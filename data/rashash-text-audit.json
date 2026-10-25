@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-25",
+  "date": "2026-10-26",
   "flags": [
     {
       "volume": "21520",
@@ -396,9 +396,1856 @@
       ],
       "occurrences": 1,
       "note": "Die gelieferte Transkription markiert hier 1 unsichere Lesart(en) mit [?] (Quellzeile(n) 2858). Die Markierungen und die unmittelbar davor stehenden Wörter bleiben erhalten; am Scan prüfen."
+    },
+    {
+      "volume": "21376",
+      "pdfPages": [
+        6
+      ],
+      "kind": "source_uncertainty",
+      "sourceIds": [
+        "HB21376-P006-T018",
+        "HB21376-P006-T033"
+      ],
+      "occurrences": 2,
+      "note": "2 ungeklärte Lesart(en) mit [?] in der gelieferten, selektiv kontextgeprüften Fassung. Am Originalscan prüfen; automatisches Niqqud ist nicht vollständig fachlich geprüft."
+    },
+    {
+      "volume": "21376",
+      "pdfPages": [
+        7
+      ],
+      "kind": "source_uncertainty",
+      "sourceIds": [
+        "HB21376-P007-T010",
+        "HB21376-P007-T037",
+        "HB21376-P007-T052"
+      ],
+      "occurrences": 3,
+      "note": "3 ungeklärte Lesart(en) mit [?] in der gelieferten, selektiv kontextgeprüften Fassung. Am Originalscan prüfen; automatisches Niqqud ist nicht vollständig fachlich geprüft."
+    },
+    {
+      "volume": "21376",
+      "pdfPages": [
+        8
+      ],
+      "kind": "source_uncertainty",
+      "sourceIds": [
+        "HB21376-P008-T008",
+        "HB21376-P008-T047"
+      ],
+      "occurrences": 3,
+      "note": "3 ungeklärte Lesart(en) mit [?] in der gelieferten, selektiv kontextgeprüften Fassung. Am Originalscan prüfen; automatisches Niqqud ist nicht vollständig fachlich geprüft."
+    },
+    {
+      "volume": "21376",
+      "pdfPages": [
+        9
+      ],
+      "kind": "source_uncertainty",
+      "sourceIds": [
+        "HB21376-P009-T003"
+      ],
+      "occurrences": 1,
+      "note": "1 ungeklärte Lesart(en) mit [?] in der gelieferten, selektiv kontextgeprüften Fassung. Am Originalscan prüfen; automatisches Niqqud ist nicht vollständig fachlich geprüft."
+    },
+    {
+      "volume": "21376",
+      "pdfPages": [
+        11
+      ],
+      "kind": "source_uncertainty",
+      "sourceIds": [
+        "HB21376-P011-T112"
+      ],
+      "occurrences": 3,
+      "note": "3 ungeklärte Lesart(en) mit [?] in der gelieferten, selektiv kontextgeprüften Fassung. Am Originalscan prüfen; automatisches Niqqud ist nicht vollständig fachlich geprüft."
+    },
+    {
+      "volume": "21376",
+      "pdfPages": [
+        13
+      ],
+      "kind": "source_uncertainty",
+      "sourceIds": [
+        "HB21376-P013-T054"
+      ],
+      "occurrences": 1,
+      "note": "1 ungeklärte Lesart(en) mit [?] in der gelieferten, selektiv kontextgeprüften Fassung. Am Originalscan prüfen; automatisches Niqqud ist nicht vollständig fachlich geprüft."
+    },
+    {
+      "volume": "21376",
+      "pdfPages": [
+        16
+      ],
+      "kind": "source_uncertainty",
+      "sourceIds": [
+        "HB21376-P016-T030"
+      ],
+      "occurrences": 1,
+      "note": "1 ungeklärte Lesart(en) mit [?] in der gelieferten, selektiv kontextgeprüften Fassung. Am Originalscan prüfen; automatisches Niqqud ist nicht vollständig fachlich geprüft."
+    },
+    {
+      "volume": "21376",
+      "pdfPages": [
+        17
+      ],
+      "kind": "source_uncertainty",
+      "sourceIds": [
+        "HB21376-P017-T009",
+        "HB21376-P017-T020"
+      ],
+      "occurrences": 2,
+      "note": "2 ungeklärte Lesart(en) mit [?] in der gelieferten, selektiv kontextgeprüften Fassung. Am Originalscan prüfen; automatisches Niqqud ist nicht vollständig fachlich geprüft."
+    },
+    {
+      "volume": "21376",
+      "pdfPages": [
+        18
+      ],
+      "kind": "source_uncertainty",
+      "sourceIds": [
+        "HB21376-P018-T003"
+      ],
+      "occurrences": 1,
+      "note": "1 ungeklärte Lesart(en) mit [?] in der gelieferten, selektiv kontextgeprüften Fassung. Am Originalscan prüfen; automatisches Niqqud ist nicht vollständig fachlich geprüft."
+    },
+    {
+      "volume": "21376",
+      "pdfPages": [
+        19
+      ],
+      "kind": "source_uncertainty",
+      "sourceIds": [
+        "HB21376-P019-T003",
+        "HB21376-P019-T058",
+        "HB21376-P019-T059",
+        "HB21376-P019-T060"
+      ],
+      "occurrences": 4,
+      "note": "4 ungeklärte Lesart(en) mit [?] in der gelieferten, selektiv kontextgeprüften Fassung. Am Originalscan prüfen; automatisches Niqqud ist nicht vollständig fachlich geprüft."
+    },
+    {
+      "volume": "21376",
+      "pdfPages": [
+        24
+      ],
+      "kind": "source_uncertainty",
+      "sourceIds": [
+        "HB21376-P024-T007",
+        "HB21376-P024-T023"
+      ],
+      "occurrences": 3,
+      "note": "3 ungeklärte Lesart(en) mit [?] in der gelieferten, selektiv kontextgeprüften Fassung. Am Originalscan prüfen; automatisches Niqqud ist nicht vollständig fachlich geprüft."
+    },
+    {
+      "volume": "21376",
+      "pdfPages": [
+        25
+      ],
+      "kind": "source_uncertainty",
+      "sourceIds": [
+        "HB21376-P025-T024",
+        "HB21376-P025-T025"
+      ],
+      "occurrences": 2,
+      "note": "2 ungeklärte Lesart(en) mit [?] in der gelieferten, selektiv kontextgeprüften Fassung. Am Originalscan prüfen; automatisches Niqqud ist nicht vollständig fachlich geprüft."
+    },
+    {
+      "volume": "21376",
+      "pdfPages": [
+        26
+      ],
+      "kind": "source_uncertainty",
+      "sourceIds": [
+        "HB21376-P026-T003"
+      ],
+      "occurrences": 1,
+      "note": "1 ungeklärte Lesart(en) mit [?] in der gelieferten, selektiv kontextgeprüften Fassung. Am Originalscan prüfen; automatisches Niqqud ist nicht vollständig fachlich geprüft."
+    },
+    {
+      "volume": "21376",
+      "pdfPages": [
+        29
+      ],
+      "kind": "source_uncertainty",
+      "sourceIds": [
+        "HB21376-P029-T027"
+      ],
+      "occurrences": 1,
+      "note": "1 ungeklärte Lesart(en) mit [?] in der gelieferten, selektiv kontextgeprüften Fassung. Am Originalscan prüfen; automatisches Niqqud ist nicht vollständig fachlich geprüft."
+    },
+    {
+      "volume": "21376",
+      "pdfPages": [
+        43
+      ],
+      "kind": "source_uncertainty",
+      "sourceIds": [
+        "HB21376-P043-T039"
+      ],
+      "occurrences": 1,
+      "note": "1 ungeklärte Lesart(en) mit [?] in der gelieferten, selektiv kontextgeprüften Fassung. Am Originalscan prüfen; automatisches Niqqud ist nicht vollständig fachlich geprüft."
+    },
+    {
+      "volume": "21376",
+      "pdfPages": [
+        47
+      ],
+      "kind": "source_uncertainty",
+      "sourceIds": [
+        "HB21376-P047-T054"
+      ],
+      "occurrences": 1,
+      "note": "1 ungeklärte Lesart(en) mit [?] in der gelieferten, selektiv kontextgeprüften Fassung. Am Originalscan prüfen; automatisches Niqqud ist nicht vollständig fachlich geprüft."
+    },
+    {
+      "volume": "21376",
+      "pdfPages": [
+        48
+      ],
+      "kind": "source_uncertainty",
+      "sourceIds": [
+        "HB21376-P048-T005"
+      ],
+      "occurrences": 1,
+      "note": "1 ungeklärte Lesart(en) mit [?] in der gelieferten, selektiv kontextgeprüften Fassung. Am Originalscan prüfen; automatisches Niqqud ist nicht vollständig fachlich geprüft."
+    },
+    {
+      "volume": "21376",
+      "pdfPages": [
+        51
+      ],
+      "kind": "source_uncertainty",
+      "sourceIds": [
+        "HB21376-P051-T046",
+        "HB21376-P051-T047"
+      ],
+      "occurrences": 3,
+      "note": "3 ungeklärte Lesart(en) mit [?] in der gelieferten, selektiv kontextgeprüften Fassung. Am Originalscan prüfen; automatisches Niqqud ist nicht vollständig fachlich geprüft."
+    },
+    {
+      "volume": "21376",
+      "pdfPages": [
+        52
+      ],
+      "kind": "source_uncertainty",
+      "sourceIds": [
+        "HB21376-P052-T020"
+      ],
+      "occurrences": 1,
+      "note": "1 ungeklärte Lesart(en) mit [?] in der gelieferten, selektiv kontextgeprüften Fassung. Am Originalscan prüfen; automatisches Niqqud ist nicht vollständig fachlich geprüft."
+    },
+    {
+      "volume": "21376",
+      "pdfPages": [
+        73
+      ],
+      "kind": "source_uncertainty",
+      "sourceIds": [
+        "HB21376-P073-T021"
+      ],
+      "occurrences": 1,
+      "note": "1 ungeklärte Lesart(en) mit [?] in der gelieferten, selektiv kontextgeprüften Fassung. Am Originalscan prüfen; automatisches Niqqud ist nicht vollständig fachlich geprüft."
+    },
+    {
+      "volume": "21376",
+      "pdfPages": [
+        81
+      ],
+      "kind": "source_uncertainty",
+      "sourceIds": [
+        "HB21376-P081-T030"
+      ],
+      "occurrences": 1,
+      "note": "1 ungeklärte Lesart(en) mit [?] in der gelieferten, selektiv kontextgeprüften Fassung. Am Originalscan prüfen; automatisches Niqqud ist nicht vollständig fachlich geprüft."
+    },
+    {
+      "volume": "21376",
+      "pdfPages": [
+        85
+      ],
+      "kind": "source_uncertainty",
+      "sourceIds": [
+        "HB21376-P085-T030"
+      ],
+      "occurrences": 1,
+      "note": "1 ungeklärte Lesart(en) mit [?] in der gelieferten, selektiv kontextgeprüften Fassung. Am Originalscan prüfen; automatisches Niqqud ist nicht vollständig fachlich geprüft."
+    },
+    {
+      "volume": "21376",
+      "pdfPages": [
+        89
+      ],
+      "kind": "source_uncertainty",
+      "sourceIds": [
+        "HB21376-P089-T030"
+      ],
+      "occurrences": 1,
+      "note": "1 ungeklärte Lesart(en) mit [?] in der gelieferten, selektiv kontextgeprüften Fassung. Am Originalscan prüfen; automatisches Niqqud ist nicht vollständig fachlich geprüft."
+    },
+    {
+      "volume": "21376",
+      "pdfPages": [
+        91
+      ],
+      "kind": "source_uncertainty",
+      "sourceIds": [
+        "HB21376-P091-T007"
+      ],
+      "occurrences": 1,
+      "note": "1 ungeklärte Lesart(en) mit [?] in der gelieferten, selektiv kontextgeprüften Fassung. Am Originalscan prüfen; automatisches Niqqud ist nicht vollständig fachlich geprüft."
+    },
+    {
+      "volume": "21376",
+      "pdfPages": [
+        94
+      ],
+      "kind": "source_uncertainty",
+      "sourceIds": [
+        "HB21376-P094-T017",
+        "HB21376-P094-T035"
+      ],
+      "occurrences": 2,
+      "note": "2 ungeklärte Lesart(en) mit [?] in der gelieferten, selektiv kontextgeprüften Fassung. Am Originalscan prüfen; automatisches Niqqud ist nicht vollständig fachlich geprüft."
+    },
+    {
+      "volume": "21376",
+      "pdfPages": [
+        95
+      ],
+      "kind": "source_uncertainty",
+      "sourceIds": [
+        "HB21376-P095-T003"
+      ],
+      "occurrences": 1,
+      "note": "1 ungeklärte Lesart(en) mit [?] in der gelieferten, selektiv kontextgeprüften Fassung. Am Originalscan prüfen; automatisches Niqqud ist nicht vollständig fachlich geprüft."
+    },
+    {
+      "volume": "21376",
+      "pdfPages": [
+        97
+      ],
+      "kind": "source_uncertainty",
+      "sourceIds": [
+        "HB21376-P097-T031"
+      ],
+      "occurrences": 1,
+      "note": "1 ungeklärte Lesart(en) mit [?] in der gelieferten, selektiv kontextgeprüften Fassung. Am Originalscan prüfen; automatisches Niqqud ist nicht vollständig fachlich geprüft."
+    },
+    {
+      "volume": "21376",
+      "pdfPages": [
+        98
+      ],
+      "kind": "source_uncertainty",
+      "sourceIds": [
+        "HB21376-P098-T003"
+      ],
+      "occurrences": 1,
+      "note": "1 ungeklärte Lesart(en) mit [?] in der gelieferten, selektiv kontextgeprüften Fassung. Am Originalscan prüfen; automatisches Niqqud ist nicht vollständig fachlich geprüft."
+    },
+    {
+      "volume": "21376",
+      "pdfPages": [
+        119
+      ],
+      "kind": "source_uncertainty",
+      "sourceIds": [
+        "HB21376-P119-T044"
+      ],
+      "occurrences": 1,
+      "note": "1 ungeklärte Lesart(en) mit [?] in der gelieferten, selektiv kontextgeprüften Fassung. Am Originalscan prüfen; automatisches Niqqud ist nicht vollständig fachlich geprüft."
+    },
+    {
+      "volume": "21376",
+      "pdfPages": [
+        125
+      ],
+      "kind": "source_uncertainty",
+      "sourceIds": [
+        "HB21376-P125-T039"
+      ],
+      "occurrences": 1,
+      "note": "1 ungeklärte Lesart(en) mit [?] in der gelieferten, selektiv kontextgeprüften Fassung. Am Originalscan prüfen; automatisches Niqqud ist nicht vollständig fachlich geprüft."
+    },
+    {
+      "volume": "21376",
+      "pdfPages": [
+        129
+      ],
+      "kind": "source_uncertainty",
+      "sourceIds": [
+        "HB21376-P129-T011"
+      ],
+      "occurrences": 1,
+      "note": "1 ungeklärte Lesart(en) mit [?] in der gelieferten, selektiv kontextgeprüften Fassung. Am Originalscan prüfen; automatisches Niqqud ist nicht vollständig fachlich geprüft."
+    },
+    {
+      "volume": "21376",
+      "pdfPages": [
+        131
+      ],
+      "kind": "source_uncertainty",
+      "sourceIds": [
+        "HB21376-P131-T005"
+      ],
+      "occurrences": 1,
+      "note": "1 ungeklärte Lesart(en) mit [?] in der gelieferten, selektiv kontextgeprüften Fassung. Am Originalscan prüfen; automatisches Niqqud ist nicht vollständig fachlich geprüft."
+    },
+    {
+      "volume": "21376",
+      "pdfPages": [
+        133
+      ],
+      "kind": "source_uncertainty",
+      "sourceIds": [
+        "HB21376-P133-T004",
+        "HB21376-P133-T005"
+      ],
+      "occurrences": 2,
+      "note": "2 ungeklärte Lesart(en) mit [?] in der gelieferten, selektiv kontextgeprüften Fassung. Am Originalscan prüfen; automatisches Niqqud ist nicht vollständig fachlich geprüft."
+    },
+    {
+      "volume": "21376",
+      "pdfPages": [
+        135
+      ],
+      "kind": "source_uncertainty",
+      "sourceIds": [
+        "HB21376-P135-T006"
+      ],
+      "occurrences": 1,
+      "note": "1 ungeklärte Lesart(en) mit [?] in der gelieferten, selektiv kontextgeprüften Fassung. Am Originalscan prüfen; automatisches Niqqud ist nicht vollständig fachlich geprüft."
+    },
+    {
+      "volume": "21376",
+      "pdfPages": [
+        136
+      ],
+      "kind": "source_uncertainty",
+      "sourceIds": [
+        "HB21376-P136-T028"
+      ],
+      "occurrences": 1,
+      "note": "1 ungeklärte Lesart(en) mit [?] in der gelieferten, selektiv kontextgeprüften Fassung. Am Originalscan prüfen; automatisches Niqqud ist nicht vollständig fachlich geprüft."
+    },
+    {
+      "volume": "21376",
+      "pdfPages": [
+        137
+      ],
+      "kind": "source_uncertainty",
+      "sourceIds": [
+        "HB21376-P137-T016",
+        "HB21376-P137-T022"
+      ],
+      "occurrences": 2,
+      "note": "2 ungeklärte Lesart(en) mit [?] in der gelieferten, selektiv kontextgeprüften Fassung. Am Originalscan prüfen; automatisches Niqqud ist nicht vollständig fachlich geprüft."
+    },
+    {
+      "volume": "21376",
+      "pdfPages": [
+        140
+      ],
+      "kind": "source_uncertainty",
+      "sourceIds": [
+        "HB21376-P140-T015"
+      ],
+      "occurrences": 1,
+      "note": "1 ungeklärte Lesart(en) mit [?] in der gelieferten, selektiv kontextgeprüften Fassung. Am Originalscan prüfen; automatisches Niqqud ist nicht vollständig fachlich geprüft."
+    },
+    {
+      "volume": "21376",
+      "pdfPages": [
+        141
+      ],
+      "kind": "source_uncertainty",
+      "sourceIds": [
+        "HB21376-P141-T018",
+        "HB21376-P141-T031",
+        "HB21376-P141-T032",
+        "HB21376-P141-T046"
+      ],
+      "occurrences": 4,
+      "note": "4 ungeklärte Lesart(en) mit [?] in der gelieferten, selektiv kontextgeprüften Fassung. Am Originalscan prüfen; automatisches Niqqud ist nicht vollständig fachlich geprüft."
+    },
+    {
+      "volume": "21376",
+      "pdfPages": [
+        142
+      ],
+      "kind": "source_uncertainty",
+      "sourceIds": [
+        "HB21376-P142-T004",
+        "HB21376-P142-T026",
+        "HB21376-P142-T027",
+        "HB21376-P142-T041"
+      ],
+      "occurrences": 4,
+      "note": "4 ungeklärte Lesart(en) mit [?] in der gelieferten, selektiv kontextgeprüften Fassung. Am Originalscan prüfen; automatisches Niqqud ist nicht vollständig fachlich geprüft."
+    },
+    {
+      "volume": "21376",
+      "pdfPages": [
+        143
+      ],
+      "kind": "source_uncertainty",
+      "sourceIds": [
+        "HB21376-P143-T004",
+        "HB21376-P143-T037"
+      ],
+      "occurrences": 2,
+      "note": "2 ungeklärte Lesart(en) mit [?] in der gelieferten, selektiv kontextgeprüften Fassung. Am Originalscan prüfen; automatisches Niqqud ist nicht vollständig fachlich geprüft."
+    },
+    {
+      "volume": "21376",
+      "pdfPages": [
+        144
+      ],
+      "kind": "source_uncertainty",
+      "sourceIds": [
+        "HB21376-P144-T012",
+        "HB21376-P144-T026"
+      ],
+      "occurrences": 2,
+      "note": "2 ungeklärte Lesart(en) mit [?] in der gelieferten, selektiv kontextgeprüften Fassung. Am Originalscan prüfen; automatisches Niqqud ist nicht vollständig fachlich geprüft."
+    },
+    {
+      "volume": "21376",
+      "pdfPages": [
+        145
+      ],
+      "kind": "source_uncertainty",
+      "sourceIds": [
+        "HB21376-P145-T018",
+        "HB21376-P145-T022",
+        "HB21376-P145-T024",
+        "HB21376-P145-T026",
+        "HB21376-P145-T029"
+      ],
+      "occurrences": 5,
+      "note": "5 ungeklärte Lesart(en) mit [?] in der gelieferten, selektiv kontextgeprüften Fassung. Am Originalscan prüfen; automatisches Niqqud ist nicht vollständig fachlich geprüft."
+    },
+    {
+      "volume": "21376",
+      "pdfPages": [
+        146
+      ],
+      "kind": "source_uncertainty",
+      "sourceIds": [
+        "HB21376-P146-T003"
+      ],
+      "occurrences": 1,
+      "note": "1 ungeklärte Lesart(en) mit [?] in der gelieferten, selektiv kontextgeprüften Fassung. Am Originalscan prüfen; automatisches Niqqud ist nicht vollständig fachlich geprüft."
+    },
+    {
+      "volume": "21376",
+      "pdfPages": [
+        147
+      ],
+      "kind": "source_uncertainty",
+      "sourceIds": [
+        "HB21376-P147-T032",
+        "HB21376-P147-T033"
+      ],
+      "occurrences": 2,
+      "note": "2 ungeklärte Lesart(en) mit [?] in der gelieferten, selektiv kontextgeprüften Fassung. Am Originalscan prüfen; automatisches Niqqud ist nicht vollständig fachlich geprüft."
+    },
+    {
+      "volume": "21376",
+      "pdfPages": [
+        148
+      ],
+      "kind": "source_uncertainty",
+      "sourceIds": [
+        "HB21376-P148-T003"
+      ],
+      "occurrences": 1,
+      "note": "1 ungeklärte Lesart(en) mit [?] in der gelieferten, selektiv kontextgeprüften Fassung. Am Originalscan prüfen; automatisches Niqqud ist nicht vollständig fachlich geprüft."
+    },
+    {
+      "volume": "21376",
+      "pdfPages": [
+        149
+      ],
+      "kind": "source_uncertainty",
+      "sourceIds": [
+        "HB21376-P149-T005",
+        "HB21376-P149-T009",
+        "HB21376-P149-T013",
+        "HB21376-P149-T016",
+        "HB21376-P149-T022",
+        "HB21376-P149-T025",
+        "HB21376-P149-T035"
+      ],
+      "occurrences": 7,
+      "note": "7 ungeklärte Lesart(en) mit [?] in der gelieferten, selektiv kontextgeprüften Fassung. Am Originalscan prüfen; automatisches Niqqud ist nicht vollständig fachlich geprüft."
+    },
+    {
+      "volume": "21376",
+      "pdfPages": [
+        150
+      ],
+      "kind": "source_uncertainty",
+      "sourceIds": [
+        "HB21376-P150-T011"
+      ],
+      "occurrences": 1,
+      "note": "1 ungeklärte Lesart(en) mit [?] in der gelieferten, selektiv kontextgeprüften Fassung. Am Originalscan prüfen; automatisches Niqqud ist nicht vollständig fachlich geprüft."
+    },
+    {
+      "volume": "21376",
+      "pdfPages": [
+        151
+      ],
+      "kind": "source_uncertainty",
+      "sourceIds": [
+        "HB21376-P151-T015"
+      ],
+      "occurrences": 1,
+      "note": "1 ungeklärte Lesart(en) mit [?] in der gelieferten, selektiv kontextgeprüften Fassung. Am Originalscan prüfen; automatisches Niqqud ist nicht vollständig fachlich geprüft."
+    },
+    {
+      "volume": "21376",
+      "pdfPages": [
+        152
+      ],
+      "kind": "source_uncertainty",
+      "sourceIds": [
+        "HB21376-P152-T003",
+        "HB21376-P152-T004",
+        "HB21376-P152-T005",
+        "HB21376-P152-T007"
+      ],
+      "occurrences": 4,
+      "note": "4 ungeklärte Lesart(en) mit [?] in der gelieferten, selektiv kontextgeprüften Fassung. Am Originalscan prüfen; automatisches Niqqud ist nicht vollständig fachlich geprüft."
+    },
+    {
+      "volume": "21376",
+      "pdfPages": [
+        153
+      ],
+      "kind": "source_uncertainty",
+      "sourceIds": [
+        "HB21376-P153-T005",
+        "HB21376-P153-T006",
+        "HB21376-P153-T007",
+        "HB21376-P153-T012"
+      ],
+      "occurrences": 5,
+      "note": "5 ungeklärte Lesart(en) mit [?] in der gelieferten, selektiv kontextgeprüften Fassung. Am Originalscan prüfen; automatisches Niqqud ist nicht vollständig fachlich geprüft."
+    },
+    {
+      "volume": "21376",
+      "pdfPages": [
+        154
+      ],
+      "kind": "source_uncertainty",
+      "sourceIds": [
+        "HB21376-P154-T005",
+        "HB21376-P154-T008",
+        "HB21376-P154-T012"
+      ],
+      "occurrences": 4,
+      "note": "4 ungeklärte Lesart(en) mit [?] in der gelieferten, selektiv kontextgeprüften Fassung. Am Originalscan prüfen; automatisches Niqqud ist nicht vollständig fachlich geprüft."
+    },
+    {
+      "volume": "21376",
+      "pdfPages": [
+        155
+      ],
+      "kind": "source_uncertainty",
+      "sourceIds": [
+        "HB21376-P155-T016"
+      ],
+      "occurrences": 1,
+      "note": "1 ungeklärte Lesart(en) mit [?] in der gelieferten, selektiv kontextgeprüften Fassung. Am Originalscan prüfen; automatisches Niqqud ist nicht vollständig fachlich geprüft."
+    },
+    {
+      "volume": "21376",
+      "pdfPages": [
+        156
+      ],
+      "kind": "source_uncertainty",
+      "sourceIds": [
+        "HB21376-P156-T008",
+        "HB21376-P156-T013",
+        "HB21376-P156-T014"
+      ],
+      "occurrences": 3,
+      "note": "3 ungeklärte Lesart(en) mit [?] in der gelieferten, selektiv kontextgeprüften Fassung. Am Originalscan prüfen; automatisches Niqqud ist nicht vollständig fachlich geprüft."
+    },
+    {
+      "volume": "21376",
+      "pdfPages": [
+        157
+      ],
+      "kind": "source_uncertainty",
+      "sourceIds": [
+        "HB21376-P157-T003",
+        "HB21376-P157-T004"
+      ],
+      "occurrences": 2,
+      "note": "2 ungeklärte Lesart(en) mit [?] in der gelieferten, selektiv kontextgeprüften Fassung. Am Originalscan prüfen; automatisches Niqqud ist nicht vollständig fachlich geprüft."
+    },
+    {
+      "volume": "21376",
+      "pdfPages": [
+        159
+      ],
+      "kind": "source_uncertainty",
+      "sourceIds": [
+        "HB21376-P159-T006",
+        "HB21376-P159-T047"
+      ],
+      "occurrences": 2,
+      "note": "2 ungeklärte Lesart(en) mit [?] in der gelieferten, selektiv kontextgeprüften Fassung. Am Originalscan prüfen; automatisches Niqqud ist nicht vollständig fachlich geprüft."
+    },
+    {
+      "volume": "21376",
+      "pdfPages": [
+        160
+      ],
+      "kind": "source_uncertainty",
+      "sourceIds": [
+        "HB21376-P160-T004"
+      ],
+      "occurrences": 1,
+      "note": "1 ungeklärte Lesart(en) mit [?] in der gelieferten, selektiv kontextgeprüften Fassung. Am Originalscan prüfen; automatisches Niqqud ist nicht vollständig fachlich geprüft."
+    },
+    {
+      "volume": "21376",
+      "pdfPages": [
+        162
+      ],
+      "kind": "source_uncertainty",
+      "sourceIds": [
+        "HB21376-P162-T005",
+        "HB21376-P162-T007",
+        "HB21376-P162-T010"
+      ],
+      "occurrences": 3,
+      "note": "3 ungeklärte Lesart(en) mit [?] in der gelieferten, selektiv kontextgeprüften Fassung. Am Originalscan prüfen; automatisches Niqqud ist nicht vollständig fachlich geprüft."
+    },
+    {
+      "volume": "21376",
+      "pdfPages": [
+        163
+      ],
+      "kind": "source_uncertainty",
+      "sourceIds": [
+        "HB21376-P163-T006",
+        "HB21376-P163-T010"
+      ],
+      "occurrences": 2,
+      "note": "2 ungeklärte Lesart(en) mit [?] in der gelieferten, selektiv kontextgeprüften Fassung. Am Originalscan prüfen; automatisches Niqqud ist nicht vollständig fachlich geprüft."
+    },
+    {
+      "volume": "21376",
+      "pdfPages": [
+        164
+      ],
+      "kind": "source_uncertainty",
+      "sourceIds": [
+        "HB21376-P164-T017",
+        "HB21376-P164-T021"
+      ],
+      "occurrences": 2,
+      "note": "2 ungeklärte Lesart(en) mit [?] in der gelieferten, selektiv kontextgeprüften Fassung. Am Originalscan prüfen; automatisches Niqqud ist nicht vollständig fachlich geprüft."
+    },
+    {
+      "volume": "21376",
+      "pdfPages": [
+        165
+      ],
+      "kind": "source_uncertainty",
+      "sourceIds": [
+        "HB21376-P165-T007",
+        "HB21376-P165-T010"
+      ],
+      "occurrences": 2,
+      "note": "2 ungeklärte Lesart(en) mit [?] in der gelieferten, selektiv kontextgeprüften Fassung. Am Originalscan prüfen; automatisches Niqqud ist nicht vollständig fachlich geprüft."
+    },
+    {
+      "volume": "21376",
+      "pdfPages": [
+        166
+      ],
+      "kind": "source_uncertainty",
+      "sourceIds": [
+        "HB21376-P166-T005",
+        "HB21376-P166-T010",
+        "HB21376-P166-T011"
+      ],
+      "occurrences": 3,
+      "note": "3 ungeklärte Lesart(en) mit [?] in der gelieferten, selektiv kontextgeprüften Fassung. Am Originalscan prüfen; automatisches Niqqud ist nicht vollständig fachlich geprüft."
+    },
+    {
+      "volume": "21376",
+      "pdfPages": [
+        167
+      ],
+      "kind": "source_uncertainty",
+      "sourceIds": [
+        "HB21376-P167-T004",
+        "HB21376-P167-T005"
+      ],
+      "occurrences": 2,
+      "note": "2 ungeklärte Lesart(en) mit [?] in der gelieferten, selektiv kontextgeprüften Fassung. Am Originalscan prüfen; automatisches Niqqud ist nicht vollständig fachlich geprüft."
+    },
+    {
+      "volume": "21376",
+      "pdfPages": [
+        168
+      ],
+      "kind": "source_uncertainty",
+      "sourceIds": [
+        "HB21376-P168-T003",
+        "HB21376-P168-T004",
+        "HB21376-P168-T005",
+        "HB21376-P168-T028",
+        "HB21376-P168-T050",
+        "HB21376-P168-T051",
+        "HB21376-P168-T052",
+        "HB21376-P168-T053"
+      ],
+      "occurrences": 8,
+      "note": "8 ungeklärte Lesart(en) mit [?] in der gelieferten, selektiv kontextgeprüften Fassung. Am Originalscan prüfen; automatisches Niqqud ist nicht vollständig fachlich geprüft."
+    },
+    {
+      "volume": "21376",
+      "pdfPages": [
+        169
+      ],
+      "kind": "source_uncertainty",
+      "sourceIds": [
+        "HB21376-P169-T004",
+        "HB21376-P169-T037"
+      ],
+      "occurrences": 2,
+      "note": "2 ungeklärte Lesart(en) mit [?] in der gelieferten, selektiv kontextgeprüften Fassung. Am Originalscan prüfen; automatisches Niqqud ist nicht vollständig fachlich geprüft."
+    },
+    {
+      "volume": "21376",
+      "pdfPages": [
+        170
+      ],
+      "kind": "source_uncertainty",
+      "sourceIds": [
+        "HB21376-P170-T013",
+        "HB21376-P170-T035"
+      ],
+      "occurrences": 2,
+      "note": "2 ungeklärte Lesart(en) mit [?] in der gelieferten, selektiv kontextgeprüften Fassung. Am Originalscan prüfen; automatisches Niqqud ist nicht vollständig fachlich geprüft."
+    },
+    {
+      "volume": "21376",
+      "pdfPages": [
+        171
+      ],
+      "kind": "source_uncertainty",
+      "sourceIds": [
+        "HB21376-P171-T004",
+        "HB21376-P171-T005"
+      ],
+      "occurrences": 2,
+      "note": "2 ungeklärte Lesart(en) mit [?] in der gelieferten, selektiv kontextgeprüften Fassung. Am Originalscan prüfen; automatisches Niqqud ist nicht vollständig fachlich geprüft."
+    },
+    {
+      "volume": "21376",
+      "pdfPages": [
+        172
+      ],
+      "kind": "source_uncertainty",
+      "sourceIds": [
+        "HB21376-P172-T021",
+        "HB21376-P172-T033"
+      ],
+      "occurrences": 2,
+      "note": "2 ungeklärte Lesart(en) mit [?] in der gelieferten, selektiv kontextgeprüften Fassung. Am Originalscan prüfen; automatisches Niqqud ist nicht vollständig fachlich geprüft."
+    },
+    {
+      "volume": "21376",
+      "pdfPages": [
+        173
+      ],
+      "kind": "source_uncertainty",
+      "sourceIds": [
+        "HB21376-P173-T011"
+      ],
+      "occurrences": 1,
+      "note": "1 ungeklärte Lesart(en) mit [?] in der gelieferten, selektiv kontextgeprüften Fassung. Am Originalscan prüfen; automatisches Niqqud ist nicht vollständig fachlich geprüft."
+    },
+    {
+      "volume": "21376",
+      "pdfPages": [
+        174
+      ],
+      "kind": "source_uncertainty",
+      "sourceIds": [
+        "HB21376-P174-T031",
+        "HB21376-P174-T032"
+      ],
+      "occurrences": 3,
+      "note": "3 ungeklärte Lesart(en) mit [?] in der gelieferten, selektiv kontextgeprüften Fassung. Am Originalscan prüfen; automatisches Niqqud ist nicht vollständig fachlich geprüft."
+    },
+    {
+      "volume": "21376",
+      "pdfPages": [
+        177
+      ],
+      "kind": "source_uncertainty",
+      "sourceIds": [
+        "HB21376-P177-T016"
+      ],
+      "occurrences": 1,
+      "note": "1 ungeklärte Lesart(en) mit [?] in der gelieferten, selektiv kontextgeprüften Fassung. Am Originalscan prüfen; automatisches Niqqud ist nicht vollständig fachlich geprüft."
     }
   ],
   "volumes": [
+    {
+      "id": "21376",
+      "part": 1,
+      "title": "Grundlagen und Morgengebet · HB21376",
+      "pages": 176,
+      "pdfPages": 177,
+      "txtPath": "texts/rashash/Siddur_HaRashash_Teil_1_HB21376_Niqqud_Tags_Kontextgeprueft.txt",
+      "sourcePath": "texts/rashash/Siddur_HaRashash_Teil_1_HB21376_Niqqud_Tags_Kontextgeprueft.txt",
+      "sourceFormat": "tagged-xml",
+      "sourceSha256": "d63dfd961cf1cad86f5f647ef6c8b5a7e5cbd2b779f52517689671f1108a8e29",
+      "jsonPath": "data/rashash-text-21376.json",
+      "status": "Automatisches Niqqud · selektiv kontextgeprüft · 143 Lesestellen offen",
+      "statistics": {
+        "siddur": 1,
+        "metadata": 1,
+        "title": 1,
+        "source": 1,
+        "original-transcription-sha256": 1,
+        "revision": 1,
+        "automatic-niqqud": 1,
+        "context-review": 1,
+        "transcription_header": 1,
+        "line": 13,
+        "page": 176,
+        "lb": 381,
+        "heading": 92,
+        "p": 1916,
+        "shem": 10963,
+        "table": 308,
+        "row": 4110,
+        "unresolved_markers": 143
+      },
+      "flags": [
+        {
+          "volume": "21376",
+          "pdfPages": [
+            6
+          ],
+          "kind": "source_uncertainty",
+          "sourceIds": [
+            "HB21376-P006-T018",
+            "HB21376-P006-T033"
+          ],
+          "occurrences": 2,
+          "note": "2 ungeklärte Lesart(en) mit [?] in der gelieferten, selektiv kontextgeprüften Fassung. Am Originalscan prüfen; automatisches Niqqud ist nicht vollständig fachlich geprüft."
+        },
+        {
+          "volume": "21376",
+          "pdfPages": [
+            7
+          ],
+          "kind": "source_uncertainty",
+          "sourceIds": [
+            "HB21376-P007-T010",
+            "HB21376-P007-T037",
+            "HB21376-P007-T052"
+          ],
+          "occurrences": 3,
+          "note": "3 ungeklärte Lesart(en) mit [?] in der gelieferten, selektiv kontextgeprüften Fassung. Am Originalscan prüfen; automatisches Niqqud ist nicht vollständig fachlich geprüft."
+        },
+        {
+          "volume": "21376",
+          "pdfPages": [
+            8
+          ],
+          "kind": "source_uncertainty",
+          "sourceIds": [
+            "HB21376-P008-T008",
+            "HB21376-P008-T047"
+          ],
+          "occurrences": 3,
+          "note": "3 ungeklärte Lesart(en) mit [?] in der gelieferten, selektiv kontextgeprüften Fassung. Am Originalscan prüfen; automatisches Niqqud ist nicht vollständig fachlich geprüft."
+        },
+        {
+          "volume": "21376",
+          "pdfPages": [
+            9
+          ],
+          "kind": "source_uncertainty",
+          "sourceIds": [
+            "HB21376-P009-T003"
+          ],
+          "occurrences": 1,
+          "note": "1 ungeklärte Lesart(en) mit [?] in der gelieferten, selektiv kontextgeprüften Fassung. Am Originalscan prüfen; automatisches Niqqud ist nicht vollständig fachlich geprüft."
+        },
+        {
+          "volume": "21376",
+          "pdfPages": [
+            11
+          ],
+          "kind": "source_uncertainty",
+          "sourceIds": [
+            "HB21376-P011-T112"
+          ],
+          "occurrences": 3,
+          "note": "3 ungeklärte Lesart(en) mit [?] in der gelieferten, selektiv kontextgeprüften Fassung. Am Originalscan prüfen; automatisches Niqqud ist nicht vollständig fachlich geprüft."
+        },
+        {
+          "volume": "21376",
+          "pdfPages": [
+            13
+          ],
+          "kind": "source_uncertainty",
+          "sourceIds": [
+            "HB21376-P013-T054"
+          ],
+          "occurrences": 1,
+          "note": "1 ungeklärte Lesart(en) mit [?] in der gelieferten, selektiv kontextgeprüften Fassung. Am Originalscan prüfen; automatisches Niqqud ist nicht vollständig fachlich geprüft."
+        },
+        {
+          "volume": "21376",
+          "pdfPages": [
+            16
+          ],
+          "kind": "source_uncertainty",
+          "sourceIds": [
+            "HB21376-P016-T030"
+          ],
+          "occurrences": 1,
+          "note": "1 ungeklärte Lesart(en) mit [?] in der gelieferten, selektiv kontextgeprüften Fassung. Am Originalscan prüfen; automatisches Niqqud ist nicht vollständig fachlich geprüft."
+        },
+        {
+          "volume": "21376",
+          "pdfPages": [
+            17
+          ],
+          "kind": "source_uncertainty",
+          "sourceIds": [
+            "HB21376-P017-T009",
+            "HB21376-P017-T020"
+          ],
+          "occurrences": 2,
+          "note": "2 ungeklärte Lesart(en) mit [?] in der gelieferten, selektiv kontextgeprüften Fassung. Am Originalscan prüfen; automatisches Niqqud ist nicht vollständig fachlich geprüft."
+        },
+        {
+          "volume": "21376",
+          "pdfPages": [
+            18
+          ],
+          "kind": "source_uncertainty",
+          "sourceIds": [
+            "HB21376-P018-T003"
+          ],
+          "occurrences": 1,
+          "note": "1 ungeklärte Lesart(en) mit [?] in der gelieferten, selektiv kontextgeprüften Fassung. Am Originalscan prüfen; automatisches Niqqud ist nicht vollständig fachlich geprüft."
+        },
+        {
+          "volume": "21376",
+          "pdfPages": [
+            19
+          ],
+          "kind": "source_uncertainty",
+          "sourceIds": [
+            "HB21376-P019-T003",
+            "HB21376-P019-T058",
+            "HB21376-P019-T059",
+            "HB21376-P019-T060"
+          ],
+          "occurrences": 4,
+          "note": "4 ungeklärte Lesart(en) mit [?] in der gelieferten, selektiv kontextgeprüften Fassung. Am Originalscan prüfen; automatisches Niqqud ist nicht vollständig fachlich geprüft."
+        },
+        {
+          "volume": "21376",
+          "pdfPages": [
+            24
+          ],
+          "kind": "source_uncertainty",
+          "sourceIds": [
+            "HB21376-P024-T007",
+            "HB21376-P024-T023"
+          ],
+          "occurrences": 3,
+          "note": "3 ungeklärte Lesart(en) mit [?] in der gelieferten, selektiv kontextgeprüften Fassung. Am Originalscan prüfen; automatisches Niqqud ist nicht vollständig fachlich geprüft."
+        },
+        {
+          "volume": "21376",
+          "pdfPages": [
+            25
+          ],
+          "kind": "source_uncertainty",
+          "sourceIds": [
+            "HB21376-P025-T024",
+            "HB21376-P025-T025"
+          ],
+          "occurrences": 2,
+          "note": "2 ungeklärte Lesart(en) mit [?] in der gelieferten, selektiv kontextgeprüften Fassung. Am Originalscan prüfen; automatisches Niqqud ist nicht vollständig fachlich geprüft."
+        },
+        {
+          "volume": "21376",
+          "pdfPages": [
+            26
+          ],
+          "kind": "source_uncertainty",
+          "sourceIds": [
+            "HB21376-P026-T003"
+          ],
+          "occurrences": 1,
+          "note": "1 ungeklärte Lesart(en) mit [?] in der gelieferten, selektiv kontextgeprüften Fassung. Am Originalscan prüfen; automatisches Niqqud ist nicht vollständig fachlich geprüft."
+        },
+        {
+          "volume": "21376",
+          "pdfPages": [
+            29
+          ],
+          "kind": "source_uncertainty",
+          "sourceIds": [
+            "HB21376-P029-T027"
+          ],
+          "occurrences": 1,
+          "note": "1 ungeklärte Lesart(en) mit [?] in der gelieferten, selektiv kontextgeprüften Fassung. Am Originalscan prüfen; automatisches Niqqud ist nicht vollständig fachlich geprüft."
+        },
+        {
+          "volume": "21376",
+          "pdfPages": [
+            43
+          ],
+          "kind": "source_uncertainty",
+          "sourceIds": [
+            "HB21376-P043-T039"
+          ],
+          "occurrences": 1,
+          "note": "1 ungeklärte Lesart(en) mit [?] in der gelieferten, selektiv kontextgeprüften Fassung. Am Originalscan prüfen; automatisches Niqqud ist nicht vollständig fachlich geprüft."
+        },
+        {
+          "volume": "21376",
+          "pdfPages": [
+            47
+          ],
+          "kind": "source_uncertainty",
+          "sourceIds": [
+            "HB21376-P047-T054"
+          ],
+          "occurrences": 1,
+          "note": "1 ungeklärte Lesart(en) mit [?] in der gelieferten, selektiv kontextgeprüften Fassung. Am Originalscan prüfen; automatisches Niqqud ist nicht vollständig fachlich geprüft."
+        },
+        {
+          "volume": "21376",
+          "pdfPages": [
+            48
+          ],
+          "kind": "source_uncertainty",
+          "sourceIds": [
+            "HB21376-P048-T005"
+          ],
+          "occurrences": 1,
+          "note": "1 ungeklärte Lesart(en) mit [?] in der gelieferten, selektiv kontextgeprüften Fassung. Am Originalscan prüfen; automatisches Niqqud ist nicht vollständig fachlich geprüft."
+        },
+        {
+          "volume": "21376",
+          "pdfPages": [
+            51
+          ],
+          "kind": "source_uncertainty",
+          "sourceIds": [
+            "HB21376-P051-T046",
+            "HB21376-P051-T047"
+          ],
+          "occurrences": 3,
+          "note": "3 ungeklärte Lesart(en) mit [?] in der gelieferten, selektiv kontextgeprüften Fassung. Am Originalscan prüfen; automatisches Niqqud ist nicht vollständig fachlich geprüft."
+        },
+        {
+          "volume": "21376",
+          "pdfPages": [
+            52
+          ],
+          "kind": "source_uncertainty",
+          "sourceIds": [
+            "HB21376-P052-T020"
+          ],
+          "occurrences": 1,
+          "note": "1 ungeklärte Lesart(en) mit [?] in der gelieferten, selektiv kontextgeprüften Fassung. Am Originalscan prüfen; automatisches Niqqud ist nicht vollständig fachlich geprüft."
+        },
+        {
+          "volume": "21376",
+          "pdfPages": [
+            73
+          ],
+          "kind": "source_uncertainty",
+          "sourceIds": [
+            "HB21376-P073-T021"
+          ],
+          "occurrences": 1,
+          "note": "1 ungeklärte Lesart(en) mit [?] in der gelieferten, selektiv kontextgeprüften Fassung. Am Originalscan prüfen; automatisches Niqqud ist nicht vollständig fachlich geprüft."
+        },
+        {
+          "volume": "21376",
+          "pdfPages": [
+            81
+          ],
+          "kind": "source_uncertainty",
+          "sourceIds": [
+            "HB21376-P081-T030"
+          ],
+          "occurrences": 1,
+          "note": "1 ungeklärte Lesart(en) mit [?] in der gelieferten, selektiv kontextgeprüften Fassung. Am Originalscan prüfen; automatisches Niqqud ist nicht vollständig fachlich geprüft."
+        },
+        {
+          "volume": "21376",
+          "pdfPages": [
+            85
+          ],
+          "kind": "source_uncertainty",
+          "sourceIds": [
+            "HB21376-P085-T030"
+          ],
+          "occurrences": 1,
+          "note": "1 ungeklärte Lesart(en) mit [?] in der gelieferten, selektiv kontextgeprüften Fassung. Am Originalscan prüfen; automatisches Niqqud ist nicht vollständig fachlich geprüft."
+        },
+        {
+          "volume": "21376",
+          "pdfPages": [
+            89
+          ],
+          "kind": "source_uncertainty",
+          "sourceIds": [
+            "HB21376-P089-T030"
+          ],
+          "occurrences": 1,
+          "note": "1 ungeklärte Lesart(en) mit [?] in der gelieferten, selektiv kontextgeprüften Fassung. Am Originalscan prüfen; automatisches Niqqud ist nicht vollständig fachlich geprüft."
+        },
+        {
+          "volume": "21376",
+          "pdfPages": [
+            91
+          ],
+          "kind": "source_uncertainty",
+          "sourceIds": [
+            "HB21376-P091-T007"
+          ],
+          "occurrences": 1,
+          "note": "1 ungeklärte Lesart(en) mit [?] in der gelieferten, selektiv kontextgeprüften Fassung. Am Originalscan prüfen; automatisches Niqqud ist nicht vollständig fachlich geprüft."
+        },
+        {
+          "volume": "21376",
+          "pdfPages": [
+            94
+          ],
+          "kind": "source_uncertainty",
+          "sourceIds": [
+            "HB21376-P094-T017",
+            "HB21376-P094-T035"
+          ],
+          "occurrences": 2,
+          "note": "2 ungeklärte Lesart(en) mit [?] in der gelieferten, selektiv kontextgeprüften Fassung. Am Originalscan prüfen; automatisches Niqqud ist nicht vollständig fachlich geprüft."
+        },
+        {
+          "volume": "21376",
+          "pdfPages": [
+            95
+          ],
+          "kind": "source_uncertainty",
+          "sourceIds": [
+            "HB21376-P095-T003"
+          ],
+          "occurrences": 1,
+          "note": "1 ungeklärte Lesart(en) mit [?] in der gelieferten, selektiv kontextgeprüften Fassung. Am Originalscan prüfen; automatisches Niqqud ist nicht vollständig fachlich geprüft."
+        },
+        {
+          "volume": "21376",
+          "pdfPages": [
+            97
+          ],
+          "kind": "source_uncertainty",
+          "sourceIds": [
+            "HB21376-P097-T031"
+          ],
+          "occurrences": 1,
+          "note": "1 ungeklärte Lesart(en) mit [?] in der gelieferten, selektiv kontextgeprüften Fassung. Am Originalscan prüfen; automatisches Niqqud ist nicht vollständig fachlich geprüft."
+        },
+        {
+          "volume": "21376",
+          "pdfPages": [
+            98
+          ],
+          "kind": "source_uncertainty",
+          "sourceIds": [
+            "HB21376-P098-T003"
+          ],
+          "occurrences": 1,
+          "note": "1 ungeklärte Lesart(en) mit [?] in der gelieferten, selektiv kontextgeprüften Fassung. Am Originalscan prüfen; automatisches Niqqud ist nicht vollständig fachlich geprüft."
+        },
+        {
+          "volume": "21376",
+          "pdfPages": [
+            119
+          ],
+          "kind": "source_uncertainty",
+          "sourceIds": [
+            "HB21376-P119-T044"
+          ],
+          "occurrences": 1,
+          "note": "1 ungeklärte Lesart(en) mit [?] in der gelieferten, selektiv kontextgeprüften Fassung. Am Originalscan prüfen; automatisches Niqqud ist nicht vollständig fachlich geprüft."
+        },
+        {
+          "volume": "21376",
+          "pdfPages": [
+            125
+          ],
+          "kind": "source_uncertainty",
+          "sourceIds": [
+            "HB21376-P125-T039"
+          ],
+          "occurrences": 1,
+          "note": "1 ungeklärte Lesart(en) mit [?] in der gelieferten, selektiv kontextgeprüften Fassung. Am Originalscan prüfen; automatisches Niqqud ist nicht vollständig fachlich geprüft."
+        },
+        {
+          "volume": "21376",
+          "pdfPages": [
+            129
+          ],
+          "kind": "source_uncertainty",
+          "sourceIds": [
+            "HB21376-P129-T011"
+          ],
+          "occurrences": 1,
+          "note": "1 ungeklärte Lesart(en) mit [?] in der gelieferten, selektiv kontextgeprüften Fassung. Am Originalscan prüfen; automatisches Niqqud ist nicht vollständig fachlich geprüft."
+        },
+        {
+          "volume": "21376",
+          "pdfPages": [
+            131
+          ],
+          "kind": "source_uncertainty",
+          "sourceIds": [
+            "HB21376-P131-T005"
+          ],
+          "occurrences": 1,
+          "note": "1 ungeklärte Lesart(en) mit [?] in der gelieferten, selektiv kontextgeprüften Fassung. Am Originalscan prüfen; automatisches Niqqud ist nicht vollständig fachlich geprüft."
+        },
+        {
+          "volume": "21376",
+          "pdfPages": [
+            133
+          ],
+          "kind": "source_uncertainty",
+          "sourceIds": [
+            "HB21376-P133-T004",
+            "HB21376-P133-T005"
+          ],
+          "occurrences": 2,
+          "note": "2 ungeklärte Lesart(en) mit [?] in der gelieferten, selektiv kontextgeprüften Fassung. Am Originalscan prüfen; automatisches Niqqud ist nicht vollständig fachlich geprüft."
+        },
+        {
+          "volume": "21376",
+          "pdfPages": [
+            135
+          ],
+          "kind": "source_uncertainty",
+          "sourceIds": [
+            "HB21376-P135-T006"
+          ],
+          "occurrences": 1,
+          "note": "1 ungeklärte Lesart(en) mit [?] in der gelieferten, selektiv kontextgeprüften Fassung. Am Originalscan prüfen; automatisches Niqqud ist nicht vollständig fachlich geprüft."
+        },
+        {
+          "volume": "21376",
+          "pdfPages": [
+            136
+          ],
+          "kind": "source_uncertainty",
+          "sourceIds": [
+            "HB21376-P136-T028"
+          ],
+          "occurrences": 1,
+          "note": "1 ungeklärte Lesart(en) mit [?] in der gelieferten, selektiv kontextgeprüften Fassung. Am Originalscan prüfen; automatisches Niqqud ist nicht vollständig fachlich geprüft."
+        },
+        {
+          "volume": "21376",
+          "pdfPages": [
+            137
+          ],
+          "kind": "source_uncertainty",
+          "sourceIds": [
+            "HB21376-P137-T016",
+            "HB21376-P137-T022"
+          ],
+          "occurrences": 2,
+          "note": "2 ungeklärte Lesart(en) mit [?] in der gelieferten, selektiv kontextgeprüften Fassung. Am Originalscan prüfen; automatisches Niqqud ist nicht vollständig fachlich geprüft."
+        },
+        {
+          "volume": "21376",
+          "pdfPages": [
+            140
+          ],
+          "kind": "source_uncertainty",
+          "sourceIds": [
+            "HB21376-P140-T015"
+          ],
+          "occurrences": 1,
+          "note": "1 ungeklärte Lesart(en) mit [?] in der gelieferten, selektiv kontextgeprüften Fassung. Am Originalscan prüfen; automatisches Niqqud ist nicht vollständig fachlich geprüft."
+        },
+        {
+          "volume": "21376",
+          "pdfPages": [
+            141
+          ],
+          "kind": "source_uncertainty",
+          "sourceIds": [
+            "HB21376-P141-T018",
+            "HB21376-P141-T031",
+            "HB21376-P141-T032",
+            "HB21376-P141-T046"
+          ],
+          "occurrences": 4,
+          "note": "4 ungeklärte Lesart(en) mit [?] in der gelieferten, selektiv kontextgeprüften Fassung. Am Originalscan prüfen; automatisches Niqqud ist nicht vollständig fachlich geprüft."
+        },
+        {
+          "volume": "21376",
+          "pdfPages": [
+            142
+          ],
+          "kind": "source_uncertainty",
+          "sourceIds": [
+            "HB21376-P142-T004",
+            "HB21376-P142-T026",
+            "HB21376-P142-T027",
+            "HB21376-P142-T041"
+          ],
+          "occurrences": 4,
+          "note": "4 ungeklärte Lesart(en) mit [?] in der gelieferten, selektiv kontextgeprüften Fassung. Am Originalscan prüfen; automatisches Niqqud ist nicht vollständig fachlich geprüft."
+        },
+        {
+          "volume": "21376",
+          "pdfPages": [
+            143
+          ],
+          "kind": "source_uncertainty",
+          "sourceIds": [
+            "HB21376-P143-T004",
+            "HB21376-P143-T037"
+          ],
+          "occurrences": 2,
+          "note": "2 ungeklärte Lesart(en) mit [?] in der gelieferten, selektiv kontextgeprüften Fassung. Am Originalscan prüfen; automatisches Niqqud ist nicht vollständig fachlich geprüft."
+        },
+        {
+          "volume": "21376",
+          "pdfPages": [
+            144
+          ],
+          "kind": "source_uncertainty",
+          "sourceIds": [
+            "HB21376-P144-T012",
+            "HB21376-P144-T026"
+          ],
+          "occurrences": 2,
+          "note": "2 ungeklärte Lesart(en) mit [?] in der gelieferten, selektiv kontextgeprüften Fassung. Am Originalscan prüfen; automatisches Niqqud ist nicht vollständig fachlich geprüft."
+        },
+        {
+          "volume": "21376",
+          "pdfPages": [
+            145
+          ],
+          "kind": "source_uncertainty",
+          "sourceIds": [
+            "HB21376-P145-T018",
+            "HB21376-P145-T022",
+            "HB21376-P145-T024",
+            "HB21376-P145-T026",
+            "HB21376-P145-T029"
+          ],
+          "occurrences": 5,
+          "note": "5 ungeklärte Lesart(en) mit [?] in der gelieferten, selektiv kontextgeprüften Fassung. Am Originalscan prüfen; automatisches Niqqud ist nicht vollständig fachlich geprüft."
+        },
+        {
+          "volume": "21376",
+          "pdfPages": [
+            146
+          ],
+          "kind": "source_uncertainty",
+          "sourceIds": [
+            "HB21376-P146-T003"
+          ],
+          "occurrences": 1,
+          "note": "1 ungeklärte Lesart(en) mit [?] in der gelieferten, selektiv kontextgeprüften Fassung. Am Originalscan prüfen; automatisches Niqqud ist nicht vollständig fachlich geprüft."
+        },
+        {
+          "volume": "21376",
+          "pdfPages": [
+            147
+          ],
+          "kind": "source_uncertainty",
+          "sourceIds": [
+            "HB21376-P147-T032",
+            "HB21376-P147-T033"
+          ],
+          "occurrences": 2,
+          "note": "2 ungeklärte Lesart(en) mit [?] in der gelieferten, selektiv kontextgeprüften Fassung. Am Originalscan prüfen; automatisches Niqqud ist nicht vollständig fachlich geprüft."
+        },
+        {
+          "volume": "21376",
+          "pdfPages": [
+            148
+          ],
+          "kind": "source_uncertainty",
+          "sourceIds": [
+            "HB21376-P148-T003"
+          ],
+          "occurrences": 1,
+          "note": "1 ungeklärte Lesart(en) mit [?] in der gelieferten, selektiv kontextgeprüften Fassung. Am Originalscan prüfen; automatisches Niqqud ist nicht vollständig fachlich geprüft."
+        },
+        {
+          "volume": "21376",
+          "pdfPages": [
+            149
+          ],
+          "kind": "source_uncertainty",
+          "sourceIds": [
+            "HB21376-P149-T005",
+            "HB21376-P149-T009",
+            "HB21376-P149-T013",
+            "HB21376-P149-T016",
+            "HB21376-P149-T022",
+            "HB21376-P149-T025",
+            "HB21376-P149-T035"
+          ],
+          "occurrences": 7,
+          "note": "7 ungeklärte Lesart(en) mit [?] in der gelieferten, selektiv kontextgeprüften Fassung. Am Originalscan prüfen; automatisches Niqqud ist nicht vollständig fachlich geprüft."
+        },
+        {
+          "volume": "21376",
+          "pdfPages": [
+            150
+          ],
+          "kind": "source_uncertainty",
+          "sourceIds": [
+            "HB21376-P150-T011"
+          ],
+          "occurrences": 1,
+          "note": "1 ungeklärte Lesart(en) mit [?] in der gelieferten, selektiv kontextgeprüften Fassung. Am Originalscan prüfen; automatisches Niqqud ist nicht vollständig fachlich geprüft."
+        },
+        {
+          "volume": "21376",
+          "pdfPages": [
+            151
+          ],
+          "kind": "source_uncertainty",
+          "sourceIds": [
+            "HB21376-P151-T015"
+          ],
+          "occurrences": 1,
+          "note": "1 ungeklärte Lesart(en) mit [?] in der gelieferten, selektiv kontextgeprüften Fassung. Am Originalscan prüfen; automatisches Niqqud ist nicht vollständig fachlich geprüft."
+        },
+        {
+          "volume": "21376",
+          "pdfPages": [
+            152
+          ],
+          "kind": "source_uncertainty",
+          "sourceIds": [
+            "HB21376-P152-T003",
+            "HB21376-P152-T004",
+            "HB21376-P152-T005",
+            "HB21376-P152-T007"
+          ],
+          "occurrences": 4,
+          "note": "4 ungeklärte Lesart(en) mit [?] in der gelieferten, selektiv kontextgeprüften Fassung. Am Originalscan prüfen; automatisches Niqqud ist nicht vollständig fachlich geprüft."
+        },
+        {
+          "volume": "21376",
+          "pdfPages": [
+            153
+          ],
+          "kind": "source_uncertainty",
+          "sourceIds": [
+            "HB21376-P153-T005",
+            "HB21376-P153-T006",
+            "HB21376-P153-T007",
+            "HB21376-P153-T012"
+          ],
+          "occurrences": 5,
+          "note": "5 ungeklärte Lesart(en) mit [?] in der gelieferten, selektiv kontextgeprüften Fassung. Am Originalscan prüfen; automatisches Niqqud ist nicht vollständig fachlich geprüft."
+        },
+        {
+          "volume": "21376",
+          "pdfPages": [
+            154
+          ],
+          "kind": "source_uncertainty",
+          "sourceIds": [
+            "HB21376-P154-T005",
+            "HB21376-P154-T008",
+            "HB21376-P154-T012"
+          ],
+          "occurrences": 4,
+          "note": "4 ungeklärte Lesart(en) mit [?] in der gelieferten, selektiv kontextgeprüften Fassung. Am Originalscan prüfen; automatisches Niqqud ist nicht vollständig fachlich geprüft."
+        },
+        {
+          "volume": "21376",
+          "pdfPages": [
+            155
+          ],
+          "kind": "source_uncertainty",
+          "sourceIds": [
+            "HB21376-P155-T016"
+          ],
+          "occurrences": 1,
+          "note": "1 ungeklärte Lesart(en) mit [?] in der gelieferten, selektiv kontextgeprüften Fassung. Am Originalscan prüfen; automatisches Niqqud ist nicht vollständig fachlich geprüft."
+        },
+        {
+          "volume": "21376",
+          "pdfPages": [
+            156
+          ],
+          "kind": "source_uncertainty",
+          "sourceIds": [
+            "HB21376-P156-T008",
+            "HB21376-P156-T013",
+            "HB21376-P156-T014"
+          ],
+          "occurrences": 3,
+          "note": "3 ungeklärte Lesart(en) mit [?] in der gelieferten, selektiv kontextgeprüften Fassung. Am Originalscan prüfen; automatisches Niqqud ist nicht vollständig fachlich geprüft."
+        },
+        {
+          "volume": "21376",
+          "pdfPages": [
+            157
+          ],
+          "kind": "source_uncertainty",
+          "sourceIds": [
+            "HB21376-P157-T003",
+            "HB21376-P157-T004"
+          ],
+          "occurrences": 2,
+          "note": "2 ungeklärte Lesart(en) mit [?] in der gelieferten, selektiv kontextgeprüften Fassung. Am Originalscan prüfen; automatisches Niqqud ist nicht vollständig fachlich geprüft."
+        },
+        {
+          "volume": "21376",
+          "pdfPages": [
+            159
+          ],
+          "kind": "source_uncertainty",
+          "sourceIds": [
+            "HB21376-P159-T006",
+            "HB21376-P159-T047"
+          ],
+          "occurrences": 2,
+          "note": "2 ungeklärte Lesart(en) mit [?] in der gelieferten, selektiv kontextgeprüften Fassung. Am Originalscan prüfen; automatisches Niqqud ist nicht vollständig fachlich geprüft."
+        },
+        {
+          "volume": "21376",
+          "pdfPages": [
+            160
+          ],
+          "kind": "source_uncertainty",
+          "sourceIds": [
+            "HB21376-P160-T004"
+          ],
+          "occurrences": 1,
+          "note": "1 ungeklärte Lesart(en) mit [?] in der gelieferten, selektiv kontextgeprüften Fassung. Am Originalscan prüfen; automatisches Niqqud ist nicht vollständig fachlich geprüft."
+        },
+        {
+          "volume": "21376",
+          "pdfPages": [
+            162
+          ],
+          "kind": "source_uncertainty",
+          "sourceIds": [
+            "HB21376-P162-T005",
+            "HB21376-P162-T007",
+            "HB21376-P162-T010"
+          ],
+          "occurrences": 3,
+          "note": "3 ungeklärte Lesart(en) mit [?] in der gelieferten, selektiv kontextgeprüften Fassung. Am Originalscan prüfen; automatisches Niqqud ist nicht vollständig fachlich geprüft."
+        },
+        {
+          "volume": "21376",
+          "pdfPages": [
+            163
+          ],
+          "kind": "source_uncertainty",
+          "sourceIds": [
+            "HB21376-P163-T006",
+            "HB21376-P163-T010"
+          ],
+          "occurrences": 2,
+          "note": "2 ungeklärte Lesart(en) mit [?] in der gelieferten, selektiv kontextgeprüften Fassung. Am Originalscan prüfen; automatisches Niqqud ist nicht vollständig fachlich geprüft."
+        },
+        {
+          "volume": "21376",
+          "pdfPages": [
+            164
+          ],
+          "kind": "source_uncertainty",
+          "sourceIds": [
+            "HB21376-P164-T017",
+            "HB21376-P164-T021"
+          ],
+          "occurrences": 2,
+          "note": "2 ungeklärte Lesart(en) mit [?] in der gelieferten, selektiv kontextgeprüften Fassung. Am Originalscan prüfen; automatisches Niqqud ist nicht vollständig fachlich geprüft."
+        },
+        {
+          "volume": "21376",
+          "pdfPages": [
+            165
+          ],
+          "kind": "source_uncertainty",
+          "sourceIds": [
+            "HB21376-P165-T007",
+            "HB21376-P165-T010"
+          ],
+          "occurrences": 2,
+          "note": "2 ungeklärte Lesart(en) mit [?] in der gelieferten, selektiv kontextgeprüften Fassung. Am Originalscan prüfen; automatisches Niqqud ist nicht vollständig fachlich geprüft."
+        },
+        {
+          "volume": "21376",
+          "pdfPages": [
+            166
+          ],
+          "kind": "source_uncertainty",
+          "sourceIds": [
+            "HB21376-P166-T005",
+            "HB21376-P166-T010",
+            "HB21376-P166-T011"
+          ],
+          "occurrences": 3,
+          "note": "3 ungeklärte Lesart(en) mit [?] in der gelieferten, selektiv kontextgeprüften Fassung. Am Originalscan prüfen; automatisches Niqqud ist nicht vollständig fachlich geprüft."
+        },
+        {
+          "volume": "21376",
+          "pdfPages": [
+            167
+          ],
+          "kind": "source_uncertainty",
+          "sourceIds": [
+            "HB21376-P167-T004",
+            "HB21376-P167-T005"
+          ],
+          "occurrences": 2,
+          "note": "2 ungeklärte Lesart(en) mit [?] in der gelieferten, selektiv kontextgeprüften Fassung. Am Originalscan prüfen; automatisches Niqqud ist nicht vollständig fachlich geprüft."
+        },
+        {
+          "volume": "21376",
+          "pdfPages": [
+            168
+          ],
+          "kind": "source_uncertainty",
+          "sourceIds": [
+            "HB21376-P168-T003",
+            "HB21376-P168-T004",
+            "HB21376-P168-T005",
+            "HB21376-P168-T028",
+            "HB21376-P168-T050",
+            "HB21376-P168-T051",
+            "HB21376-P168-T052",
+            "HB21376-P168-T053"
+          ],
+          "occurrences": 8,
+          "note": "8 ungeklärte Lesart(en) mit [?] in der gelieferten, selektiv kontextgeprüften Fassung. Am Originalscan prüfen; automatisches Niqqud ist nicht vollständig fachlich geprüft."
+        },
+        {
+          "volume": "21376",
+          "pdfPages": [
+            169
+          ],
+          "kind": "source_uncertainty",
+          "sourceIds": [
+            "HB21376-P169-T004",
+            "HB21376-P169-T037"
+          ],
+          "occurrences": 2,
+          "note": "2 ungeklärte Lesart(en) mit [?] in der gelieferten, selektiv kontextgeprüften Fassung. Am Originalscan prüfen; automatisches Niqqud ist nicht vollständig fachlich geprüft."
+        },
+        {
+          "volume": "21376",
+          "pdfPages": [
+            170
+          ],
+          "kind": "source_uncertainty",
+          "sourceIds": [
+            "HB21376-P170-T013",
+            "HB21376-P170-T035"
+          ],
+          "occurrences": 2,
+          "note": "2 ungeklärte Lesart(en) mit [?] in der gelieferten, selektiv kontextgeprüften Fassung. Am Originalscan prüfen; automatisches Niqqud ist nicht vollständig fachlich geprüft."
+        },
+        {
+          "volume": "21376",
+          "pdfPages": [
+            171
+          ],
+          "kind": "source_uncertainty",
+          "sourceIds": [
+            "HB21376-P171-T004",
+            "HB21376-P171-T005"
+          ],
+          "occurrences": 2,
+          "note": "2 ungeklärte Lesart(en) mit [?] in der gelieferten, selektiv kontextgeprüften Fassung. Am Originalscan prüfen; automatisches Niqqud ist nicht vollständig fachlich geprüft."
+        },
+        {
+          "volume": "21376",
+          "pdfPages": [
+            172
+          ],
+          "kind": "source_uncertainty",
+          "sourceIds": [
+            "HB21376-P172-T021",
+            "HB21376-P172-T033"
+          ],
+          "occurrences": 2,
+          "note": "2 ungeklärte Lesart(en) mit [?] in der gelieferten, selektiv kontextgeprüften Fassung. Am Originalscan prüfen; automatisches Niqqud ist nicht vollständig fachlich geprüft."
+        },
+        {
+          "volume": "21376",
+          "pdfPages": [
+            173
+          ],
+          "kind": "source_uncertainty",
+          "sourceIds": [
+            "HB21376-P173-T011"
+          ],
+          "occurrences": 1,
+          "note": "1 ungeklärte Lesart(en) mit [?] in der gelieferten, selektiv kontextgeprüften Fassung. Am Originalscan prüfen; automatisches Niqqud ist nicht vollständig fachlich geprüft."
+        },
+        {
+          "volume": "21376",
+          "pdfPages": [
+            174
+          ],
+          "kind": "source_uncertainty",
+          "sourceIds": [
+            "HB21376-P174-T031",
+            "HB21376-P174-T032"
+          ],
+          "occurrences": 3,
+          "note": "3 ungeklärte Lesart(en) mit [?] in der gelieferten, selektiv kontextgeprüften Fassung. Am Originalscan prüfen; automatisches Niqqud ist nicht vollständig fachlich geprüft."
+        },
+        {
+          "volume": "21376",
+          "pdfPages": [
+            177
+          ],
+          "kind": "source_uncertainty",
+          "sourceIds": [
+            "HB21376-P177-T016"
+          ],
+          "occurrences": 1,
+          "note": "1 ungeklärte Lesart(en) mit [?] in der gelieferten, selektiv kontextgeprüften Fassung. Am Originalscan prüfen; automatisches Niqqud ist nicht vollständig fachlich geprüft."
+        }
+      ],
+      "editionNote": "Unverändert gelieferte XML-TXT-Fassung. 143 Lesestellen bleiben offen. Das automatische Niqqud wurde nur selektiv kontextgeprüft; keine vollständige Kollation mit dem Originalscan.",
+      "sourceLabel": "Gelieferte TXT-Fassung mit Niqqud und Tags ↓"
+    },
     {
       "id": "21519",
       "part": 3,

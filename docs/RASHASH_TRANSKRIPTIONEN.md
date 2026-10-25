@@ -1,9 +1,10 @@
-# Fünf Rashash-Textfassungen · Prüfvermerk vom 25. Oktober 2026
+# Sechs Rashash-Textfassungen · Prüfvermerk vom 26. Oktober 2026
 
-Die fünf hochgeladenen Transkriptionen sind in Azara unter **Siddur & Kavvanot → HaRashash · Text mit Niqqud** erschlossen. Teil III liegt in zwei getrennten Scanfassungen vor. Die TXT-Downloads enthalten XML-Struktur-Tags und sind UTF-8-Dateien. Die hochgeladenen Originaltranskriptionen werden daneben unverändert erhalten.
+Die sechs hochgeladenen Transkriptionen sind in Azara unter **Siddur & Kavvanot → HaRashash · Text mit Niqqud** erschlossen. Teil III liegt in zwei getrennten Scanfassungen vor. Die TXT-Downloads enthalten XML-Struktur-Tags und sind UTF-8-Dateien. Die hochgeladenen Originaltranskriptionen werden unverändert erhalten. Teil I wurde bereits mit Tags und Niqqud geliefert; hierfür ist der TXT-Download zugleich die unveränderte Quelldatei.
 
 | Band | Thema | HebrewBooks | Textseiten | Tabellen |
 |---|---|---|---:|---:|
+| I | Grundlagen, Morgenberachot, Tallit, Tefillin und Ketoret | 21376 | 176 | 308 |
 | III | Erev Schabbat, Kabbalat Schabbat und Arvit | 21519 | 72 | 149 |
 | III | Erev Schabbat, Kabbalat Schabbat und Arvit | 21520 | 72 | 149 |
 | VI | Schawuot, Lernen in der Nacht, Schacharit und Musaf | 21518 | 24 | 28 |
@@ -102,3 +103,22 @@ Gezielt visuell verglichen wurden PDF 1, 3, 4, 98, 99, 126, 128, 130, 132, 138 u
 Die zuvor veröffentlichten Textfassungen der Teile III, VI und IX werden durch diese Ergänzung nicht neu erzeugt oder verändert.
 
 Auf PDF 99 wurden außerdem die Wörter `מְחוֹל`, der Imperativ `מְחֵה` und `פְשָׁעֵנוּ` sowie die Passage `מִנֶּגֶד עֵינֶיךָ` direkt am Scan geprüft. Das spätere `מֹחֶה` in der Schriftstelle bleibt als Partizip unterschieden. Die ergänzte Punktierung voller Schreibweisen mit Waw wird entsprechend lesbar gesetzt.
+
+
+## Ergänzung: Teil I · HB21376 · 26. Oktober 2026
+
+Die gelieferte Datei `Siddur_HaRashash_Teil_1_HB21376_Niqqud_Tags_Kontextgeprueft.txt` wurde **bytegenau unverändert** übernommen (SHA-256 `d63dfd961cf1cad86f5f647ef6c8b5a7e5cbd2b779f52517689671f1108a8e29`). Sie enthält bereits wohlgeformtes XML, Niqqud und geschützte Namen-Tags. Für diesen Import wurde kein Niqqud-Dienst aufgerufen. Der Download ist zugleich die gelieferte Quelldatei; eine unvokalisierte Vorgängerfassung lag für diesen Import nicht vor. Die oben beschriebenen Niqqud-Erzeugungsschritte der früheren fünf Textfassungen wurden auf diesen Band nicht erneut angewandt.
+
+Geprüft wurden die lückenlose Folge der 176 Textseiten (PDF 1 und 3–177), alle 6.118 Absatz-/Überschriften-/Zeilen-IDs, 308 Tabellen mit 4.110 Zeilen, sämtliche geschützten Namen sowie die vollständige Textidentität zwischen XML und Webdaten. Alle 143 `[?]`-Markierungen sind hervorgehoben und mit seitenbezogenen Prüfvermerken erschlossen. Die Metadaten der gelieferten Datei beschreiben eine selektive Kontextprüfung und überwiegend ungeprüftes automatisches Niqqud. Dies wird nicht als vollständige philologische oder sprachliche Freigabe ausgewiesen. Der erhaltene Transkriptionskopf beschreibt teilweise noch den früheren unvokalisierten Stand; maßgebend für den aktuellen Bearbeitungsstand sind die mitgelieferten Metadaten.
+
+Visuelle Stichproben am vorhandenen Originalscan betrafen PDF 19 (Beracha/Namenstabellen), PDF 153 (Ketoret und Fußnote) und PDF 177 (gedrucktes Fehlerverzeichnis). Diese Stichprobe ist keine vollständige neue Kollation aller Seiten. Die gedruckte Korrekturtabelle auf PDF 177 bleibt als eigener Quelltext erhalten; ihre Lesarten wurden nicht stillschweigend auf andere Seiten angewandt.
+
+Der neue Band ist in der Textansicht zunächst ausgewählt. An Werktagen verweisen die Morgenberachot auf PDF 19 und die Ketoret-Schritte auf PDF 153 dieses Bandes. Suche ohne Niqqud, Schriftgröße, Seitenwechsel, TXT-Download und Originalscan-Verweise nutzen die bestehende Leseansicht. Die bisherigen fünf TXT- und Webtextdateien bleiben unverändert.
+
+Der Import lässt sich offline wiederholen:
+
+```bash
+python3 scripts/import-tagged-rashash.py /pfad/zur/gelieferten/HB21376.txt
+npm test
+npm run build
+```

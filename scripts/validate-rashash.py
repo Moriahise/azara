@@ -13,6 +13,35 @@ bare=lambda s:marks.sub('',s)
 data=json.loads((ROOT/'data/rashash.json').read_text())
 report=[]
 for meta in data['transcriptions']['volumes']:
+    if meta.get('sourceFormat')=='tagged-xml':
+        raw=(ROOT/meta['txtPath']).read_bytes()
+        assert sha256(raw).hexdigest()==meta['sourceSha256']
+        root=ET.fromstring(raw);pages=root.findall('page')
+        assert [int(p.attrib['pdf']) for p in pages]==[1,*range(3,meta['pdfPages']+1)]
+        assert len(pages)==meta['pages']
+        ids=[n.get('id') for n in root.iter() if n.get('id')]
+        assert len(ids)==len(set(ids))
+        volume=json.loads((ROOT/meta['jsonPath']).read_text())
+        assert volume['sourceSha256']==meta['sourceSha256'] and volume['id']==meta['id']
+        assert len(volume['pages'])==len(pages)
+        for source,page in zip(pages,volume['pages']):
+            assert page['pdfPage']==int(source.get('pdf')) and page['folio']==source.get('folio')
+            expected=[n for n in source if n.tag!='lb']
+            assert len(expected)==len(page['blocks'])
+            for node,block in zip(expected,page['blocks']):
+                assert block['kind']==node.tag
+                nodes=[n for n in node if n.tag=='row'] if node.tag=='table' else [node]
+                items=block['rows'] if node.tag=='table' else [block]
+                assert len(nodes)==len(items)
+                for n,item in zip(nodes,items):
+                    assert item['id']==n.get('id') and item['text']==''.join(n.itertext())
+                    assert '<script' not in item['html'] and 'onclick=' not in item['html']
+            count=''.join(source.itertext()).count('[?]')
+            assert sum(f.get('occurrences',0) for f in page['flags'])==count
+        assert sum(''.join(p.itertext()).count('[?]') for p in pages)==meta['statistics']['unresolved_markers']
+        report.append({'id':meta['id'],'pages':len(pages),'tables':len(root.findall('.//table')),
+                       'protectedTokens':len(root.findall('.//shem')),'importedUnchanged':True})
+        continue
     raw=(ROOT/meta['sourcePath']).read_text();lines=raw.splitlines()
     root=ET.parse(ROOT/meta['txtPath']).getroot()
     assert root.find('metadata/source').attrib['sha256']==sha256(raw.encode()).hexdigest()

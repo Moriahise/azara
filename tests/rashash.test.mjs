@@ -2,17 +2,50 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {execFileSync} from 'node:child_process';
 import {readFile} from 'node:fs/promises';
+import {createHash} from 'node:crypto';
 import {RashashTextStore,renderRashashReader,renderRashashPage,searchableHebrew} from '../src/rashash-reader.js';
+import {stripHtml} from '../src/readalong.js';
 
-test('All five Rashash editions retain every source letter, original vowel and all tables',()=>{
+test('All six Rashash editions retain every source letter, original vowel and all tables',()=>{
  const report=JSON.parse(execFileSync('python3',['scripts/validate-rashash.py'],{encoding:'utf8'}));
- assert.deepEqual(report.map(v=>v.id),['21519','21520','21518','21722','21723']);
- assert.equal(report.reduce((n,v)=>n+v.pages,0),348);assert.equal(report.reduce((n,v)=>n+v.tables,0),839);
- assert.ok(report.every(v=>v.addedMarks>1000&&v.protectedTokens>100));
+ assert.deepEqual(report.map(v=>v.id),['21376','21519','21520','21518','21722','21723']);
+ assert.equal(report.reduce((n,v)=>n+v.pages,0),524);assert.equal(report.reduce((n,v)=>n+v.tables,0),1147);
+ assert.ok(report.every(v=>(v.importedUnchanged||v.addedMarks>1000)&&v.protectedTokens>100));
 });
 test('Rashash Hebrew search works with or without Niqqud and quote variants',()=>{
  assert.equal(searchableHebrew('שַׁבָּת'),searchableHebrew('שבת'));
  assert.equal(searchableHebrew('רש״ש'),searchableHebrew('רש"ש'));
+});
+test('HB21376 imports the tagged upload verbatim with stable IDs, tables and all open readings',async()=>{
+ const index=JSON.parse(await readFile('data/rashash.json','utf8'));
+ const metadata=index.documents.find(d=>d.id==='21376').transcription;
+ const raw=await readFile(metadata.txtPath);
+ assert.equal(createHash('sha256').update(raw).digest('hex'),'d63dfd961cf1cad86f5f647ef6c8b5a7e5cbd2b779f52517689671f1108a8e29');
+ const volume=JSON.parse(await readFile(metadata.jsonPath,'utf8'));
+ assert.deepEqual(volume.pages.map(p=>p.pdfPage),[1,...Array.from({length:175},(_,i)=>i+3)]);
+ let count=0,tables=0,rows=0;const ids=[];
+ for(const page of volume.pages){
+  let local=0;
+  for(const block of page.blocks){
+   if(block.kind==='table'){tables++;rows+=block.rows.length;}
+   for(const item of block.kind==='table'?block.rows:[block]){
+    ids.push(item.id);local+=(item.text.match(/\[\?\]/g)||[]).length;
+    assert.match(item.id,new RegExp(`^HB21376-P${String(page.pdfPage).padStart(3,'0')}-T\\d{3}$`));
+    if(item.text.includes('[?]'))assert.ok(item.html.includes('rashash-unclear'));
+    assert.ok(!/<(?!\/?span\b)/i.test(item.html));
+    assert.equal(stripHtml(item.html),item.text);
+   }
+  }
+  assert.equal(page.flags.reduce((n,f)=>n+f.occurrences,0),local);count+=local;
+ }
+ assert.equal(new Set(ids).size,6118);assert.equal(ids.length,6118);
+ assert.equal(count,143);assert.equal(tables,308);assert.equal(rows,4110);
+ assert.equal(volume.provenance.automaticNiqqud.reviewed,'false');
+ assert.equal(volume.provenance.contextReview['remaining-markers'],'143');
+ const html=renderRashashReader({documents:index.documents,id:'21376',pageNumber:177,volume});
+ assert.ok(html.includes('data-open-rashash="21376" data-page="177"'));
+ assert.ok(html.includes('143 Lesestellen'));assert.ok(html.includes(metadata.txtPath));
+ assert.ok(html.includes('Gelieferte TXT-Fassung mit Niqqud und Tags'));
 });
 test('Jom Kippur preserves and exposes all 27 uncertain readings on their 19 source pages',async()=>{
  const volume=JSON.parse(await readFile('data/rashash-text-21722.json','utf8'));
@@ -41,7 +74,7 @@ test('The checked Jom Kippur prayer distinguishes imperative mecheh from partici
 });
 test('Text edition keeps review flags visible and links the exact TXT and scan page',async()=>{
  const index=JSON.parse(await readFile('data/rashash.json','utf8'));
- for(const id of ['21519','21520','21518','21722','21723']){
+ for(const id of ['21376','21519','21520','21518','21722','21723']){
   const metadata=index.documents.find(d=>d.id===id).transcription;
   const volume=JSON.parse(await readFile(metadata.jsonPath,'utf8'));
   const page=metadata.flags.at(-1).pdfPages.at(-1);
