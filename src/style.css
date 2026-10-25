@@ -15,3 +15,5 @@
 @media(max-width:760px){.rashash-text-split{display:flex;flex-direction:column}.rashash-text-catalog{max-height:300px;width:100%}.rashash-transcription{padding:20px}.rashash-toolbar{align-items:stretch}.rashash-toolbar label:first-child{min-width:100%}.rashash-text-body{line-height:1.95}.rashash-table-scroll{padding:10px}.rashash-table-row{font-size:.8em}}
 
 .rashash-unclear{color:#805d1d;background:#f5e5bb;border-bottom:1px dotted #a57c30;border-radius:3px;padding:0 3px;white-space:nowrap}
+
+.parochet-status{display:block;color:var(--gold);margin:2px 0 3px}

@@ -1,5 +1,6 @@
 import * as THREE from 'three';
 import {OrbitControls} from 'three/addons/controls/OrbitControls.js';
+import {ritualForStep,parochetPanel,animateParochet} from './ritual.js';
 const G=THREE;
 export class SynagogueScene{
  constructor(canvas,rabbis,onSelect){this.canvas=canvas;this.rabbis=rabbis;this.onSelect=onSelect;this.people=[];this.phase='standing';this.activeIndex=-1;this.elapsed=0;this.progress=0;this.disposed=false;this.reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -14,7 +15,7 @@ export class SynagogueScene{
  const stone=canvas(512,(c,n)=>{c.fillStyle='#c6b99f';c.fillRect(0,0,n,n);let seed=7;const rnd=()=>{seed=(seed*16807)%2147483647;return seed/2147483647};for(let i=0;i<18000;i++){const v=150+Math.floor(rnd()*65);c.fillStyle=`rgba(${v},${v-9},${v-23},.18)`;c.fillRect(rnd()*n,rnd()*n,rnd()*3+1,rnd()*2+1)}for(let y=0;y<n;y+=64){c.fillStyle='#9e9179';c.fillRect(0,y,n,2);for(let x=(y/64%2)*96;x<n;x+=192)c.fillRect(x,y,2,64)}});stone.repeat.set(2,2);
  const wood=canvas(256,(c,n)=>{c.fillStyle='#463021';c.fillRect(0,0,n,n);for(let i=0;i<100;i++){c.strokeStyle=`rgba(${105+i%40},${70+i%30},${35+i%20},.23)`;c.lineWidth=i%3+1;c.beginPath();c.moveTo(i*3,0);c.bezierCurveTo(i*3+Math.sin(i)*10,80,i*3-8,180,i*3,256);c.stroke()}});wood.repeat.set(1,2);
  const rug=canvas(512,(c,n)=>{c.fillStyle='#17313c';c.fillRect(0,0,n,n);for(let inset of [10,20,38,48]){c.strokeStyle='#bfa575';c.lineWidth=inset===38?3:1;c.strokeRect(inset,inset,n-inset*2,n-inset*2)}for(let x=65;x<470;x+=48)for(let y=65;y<470;y+=48){c.strokeStyle='#bba37866';c.beginPath();c.moveTo(x,y-9);c.lineTo(x+7,y);c.lineTo(x,y+9);c.lineTo(x-7,y);c.closePath();c.stroke()}});
- this.materials.stone=new G.MeshStandardMaterial({map:stone,roughness:.95});this.materials.wood=new G.MeshStandardMaterial({map:wood,roughness:.56});this.materials.gold=new G.MeshStandardMaterial({color:0xb89955,metalness:.7,roughness:.29});this.materials.rug=new G.MeshStandardMaterial({map:rug,roughness:1});this.materials.cream=new G.MeshStandardMaterial({color:0xece2cb,roughness:1});this.materials.velvet=new G.MeshStandardMaterial({color:0x1c3d48,roughness:.95});this.materials.dark=new G.MeshStandardMaterial({color:0x272b28,roughness:.8});this.materials.glass=new G.MeshStandardMaterial({color:0x85b6bf,transparent:true,opacity:.5,roughness:.2,metalness:.3});this.materials.glow=new G.MeshStandardMaterial({color:0xffde92,emissive:0xffb44d,emissiveIntensity:1.9,roughness:.3});
+ this.materials.stone=new G.MeshStandardMaterial({map:stone,roughness:.95});this.materials.wood=new G.MeshStandardMaterial({map:wood,roughness:.56});this.materials.gold=new G.MeshStandardMaterial({color:0xb89955,metalness:.7,roughness:.29});this.materials.rug=new G.MeshStandardMaterial({map:rug,roughness:1});this.materials.cream=new G.MeshStandardMaterial({color:0xece2cb,roughness:1});this.materials.velvet=new G.MeshStandardMaterial({color:0x1c3d48,roughness:.95});this.materials.dark=new G.MeshStandardMaterial({color:0x272b28,roughness:.8});this.materials.glow=new G.MeshStandardMaterial({color:0xffde92,emissive:0xffb44d,emissiveIntensity:1.9,roughness:.3});
  }
  mesh(geo,mat,x=0,y=0,z=0,parent=this.scene){const m=new G.Mesh(geo,typeof mat==='string'?this.materials[mat]:mat);m.position.set(x,y,z);m.receiveShadow=true;parent.add(m);return m;}
  box(w,h,d,x,y,z,mat='stone',parent){return this.mesh(new G.BoxGeometry(w,h,d),mat,x,y,z,parent)}
@@ -27,15 +28,15 @@ export class SynagogueScene{
  this.box(23,8,.5,0,4,-13,'stone');this.box(.5,1.05,28,-11.25,.5,1,'stone');this.box(.5,1.05,28,11.25,.5,1,'stone');
  this.box(22,.12,.35,0,.18,-12.6,'wood');this.box(22,.17,.45,0,7.4,-12.6,'gold');
  for(const side of [-1,1])for(const z of [-9,-3,3,9]){this.cyl(.41,6.3,side*10.3,3.3,z,'stone');this.cyl(.56,.25,side*10.3,.23,z,'cream');this.cyl(.58,.22,side*10.3,6.45,z,'gold');this.cyl(.5,.1,side*10.3,6.2,z,'gold');this.arch(5.6,2.4,.24,side*10.3,6.5,z+2.8,'stone').rotation.y=Math.PI/2;}
- // Rear high arched windows flank the carved wooden sanctuary.
- for(const x of [-8,-4.9,4.9,8]){this.box(1.9,3.8,.08,x,4,-12.68,'glass');this.arch(2.3,5.0,.19,x,1.7,-12.5);this.box(.065,3.5,.12,x,3.9,-12.55,'gold');this.box(2,.065,.12,x,4,-12.55,'gold');const light=new G.PointLight(0xb0d7e6,12,10,2);light.position.set(x,4,-11.8);this.scene.add(light)}
+ // Uninterrupted Jerusalem-stone wall on both sides of the sanctuary.
  this.box(6,.18,3,0,.14,-10.7,'stone');this.box(5.5,.18,2.7,0,.32,-10.9,'stone');this.box(5,.18,2.4,0,.5,-11,'stone');
- const aron=new G.Group();aron.position.set(0,.6,-11.8);this.scene.add(aron);this.box(4.3,5.3,.65,0,2.65,0,'wood',aron);this.arch(4.9,6.4,.32,0,0,.1,'gold',aron);this.box(4.7,.2,1,0,0,.15,'wood',aron);
+ const aron=new G.Group();aron.name='aron-hakodesh';aron.position.set(0,.6,-11.8);this.scene.add(aron);this.box(4.3,5.3,.18,0,2.65,-.28,'wood',aron);this.box(3.95,4.95,.04,0,2.6,-.16,'dark',aron);for(const x of [-2.06,2.06])this.box(.18,5.3,.9,x,2.65,.08,'wood',aron);this.box(4.3,.17,.9,0,5.22,.08,'wood',aron);this.arch(4.9,6.4,.32,0,0,.1,'gold',aron);this.box(4.7,.2,1,0,0,.15,'wood',aron);
  for(const x of [-2.1,2.1]){this.cyl(.13,5.3,x,2.65,.48,'gold',aron);this.cyl(.23,.25,x,5.4,.48,'gold',aron)}
- this.curtain=new G.Group();aron.add(this.curtain);for(let i=0;i<32;i++){const x=-1.88+i*.12;this.box(.12,4.65,.16,x,2.45,.46+(i%2)*.1,i%2?'velvet':new G.MeshStandardMaterial({color:0x264b58,roughness:1}),this.curtain)}
- for(let x of [-1.75,1.75])this.box(.035,4.65,.05,x,2.45,.66,'gold',this.curtain);this.box(3.7,.12,.08,0,.19,.65,'gold',this.curtain);this.label('כתר תורה',0,6.3,-11.23,4.4);this.label('דע לפני מי אתה עומד',0,7.35,-12.31,6.6);
- // Torah cases are revealed when the curtain opens.
- for(let x of [-1.2,-.4,.4,1.2]){this.cyl(.25,1.5,x,2.1,-11.2,'gold');this.cyl(.18,.3,x,3,-11.2,'gold');}
+ this.buildParochet(aron);this.label('כתר תורה',0,6.3,-11.23,4.4);this.label('דע לפני מי אתה עומד',0,7.35,-12.31,6.6);
+ // The cases sit inside the hollow cabinet, behind the opaque fabric.
+ this.arkScrolls=new G.Group();this.arkScrolls.name='torah-in-ark';aron.add(this.arkScrolls);
+ for(let x of [-1.2,-.4,.4,1.2]){const scroll=new G.Group();this.arkScrolls.add(scroll);this.cyl(.23,1.5,x,2.1,.25,'gold',scroll);this.cyl(.17,.3,x,3,.25,'gold',scroll);}
+ this.arkScrolls.visible=false;
  this.ner=new G.Group();this.ner.position.set(0,5.8,-10.2);this.scene.add(this.ner);this.cyl(.025,1.4,0,.6,0,'gold',this.ner);this.mesh(new G.SphereGeometry(.19,16,12),'glow',0,-.2,0,this.ner);this.cyl(.29,.12,0,-.45,0,'gold',this.ner);const nerlight=new G.PointLight(0xffbd63,12,7,2);nerlight.position.copy(this.ner.position);nerlight.position.y-=.2;this.scene.add(nerlight);
  // Central teva with steps, balustrade and reader's open Torah.
  this.box(4.7,.24,4.5,0,.16,0,'wood');this.box(4.2,.2,4,0,.36,-.1,'wood');this.box(3.8,.08,3.6,0,.5,-.1,'rug');for(let j=0;j<3;j++)this.box(1.5,.16,1.4-j*.35,0,.08+j*.16,2.8-j*.15,'wood');
@@ -43,12 +44,29 @@ export class SynagogueScene{
  this.box(3.8,.12,.13,0,1.6,-1.9,'gold');for(let x=-1.8;x<=1.8;x+=.45)this.cyl(.033,1,x,1.05,-1.9,'gold');this.box(1.9,.12,.9,0,1.56,-.5,'wood').rotation.x=.2;this.box(1.5,.02,.75,0,1.68,-.5,'cream').rotation.x=.2;
  this.torah=new G.Group();this.torah.position.set(0,1.73,-.5);this.scene.add(this.torah);for(let x of [-.7,.7]){this.cyl(.06,1.15,x,.02,0,'wood',this.torah).rotation.x=Math.PI/2;for(let z of [-.6,.6])this.cyl(.11,.05,x,.02,z,'gold',this.torah).rotation.x=Math.PI/2;}
  const c=document.createElement('canvas');c.width=512;c.height=256;const ctx=c.getContext('2d');ctx.fillStyle='#ead9ac';ctx.fillRect(0,0,512,256);ctx.font='9px serif';ctx.fillStyle='#42392b';for(let col=0;col<5;col++)for(let line=0;line<23;line++)ctx.fillText('בראשית ברא אלהים את השמים',col*100+8,line*10+12);const tex=new G.CanvasTexture(c);const parchment=this.mesh(new G.PlaneGeometry(1.35,.85),new G.MeshStandardMaterial({map:tex,roughness:1,side:G.DoubleSide}),0,.05,0,this.torah);parchment.rotation.x=-Math.PI/2+.2;
+ this.torah.visible=false;this.carriedTorah=new G.Group();this.carriedTorah.name='carried-torah';this.scene.add(this.carriedTorah);this.cyl(.24,.95,0,0,0,'velvet',this.carriedTorah);for(const y of [-.5,.5])this.cyl(.26,.07,0,y,0,'gold',this.carriedTorah);for(const x of [-.12,.12])this.cyl(.035,.3,x,.64,0,'gold',this.carriedTorah);this.carriedTorah.visible=false;
  this.box(2.2,.03,7.2,0,.045,-6.3,'rug');this.box(2.2,.03,9,0,.045,8.3,'rug');
  // Four bays of bookcases on the back wall, an accessible entrance left open.
  for(const x of [-7.6,7.6]){this.box(4.4,2.7,.5,x,1.35,14.2,'wood');for(let y of [.2,1,1.8,2.6])this.box(4.4,.08,.65,x,y,14,'gold');for(let row=0;row<3;row++)for(let i=0;i<25;i++){const colors=[0x5d3c29,0x2f4435,0x263743,0x633b33,0x7f653c];this.box(.12,.55+((i*7)%5)*.04,.35,x-2+i*.16,.6+row*.8,13.95,new G.MeshStandardMaterial({color:colors[i%5],roughness:.8}));}}
  this.seats=[];for(let side of [-1,1])for(let row=0;row<9;row++)for(let col=0;col<4;col++){if(this.seats.length>=71)break;const x=side*(3.9+col*1.45),z=-8.2+row*2.45;this.seats.push({x,z,rotation:0});this.chair(x,z)}
  // Chandelier rings float below the cutaway timber beams.
  for(const z of [-6,5]){this.box(20,.25,.27,0,7.9,z,'wood');this.chandelier(0,6.4,z)}
+ }
+ buildParochet(aron){
+ const canvas=document.createElement('canvas');canvas.width=1024;canvas.height=1536;const c=canvas.getContext('2d');c.fillStyle='#153843';c.fillRect(0,0,1024,1536);
+ // Woven velvet, gold border and a Torah crown, split across both halves.
+ for(let x=0;x<1024;x+=3){c.fillStyle=x%6?'#234a532a':'#081e2528';c.fillRect(x,0,1,1536)}
+ c.strokeStyle='#d7b777';c.lineWidth=8;c.strokeRect(28,28,968,1480);c.lineWidth=2;c.strokeRect(46,46,932,1444);
+ c.fillStyle='#dbbd7e';c.beginPath();c.moveTo(363,450);c.lineTo(345,315);c.lineTo(423,371);c.lineTo(465,286);c.lineTo(512,365);c.lineTo(559,286);c.lineTo(601,371);c.lineTo(679,315);c.lineTo(661,450);c.closePath();c.fill();c.fillRect(363,468,298,13);
+ c.font='bold 98px "Frank Ruhl Libre",serif';c.textAlign='center';c.direction='rtl';c.fillText('כתר תורה',512,650);
+ for(const x of [90,934])for(let y=180;y<1370;y+=95){c.beginPath();c.ellipse(x,y,6,17,0,0,Math.PI*2);c.fill()}
+ const texture=new G.CanvasTexture(canvas);texture.colorSpace=G.SRGBColorSpace;texture.anisotropy=4;
+ this.curtain=new G.Group();this.curtain.name='parochet';aron.add(this.curtain);this.curtainPanels=[];this.curtainAmount=0;this.ritual=ritualForStep(null);
+ for(const side of [-1,1]){const map=texture.clone();map.repeat.x=.5;map.offset.x=side<0?0:.5;const geometry=new G.PlaneGeometry(2,4.75,48,24),positions=geometry.attributes.position;
+  for(let i=0;i<positions.count;i++){const x=positions.getX(i),y=positions.getY(i);positions.setZ(i,.065*Math.cos((x+1)*Math.PI*8));positions.setY(i,y-.025*(1+Math.cos((x+1)*Math.PI*8))*Math.pow((2.375-y)/4.75,8))}geometry.computeVertexNormals();
+  const panel=this.mesh(geometry,new G.MeshStandardMaterial({map,roughness:.98,side:G.DoubleSide}),side*.99,2.55,1.01,this.curtain);panel.name=side<0?'parochet-left':'parochet-right';panel.castShadow=true;this.curtainPanels.push({panel,side});
+ }
+ this.box(4.2,.26,.14,0,4.94,1.12,'velvet',aron);this.box(4.25,.035,.16,0,4.8,1.14,'gold',aron);this.box(4.3,.045,.08,0,5.11,.98,'gold',aron);
  }
  chair(x,z){this.box(.94,.14,.9,x,.55,z,'wood');this.box(.86,.10,.8,x,.66,z,'velvet');this.box(.98,1.04,.13,x,1.08,z+.48,'wood');this.box(.79,.75,.055,x,1.1,z+.39,'velvet');for(const dx of [-.36,.36])for(const dz of [-.3,.3])this.box(.07,.5,.07,x+dx,.27,z+dz,'wood');}
  chandelier(x,y,z){const g=new G.Group();g.position.set(x,y,z);this.scene.add(g);this.cyl(.02,1.5,0,.75,0,'gold',g);const ring=this.mesh(new G.TorusGeometry(1.5,.045,8,48),'gold',0,0,0,g);ring.rotation.x=Math.PI/2;for(let i=0;i<12;i++){const a=i/12*Math.PI*2;this.cyl(.06,.35,Math.sin(a)*1.5,.2,Math.cos(a)*1.5,'gold',g);this.mesh(new G.SphereGeometry(.085,10,10),'glow',Math.sin(a)*1.5,.45,Math.cos(a)*1.5,g)}const light=new G.PointLight(0xffd398,65,22,2);light.position.set(x,y-.2,z);this.scene.add(light)}
@@ -65,13 +83,14 @@ export class SynagogueScene{
  this.ring=this.mesh(new G.TorusGeometry(.55,.018,6,40),'gold',0,.08,0);this.ring.rotation.x=-Math.PI/2;this.ring.visible=false;
  }
  setView(name){const presets={overview:[[20,19,25],[0,1.9,0]],bimah:[[6.6,5.5,9],[0,1.2,-.3]],aron:[[5.7,4.2,-4.4],[0,3.2,-11.7]],congregation:[[-12,6.4,9],[0,1.4,2]],entrance:[[0,4.2,17.5],[0,2.4,-6]],top:[[.01,32,3],[0,0,0]]};const p=presets[name]||presets.overview;this.camera.position.set(...p[0]);this.controls.target.set(...p[1]);this.controls.update();}
- setState(step,progress,activeIndex,minute=720){this.phase=step?.pose||'standing';this.progress=progress;this.activeIndex=activeIndex;const night=minute<330||minute>1050;this.sun.intensity=night?.6:4;this.renderer.toneMappingExposure=night?1.05:1.25;this.scene.background.set(night?'#172a2a':'#a8b6b0');this.scene.fog.color.copy(this.scene.background);this.curtain.scale.x=['reading','procession'].includes(this.phase)?.18:1;this.torah.visible=['reading','procession'].includes(this.phase);}
- animate(dt){this.elapsed+=dt;const t=this.elapsed;this.people.forEach(p=>{const active=p.index===this.activeIndex;let target=new G.Vector3(p.seat.x,0,p.seat.z);if(active&&this.phase==='reading')target.set(.82,.5,.1);if(active&&this.phase==='procession'){const z=-10+10*this.progress;target.set(0,0,z);}
+ setState(step,progress,activeIndex,minute=720){this.phase=step?.pose||'standing';this.progress=progress;this.activeIndex=activeIndex;this.ritual=ritualForStep(step,progress);const night=minute<330||minute>1050;this.sun.intensity=night?.6:4;this.renderer.toneMappingExposure=night?1.05:1.25;this.scene.background.set(night?'#172a2a':'#a8b6b0');this.scene.fog.color.copy(this.scene.background);this.torah.visible=this.ritual.bimahReading;}
+ animate(dt){this.elapsed+=dt;this.curtainAmount=animateParochet(this.curtainAmount,this.ritual.opening,dt,this.reduce);for(const {panel,side} of this.curtainPanels){const pose=parochetPanel(this.curtainAmount,side);panel.position.x=pose.x;panel.scale.x=pose.scaleX}this.arkScrolls.visible=this.curtainAmount>.015;this.arkScrolls.children[0].visible=!this.ritual.scrollOut;
+ const t=this.elapsed;this.people.forEach(p=>{const active=p.index===this.activeIndex;let target=new G.Vector3(p.seat.x,0,p.seat.z);if(active&&this.phase==='reading')target.set(.82,.5,.1);if(active&&this.ritual.procession)target.set(0,0,this.ritual.processionZ);
  if(this.phase==='arrival'&&!this.reduce){const f=Math.min(1,this.progress*1.6+p.index/110);target.z=15+(p.seat.z-15)*f;target.x=p.seat.x*f;}
- p.group.position.lerp(target,Math.min(1,dt*3));const moving=p.group.position.distanceTo(target)>.12;const direction=active&&this.phase==='reading'?Math.PI:Math.PI+(p.seat.x>0?-.13:.13);p.group.rotation.y=direction;
+ p.group.position.lerp(target,Math.min(1,dt*3));const moving=p.group.position.distanceTo(target)>.12;const direction=active&&this.ritual.procession?(this.ritual.returning?Math.PI:0):active&&this.phase==='reading'?Math.PI:Math.PI+(p.seat.x>0?-.13:.13);p.group.rotation.y=direction;
  const bow=this.phase==='bowing'?.28:0;p.body.rotation.x+=(bow-p.body.rotation.x)*dt*3;if(!this.reduce){p.body.rotation.z=Math.sin(t*(moving?6:1.3)+p.index)* (moving?.045:.012);p.body.position.y=Math.sin(t*1.5+p.index)*.007;}
  const seated=!['standing','bowing','reading','procession','arrival'].includes(this.phase);if(seated)p.body.position.y=-.28+(this.reduce?0:Math.sin(t*1.5+p.index)*.006);
- });if(this.activeIndex>=0){const p=this.people[this.activeIndex];this.ring.visible=true;this.ring.position.set(p.group.position.x,p.group.position.y+.08,p.group.position.z);}else this.ring.visible=false;}
+ });this.carriedTorah.visible=this.ritual.carrying&&this.activeIndex>=0;if(this.activeIndex>=0){const p=this.people[this.activeIndex];this.ring.visible=true;this.ring.position.set(p.group.position.x,p.group.position.y+.08,p.group.position.z);this.carriedTorah.position.copy(p.group.position);this.carriedTorah.position.y+=1.15;this.carriedTorah.position.z+=this.ritual.returning?-.32:.32;}else this.ring.visible=false;}
  resize(){const w=this.canvas.clientWidth,h=this.canvas.clientHeight;if(!w||!h)return;this.renderer.setSize(w,h,false);this.camera.aspect=w/h;this.camera.updateProjectionMatrix();}
  dispose(){this.disposed=true;cancelAnimationFrame(this.frame);this.observer.disconnect();this.controls.dispose();this.canvas.removeEventListener('pointerdown',this.onDown);this.canvas.removeEventListener('pointerup',this.onUp);this.scene.traverse(o=>{o.geometry?.dispose();if(o.material){const mats=Array.isArray(o.material)?o.material:[o.material];mats.forEach(m=>{m.map?.dispose();m.dispose()})}});this.renderer.dispose();}
 }
