@@ -1,0 +1,1114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<siddur id="HB21518" part="6" xml:lang="he" schema="azara-rashash-1" niqqud-status="machine-assisted-draft">
+<metadata>
+<title>Schawuot · Lernen in der Nacht, Schacharit &amp; Musaf</title>
+<source filename="Siddur_HaRashash_Teil_6_HB21518-Schawuot.txt" sha256="de5b98f0c2226d678cce7296f6c19e1420b129bb7a555f7b358990a451e26caf" />
+<vocalization engine="Dicta Nakdan" genre="rabbinic" status="editorial-review-required" />
+<policy>Alle Quellbuchstaben bleiben erhalten. Namen, Abkürzungen, einzelne Buchstaben und vorhandene Punktierung werden nicht automatisch verändert. Ergänztes Niqqud ist kein vollständig am Scan geprüftes Original-Niqqud.</policy>
+</metadata>
+<transcription_header status="original-before-vocalization">
+<line source-line="1">סידור תפלה להרש&quot;ש — חלק ששי</line>
+<line source-line="2">סידור עם כוונות, רבנו שלום שרעבי זצ&quot;ל (הרש&quot;ש)</line>
+<line source-line="3">מקור: hebrewbooks.org, מס&#x27; 21518</line>
+<line source-line="4"></line>
+<line source-line="5">הועתק מכתב רש&quot;י לכתב מרובע ונערך לקריאה.</line>
+<line source-line="6">סימנים:</line>
+<line source-line="7">  (אדני)       = שם קטן הנדפס בתוך שם הוי&quot;ה או על גביו</line>
+<line source-line="8">  [ ... ]      = כוונה או הערה קטנה הנדפסת בין השורות או בגיליון</line>
+<line source-line="9">  &quot;...&quot;        = מילות התפלה או הפסוק שעליהן הכוונה</line>
+<line source-line="10">  ניקוד ניתן רק בשמות הקודש שבכוונות (כפי שנדפסו); נוסח התפלה בלא ניקוד</line>
+<line source-line="11">  === טבלה === = שמות וצירופים שנדפסו בטורים; טורים מסומנים [ימין] [אמצע] [שמאל] או בכותרתם</line>
+<line source-line="12">  מספר הדף = כפי שנדפס בספר (ע&quot;א / ע&quot;ב), ובסוגריים מספר העמוד בקובץ ה־PDF</line>
+<line source-line="13">  חותמת הסריקה, כותרות־הריצה ומילות־השמירה (התיבה שבתחתית העמוד) הושמטו</line>
+<line source-line="14"></line>
+<line source-line="15">Siddur HaRashash, Teil 6 (HebrewBooks 21518) – aus Raschi-Schrift in hebräische Quadratschrift übertragen.</line>
+<line source-line="16">UTF-8. Zum Lesen einen Editor mit Rechts-nach-links-Unterstützung verwenden.</line>
+<line source-line="17"></line>
+</transcription_header>
+<page id="HB21518-p001" pdf="1" folio="א ע&quot;א" marker="━━━━━━━━━━  דף א ע&quot;א   (PDF 1)  ━━━━━━━━━━">
+<review kind="page_anchor_imprecision" status="open">Die Fußnote unter PDF 1 setzt sich unter PDF 3 fort. In der gelieferten Transkription steht die gesamte Fußnote bei PDF 1.</review>
+<lb source-line="19" />
+<p id="HB21518-L0020" source-line="20" niqqud="added-draft">סִיֽדּוּר תְּפִלָּה <abbr>להרש&quot;ש</abbr></p>
+<p id="HB21518-L0021" source-line="21" niqqud="added-draft">חֵלֶק שִׁשִּׁי</p>
+<lb source-line="22" />
+<p id="HB21518-L0023" source-line="23" niqqud="added-draft">*) לְשֵׁם יִחוּד <abbr>קבה&quot;ו</abbr> <abbr>זו&quot;ן</abbr> <shem recite="false">יאהדונהי</shem> בִּדְחִילוּ וּרְחִימוּ <shem recite="false">יאההויהה</shem> וּרְחִימוּ וּדְחִילוּ <shem recite="false">איההיוהה</shem> לְיַחֲדָא שֵׁם <shem recite="false">יה</shem> <abbr>או&quot;א</abbr> בֹּוֽהַּ <abbr>זו&quot;ן</abbr> <abbr>ע&quot;י</abbr> שֶׁפַע <abbr>הא&quot;ס</abbr> הַמַּשְׁפִּיעַ בָּהֶם וּמְיַחֲדָם בְּיִחוּדָא שְׁלִים <shem recite="false">יהוה</shem> בְּשֵׁם כָּל יִשְׂרָאֵל הִנֵּה אֲנַֽחְנוּ בָּאִים לְקַיֵּיֽם מִצְוַת עֲשֵׂה לְהַגּוֹת בַּתּוֹרָה בַּלַּיְלָה הַזֹּאת לְתַקֵּן אֶת שָׁרְשָׁהּ בְּמָקוֹם עֶלְיוֹן לְקַשֵּׁר אֶת נַפְשֵׁיֽנוּ רוּחֵיֽנוּ וְנִשְׁמָתֵיֽנוּ וּלְהַדְבִּיקָם בְּשָׁוֽרְשָׁם הָעֶלְיוֹן לְהַשְׁלִים אִילָן הָעֶלְיוֹן וּלְהַשְׁלִים אָדָם הָעֶלְיוֹן לְתַקְּנוֹ לָתֵת נַחַת רוּחַ לְיוֹצְרֵינוּ אֲשֶׁר קִדְּשָׁנוּ בְּמִצְוֹתָיו וְצִוָּנוּ לְהַגּוֹת בַּתּוֹרָה:</p>
+<lb source-line="24" />
+<p id="HB21518-L0025" source-line="25" niqqud="added-draft"><abbr>ויר&quot;מי</abbr> <abbr>או&quot;א</abbr> שֶׁבִּסְגֻוֽלַּת כָּל הַפְּסוּקִים וְהַתֵּיֽבוֹת וְהָאוֹתִיּוֹת וְהַנְּקֻוֽדּוֹת וְהַטְּעָמִים וְהַשֵּׁמוֹת הַיּוֹצְאִים מֵרָאשֵׁי תֵּיֽבוֹת וְסוֹפֵי תֵּיֽבוֹת וְחִיֽלּוּפֵי תֵּיֽבוֹת וְהַסּוֹדוֹת הַקְּדוֹשִׁים וְהַנּוֹרָאִים הַיּוֹצְאִים מִכָּל קְרִיאָתֵיֽנוּ שֶׁנִּקְרָא בַּלַּיְלָה הַזֶּה שֶׁתְּהֵא שָׁעָה זֹאת שְׁעַת רַחֲמִים וְרָצוֹן לִהְיוֹת לִמּוּדֵינוּ נַחַת רוּחַ לִפְנֵי כִּסֵּא כְּבוֹדְךָ וִיהֵא עוֹלֶה לְפָנֶיךָ כְּאִלּוּ הִשַּׂגְנוּ כָּל הַסּוֹדוֹת הַנּוֹרָאִים אֲשֶׁר הֵם חֲתוּמִים בָּהֶם לְעוֹרֵר רַחֲמֶיךָ וַחֲסָדֶיךָ לָתֵת כֹּחַ בְּלִיֽמּוּדֵינוּ לְהַעֲלוֹת <abbr>מ&quot;ן</abbr> מֵחֶלְקֵי הַכֵּלִים וְאוֹרוֹת <abbr>דרפ&quot;ח</abbr> <abbr>דנה&quot;י</abbr> דְּכָל <abbr>פרצו&#x27;</abbr> <abbr>מג&#x27;</abbr> <abbr>פרצו&#x27;</abbr> <abbr>נה&quot;י</abbr> הַפְּרָטִיִּים <abbr>דפרצו&#x27;</abbr> <abbr>חב&quot;ד</abbr> שֶׁהֵם עַתִּיק <abbr>ונוק&#x27;</abbr> <abbr>וא&quot;א</abbr> <abbr>ונוק&#x27;</abbr> <abbr>ודפרצו&#x27;</abbr> <abbr>חג&quot;ת</abbr> שֶׁהֵם <abbr>או&quot;א</abbr> <abbr>וישסו&quot;ת</abbr> <abbr>דמ&quot;ה</abbr> <abbr>וב&quot;ן</abbr> <abbr>דב&quot;ן</abbr> דְּחָכְמָה וּדְבִינָה <abbr>הכו&#x27;</abbr> <abbr>דזו&quot;ן</abbr> וְגַם הַכֵּלִים וְאוֹרוֹת <abbr>דרפ&quot;ח</abbr> דְּכָל עֲשָׂרָה <abbr>פרצו&#x27;</abbr> הַפְּרָטִיִּים דְּכָל <abbr>פרצו&#x27;</abbr> מֵחֶלְקֵי <abbr>מג&#x27;</abbr> <abbr>פרצו&#x27;</abbr> <abbr>נה&quot;י</abbr> הַכּוֹלְלִים <abbr>דמ&quot;ה</abbr> <abbr>וב&quot;ן</abbr> <abbr>דב&quot;ן</abbr> דְּבִינָה וְדַחֲכָמָה הַכּוֹלְלִים <abbr>דזו&quot;ן</abbr> וּמְחַלְּקֵי הַכֵּלִים וְאוֹרוֹת <abbr>דרפ&quot;ח</abbr> <abbr>דה&quot;פ</abbr> כֶּתֶר <abbr>הכו&#x27;</abbr> <abbr>דז&quot;א</abbr> וְיַעֲלוּ וְיִתְחַבְּרוּ עִם חֶלְקֵי אוֹרוֹתֵיהֶם הָעֶלְיוֹנִים שֶׁבְּהִתְפַּשְּׁטוּת כָּל אֲחוֹרַיִיֽם <abbr>דפר&#x27;</abbr> הָעֶלְיוֹנִים <abbr>דישסו&quot;ת</abbr> <abbr>ודאו&quot;א</abbr> <abbr>ודא&quot;א</abbr> וְיַעֲלוּ עִם חֶלְקֵי הִתְפַּשְּׁטוּת הָאֲחוֹרַיִיֽם הָהֵם הַמִּתְיַחֲסִים לָהֶם <abbr>למ&quot;ן</abbr> <abbr>לפרצו&#x27;</abbr> הָעֶלְיוֹנִים וְיִזְדַּוְּוֽגוּ לְהַמְשִׁיךְ לָהֶם תַּשְׁלוּם <abbr>י&quot;ס</abbr> <abbr>דב&quot;ן</abbr> עִם <abbr>י&quot;ס</abbr> <abbr>דמ&quot;ה</abbr> עִם הַהֲוָיוֹת <shem recite="false">והאהיה</shem> הַמְנֻוֽקָּדוֹת שֶׁהֵם <abbr>הנרנח&quot;י</abbr> הַמְיֻוֽחָסִים לָהֶם וְיִמְשְׁכוּ הַמֹּוֽחִין הָהֵם מְלֻוֽבָּשִׁין בְּחֶלְקֵי הִתְפַּשְּׁטוּת דַּאֲחוֹרַיִיֽם הָהֵם שֶׁעָלוּ וְנִתַּקְּנוּ וְנַעֲשׂוּ דְּמוּת צֶלֶם <abbr>למוחי&#x27;</abbr> הָהֵם וּבְכֵן יִמָּשְׁכוּ <abbr>המוחי&#x27;</abbr> <abbr>דנה&quot;י</abbr> דְּקַטְנוּת וְגַדְלוּת רִאשׁוֹן <abbr>דעסמ&quot;ב</abbr> <abbr>מלובשי&#x27;</abbr> <abbr>בקס&quot;א</abbr> <abbr>קמ&quot;ג</abbr> <abbr>קנ&quot;א</abbr> שֶׁהֵם חֶלְקֵי הִתְפַּשְּׁטוּת הָאֲחוֹרַיִיֽם הָהֵם <abbr>דישסו&quot;ת</abbr> שֶׁעָלוּ וְנִיֽתְקְנוּ וְנַעֲשׂוּ דְּמוּת צֶלֶם <abbr>למוחי&#x27;</abbr> <abbr>דקט&#x27;</abbr> <abbr>וגד&#x27;</abbr> <abbr>א&#x27;</abbr> וּבְתוֹכָם מְלֻוֽבָּשִׁים <abbr>ההויו&quot;ת</abbr> <abbr>והאהי&quot;ה</abbr> הַמְנֻוֽקָּדוֹת שֶׁהֵם <abbr>נרנח&quot;י</abbr> דִּנְפָשׁוֹת <abbr>דנרנח&quot;י</abbr> <abbr>דמ&quot;ה</abbr> <abbr>וב&quot;ן</abbr> <abbr>דמ&quot;ה</abbr> <abbr>ומ&quot;ה</abbr> <abbr>וב&quot;ן</abbr> <abbr>דב&quot;ן</abbr> דִּנְשָׁמָה <abbr>לחח&quot;ן</abbr> <abbr>בג&quot;ה</abbr> <abbr>דת&quot;י</abbr> דְּכָל <abbr>פרצו&#x27;</abbr> <abbr>מג&#x27;</abbr> פַּרְצוּפֵי <abbr>נה&quot;י</abbr> <abbr>דפר&#x27;</abbr> <abbr>חב&quot;ד</abbr> שֶׁהֵם עַתִּיק <abbr>ונוק&#x27;</abbr> <abbr>וא&quot;א</abbr> <abbr>ונוק&#x27;</abbr> <abbr>ודפר&#x27;</abbr> <abbr>חג&quot;ת</abbr> שֶׁהֵם <abbr>או&quot;א</abbr> <abbr>וישסו&quot;ת</abbr> <abbr>דמ&quot;ה</abbr> <abbr>וב&quot;ן</abbr> <abbr>דמ&quot;ה</abbr> <abbr>ומ&quot;ה</abbr> <abbr>וב&quot;ן</abbr> <abbr>דב&quot;ן</abbr> דְּבִינָה <abbr>דז&quot;א</abbr> וְגַם <abbr>לחח&quot;ן</abbr> <abbr>בג&quot;ה</abbr> <abbr>דת&quot;י</abbr> דְּכָל הָעֲשָׂרָה <abbr>פרצו&#x27;</abbr> דְּכָל <abbr>ג&#x27;</abbr> <abbr>פר&#x27;</abbr> <abbr>נה&quot;י</abbr> <abbr>הכוללי&#x27;</abbr> שֶׁהֵם <abbr>זו&quot;ן</abbr> וְיַעֲקֹב וְרָחֵל <abbr>דמ&quot;ה</abbr> <abbr>וב&quot;ן</abbr> דְּבִינָה <abbr>דז&quot;א</abbr>:</p>
+<lb source-line="26" />
+<p id="HB21518-L0027" source-line="27" niqqud="added-draft">— <abbr>הג&quot;ה</abbr> בְּתַחְתִּית הָעַמּוּד —</p>
+<p id="HB21518-L0028" source-line="28" niqqud="added-draft">*) <abbr>א&quot;ה</abbr> עַיֵּיֽן בְּפֶתַח עֵינַיִם <abbr>דפ&quot;ח</abbr> <abbr>ע&quot;ד</abbr> <abbr>וז&quot;ל</abbr> וְעַיֵּיֽן לְהָרַב הַגָּאוֹן רַב <abbr>חיד&quot;א</abbr> <abbr>בס&#x27;</abbr> שִׂמְחַת הָרֶגֶל <abbr>ובס&#x27;</abbr> יוֹסֵף אֹוֽמֶץ שֶׁכָּתַב מִשֵּׁם <abbr>הרש&quot;ש</abbr> <abbr>ז&quot;ל</abbr> דְּכֵן שָׁמַע מִפֶּה קָדוֹשׁ הָרַב <abbr>ש&quot;ש</abbr> <abbr>ז&quot;ל</abbr> כִּי אֵין רָאוּי לְסַדֵּר הַכַּוָּנָה בְּדֶרֶךְ <abbr>תפי&#x27;</abbr> <abbr>יע&quot;ש</abbr> <abbr>וא&quot;כ</abbr> <abbr>וכו&#x27;</abbr> <abbr>עש&quot;ב</abbr> <abbr>ונ&quot;ל</abbr> כִּי מַה שֶׁנִּסְדַּר כָּאן הַכַּוָּנָה בִּלְשׁוֹן תְּפִלָּה לֹא בָּא לֵאמֹר כִּי אֵין צָרִיךְ כַּוָּנָה אֶלָּא הַכַּוָּנָה לְחוּד וְהַתְּפִלָּה לְחוּד יַעַן כִּי בְּמַחֲשָׁבָה אֶתְבָּרֵר כּוֹלָּא וּלְפִיכָךְ סִדַּרְנוּ הַכֹּל בְּמִשְׁלַם וְרַק בְּמָקוֹם שֶׁהוּא תְּפִלָּה אֲזַי יִלְמֹוֽד בַּפֶּה מִלָּה בִּלְשׁוֹן תְּפִלָּה וּבְמָקוֹם שֶׁיֵּשׁ כַּוָּנָה יְכַוֵּיֽן בְּמַחְשָׁבָה <abbr>ע&quot;ד</abbr> כָּל הַכַּוָּנוֹת וְכֵן <abbr>ס&quot;ל</abbr> <abbr>להרה&quot;ג</abbr> <abbr>שד&quot;ה</abbr> <abbr>יצ&quot;ו</abbr> <abbr>ויעב&quot;א</abbr>.</p>
+<lb source-line="29" />
+</page>
+<page id="HB21518-p003" pdf="3" folio="א ע&quot;ב" marker="━━━━━━━━━━  דף א ע&quot;ב   (PDF 3)  ━━━━━━━━━━">
+<review kind="page_anchor_imprecision" status="open">Die Fußnote unter PDF 1 setzt sich unter PDF 3 fort. In der gelieferten Transkription steht die gesamte Fußnote bei PDF 1.</review>
+<lb source-line="31" />
+<table id="HB21518-L0032" source-line="32" preserve-layout="true" niqqud="source-only" recite="false">
+<row id="HB21518-L0033" source-line="33" niqqud="source-preserved">[טור ימין — <abbr>חח&quot;ן</abbr> דחכמה <abbr>דג&#x27;</abbr> <abbr>פרצו&#x27;</abbr> <abbr>נה&quot;י</abbr> הפרטיים דבינה <abbr>דז&quot;א</abbr>]</row>
+<row id="HB21518-L0034" source-line="34" niqqud="source-preserved"><shem recite="false">אַהַיַהַ</shem> <shem recite="false">אַהַיַהַ</shem></row>
+<row id="HB21518-L0035" source-line="35" niqqud="source-preserved"><shem recite="false">יַהַוַהַ</shem> <shem recite="false">יַהַוַהַ</shem></row>
+<row id="HB21518-L0036" source-line="36" niqqud="source-preserved"><shem recite="false">אֶהֶיֶהֶ</shem> <shem recite="false">אֶהֶיֶהֶ</shem></row>
+<row id="HB21518-L0037" source-line="37" niqqud="source-preserved"><shem recite="false">יֶהֶוֶהֶ</shem> <shem recite="false">יֶהֶוֶהֶ</shem></row>
+<row id="HB21518-L0038" source-line="38" niqqud="source-preserved"><shem recite="false">אִהִיִהִ</shem> <shem recite="false">אִהִיִהִ</shem></row>
+<row id="HB21518-L0039" source-line="39" niqqud="source-preserved"><shem recite="false">יִהִוִהִ</shem> <shem recite="false">יִהִוִהִ</shem></row>
+<lb source-line="40" />
+<row id="HB21518-L0041" source-line="41" niqqud="source-preserved">[טור אמצעי — <abbr>דת&quot;י</abbr> <abbr>דחו&quot;ג</abbr> דדעת <abbr>דג&#x27;</abbr> <abbr>פרצו&#x27;</abbr> <abbr>נה&quot;י</abbr> הפרטיים <abbr>דחב&quot;ד</abbr> <abbr>וחג&quot;ת</abbr> דבינה <abbr>דז&quot;א</abbr>]</row>
+<row id="HB21518-L0042" source-line="42" niqqud="source-preserved"><shem recite="false">אֹהֵיָהֵ</shem> <shem recite="false">אֹהֵיָהֵ</shem> <shem recite="false">אֹהֵיָהֵ</shem> <shem recite="false">אֹהֵיָהֵ</shem></row>
+<row id="HB21518-L0043" source-line="43" niqqud="source-preserved"><shem recite="false">יֹהֵוָהֵ</shem> <shem recite="false">יֹהֵוָהֵ</shem> <shem recite="false">יֹהֵוָהֵ</shem> <shem recite="false">יֹהֵוָהֵ</shem></row>
+<row id="HB21518-L0044" source-line="44" niqqud="source-preserved"><shem recite="false">אֹהֹיֹהֹ</shem> <shem recite="false">אֹהֹיֹהֹ</shem> <shem recite="false">אֹהֹיֹהֹ</shem> <shem recite="false">אֹהֹיֹהֹ</shem></row>
+<row id="HB21518-L0045" source-line="45" niqqud="source-preserved"><shem recite="false">יֹהֹוֹהֹ</shem> <shem recite="false">יֹהֹוֹהֹ</shem> <shem recite="false">יֹהֹוֹהֹ</shem> <shem recite="false">יֹהֹוֹהֹ</shem></row>
+<row id="HB21518-L0046" source-line="46" niqqud="source-preserved"><source_pointing>אוּהוּיוּהוּ</source_pointing> <source_pointing>אוּהוּיוּהוּ</source_pointing> <source_pointing>אוּהוּיוּהוּ</source_pointing> <source_pointing>אוּהוּיוּהוּ</source_pointing></row>
+<row id="HB21518-L0047" source-line="47" niqqud="source-preserved"><source_pointing>יוּהוּווּהוּ</source_pointing> <source_pointing>יוּהוּווּהוּ</source_pointing> <source_pointing>יוּהוּווּהוּ</source_pointing> <source_pointing>יוּהוּווּהוּ</source_pointing></row>
+<lb source-line="48" />
+<row id="HB21518-L0049" source-line="49" niqqud="source-preserved">[טור שמאל — <abbr>בג&quot;ה</abbr> דבינה <abbr>דג&#x27;</abbr> <abbr>פרצו&#x27;</abbr> <abbr>נה&quot;י</abbr> הפרטיים דבינה <abbr>דז&quot;א</abbr>]</row>
+<row id="HB21518-L0050" source-line="50" niqqud="source-preserved"><shem recite="false">אֵהֵיֵהֵ</shem> <shem recite="false">אֵהֵיֵהֵ</shem></row>
+<row id="HB21518-L0051" source-line="51" niqqud="source-preserved"><shem recite="false">יֵהֵוֵהֵ</shem> <shem recite="false">יֵהֵוֵהֵ</shem></row>
+<row id="HB21518-L0052" source-line="52" niqqud="source-preserved"><shem recite="false">אְהְיְהְ</shem> <shem recite="false">אְהְיְהְ</shem></row>
+<row id="HB21518-L0053" source-line="53" niqqud="source-preserved"><shem recite="false">יְהְוְהְ</shem> <shem recite="false">יְהְוְהְ</shem></row>
+<row id="HB21518-L0054" source-line="54" niqqud="source-preserved"><shem recite="false">אֻהֻיֻהֻ</shem> <shem recite="false">אֻהֻיֻהֻ</shem></row>
+<row id="HB21518-L0055" source-line="55" niqqud="source-preserved"><shem recite="false">יֻהֻוֻהֻ</shem> <shem recite="false">יֻהֻוֻהֻ</shem></row>
+<lb source-line="56" />
+<row id="HB21518-L0057" source-line="57" niqqud="source-preserved">[מוח חכמה]</row>
+<row id="HB21518-L0058" source-line="58" niqqud="source-preserved"><shem recite="false">אלף</shem> <shem recite="false">למד</shem> <shem recite="false">הי</shem> <shem recite="false">יוד</shem> <shem recite="false">מם</shem></row>
+<row id="HB21518-L0059" source-line="59" niqqud="source-preserved"><shem recite="false">אלף</shem> <shem recite="false">למד</shem> <shem recite="false">הי</shem> <shem recite="false">יוד</shem> <shem recite="false">מם</shem></row>
+<row id="HB21518-L0060" source-line="60" niqqud="source-preserved"><shem recite="false">אלף</shem> <shem recite="false">למד</shem> <shem recite="false">הי</shem> <shem recite="false">יוד</shem> <shem recite="false">מם</shem></row>
+<row id="HB21518-L0061" source-line="61" niqqud="source-preserved"><shem recite="false">אלף</shem> <shem recite="false">למד</shem> <shem recite="false">הי</shem> <shem recite="false">יוד</shem> <shem recite="false">מם</shem></row>
+<lb source-line="62" />
+<row id="HB21518-L0063" source-line="63" niqqud="source-preserved">[<abbr>קט&quot;א</abbr> <abbr>דאו&quot;א</abbr> מוח דעת]</row>
+<row id="HB21518-L0064" source-line="64" niqqud="source-preserved"><shem recite="false">אלף</shem> <shem recite="false">למד</shem> <shem recite="false">הא</shem> <shem recite="false">יוד</shem> <shem recite="false">מם</shem></row>
+<row id="HB21518-L0065" source-line="65" niqqud="source-preserved"><shem recite="false">אלף</shem> <shem recite="false">למד</shem> <shem recite="false">הא</shem> <shem recite="false">יוד</shem> <shem recite="false">מם</shem></row>
+<row id="HB21518-L0066" source-line="66" niqqud="source-preserved"><shem recite="false">אלף</shem> <shem recite="false">למד</shem> <shem recite="false">הא</shem> <shem recite="false">יוד</shem> <shem recite="false">מם</shem></row>
+<row id="HB21518-L0067" source-line="67" niqqud="source-preserved"><shem recite="false">אלף</shem> <shem recite="false">למד</shem> <shem recite="false">הא</shem> <shem recite="false">יוד</shem> <shem recite="false">מם</shem></row>
+<lb source-line="68" />
+<row id="HB21518-L0069" source-line="69" niqqud="source-preserved">[מוח בינה]</row>
+<row id="HB21518-L0070" source-line="70" niqqud="source-preserved"><shem recite="false">אלף</shem> <shem recite="false">למד</shem> <shem recite="false">הה</shem> <shem recite="false">יוד</shem> <shem recite="false">מם</shem></row>
+<row id="HB21518-L0071" source-line="71" niqqud="source-preserved"><shem recite="false">אלף</shem> <shem recite="false">למד</shem> <shem recite="false">הה</shem> <shem recite="false">יוד</shem> <shem recite="false">מם</shem></row>
+<row id="HB21518-L0072" source-line="72" niqqud="source-preserved"><shem recite="false">אלף</shem> <shem recite="false">למד</shem> <shem recite="false">הה</shem> <shem recite="false">יוד</shem> <shem recite="false">מם</shem></row>
+<row id="HB21518-L0073" source-line="73" niqqud="source-preserved"><shem recite="false">אלף</shem> <shem recite="false">למד</shem> <shem recite="false">הה</shem> <shem recite="false">יוד</shem> <shem recite="false">מם</shem></row>
+<lb source-line="74" />
+<row id="HB21518-L0075" source-line="75" niqqud="source-preserved">[מוח דעת]</row>
+<row id="HB21518-L0076" source-line="76" niqqud="source-preserved"><shem recite="false">אלף</shem> <shem recite="false">למד</shem> <shem recite="false">הא</shem> <shem recite="false">יוד</shem> <shem recite="false">מם</shem> <shem recite="false">אלף</shem> <shem recite="false">למד</shem> <shem recite="false">הא</shem> <shem recite="false">יוד</shem> <shem recite="false">מם</shem></row>
+<row id="HB21518-L0077" source-line="77" niqqud="source-preserved"><shem recite="false">אלף</shem> <shem recite="false">למד</shem> <shem recite="false">הא</shem> <shem recite="false">יוד</shem> <shem recite="false">מם</shem> <shem recite="false">אלף</shem> <shem recite="false">למד</shem> <shem recite="false">הא</shem> <shem recite="false">יוד</shem> <shem recite="false">מם</shem></row>
+<lb source-line="78" />
+<row id="HB21518-L0079" source-line="79" niqqud="source-preserved">[ימין]</row>
+<row id="HB21518-L0080" source-line="80" niqqud="source-preserved"><shem recite="false">יוד</shem> <shem recite="false">הי</shem> <shem recite="false">ויו</shem> <shem recite="false">הי</shem></row>
+<row id="HB21518-L0081" source-line="81" niqqud="source-preserved"><shem recite="false">אלף</shem> <shem recite="false">הי</shem> <shem recite="false">יוד</shem> <shem recite="false">הי</shem></row>
+<row id="HB21518-L0082" source-line="82" niqqud="source-preserved"><shem recite="false">יוד</shem> <shem recite="false">הי</shem> <shem recite="false">ויו</shem> <shem recite="false">הי</shem></row>
+<row id="HB21518-L0083" source-line="83" niqqud="source-preserved"><shem recite="false">אלף</shem> <shem recite="false">הי</shem> <shem recite="false">יוד</shem> <shem recite="false">הי</shem></row>
+<lb source-line="84" />
+<row id="HB21518-L0085" source-line="85" niqqud="source-preserved">[אמצע]</row>
+<row id="HB21518-L0086" source-line="86" niqqud="source-preserved"><shem recite="false">יוד</shem> <shem recite="false">הא</shem> <shem recite="false">ואו</shem> <shem recite="false">הא</shem></row>
+<row id="HB21518-L0087" source-line="87" niqqud="source-preserved"><shem recite="false">אלף</shem> <shem recite="false">הא</shem> <shem recite="false">יוד</shem> <shem recite="false">הא</shem></row>
+<row id="HB21518-L0088" source-line="88" niqqud="source-preserved"><shem recite="false">יוד</shem> <shem recite="false">הה</shem> <shem recite="false">וו</shem> <shem recite="false">הה</shem></row>
+<row id="HB21518-L0089" source-line="89" niqqud="source-preserved"><shem recite="false">אלף</shem> <shem recite="false">הה</shem> <shem recite="false">יוד</shem> <shem recite="false">הה</shem></row>
+<lb source-line="90" />
+<row id="HB21518-L0091" source-line="91" niqqud="source-preserved">[שמאל]</row>
+<row id="HB21518-L0092" source-line="92" niqqud="source-preserved"><shem recite="false">יוד</shem> <shem recite="false">הי</shem> <shem recite="false">ואו</shem> <shem recite="false">הי</shem></row>
+<row id="HB21518-L0093" source-line="93" niqqud="source-preserved"><shem recite="false">אלף</shem> <shem recite="false">הי</shem> <shem recite="false">יוד</shem> <shem recite="false">הי</shem></row>
+<row id="HB21518-L0094" source-line="94" niqqud="source-preserved"><shem recite="false">יוד</shem> <shem recite="false">הי</shem> <shem recite="false">ואו</shem> <shem recite="false">הי</shem></row>
+<row id="HB21518-L0095" source-line="95" niqqud="source-preserved"><shem recite="false">אלף</shem> <shem recite="false">הי</shem> <shem recite="false">יוד</shem> <shem recite="false">הי</shem></row>
+</table>
+<lb source-line="97" />
+</page>
+<page id="HB21518-p004" pdf="4" folio="ב ע&quot;א" marker="━━━━━━━━━━  דף ב ע&quot;א   (PDF 4)  ━━━━━━━━━━">
+<lb source-line="99" />
+<table id="HB21518-L0100" source-line="100" preserve-layout="true" niqqud="source-only" recite="false">
+<row id="HB21518-L0101" source-line="101" niqqud="source-preserved">[<abbr>ג&#x27;</abbr> כלי חכמה]</row>
+<row id="HB21518-L0102" source-line="102" niqqud="source-preserved"><shem recite="false">יוד</shem> <shem recite="false">הי</shem> <shem recite="false">ואו</shem> <shem recite="false">הא</shem></row>
+<row id="HB21518-L0103" source-line="103" niqqud="source-preserved"><letter recite="false">י</letter> <shem recite="false">יה</shem> <shem recite="false">יהו</shem> <shem recite="false">יהוה</shem></row>
+<row id="HB21518-L0104" source-line="104" niqqud="source-preserved"><shem recite="false">יוד</shem> <shem recite="false">הא</shem> <shem recite="false">ואו</shem> <shem recite="false">הא</shem></row>
+<lb source-line="105" />
+<row id="HB21518-L0106" source-line="106" niqqud="source-preserved">[<abbr>ג&#x27;</abbr> כלי דעת]</row>
+<row id="HB21518-L0107" source-line="107" niqqud="source-preserved"><shem recite="false">יוד</shem> <shem recite="false">הי</shem> <shem recite="false">ויו</shem> <shem recite="false">הי</shem></row>
+<row id="HB21518-L0108" source-line="108" niqqud="source-preserved"><shem recite="false">יוד</shem> <shem recite="false">הי</shem> <shem recite="false">ואו</shem> <shem recite="false">הי</shem></row>
+<row id="HB21518-L0109" source-line="109" niqqud="source-preserved"><shem recite="false">יוד</shem> <shem recite="false">הה</shem> <shem recite="false">וו</shem> <shem recite="false">הה</shem></row>
+<lb source-line="110" />
+<row id="HB21518-L0111" source-line="111" niqqud="source-preserved">[<abbr>ג&#x27;</abbr> כלי בינה]</row>
+<row id="HB21518-L0112" source-line="112" niqqud="source-preserved"><shem recite="false">אלף</shem> <shem recite="false">אלף</shem> <shem recite="false">הא</shem> <shem recite="false">אלף</shem> <shem recite="false">הא</shem> <shem recite="false">יוד</shem></row>
+<row id="HB21518-L0113" source-line="113" niqqud="source-preserved"><shem recite="false">אלף</shem> <shem recite="false">הא</shem> <shem recite="false">יוד</shem> <shem recite="false">הא</shem></row>
+<row id="HB21518-L0114" source-line="114" niqqud="source-preserved"><shem recite="false">אלף</shem> <shem recite="false">הא</shem> <shem recite="false">יוד</shem> <shem recite="false">הא</shem></row>
+<row id="HB21518-L0115" source-line="115" niqqud="source-preserved"><shem recite="false">אהיה</shem></row>
+<lb source-line="116" />
+<row id="HB21518-L0117" source-line="117" niqqud="source-preserved">[<abbr>ג&#x27;</abbr> כלי חסד]</row>
+<row id="HB21518-L0118" source-line="118" niqqud="source-preserved"><letter recite="false">א</letter> <shem recite="false">אל</shem> אלו <shem recite="false">אלוה</shem></row>
+<row id="HB21518-L0119" source-line="119" niqqud="source-preserved"><shem recite="false">אלוה</shem></row>
+<row id="HB21518-L0120" source-line="120" niqqud="source-preserved"><shem recite="false">אלף</shem> <shem recite="false">למד</shem></row>
+<lb source-line="121" />
+<row id="HB21518-L0122" source-line="122" niqqud="source-preserved">[<abbr>ג&#x27;</abbr> כלי <abbr>ת&quot;ת</abbr>]</row>
+<row id="HB21518-L0123" source-line="123" niqqud="source-preserved"><shem recite="false">יוד</shem> <shem recite="false">הא</shem> <shem recite="false">ואו</shem> <shem recite="false">הא</shem></row>
+<row id="HB21518-L0124" source-line="124" niqqud="source-preserved"><letter recite="false">י</letter> <shem recite="false">יה</shem> <shem recite="false">יהו</shem> <shem recite="false">יהוה</shem></row>
+<row id="HB21518-L0125" source-line="125" niqqud="source-preserved"><shem recite="false">יהוה</shem></row>
+<lb source-line="126" />
+<row id="HB21518-L0127" source-line="127" niqqud="source-preserved">[<abbr>ג&#x27;</abbr> כלי גבורה]</row>
+<row id="HB21518-L0128" source-line="128" niqqud="source-preserved"><letter recite="false">י</letter> <letter recite="false">ה</letter></row>
+<row id="HB21518-L0129" source-line="129" niqqud="source-preserved"><shem recite="false">אלף</shem> <shem recite="false">אלף</shem> <shem recite="false">למד</shem> <shem recite="false">אלף</shem> <shem recite="false">למד</shem> <shem recite="false">הי</shem></row>
+<row id="HB21518-L0130" source-line="130" niqqud="source-preserved"><shem recite="false">אלף</shem> <shem recite="false">למד</shem> <shem recite="false">הי</shem> <shem recite="false">יוד</shem></row>
+<row id="HB21518-L0131" source-line="131" niqqud="source-preserved"><shem recite="false">אלף</shem> <shem recite="false">למד</shem> <shem recite="false">הי</shem> <shem recite="false">יוד</shem> <shem recite="false">מם</shem></row>
+<row id="HB21518-L0132" source-line="132" niqqud="source-preserved"><shem recite="false">יֱהֹוִה</shem></row>
+<lb source-line="133" />
+<row id="HB21518-L0134" source-line="134" niqqud="source-preserved">[<abbr>ג&#x27;</abbr> כלי נצח]</row>
+<row id="HB21518-L0135" source-line="135" niqqud="source-preserved"><shem recite="false">יהוה</shem></row>
+<row id="HB21518-L0136" source-line="136" niqqud="source-preserved"><letter recite="false">צ</letter> צב צבא</row>
+<row id="HB21518-L0137" source-line="137" niqqud="source-preserved">צבא</row>
+<lb source-line="138" />
+<row id="HB21518-L0139" source-line="139" niqqud="source-preserved">[<abbr>ג&#x27;</abbr> כלי יסוד]</row>
+<row id="HB21518-L0140" source-line="140" niqqud="source-preserved"><shem recite="false">יאהדונהי</shem></row>
+<row id="HB21518-L0141" source-line="141" niqqud="source-preserved"><shem recite="false">שין</shem> <shem recite="false">שין</shem> <shem recite="false">דלת</shem></row>
+<row id="HB21518-L0142" source-line="142" niqqud="source-preserved"><shem recite="false">שין</shem> <shem recite="false">דלת</shem> <shem recite="false">יוד</shem></row>
+<row id="HB21518-L0143" source-line="143" niqqud="source-preserved"><shem recite="false">שין</shem> <shem recite="false">דלת</shem> <shem recite="false">יוד</shem></row>
+<lb source-line="144" />
+<row id="HB21518-L0145" source-line="145" niqqud="source-preserved">[<abbr>ג&#x27;</abbr> כלי <shem recite="false">הוד</shem>]</row>
+<row id="HB21518-L0146" source-line="146" niqqud="source-preserved"><shem recite="false">אדני</shem></row>
+<row id="HB21518-L0147" source-line="147" niqqud="source-preserved"><letter recite="false">א</letter> <shem recite="false">צבאו</shem> <shem recite="false">צבאות</shem></row>
+<row id="HB21518-L0148" source-line="148" niqqud="source-preserved">אות</row>
+</table>
+<lb source-line="150" />
+<p id="HB21518-L0151" source-line="151" niqqud="added-draft">וְכָזֶה <abbr>הנז&quot;ל</abbr> יְכַוֵּיֽן לְהַמְשִׁיךְ <abbr>לחח&quot;ן</abbr> <abbr>בג&quot;ה</abbr> <abbr>דת&quot;י</abbr> דְּכָל הָעֲשָׂרָה פַּרְצוּפִים דְּכָל <abbr>פרצו&#x27;</abbr> <abbr>מג&#x27;</abbr> פַּרְצוּפִים <abbr>דנה&quot;י</abbr> הַכּוֹלְלִים <abbr>דפר&#x27;</abbr> בִּינָה הַכּוֹלֵל <abbr>דזו&quot;ן</abbr>:</p>
+<p id="HB21518-L0152" source-line="152" niqqud="added-draft"><abbr>ואח&quot;כ</abbr> יְכַוֵּיֽן לְהַמְשִׁיךְ הַמֹּוֽחִין <abbr>הנז&#x27;</abbr> לְיַעֲקֹב וְרָחֵל.</p>
+<lb source-line="153" />
+<table id="HB21518-L0154" source-line="154" preserve-layout="true" niqqud="source-only" recite="false">
+<row id="HB21518-L0155" source-line="155" niqqud="source-preserved">[חכמה <abbr>דנוק&#x27;</abbr>]</row>
+<row id="HB21518-L0156" source-line="156" niqqud="source-preserved"><shem recite="false">יוד</shem> <shem recite="false">הא</shem> <shem recite="false">וו</shem> <shem recite="false">הה</shem></row>
+<row id="HB21518-L0157" source-line="157" niqqud="source-preserved"><shem recite="false">יוד</shem> <shem recite="false">יוד</shem> <shem recite="false">הא</shem></row>
+<row id="HB21518-L0158" source-line="158" niqqud="source-preserved"><shem recite="false">יוד</shem> <shem recite="false">הא</shem> <shem recite="false">וו</shem></row>
+<row id="HB21518-L0159" source-line="159" niqqud="source-preserved"><shem recite="false">יוד</shem> <shem recite="false">הא</shem> <shem recite="false">וו</shem> <shem recite="false">הה</shem></row>
+<row id="HB21518-L0160" source-line="160" niqqud="source-preserved"><letter recite="false">י</letter> <shem recite="false">יה</shem> <shem recite="false">יהו</shem> <shem recite="false">יהוה</shem></row>
+<lb source-line="161" />
+<row id="HB21518-L0162" source-line="162" niqqud="source-preserved">[דעת <abbr>דנוק&#x27;</abbr>]</row>
+<row id="HB21518-L0163" source-line="163" niqqud="source-preserved"><shem recite="false">יוד</shem> <shem recite="false">הה</shem> <shem recite="false">וו</shem> <shem recite="false">הה</shem></row>
+<row id="HB21518-L0164" source-line="164" niqqud="source-preserved"><shem recite="false">יוד</shem> <shem recite="false">יוד</shem> <shem recite="false">הה</shem> <shem recite="false">יוד</shem> <shem recite="false">הה</shem></row>
+<row id="HB21518-L0165" source-line="165" niqqud="source-preserved"><shem recite="false">וו</shem> <shem recite="false">יוד</shem> <shem recite="false">הה</shem> <shem recite="false">וו</shem> <shem recite="false">הה</shem></row>
+<row id="HB21518-L0166" source-line="166" niqqud="source-preserved"><shem recite="false">יוד</shem> <shem recite="false">יוד</shem> <shem recite="false">הא</shem> <shem recite="false">יוד</shem> <shem recite="false">הא</shem></row>
+<row id="HB21518-L0167" source-line="167" niqqud="source-preserved"><shem recite="false">ואו</shem> <shem recite="false">יוד</shem> <shem recite="false">הא</shem> <shem recite="false">ואו</shem> <shem recite="false">הא</shem></row>
+<row id="HB21518-L0168" source-line="168" niqqud="source-preserved"><shem recite="false">אלף</shem> <shem recite="false">למד</shem> <shem recite="false">הי</shem> <shem recite="false">יוד</shem> <shem recite="false">מם</shem></row>
+<row id="HB21518-L0169" source-line="169" niqqud="source-preserved"><letter recite="false">צ</letter> <letter recite="false">ב</letter> <letter recite="false">א</letter> <letter recite="false">ו</letter> <letter recite="false">ת</letter></row>
+<row id="HB21518-L0170" source-line="170" niqqud="source-preserved"><letter recite="false">ה</letter> <letter recite="false">ש</letter> <letter recite="false">ת</letter> <letter recite="false">פ</letter> <letter recite="false">א</letter></row>
+<lb source-line="171" />
+<row id="HB21518-L0172" source-line="172" niqqud="source-preserved">[בינה <abbr>דנוק&#x27;</abbr>]</row>
+<row id="HB21518-L0173" source-line="173" niqqud="source-preserved"><shem recite="false">אלף</shem> <shem recite="false">הה</shem> <shem recite="false">יוד</shem> <shem recite="false">הה</shem></row>
+<row id="HB21518-L0174" source-line="174" niqqud="source-preserved"><letter recite="false">א</letter> <letter recite="false">ה</letter> <letter recite="false">י</letter> <letter recite="false">ה</letter></row>
+<row id="HB21518-L0175" source-line="175" niqqud="source-preserved"><letter recite="false">א</letter> <shem recite="false">אה</shem> <shem recite="false">אהי</shem> <shem recite="false">אהיה</shem></row>
+<lb source-line="176" />
+<row id="HB21518-L0177" source-line="177" niqqud="source-preserved">[חסד <abbr>דנוק&#x27;</abbr>]</row>
+<row id="HB21518-L0178" source-line="178" niqqud="source-preserved"><shem recite="false">אלף</shem> <shem recite="false">למד</shem></row>
+<row id="HB21518-L0179" source-line="179" niqqud="source-preserved"><shem recite="false">אלף</shem> <shem recite="false">אלף</shem> <shem recite="false">למד</shem></row>
+<row id="HB21518-L0180" source-line="180" niqqud="source-preserved"><shem recite="false">אל</shem></row>
+<lb source-line="181" />
+<row id="HB21518-L0182" source-line="182" niqqud="source-preserved">[גבורה <abbr>דנוק&#x27;</abbr>]</row>
+<row id="HB21518-L0183" source-line="183" niqqud="source-preserved"><shem recite="false">יֱהֹוִה</shem></row>
+<row id="HB21518-L0184" source-line="184" niqqud="source-preserved"><shem recite="false">אלהים</shem></row>
+<row id="HB21518-L0185" source-line="185" niqqud="source-preserved"><shem recite="false">אכדטם</shem></row>
+<lb source-line="186" />
+<row id="HB21518-L0187" source-line="187" niqqud="source-preserved">[נצח <abbr>דנוק&#x27;</abbr>]</row>
+<row id="HB21518-L0188" source-line="188" niqqud="source-preserved"><shem recite="false">אל</shem></row>
+<row id="HB21518-L0189" source-line="189" niqqud="source-preserved"><letter recite="false">א</letter> <shem recite="false">אל</shem></row>
+<row id="HB21518-L0190" source-line="190" niqqud="source-preserved">בם</row>
+<lb source-line="191" />
+<row id="HB21518-L0192" source-line="192" niqqud="source-preserved">[יסוד <abbr>דנוק&#x27;</abbr>]</row>
+<row id="HB21518-L0193" source-line="193" niqqud="source-preserved"><shem recite="false">שין</shem> <shem recite="false">דלת</shem> <shem recite="false">יוד</shem></row>
+<row id="HB21518-L0194" source-line="194" niqqud="source-preserved"><letter recite="false">ש</letter> <letter recite="false">ד</letter> <letter recite="false">י</letter></row>
+<row id="HB21518-L0195" source-line="195" niqqud="source-preserved"><letter recite="false">ש</letter> <shem recite="false">שד</shem> <shem recite="false">שדי</shem></row>
+<row id="HB21518-L0196" source-line="196" niqqud="source-preserved"><abbr>מל&#x27;</abbr> <shem recite="false">אלף</shem> <shem recite="false">דלת</shem> <shem recite="false">נון</shem> <shem recite="false">יוד</shem></row>
+<row id="HB21518-L0197" source-line="197" niqqud="source-preserved"><letter recite="false">א</letter> <letter recite="false">ד</letter> <letter recite="false">נ</letter> <letter recite="false">י</letter></row>
+<row id="HB21518-L0198" source-line="198" niqqud="source-preserved"><letter recite="false">א</letter> אד אדנ <shem recite="false">אדני</shem></row>
+<lb source-line="199" />
+<row id="HB21518-L0200" source-line="200" niqqud="source-preserved">[<shem recite="false">הוד</shem> <abbr>דנוק&#x27;</abbr>]</row>
+<row id="HB21518-L0201" source-line="201" niqqud="source-preserved"><shem recite="false">אלהים</shem></row>
+<row id="HB21518-L0202" source-line="202" niqqud="source-preserved"><letter recite="false">א</letter> <shem recite="false">אל</shem> אלה <shem recite="false">אלהי</shem> <shem recite="false">אלהים</shem></row>
+<row id="HB21518-L0203" source-line="203" niqqud="source-preserved">במוכן</row>
+</table>
+<lb source-line="205" />
+</page>
+<page id="HB21518-p005" pdf="5" folio="ב ע&quot;ב" marker="━━━━━━━━━━  דף ב ע&quot;ב   (PDF 5)  ━━━━━━━━━━">
+<lb source-line="207" />
+<p id="HB21518-L0208" source-line="208" niqqud="added-draft">וּבְכֵן יִמָּשְׁכוּ הַמֹּוֽחִין <abbr>דנה&quot;י</abbr> דְּקַטְנוּת וְגַדְלוּת שֵׁנִי <abbr>דעסמ&quot;ב</abbr> מְלֻוֽבָּשִׁים <abbr>בקס&quot;א</abbr> <abbr>קמ&quot;ג</abbr> <abbr>קנ&quot;א</abbr> שֶׁהֵם חֶלְקֵי הִתְפַּשְּׁטוּת הָאֲחוֹרַיִם הָהֵם <abbr>דאו&quot;א</abbr> שֶׁעָלוּ וְנִתַּקְּנוּ וְנַעֲשׂוּ דְּמוּת צֶלֶם לְמוֹחִין דְּקַטְנוּת וְגַדְלוּת שֵׁנִי וּבְתוֹכָם מְלֻוֽבָּשִׁים <abbr>ההויו&quot;ת</abbr> <abbr>והאהי&quot;ה</abbr> הַמְנֻוֽקָּדוֹת שֶׁהֵם <abbr>נרנח&quot;י</abbr> דִּנְפָשׁוֹת <abbr>דנרנח&quot;י</abbr> <abbr>דמ&quot;ה</abbr> <abbr>וב&quot;ן</abbr> <abbr>דמ&quot;ה</abbr> <abbr>ודמ&quot;ה</abbr> <abbr>וב&quot;ן</abbr> <abbr>דב&quot;ן</abbr> דְּחַיָּה <abbr>לחח&quot;ן</abbr> <abbr>בג&quot;ה</abbr> <abbr>דת&quot;י</abbr> <abbr>דנה&quot;י</abbr> דְּכָל פַּרְצוּף <abbr>מג&#x27;</abbr> פַּרְצוּפֵי <abbr>נה&quot;י</abbr> הַפְּרָטִים דְּפַרְצוּף <abbr>חב&quot;ד</abbr> שֶׁהֵם עַתִּיק וְנֻוֽקְבֵּיֽהּ <abbr>וא&quot;א</abbr> וְנֻוֽקְבֵּיֽהּ וּדְפַרְצוּף <abbr>חג&quot;ת</abbr> שֶׁהֵם <abbr>או&quot;א</abbr> <abbr>וישסו&quot;ת</abbr> <abbr>דחכ&#x27;</abbr> הַכּוֹלֵל <abbr>דזו&quot;ן</abbr>. וְגַם <abbr>לחח&quot;ן</abbr> <abbr>בג&quot;ה</abbr> <abbr>דת&quot;י</abbr> דְּכָל הָעֲשָׂרָה פַּרְצוּפִים דְּכָל פַּרְצוּף <abbr>מג&#x27;</abbr> פַּרְצוּפִים <abbr>דנה&quot;י</abbr> הַכּוֹלְלִים <abbr>דמ&quot;ה</abbr> <abbr>וב&quot;ן</abbr> <abbr>דמ&quot;ה</abbr> <abbr>ומ&quot;ה</abbr> <abbr>וב&quot;ן</abbr> <abbr>דב&quot;ן</abbr> דְּפַרְצוּף חָכְמָה הַכּוֹלֵל <abbr>דזו&quot;ן</abbr>:</p>
+<lb source-line="209" />
+<table id="HB21518-L0210" source-line="210" preserve-layout="true" niqqud="source-only" recite="false">
+<row id="HB21518-L0211" source-line="211" niqqud="source-preserved">[טור ימין]</row>
+<row id="HB21518-L0212" source-line="212" niqqud="source-preserved"><shem recite="false">אַהַיַהַ</shem> <shem recite="false">אַהַיַהַ</shem></row>
+<row id="HB21518-L0213" source-line="213" niqqud="source-preserved"><shem recite="false">יַהַוַהַ</shem> <shem recite="false">יַהַוַהַ</shem></row>
+<row id="HB21518-L0214" source-line="214" niqqud="source-preserved"><shem recite="false">אֶהֶיֶהֶ</shem> <shem recite="false">אֶהֶיֶהֶ</shem></row>
+<row id="HB21518-L0215" source-line="215" niqqud="source-preserved"><shem recite="false">יֶהֶוֶהֶ</shem> <shem recite="false">יֶהֶוֶהֶ</shem></row>
+<row id="HB21518-L0216" source-line="216" niqqud="source-preserved"><shem recite="false">אִהִיִהִ</shem> <shem recite="false">אִהִיִהִ</shem></row>
+<row id="HB21518-L0217" source-line="217" niqqud="source-preserved"><shem recite="false">יִהִוִהִ</shem> <shem recite="false">יִהִוִהִ</shem></row>
+<lb source-line="218" />
+<row id="HB21518-L0219" source-line="219" niqqud="source-preserved">[טור אמצעי]</row>
+<row id="HB21518-L0220" source-line="220" niqqud="source-preserved"><shem recite="false">אֹהֵיָהֵ</shem> <shem recite="false">אֹהֵיָהֵ</shem> <shem recite="false">אֹהֵיָהֵ</shem> <shem recite="false">אֹהֵיָהֵ</shem></row>
+<row id="HB21518-L0221" source-line="221" niqqud="source-preserved"><shem recite="false">יֹהֵוָהֵ</shem> <shem recite="false">יֹהֵוָהֵ</shem> <shem recite="false">יֹהֵוָהֵ</shem> <shem recite="false">יֹהֵוָהֵ</shem></row>
+<row id="HB21518-L0222" source-line="222" niqqud="source-preserved"><shem recite="false">אֹהֹיֹהֹ</shem> <shem recite="false">אֹהֹיֹהֹ</shem> <shem recite="false">אֹהֹיֹהֹ</shem> <shem recite="false">אֹהֹיֹהֹ</shem></row>
+<row id="HB21518-L0223" source-line="223" niqqud="source-preserved"><shem recite="false">יֹהֹוֹהֹ</shem> <shem recite="false">יֹהֹוֹהֹ</shem> <shem recite="false">יֹהֹוֹהֹ</shem> <shem recite="false">יֹהֹוֹהֹ</shem></row>
+<row id="HB21518-L0224" source-line="224" niqqud="source-preserved"><source_pointing>אוּהוּיוּהוּ</source_pointing> <source_pointing>אוּהוּיוּהוּ</source_pointing> <source_pointing>אוּהוּיוּהוּ</source_pointing> <source_pointing>אוּהוּיוּהוּ</source_pointing></row>
+<row id="HB21518-L0225" source-line="225" niqqud="source-preserved"><source_pointing>יוּהוּווּהוּ</source_pointing> <source_pointing>יוּהוּווּהוּ</source_pointing> <source_pointing>יוּהוּווּהוּ</source_pointing> <source_pointing>יוּהוּווּהוּ</source_pointing></row>
+<lb source-line="226" />
+<row id="HB21518-L0227" source-line="227" niqqud="source-preserved">[טור שמאל]</row>
+<row id="HB21518-L0228" source-line="228" niqqud="source-preserved"><shem recite="false">אֵהֵיֵהֵ</shem> <shem recite="false">אֵהֵיֵהֵ</shem></row>
+<row id="HB21518-L0229" source-line="229" niqqud="source-preserved"><shem recite="false">יֵהֵוֵהֵ</shem> <shem recite="false">יֵהֵוֵהֵ</shem></row>
+<row id="HB21518-L0230" source-line="230" niqqud="source-preserved"><shem recite="false">אְהְיְהְ</shem> <shem recite="false">אְהְיְהְ</shem></row>
+<row id="HB21518-L0231" source-line="231" niqqud="source-preserved"><shem recite="false">יְהְוְהְ</shem> <shem recite="false">יְהְוְהְ</shem></row>
+<row id="HB21518-L0232" source-line="232" niqqud="source-preserved"><shem recite="false">אֻהֻיֻהֻ</shem> <shem recite="false">אֻהֻיֻהֻ</shem></row>
+<row id="HB21518-L0233" source-line="233" niqqud="source-preserved"><shem recite="false">יֻהֻוֻהֻ</shem> <shem recite="false">יֻהֻוֻהֻ</shem></row>
+<lb source-line="234" />
+<row id="HB21518-L0235" source-line="235" niqqud="source-preserved"><shem recite="false">אכדטם</shem> <shem recite="false">אכדטם</shem>   <shem recite="false">אכדטם</shem> <shem recite="false">אכדטם</shem>   אם גל   אם גל</row>
+<row id="HB21518-L0236" source-line="236" niqqud="source-preserved"><shem recite="false">אכדטם</shem> <shem recite="false">אכדטם</shem>   <shem recite="false">אכדטם</shem> <shem recite="false">אכדטם</shem>   אם גל   אם גל</row>
+<row id="HB21518-L0237" source-line="237" niqqud="source-preserved"><shem recite="false">יוד</shem> <shem recite="false">אלף</shem> <shem recite="false">הא</shem> <shem recite="false">למד</shem> <shem recite="false">ואו</shem> <shem recite="false">הא</shem> <shem recite="false">הא</shem> <shem recite="false">יוד</shem> <shem recite="false">מם</shem></row>
+<row id="HB21518-L0238" source-line="238" niqqud="source-preserved"><shem recite="false">יוד</shem> <shem recite="false">אלף</shem> <shem recite="false">הא</shem> <shem recite="false">למד</shem> <shem recite="false">ואו</shem> <shem recite="false">הא</shem> <shem recite="false">הא</shem> <shem recite="false">יוד</shem> <shem recite="false">מם</shem></row>
+<row id="HB21518-L0239" source-line="239" niqqud="source-preserved"><shem recite="false">יוד</shem> <shem recite="false">אלף</shem> <shem recite="false">הא</shem> <shem recite="false">למד</shem> <shem recite="false">ואו</shem> <shem recite="false">הא</shem> <shem recite="false">הא</shem> <shem recite="false">יוד</shem> <shem recite="false">מם</shem></row>
+<row id="HB21518-L0240" source-line="240" niqqud="source-preserved"><shem recite="false">יהוה</shem> <shem recite="false">אלהים</shem> <shem recite="false">יהוה</shem> <shem recite="false">אלהים</shem> <shem recite="false">יהוה</shem> <shem recite="false">אלהים</shem></row>
+<lb source-line="241" />
+<row id="HB21518-L0242" source-line="242" niqqud="source-preserved">[ימין]</row>
+<row id="HB21518-L0243" source-line="243" niqqud="source-preserved"><shem recite="false">יוד</shem> <shem recite="false">הי</shem> <shem recite="false">ויו</shem> <shem recite="false">הי</shem></row>
+<row id="HB21518-L0244" source-line="244" niqqud="source-preserved"><shem recite="false">אלף</shem> <shem recite="false">הי</shem> <shem recite="false">יוד</shem> <shem recite="false">הי</shem></row>
+<row id="HB21518-L0245" source-line="245" niqqud="source-preserved"><shem recite="false">יוד</shem> <shem recite="false">הי</shem> <shem recite="false">ויו</shem> <shem recite="false">הי</shem></row>
+<row id="HB21518-L0246" source-line="246" niqqud="source-preserved"><shem recite="false">אלף</shem> <shem recite="false">הי</shem> <shem recite="false">יוד</shem> <shem recite="false">הי</shem></row>
+<lb source-line="247" />
+<row id="HB21518-L0248" source-line="248" niqqud="source-preserved">[אמצע]</row>
+<row id="HB21518-L0249" source-line="249" niqqud="source-preserved"><shem recite="false">יוד</shem> <shem recite="false">הא</shem> <shem recite="false">ואו</shem> <shem recite="false">הא</shem></row>
+<row id="HB21518-L0250" source-line="250" niqqud="source-preserved"><shem recite="false">אלף</shem> <shem recite="false">הא</shem> <shem recite="false">יוד</shem> <shem recite="false">הא</shem></row>
+<row id="HB21518-L0251" source-line="251" niqqud="source-preserved"><shem recite="false">יוד</shem> <shem recite="false">הה</shem> <shem recite="false">וו</shem> <shem recite="false">הה</shem></row>
+<row id="HB21518-L0252" source-line="252" niqqud="source-preserved"><shem recite="false">אלף</shem> <shem recite="false">הה</shem> <shem recite="false">יוד</shem> <shem recite="false">הה</shem></row>
+<lb source-line="253" />
+<row id="HB21518-L0254" source-line="254" niqqud="source-preserved">[שמאל]</row>
+<row id="HB21518-L0255" source-line="255" niqqud="source-preserved"><shem recite="false">יוד</shem> <shem recite="false">הי</shem> <shem recite="false">ואו</shem> <shem recite="false">הי</shem></row>
+<row id="HB21518-L0256" source-line="256" niqqud="source-preserved"><shem recite="false">אלף</shem> <shem recite="false">הי</shem> <shem recite="false">יוד</shem> <shem recite="false">הי</shem></row>
+<row id="HB21518-L0257" source-line="257" niqqud="source-preserved"><shem recite="false">יוד</shem> <shem recite="false">הי</shem> <shem recite="false">ואו</shem> <shem recite="false">הי</shem></row>
+<row id="HB21518-L0258" source-line="258" niqqud="source-preserved"><shem recite="false">אלף</shem> <shem recite="false">הי</shem> <shem recite="false">יוד</shem> <shem recite="false">הי</shem></row>
+<lb source-line="259" />
+<row id="HB21518-L0260" source-line="260" niqqud="source-preserved">[<abbr>ג&#x27;</abbr> כלי חכמה <abbr>דז&quot;א</abbr>]</row>
+<row id="HB21518-L0261" source-line="261" niqqud="source-preserved"><shem recite="false">יוד</shem> <shem recite="false">הי</shem> <shem recite="false">ואו</shem> <shem recite="false">הא</shem></row>
+<row id="HB21518-L0262" source-line="262" niqqud="source-preserved"><letter recite="false">י</letter> <shem recite="false">יה</shem> <shem recite="false">יהו</shem> <shem recite="false">יהוה</shem></row>
+<row id="HB21518-L0263" source-line="263" niqqud="source-preserved">ודי <shem recite="false">הא</shem> <shem recite="false">ואו</shem> <shem recite="false">הי</shem></row>
+<lb source-line="264" />
+<row id="HB21518-L0265" source-line="265" niqqud="source-preserved">[<abbr>ג&#x27;</abbr> כלי דעת <abbr>דז&quot;א</abbr>]</row>
+<row id="HB21518-L0266" source-line="266" niqqud="source-preserved"><shem recite="false">יוד</shem> <shem recite="false">הי</shem> <shem recite="false">ויו</shem> <shem recite="false">הי</shem></row>
+<row id="HB21518-L0267" source-line="267" niqqud="source-preserved"><shem recite="false">יוד</shem> <shem recite="false">הי</shem> <shem recite="false">ואו</shem> <shem recite="false">הי</shem></row>
+<row id="HB21518-L0268" source-line="268" niqqud="source-preserved"><shem recite="false">יוד</shem> <shem recite="false">הה</shem> <shem recite="false">וו</shem> <shem recite="false">הה</shem></row>
+<lb source-line="269" />
+<row id="HB21518-L0270" source-line="270" niqqud="source-preserved">[<abbr>ג&#x27;</abbr> כלי בינה <abbr>דז&quot;א</abbr>]</row>
+<row id="HB21518-L0271" source-line="271" niqqud="source-preserved"><shem recite="false">אלף</shem> <shem recite="false">אלף</shem> <shem recite="false">הא</shem> <shem recite="false">אלף</shem> <shem recite="false">הא</shem></row>
+<row id="HB21518-L0272" source-line="272" niqqud="source-preserved"><shem recite="false">יוד</shem> <shem recite="false">אלף</shem> <shem recite="false">הא</shem> <shem recite="false">יוד</shem> <shem recite="false">הא</shem></row>
+<row id="HB21518-L0273" source-line="273" niqqud="source-preserved"><shem recite="false">אלף</shem> <shem recite="false">הא</shem> <shem recite="false">יוד</shem> <shem recite="false">הא</shem></row>
+<row id="HB21518-L0274" source-line="274" niqqud="source-preserved"><shem recite="false">אהיה</shem></row>
+</table>
+<lb source-line="276" />
+</page>
+<page id="HB21518-p006" pdf="6" folio="ג ע&quot;א" marker="━━━━━━━━━━  דף ג ע&quot;א   (PDF 6)  ━━━━━━━━━━">
+<lb source-line="278" />
+<table id="HB21518-L0279" source-line="279" preserve-layout="true" niqqud="source-only" recite="false">
+<row id="HB21518-L0280" source-line="280" niqqud="source-preserved">[<abbr>ג&#x27;</abbr> כלי חסד]</row>
+<row id="HB21518-L0281" source-line="281" niqqud="source-preserved"><letter recite="false">א</letter> <shem recite="false">אל</shem> אלו <shem recite="false">אלוה</shem></row>
+<row id="HB21518-L0282" source-line="282" niqqud="source-preserved"><letter recite="false">א</letter> <letter recite="false">ל</letter> <letter recite="false">ו</letter> <letter recite="false">ה</letter></row>
+<row id="HB21518-L0283" source-line="283" niqqud="source-preserved"><shem recite="false">אלף</shem> <shem recite="false">למד</shem></row>
+<lb source-line="284" />
+<row id="HB21518-L0285" source-line="285" niqqud="source-preserved">[<abbr>ג&#x27;</abbr> כלי <abbr>ת&quot;ת</abbr>]</row>
+<row id="HB21518-L0286" source-line="286" niqqud="source-preserved"><shem recite="false">יוד</shem> <shem recite="false">הא</shem> <shem recite="false">ואו</shem> <shem recite="false">הא</shem></row>
+<row id="HB21518-L0287" source-line="287" niqqud="source-preserved"><letter recite="false">י</letter> <shem recite="false">יה</shem> <shem recite="false">יהו</shem> <shem recite="false">יהוה</shem></row>
+<row id="HB21518-L0288" source-line="288" niqqud="source-preserved"><letter recite="false">י</letter> <letter recite="false">ה</letter> <letter recite="false">ו</letter> <letter recite="false">ה</letter></row>
+<lb source-line="289" />
+<row id="HB21518-L0290" source-line="290" niqqud="source-preserved">[<abbr>ג&#x27;</abbr> כלי גבורה]</row>
+<row id="HB21518-L0291" source-line="291" niqqud="source-preserved"><letter recite="false">י</letter> <letter recite="false">ה</letter></row>
+<row id="HB21518-L0292" source-line="292" niqqud="source-preserved"><shem recite="false">אלף</shem> <shem recite="false">אלף</shem> <shem recite="false">למד</shem> <shem recite="false">אלף</shem> <shem recite="false">למד</shem> <shem recite="false">הי</shem> <shem recite="false">אלף</shem> <shem recite="false">למד</shem> <shem recite="false">הי</shem> <shem recite="false">יוד</shem> <shem recite="false">אלף</shem> <shem recite="false">למד</shem> <shem recite="false">הי</shem> <shem recite="false">יוד</shem> <shem recite="false">מם</shem></row>
+<row id="HB21518-L0293" source-line="293" niqqud="source-preserved"><source_pointing>יֱ</source_pointing> <source_pointing>הֹ</source_pointing> <source_pointing>וִ</source_pointing> <letter recite="false">ה</letter></row>
+<lb source-line="294" />
+<row id="HB21518-L0295" source-line="295" niqqud="source-preserved">[<abbr>ג&#x27;</abbr> כלי נצח]</row>
+<row id="HB21518-L0296" source-line="296" niqqud="source-preserved"><shem recite="false">יהוה</shem></row>
+<row id="HB21518-L0297" source-line="297" niqqud="source-preserved"><letter recite="false">צ</letter> צב צבא</row>
+<row id="HB21518-L0298" source-line="298" niqqud="source-preserved">צבא</row>
+<lb source-line="299" />
+<row id="HB21518-L0300" source-line="300" niqqud="source-preserved">[<abbr>ג&#x27;</abbr> כלי יסוד]</row>
+<row id="HB21518-L0301" source-line="301" niqqud="source-preserved"><shem recite="false">יאהדונהי</shem></row>
+<row id="HB21518-L0302" source-line="302" niqqud="source-preserved"><shem recite="false">שין</shem> <shem recite="false">שין</shem> <shem recite="false">דלת</shem> <shem recite="false">שין</shem> <shem recite="false">דלת</shem> <shem recite="false">יוד</shem></row>
+<row id="HB21518-L0303" source-line="303" niqqud="source-preserved"><shem recite="false">שין</shem> <shem recite="false">דלת</shem> <shem recite="false">יוד</shem></row>
+<lb source-line="304" />
+<row id="HB21518-L0305" source-line="305" niqqud="source-preserved">[<abbr>ג&#x27;</abbr> כלי <shem recite="false">הוד</shem>]</row>
+<row id="HB21518-L0306" source-line="306" niqqud="source-preserved"><shem recite="false">אדני</shem></row>
+<row id="HB21518-L0307" source-line="307" niqqud="source-preserved"><letter recite="false">א</letter> <shem recite="false">צבאו</shem> <shem recite="false">צבאות</shem></row>
+<row id="HB21518-L0308" source-line="308" niqqud="source-preserved">אות</row>
+</table>
+<lb source-line="310" />
+<p id="HB21518-L0311" source-line="311" niqqud="added-draft">וְכָזֶה יְכַוֵּיֽן לְהַמְשִׁיךְ <abbr>לחח&quot;ן</abbr> <abbr>בג&quot;ה</abbr> <abbr>דת&quot;י</abbr> דְּכָל עֲשָׂרָה פַּרְצוּפִים דְּכָל פַּרְצוּף מִשְּׁלֹשָׁה פַּרְצוּפִים <abbr>דנה&quot;י</abbr> הַכּוֹלְלִים <abbr>דפ&#x27;</abbr> חָכְמָה הַכּוֹלֵל <abbr>דזו&quot;ן</abbr>:</p>
+<p id="HB21518-L0312" source-line="312" niqqud="added-draft"><abbr>ואח&quot;כ</abbr> יְכַוֵּיֽן לְהַמְשִׁיךְ הַמֹּוֽחִין <abbr>הנז&#x27;</abbr> לְיַעֲקֹב וְרָחֵל:</p>
+<lb source-line="313" />
+<table id="HB21518-L0314" source-line="314" preserve-layout="true" niqqud="source-only" recite="false">
+<row id="HB21518-L0315" source-line="315" niqqud="source-preserved">[<abbr>ג&#x27;</abbr> כלי חכמה <abbr>דנוק&#x27;</abbr>]</row>
+<row id="HB21518-L0316" source-line="316" niqqud="source-preserved"><shem recite="false">יוד</shem> <shem recite="false">הא</shem> <shem recite="false">וו</shem> <shem recite="false">הה</shem></row>
+<row id="HB21518-L0317" source-line="317" niqqud="source-preserved"><shem recite="false">יוד</shem> <shem recite="false">יוד</shem> <shem recite="false">הא</shem></row>
+<row id="HB21518-L0318" source-line="318" niqqud="source-preserved"><shem recite="false">יוד</shem> <shem recite="false">הא</shem> <shem recite="false">וו</shem></row>
+<row id="HB21518-L0319" source-line="319" niqqud="source-preserved"><shem recite="false">יוד</shem> <shem recite="false">הא</shem> <shem recite="false">וו</shem> <shem recite="false">הה</shem></row>
+<row id="HB21518-L0320" source-line="320" niqqud="source-preserved"><letter recite="false">י</letter> <shem recite="false">יה</shem> <shem recite="false">יהו</shem> <shem recite="false">יהוה</shem></row>
+<lb source-line="321" />
+<row id="HB21518-L0322" source-line="322" niqqud="source-preserved">[<abbr>ג&#x27;</abbr> כלי דעת <abbr>דנוק&#x27;</abbr>]</row>
+<row id="HB21518-L0323" source-line="323" niqqud="source-preserved"><shem recite="false">יוד</shem> <shem recite="false">הה</shem> <shem recite="false">וו</shem> <shem recite="false">הה</shem></row>
+<row id="HB21518-L0324" source-line="324" niqqud="source-preserved"><shem recite="false">יוד</shem> <shem recite="false">יוד</shem> <shem recite="false">הה</shem> <shem recite="false">יוד</shem> <shem recite="false">הה</shem></row>
+<row id="HB21518-L0325" source-line="325" niqqud="source-preserved"><shem recite="false">וו</shem> <shem recite="false">יוד</shem> <shem recite="false">הה</shem> <shem recite="false">וו</shem> <shem recite="false">הה</shem></row>
+<row id="HB21518-L0326" source-line="326" niqqud="source-preserved"><shem recite="false">יוד</shem> <shem recite="false">יוד</shem> <shem recite="false">הא</shem> <shem recite="false">יוד</shem> <shem recite="false">הא</shem></row>
+<row id="HB21518-L0327" source-line="327" niqqud="source-preserved"><shem recite="false">ואו</shem> <shem recite="false">יוד</shem> <shem recite="false">הא</shem> <shem recite="false">ואו</shem> <shem recite="false">הא</shem></row>
+<lb source-line="328" />
+<row id="HB21518-L0329" source-line="329" niqqud="source-preserved">[<abbr>ג&#x27;</abbr> כלי בינה <abbr>דנוק&#x27;</abbr>]</row>
+<row id="HB21518-L0330" source-line="330" niqqud="source-preserved"><shem recite="false">אלף</shem> <shem recite="false">הה</shem> <shem recite="false">יוד</shem> <shem recite="false">הה</shem></row>
+<row id="HB21518-L0331" source-line="331" niqqud="source-preserved"><letter recite="false">א</letter> <letter recite="false">ה</letter> <letter recite="false">י</letter> <letter recite="false">ה</letter></row>
+<row id="HB21518-L0332" source-line="332" niqqud="source-preserved"><letter recite="false">א</letter> <shem recite="false">אה</shem> <shem recite="false">אהי</shem> <shem recite="false">אהיה</shem></row>
+<lb source-line="333" />
+<row id="HB21518-L0334" source-line="334" niqqud="source-preserved">[<abbr>ג&#x27;</abbr> כלי חסד <abbr>דנוק&#x27;</abbr>]</row>
+<row id="HB21518-L0335" source-line="335" niqqud="source-preserved"><shem recite="false">אלף</shem> <shem recite="false">למד</shem></row>
+<row id="HB21518-L0336" source-line="336" niqqud="source-preserved"><shem recite="false">אלף</shem> <shem recite="false">אלף</shem> <shem recite="false">למד</shem></row>
+<row id="HB21518-L0337" source-line="337" niqqud="source-preserved"><shem recite="false">אל</shem></row>
+<lb source-line="338" />
+<row id="HB21518-L0339" source-line="339" niqqud="source-preserved">[<abbr>ג&#x27;</abbr> כלי <abbr>ת&quot;ת</abbr> <abbr>דנוק&#x27;</abbr>]</row>
+<row id="HB21518-L0340" source-line="340" niqqud="source-preserved"><shem recite="false">אלף</shem> <shem recite="false">למד</shem> <shem recite="false">הי</shem> <shem recite="false">יוד</shem> <shem recite="false">מם</shem></row>
+<row id="HB21518-L0341" source-line="341" niqqud="source-preserved"><letter recite="false">צ</letter> <letter recite="false">ב</letter> <letter recite="false">א</letter> <letter recite="false">ו</letter> <letter recite="false">ת</letter></row>
+<row id="HB21518-L0342" source-line="342" niqqud="source-preserved"><letter recite="false">ה</letter> <letter recite="false">ש</letter> <letter recite="false">ת</letter> <letter recite="false">פ</letter> <letter recite="false">א</letter></row>
+<lb source-line="343" />
+<row id="HB21518-L0344" source-line="344" niqqud="source-preserved">[<abbr>ג&#x27;</abbr> כלי גבורה]</row>
+<row id="HB21518-L0345" source-line="345" niqqud="source-preserved"><shem recite="false">יֱהֹוִה</shem></row>
+<row id="HB21518-L0346" source-line="346" niqqud="source-preserved"><shem recite="false">אלהים</shem></row>
+<row id="HB21518-L0347" source-line="347" niqqud="source-preserved"><shem recite="false">אכדטם</shem></row>
+<lb source-line="348" />
+<row id="HB21518-L0349" source-line="349" niqqud="source-preserved">[<abbr>ג&#x27;</abbr> כלי נצח <abbr>דנוק&#x27;</abbr>]</row>
+<row id="HB21518-L0350" source-line="350" niqqud="source-preserved"><shem recite="false">אל</shem></row>
+<row id="HB21518-L0351" source-line="351" niqqud="source-preserved"><letter recite="false">א</letter> <shem recite="false">אל</shem></row>
+<row id="HB21518-L0352" source-line="352" niqqud="source-preserved">בם</row>
+<lb source-line="353" />
+<row id="HB21518-L0354" source-line="354" niqqud="source-preserved">[<abbr>ג&#x27;</abbr> כלי יסוד <abbr>דנוק&#x27;</abbr>]</row>
+<row id="HB21518-L0355" source-line="355" niqqud="source-preserved"><shem recite="false">שין</shem> <shem recite="false">דלת</shem> <shem recite="false">יוד</shem></row>
+<row id="HB21518-L0356" source-line="356" niqqud="source-preserved"><letter recite="false">ש</letter> <letter recite="false">ד</letter> <letter recite="false">י</letter></row>
+<row id="HB21518-L0357" source-line="357" niqqud="source-preserved"><letter recite="false">ש</letter> <shem recite="false">שד</shem> <shem recite="false">שדי</shem></row>
+<lb source-line="358" />
+<row id="HB21518-L0359" source-line="359" niqqud="source-preserved">[<abbr>ג&#x27;</abbr> כלי <shem recite="false">הוד</shem> <abbr>דנוק&#x27;</abbr>]</row>
+<row id="HB21518-L0360" source-line="360" niqqud="source-preserved"><shem recite="false">אלהים</shem></row>
+<row id="HB21518-L0361" source-line="361" niqqud="source-preserved"><letter recite="false">א</letter> <shem recite="false">אל</shem> אלה <shem recite="false">אלהי</shem> <shem recite="false">אלהים</shem></row>
+<row id="HB21518-L0362" source-line="362" niqqud="source-preserved">במוכן</row>
+<lb source-line="363" />
+<row id="HB21518-L0364" source-line="364" niqqud="source-preserved">[<abbr>ג&#x27;</abbr> כלי מלכות <abbr>דנוק&#x27;</abbr>]</row>
+<row id="HB21518-L0365" source-line="365" niqqud="source-preserved"><shem recite="false">אלף</shem> <shem recite="false">דלת</shem> <shem recite="false">נון</shem> <shem recite="false">יוד</shem></row>
+<row id="HB21518-L0366" source-line="366" niqqud="source-preserved"><letter recite="false">א</letter> <letter recite="false">ד</letter> <letter recite="false">נ</letter> <letter recite="false">י</letter></row>
+<row id="HB21518-L0367" source-line="367" niqqud="source-preserved"><letter recite="false">א</letter> אד אדנ <shem recite="false">אדני</shem></row>
+</table>
+<lb source-line="369" />
+</page>
+<page id="HB21518-p007" pdf="7" folio="ג ע&quot;ב" marker="━━━━━━━━━━  דף ג ע&quot;ב   (PDF 7)  ━━━━━━━━━━">
+<lb source-line="371" />
+<p id="HB21518-L0372" source-line="372" niqqud="added-draft">וּבְכֹחַ לִמּוּדֵינוּ יֻוֽמְשְׁכוּ <abbr>חח&quot;ן</abbr> <abbr>בג&quot;ה</abbr> <abbr>דת&quot;י</abbr> <abbr>דחו&quot;ג</abbr> <abbr>דנה&quot;י</abbr> <abbr>וחג&quot;ת</abbr> <abbr>וחב&quot;ד</abbr> דְּאַרְבָּעָה פַּרְצוּפֵי <abbr>חו&quot;ב</abbr> <abbr>וחו&quot;ג</abbr> דְּאַרְבַּע מוֹחִין הַכּוֹלְלִים <abbr>דפר&#x27;</abbr> הַכְּתָרִים <abbr>דישסו&quot;ת</abbr> <abbr>ודאו&quot;א</abbr> <abbr>לחח&quot;ן</abbr> <abbr>בג&quot;ה</abbr> <abbr>דת&quot;י</abbr> <abbr>דחו&quot;ג</abbr> <abbr>דנה&quot;י</abbr> <abbr>וחג&quot;ת</abbr> <abbr>וחב&quot;ד</abbr> דְּאַרְבָּעָה פַּרְצוּפֵי <abbr>חו&quot;ב</abbr> <abbr>וחו&quot;ג</abbr> דְּאַרְבַּע מוֹחִין הַכּוֹלְלִים <abbr>דפרצו&#x27;</abbr> הַכֶּתֶר דְּפַרְצוּפֵי חָכְמָה וּבִינָה הַכּוֹלְלִים <abbr>דזו&quot;ן</abbr>:</p>
+<lb source-line="373" />
+<p id="HB21518-L0374" source-line="374" niqqud="added-draft">וְכֵן יִמָּשְׁכוּ הַמֹּוֽחִין <abbr>דנה&quot;י</abbr> <abbr>וחג&quot;ת</abbr> <abbr>וחב&quot;ד</abbr> דְּאַרְבָּעָה פַּרְצוּפֵי <abbr>חו&quot;ב</abbr> <abbr>וחו&quot;ג</abbr> <abbr>דמ&quot;ה</abbr> <abbr>וב&quot;ן</abbr> דַּחֲמִשָּׁה פַּרְצוּפֵי הַכֶּתֶר <abbr>דז&quot;א</abbr> הַנִּמְשָׁכִים <abbr>מחח&quot;ן</abbr> <abbr>בג&quot;ה</abbr> <abbr>דת&quot;י</abbr> <abbr>דנה&quot;י</abbr> <abbr>וחג&quot;ת</abbr> <abbr>וחב&quot;ד</abbr> הַכּוֹלְלִים דְּמוֹחָא סְתִימָאָה חָכְמָה <abbr>דמ&quot;ה</abbr> <abbr>וב&quot;ן</abbr> <abbr>דא&quot;א</abbr> [שֶׁהֵם <abbr>נרנח&quot;י</abbr> דְּחַיָּה] <abbr>ומחח&quot;ן</abbr> <abbr>בג&quot;ה</abbr> <abbr>דת&quot;י</abbr> <abbr>דנה&quot;י</abbr> <abbr>וחג&quot;ת</abbr> <abbr>וחב&quot;ד</abbr> הַכּוֹלְלִים דְּגֻולְגָּלְתָּא כֶּתֶר <abbr>דמ&quot;ה</abbr> <abbr>וב&quot;ן</abbr> <abbr>דא&quot;א</abbr> [שֶׁהֵם <abbr>נרנח&quot;י</abbr> דִּיחִידָה] מְלֻוֽבָּשִׁים בְּחֶלְקֵי הִתְפַּשְּׁטוּת הָאֲחוֹרַיִם הָהֵם <abbr>דא&quot;א</abbr> שֶׁעָלוּ וְנִתַּקְּנוּ וְנַעֲשׂוּ דְּמוּת צֶלֶם לְמוֹחִין הָהֵם דְּכֶתֶר וּבְתוֹכָם מְלֻוֽבָּשִׁים הַהֲוָיוֹת <shem recite="false">והאהיה</shem> הַמְנֻוֽקָּדוֹת שֶׁהֵם <abbr>נרנח&quot;י</abbr> <abbr>דנרנח&quot;י</abbr> <abbr>דמ&quot;ה</abbr> <abbr>וב&quot;ן</abbr> <abbr>דמ&quot;ה</abbr> <abbr>ומ&quot;ה</abbr> <abbr>וב&quot;ן</abbr> <abbr>דב&quot;ן</abbr> דִּיחִידָה <abbr>לחח&quot;ן</abbr> <abbr>בג&quot;ה</abbr> <abbr>דת&quot;י</abbr> <abbr>דנה&quot;י</abbr> <abbr>וחג&quot;ת</abbr> <abbr>וחב&quot;ד</abbr> דַּחֲמִשָּׁה פַּרְצוּפֵי הַכֶּתֶר דִּזְעֵיר אַנְפִּין:</p>
+<lb source-line="375" />
+<p id="HB21518-L0376" source-line="376" niqqud="added-draft"><abbr>חב&quot;ד</abbr> <abbr>חג&quot;ת</abbr> <abbr>נה&quot;י</abbr> <abbr>דמ&quot;ה</abbr> <abbr>וב&quot;ן</abbr> עִם <abbr>נרנח&quot;י</abbr> <abbr>דנרנח&quot;י</abbr> <abbr>דחו&quot;ב</abbr> <abbr>חו&quot;ג</abbr> דְּכֶתֶר <abbr>דפר&#x27;</abbr> בִּינָה <abbr>ודפר&#x27;</abbr> חָכְמָה <abbr>ודפר&#x27;</abbr> כֶּתֶר.</p>
+<lb source-line="377" />
+<table id="HB21518-L0378" source-line="378" preserve-layout="true" niqqud="source-only" recite="false">
+<row id="HB21518-L0379" source-line="379" niqqud="source-preserved">[טור ימין]</row>
+<row id="HB21518-L0380" source-line="380" niqqud="source-preserved"><shem recite="false">אַהַיַהַ</shem> <shem recite="false">אַהַיַהַ</shem></row>
+<row id="HB21518-L0381" source-line="381" niqqud="source-preserved"><shem recite="false">יַהַוַהַ</shem> <shem recite="false">יַהַוַהַ</shem></row>
+<row id="HB21518-L0382" source-line="382" niqqud="source-preserved"><shem recite="false">אֶהֶיֶהֶ</shem> <shem recite="false">אֶהֶיֶהֶ</shem></row>
+<row id="HB21518-L0383" source-line="383" niqqud="source-preserved"><shem recite="false">יֶהֶוֶהֶ</shem> <shem recite="false">יֶהֶוֶהֶ</shem></row>
+<row id="HB21518-L0384" source-line="384" niqqud="source-preserved"><shem recite="false">אִהִיִהִ</shem> <shem recite="false">אִהִיִהִ</shem></row>
+<row id="HB21518-L0385" source-line="385" niqqud="source-preserved"><shem recite="false">יִהִוִהִ</shem> <shem recite="false">יִהִוִהִ</shem></row>
+<lb source-line="386" />
+<row id="HB21518-L0387" source-line="387" niqqud="source-preserved">[טור אמצעי]</row>
+<row id="HB21518-L0388" source-line="388" niqqud="source-preserved"><shem recite="false">אֹהֵיָהֵ</shem> <shem recite="false">אֹהֵיָהֵ</shem> <shem recite="false">אֹהֵיָהֵ</shem> <shem recite="false">אֹהֵיָהֵ</shem></row>
+<row id="HB21518-L0389" source-line="389" niqqud="source-preserved"><shem recite="false">יֹהֵוָהֵ</shem> <shem recite="false">יֹהֵוָהֵ</shem> <shem recite="false">יֹהֵוָהֵ</shem> <shem recite="false">יֹהֵוָהֵ</shem></row>
+<row id="HB21518-L0390" source-line="390" niqqud="source-preserved"><shem recite="false">אֹהֹיֹהֹ</shem> <shem recite="false">אֹהֹיֹהֹ</shem> <shem recite="false">אֹהֹיֹהֹ</shem> <shem recite="false">אֹהֹיֹהֹ</shem></row>
+<row id="HB21518-L0391" source-line="391" niqqud="source-preserved"><shem recite="false">יֹהֹוֹהֹ</shem> <shem recite="false">יֹהֹוֹהֹ</shem> <shem recite="false">יֹהֹוֹהֹ</shem> <shem recite="false">יֹהֹוֹהֹ</shem></row>
+<row id="HB21518-L0392" source-line="392" niqqud="source-preserved"><source_pointing>אוּהוּיוּהוּ</source_pointing> <source_pointing>אוּהוּיוּהוּ</source_pointing> <source_pointing>אוּהוּיוּהוּ</source_pointing> <source_pointing>אוּהוּיוּהוּ</source_pointing></row>
+<row id="HB21518-L0393" source-line="393" niqqud="source-preserved"><source_pointing>יוּהוּווּהוּ</source_pointing> <source_pointing>יוּהוּווּהוּ</source_pointing> <source_pointing>יוּהוּווּהוּ</source_pointing> <source_pointing>יוּהוּווּהוּ</source_pointing></row>
+<lb source-line="394" />
+<row id="HB21518-L0395" source-line="395" niqqud="source-preserved">[טור שמאל]</row>
+<row id="HB21518-L0396" source-line="396" niqqud="source-preserved"><shem recite="false">אֵהֵיֵהֵ</shem> <shem recite="false">אֵהֵיֵהֵ</shem></row>
+<row id="HB21518-L0397" source-line="397" niqqud="source-preserved"><shem recite="false">יֵהֵוֵהֵ</shem> <shem recite="false">יֵהֵוֵהֵ</shem></row>
+<row id="HB21518-L0398" source-line="398" niqqud="source-preserved"><shem recite="false">אְהְיְהְ</shem> <shem recite="false">אְהְיְהְ</shem></row>
+<row id="HB21518-L0399" source-line="399" niqqud="source-preserved"><shem recite="false">יְהְוְהְ</shem> <shem recite="false">יְהְוְהְ</shem></row>
+<row id="HB21518-L0400" source-line="400" niqqud="source-preserved"><shem recite="false">אֻהֻיֻהֻ</shem> <shem recite="false">אֻהֻיֻהֻ</shem></row>
+<row id="HB21518-L0401" source-line="401" niqqud="source-preserved"><shem recite="false">יֻהֻוֻהֻ</shem> <shem recite="false">יֻהֻוֻהֻ</shem></row>
+<lb source-line="402" />
+<row id="HB21518-L0403" source-line="403" niqqud="source-preserved">[<abbr>ג&#x27;</abbr> כלי חכמה <abbr>דז&quot;א</abbr>]</row>
+<row id="HB21518-L0404" source-line="404" niqqud="source-preserved"><shem recite="false">יוד</shem> <shem recite="false">הי</shem> <shem recite="false">ואו</shem> <shem recite="false">הא</shem></row>
+<row id="HB21518-L0405" source-line="405" niqqud="source-preserved"><letter recite="false">י</letter> <shem recite="false">יה</shem> <shem recite="false">יהו</shem> <shem recite="false">יהוה</shem></row>
+<row id="HB21518-L0406" source-line="406" niqqud="source-preserved"><shem recite="false">יוד</shem> <shem recite="false">הא</shem> <shem recite="false">ואו</shem> <shem recite="false">הא</shem></row>
+<lb source-line="407" />
+<row id="HB21518-L0408" source-line="408" niqqud="source-preserved">[<abbr>ג&#x27;</abbr> כלי דעת <abbr>דז&quot;א</abbr>]</row>
+<row id="HB21518-L0409" source-line="409" niqqud="source-preserved"><shem recite="false">יוד</shem> <shem recite="false">הי</shem> <shem recite="false">ויו</shem> <shem recite="false">הי</shem></row>
+<row id="HB21518-L0410" source-line="410" niqqud="source-preserved"><shem recite="false">יוד</shem> <shem recite="false">הי</shem> <shem recite="false">ואו</shem> <shem recite="false">הי</shem></row>
+<row id="HB21518-L0411" source-line="411" niqqud="source-preserved"><shem recite="false">יוד</shem> <shem recite="false">הה</shem> <shem recite="false">וו</shem> <shem recite="false">הה</shem></row>
+<lb source-line="412" />
+<row id="HB21518-L0413" source-line="413" niqqud="source-preserved">[<abbr>ג&#x27;</abbr> כלי בינה <abbr>דז&quot;א</abbr>]</row>
+<row id="HB21518-L0414" source-line="414" niqqud="source-preserved"><shem recite="false">אלף</shem> <shem recite="false">אלף</shem> <shem recite="false">הא</shem> <shem recite="false">אלף</shem> <shem recite="false">הא</shem> <shem recite="false">יוד</shem></row>
+<row id="HB21518-L0415" source-line="415" niqqud="source-preserved"><shem recite="false">אלף</shem> <shem recite="false">הא</shem> <shem recite="false">יוד</shem> <shem recite="false">הא</shem></row>
+<row id="HB21518-L0416" source-line="416" niqqud="source-preserved"><shem recite="false">אלף</shem> <shem recite="false">הא</shem> <shem recite="false">יוד</shem> <shem recite="false">הא</shem></row>
+<row id="HB21518-L0417" source-line="417" niqqud="source-preserved"><shem recite="false">אהיה</shem></row>
+</table>
+<lb source-line="419" />
+</page>
+<page id="HB21518-p008" pdf="8" folio="ד ע&quot;א" marker="━━━━━━━━━━  דף ד ע&quot;א   (PDF 8)  ━━━━━━━━━━">
+<lb source-line="421" />
+<table id="HB21518-L0422" source-line="422" preserve-layout="true" niqqud="source-only" recite="false">
+<row id="HB21518-L0423" source-line="423" niqqud="source-preserved">[<abbr>ג&#x27;</abbr> כלי חסד <abbr>דז&quot;א</abbr>]</row>
+<row id="HB21518-L0424" source-line="424" niqqud="source-preserved"><letter recite="false">א</letter> <shem recite="false">אל</shem> אלו <shem recite="false">אלוה</shem></row>
+<row id="HB21518-L0425" source-line="425" niqqud="source-preserved"><shem recite="false">אלוה</shem></row>
+<row id="HB21518-L0426" source-line="426" niqqud="source-preserved"><shem recite="false">אלף</shem> <shem recite="false">למד</shem></row>
+<lb source-line="427" />
+<row id="HB21518-L0428" source-line="428" niqqud="source-preserved">[<abbr>ג&#x27;</abbr> כלי <abbr>ת&quot;ת</abbr> <abbr>דז&quot;א</abbr>]</row>
+<row id="HB21518-L0429" source-line="429" niqqud="source-preserved"><shem recite="false">יוד</shem> <shem recite="false">הא</shem> <shem recite="false">ואו</shem> <shem recite="false">הא</shem></row>
+<row id="HB21518-L0430" source-line="430" niqqud="source-preserved"><letter recite="false">י</letter> <shem recite="false">יה</shem> <shem recite="false">יהו</shem> <shem recite="false">יהוה</shem></row>
+<row id="HB21518-L0431" source-line="431" niqqud="source-preserved"><shem recite="false">יהוה</shem></row>
+<lb source-line="432" />
+<row id="HB21518-L0433" source-line="433" niqqud="source-preserved">[<abbr>ג&#x27;</abbr> כלי גבורה <abbr>דז&quot;א</abbr>]</row>
+<row id="HB21518-L0434" source-line="434" niqqud="source-preserved"><letter recite="false">י</letter> <letter recite="false">ה</letter></row>
+<row id="HB21518-L0435" source-line="435" niqqud="source-preserved"><shem recite="false">אלף</shem> <shem recite="false">אלף</shem> <shem recite="false">למד</shem> <shem recite="false">אלף</shem> <shem recite="false">למד</shem> <shem recite="false">הי</shem></row>
+<row id="HB21518-L0436" source-line="436" niqqud="source-preserved"><shem recite="false">אלף</shem> <shem recite="false">למד</shem> <shem recite="false">הי</shem> <shem recite="false">יוד</shem></row>
+<row id="HB21518-L0437" source-line="437" niqqud="source-preserved"><shem recite="false">אלף</shem> <shem recite="false">למד</shem> <shem recite="false">הי</shem> <shem recite="false">יוד</shem> <shem recite="false">מם</shem></row>
+<row id="HB21518-L0438" source-line="438" niqqud="source-preserved"><shem recite="false">יֱהֹוִה</shem></row>
+<lb source-line="439" />
+<row id="HB21518-L0440" source-line="440" niqqud="source-preserved">[<abbr>ג&#x27;</abbr> כלי נצח]</row>
+<row id="HB21518-L0441" source-line="441" niqqud="source-preserved"><shem recite="false">יהוה</shem></row>
+<row id="HB21518-L0442" source-line="442" niqqud="source-preserved"><letter recite="false">צ</letter> צב צבא</row>
+<row id="HB21518-L0443" source-line="443" niqqud="source-preserved">צבא</row>
+<lb source-line="444" />
+<row id="HB21518-L0445" source-line="445" niqqud="source-preserved">[<abbr>ג&#x27;</abbr> כלי יסוד]</row>
+<row id="HB21518-L0446" source-line="446" niqqud="source-preserved"><shem recite="false">יאהדונהי</shem></row>
+<row id="HB21518-L0447" source-line="447" niqqud="source-preserved"><shem recite="false">שין</shem> <shem recite="false">שין</shem> <shem recite="false">דלת</shem> <shem recite="false">שין</shem></row>
+<row id="HB21518-L0448" source-line="448" niqqud="source-preserved"><shem recite="false">דלת</shem> <shem recite="false">יוד</shem></row>
+<row id="HB21518-L0449" source-line="449" niqqud="source-preserved"><shem recite="false">שין</shem> <shem recite="false">דלת</shem> <shem recite="false">יוד</shem></row>
+<lb source-line="450" />
+<row id="HB21518-L0451" source-line="451" niqqud="source-preserved">[<abbr>ג&#x27;</abbr> כלי <shem recite="false">הוד</shem> <abbr>דז&quot;א</abbr>]</row>
+<row id="HB21518-L0452" source-line="452" niqqud="source-preserved"><shem recite="false">אדני</shem></row>
+<row id="HB21518-L0453" source-line="453" niqqud="source-preserved"><letter recite="false">א</letter> <shem recite="false">צבאו</shem> <shem recite="false">צבאות</shem></row>
+<row id="HB21518-L0454" source-line="454" niqqud="source-preserved">אות</row>
+</table>
+<lb source-line="456" />
+<p id="HB21518-L0457" source-line="457" niqqud="added-draft"><abbr>אח&quot;כ</abbr> יְכַוֵּיֽן לְהַמְשִׁיךְ הַמֹּוֽחִין <abbr>דחו&quot;ב</abbr> <abbr>וחו&quot;ג</abbr> <abbr>הנז&#x27;</abbr> <abbr>לפר&#x27;</abbr> בִּינָה <abbr>ולפר&#x27;</abbr> חָכְמָה <abbr>ולפר&#x27;</abbr> הַכֶּתֶר דְּיַעֲקֹב וְרָחֵל <abbr>ע&quot;ד</abbr> <abbr>הנז&quot;ל</abbr>:</p>
+<lb source-line="458" />
+<table id="HB21518-L0459" source-line="459" preserve-layout="true" niqqud="source-only" recite="false">
+<row id="HB21518-L0460" source-line="460" niqqud="source-preserved">[חכמה <abbr>דנוק&#x27;</abbr>]</row>
+<row id="HB21518-L0461" source-line="461" niqqud="source-preserved"><shem recite="false">יוד</shem> <shem recite="false">הא</shem> <shem recite="false">וו</shem> <shem recite="false">הה</shem></row>
+<row id="HB21518-L0462" source-line="462" niqqud="source-preserved"><shem recite="false">יוד</shem> <shem recite="false">יוד</shem> <shem recite="false">הא</shem></row>
+<row id="HB21518-L0463" source-line="463" niqqud="source-preserved"><shem recite="false">יוד</shem> <shem recite="false">הא</shem> <shem recite="false">וו</shem></row>
+<row id="HB21518-L0464" source-line="464" niqqud="source-preserved"><shem recite="false">יוד</shem> <shem recite="false">הא</shem> <shem recite="false">וו</shem> <shem recite="false">הה</shem></row>
+<row id="HB21518-L0465" source-line="465" niqqud="source-preserved"><letter recite="false">י</letter> <shem recite="false">יה</shem> <shem recite="false">יהו</shem> <shem recite="false">יהוה</shem></row>
+<lb source-line="466" />
+<row id="HB21518-L0467" source-line="467" niqqud="source-preserved">[דעת <abbr>דנוק&#x27;</abbr>]</row>
+<row id="HB21518-L0468" source-line="468" niqqud="source-preserved"><shem recite="false">יוד</shem> <shem recite="false">הה</shem> <shem recite="false">וו</shem> <shem recite="false">הה</shem></row>
+<row id="HB21518-L0469" source-line="469" niqqud="source-preserved"><shem recite="false">יוד</shem> <shem recite="false">יוד</shem> <shem recite="false">הה</shem> <shem recite="false">יוד</shem> <shem recite="false">הה</shem></row>
+<row id="HB21518-L0470" source-line="470" niqqud="source-preserved"><shem recite="false">וו</shem> <shem recite="false">יוד</shem> <shem recite="false">הה</shem> <shem recite="false">וו</shem> <shem recite="false">הה</shem></row>
+<row id="HB21518-L0471" source-line="471" niqqud="source-preserved"><shem recite="false">יוד</shem> <shem recite="false">יוד</shem> <shem recite="false">הא</shem> <shem recite="false">יוד</shem> <shem recite="false">הא</shem></row>
+<row id="HB21518-L0472" source-line="472" niqqud="source-preserved"><shem recite="false">ואו</shem> <shem recite="false">יוד</shem> <shem recite="false">הא</shem> <shem recite="false">ואו</shem> <shem recite="false">הא</shem></row>
+<lb source-line="473" />
+<row id="HB21518-L0474" source-line="474" niqqud="source-preserved">[בינה <abbr>דנוק&#x27;</abbr>]</row>
+<row id="HB21518-L0475" source-line="475" niqqud="source-preserved"><shem recite="false">אלף</shem> <shem recite="false">הה</shem> <shem recite="false">יוד</shem> <shem recite="false">הה</shem></row>
+<row id="HB21518-L0476" source-line="476" niqqud="source-preserved"><letter recite="false">א</letter> <letter recite="false">ה</letter> <letter recite="false">י</letter> <letter recite="false">ה</letter></row>
+<row id="HB21518-L0477" source-line="477" niqqud="source-preserved"><letter recite="false">א</letter> <shem recite="false">אה</shem> <shem recite="false">אהי</shem> <shem recite="false">אהיה</shem></row>
+<lb source-line="478" />
+<row id="HB21518-L0479" source-line="479" niqqud="source-preserved">[חסד <abbr>דנוק&#x27;</abbr>]</row>
+<row id="HB21518-L0480" source-line="480" niqqud="source-preserved"><shem recite="false">אלף</shem> <shem recite="false">למד</shem></row>
+<row id="HB21518-L0481" source-line="481" niqqud="source-preserved"><shem recite="false">אלף</shem> <shem recite="false">אלף</shem> <shem recite="false">למד</shem></row>
+<row id="HB21518-L0482" source-line="482" niqqud="source-preserved"><shem recite="false">אל</shem></row>
+<lb source-line="483" />
+<row id="HB21518-L0484" source-line="484" niqqud="source-preserved">[<abbr>ת&quot;ת</abbr> <abbr>דנוק&#x27;</abbr>]</row>
+<row id="HB21518-L0485" source-line="485" niqqud="source-preserved"><shem recite="false">אלף</shem> <shem recite="false">למד</shem> <shem recite="false">הי</shem> <shem recite="false">יוד</shem> <shem recite="false">מם</shem></row>
+<row id="HB21518-L0486" source-line="486" niqqud="source-preserved"><letter recite="false">צ</letter> <letter recite="false">ב</letter> <letter recite="false">א</letter> <letter recite="false">ו</letter> <letter recite="false">ת</letter></row>
+<row id="HB21518-L0487" source-line="487" niqqud="source-preserved"><letter recite="false">ה</letter> <letter recite="false">ש</letter> <letter recite="false">ת</letter> <letter recite="false">פ</letter> <letter recite="false">א</letter></row>
+<lb source-line="488" />
+<row id="HB21518-L0489" source-line="489" niqqud="source-preserved">[גבורה <abbr>דנוק&#x27;</abbr>]</row>
+<row id="HB21518-L0490" source-line="490" niqqud="source-preserved"><shem recite="false">יֱהֹוִה</shem></row>
+<row id="HB21518-L0491" source-line="491" niqqud="source-preserved"><shem recite="false">אלהים</shem></row>
+<row id="HB21518-L0492" source-line="492" niqqud="source-preserved"><shem recite="false">אכדטם</shem></row>
+<lb source-line="493" />
+<row id="HB21518-L0494" source-line="494" niqqud="source-preserved">[נצח <abbr>דנוק&#x27;</abbr>]</row>
+<row id="HB21518-L0495" source-line="495" niqqud="source-preserved"><shem recite="false">אל</shem></row>
+<row id="HB21518-L0496" source-line="496" niqqud="source-preserved"><letter recite="false">א</letter> <shem recite="false">אל</shem></row>
+<row id="HB21518-L0497" source-line="497" niqqud="source-preserved">בם</row>
+<lb source-line="498" />
+<row id="HB21518-L0499" source-line="499" niqqud="source-preserved">[יסוד <abbr>דנוק&#x27;</abbr>]</row>
+<row id="HB21518-L0500" source-line="500" niqqud="source-preserved"><shem recite="false">שין</shem> <shem recite="false">דלת</shem> <shem recite="false">יוד</shem></row>
+<row id="HB21518-L0501" source-line="501" niqqud="source-preserved"><letter recite="false">ש</letter> <letter recite="false">ד</letter> <letter recite="false">י</letter></row>
+<row id="HB21518-L0502" source-line="502" niqqud="source-preserved"><letter recite="false">ש</letter> <shem recite="false">שד</shem> <shem recite="false">שדי</shem></row>
+<lb source-line="503" />
+<row id="HB21518-L0504" source-line="504" niqqud="source-preserved">[<shem recite="false">הוד</shem> <abbr>דנוק&#x27;</abbr>]</row>
+<row id="HB21518-L0505" source-line="505" niqqud="source-preserved"><shem recite="false">אלהים</shem></row>
+<row id="HB21518-L0506" source-line="506" niqqud="source-preserved"><letter recite="false">א</letter> <shem recite="false">אל</shem> אלה <shem recite="false">אלהי</shem> <shem recite="false">אלהים</shem></row>
+<row id="HB21518-L0507" source-line="507" niqqud="source-preserved">במוכן</row>
+<lb source-line="508" />
+<row id="HB21518-L0509" source-line="509" niqqud="source-preserved">[<abbr>מל&#x27;</abbr> <abbr>דנוק&#x27;</abbr>]</row>
+<row id="HB21518-L0510" source-line="510" niqqud="source-preserved"><shem recite="false">אלף</shem> <shem recite="false">דלת</shem> <shem recite="false">נון</shem> <shem recite="false">יוד</shem></row>
+<row id="HB21518-L0511" source-line="511" niqqud="source-preserved"><letter recite="false">א</letter> <letter recite="false">ד</letter> <letter recite="false">נ</letter> <letter recite="false">י</letter></row>
+<row id="HB21518-L0512" source-line="512" niqqud="source-preserved"><letter recite="false">א</letter> אד אדנ <shem recite="false">אדני</shem></row>
+</table>
+<lb source-line="514" />
+</page>
+<page id="HB21518-p009" pdf="9" folio="ד ע&quot;ב" marker="━━━━━━━━━━  דף ד ע&quot;ב   (PDF 9)  ━━━━━━━━━━">
+<lb source-line="516" />
+<p id="HB21518-L0517" source-line="517" niqqud="added-draft"><abbr>ויר&quot;מי</abbr> <abbr>או&quot;א</abbr> שֶׁבִּסְגֻוֽלַּת הַלִּיֽמּוּד אֲשֶׁר אַלִּמּוּד מִכָּל סֵפֶר <abbr>מכ&quot;ד</abbr> סְפָרִים דְּתוֹרָה נְבִיאִים וּכְתוּבִים שֶׁיִּמָּשְׁכוּ <abbr>מי&quot;ב</abbr> תִּקּוּנֵי דְּיִקְנֶה <abbr>דא&quot;א</abbr> <abbr>ומי&quot;ב</abbr> תִּיֽקּוּנֵי דְּיִקְנֶה <abbr>דז&quot;א</abbr> <abbr>כ&quot;ד</abbr> אוֹרוֹת לְקַשֵּׁט אֶת הַשְּׁכִינָה <abbr>נוק&#x27;</abbr> קַדִּישָׁא <abbr>דז&quot;א</abbr> <abbr>בכ&quot;ד</abbr> תַּכְשִׁיטִין קַדִּישִׁין וּבִסְגֻוֽלַּת הַפְּסוּקִין אֲשֶׁר אַלִּמּוּד מִכָּל סֵפֶר <abbr>מי&quot;ב</abbr> סְפָרִים הָרִאשׁוֹנִים שֶׁיִּמָּשְׁכוּ מִשְּׁלֹשָׁה שֵׁמוֹת <abbr>דע&quot;ב</abbr> <abbr>די&quot;ב</abbr> תִּיֽקּוּנֵי דְּיִקְנֶה <abbr>דא&quot;א</abbr> <abbr>י&quot;ב</abbr> אוֹרוֹת שֶׁהֵם <abbr>י&quot;ב</abbr> <abbr>צירופ&#x27;</abbr> הָרִאשׁוֹנִים <abbr>מכ&quot;ד</abbr> <abbr>צירופ&#x27;</abbr> <shem recite="false">אדני</shem> <abbr>י&quot;ב</abbr> תַּכְשִׁיטִין <abbr>לי&quot;ב</abbr> תִּיֽקּוּנֵי רֵישָׁא <abbr>דנוק&#x27;</abbr> קַדִּישָׁא <abbr>דז&quot;א</abbr>:</p>
+<lb source-line="518" />
+<p id="HB21518-L0519" source-line="519" niqqud="added-draft">בְּרֵאשִׁית — <source_pointing>יֻפָ</source_pointing> <source_pointing>בֻןָ</source_pointing> — מִתִּיֽקּוּן <abbr>א&#x27;</abbr> דְּדַיְּקָנָהּ <abbr>דא&quot;א</abbr> &quot;מִי <shem recite="false">אל</shem> <abbr>כמוך&quot;</abbr> — מַלְכוּת <abbr>מקי&#x27;</abbr> בִּינָה <abbr>פנימי&#x27;</abbr>. <shem recite="false">יוד</shem> <abbr>דע&quot;ב</abbr> אוֹר. <shem recite="false">אלף</shem> <abbr>דקס&quot;א</abbr> כְּלִי. <source_pointing>יֻבֻפָןָ</source_pointing> <shem recite="false">אדני</shem> לְגֻולְגָּלְתָּא <abbr>דנוק&#x27;</abbr>.</p>
+<lb source-line="520" />
+<p id="HB21518-L0521" source-line="521" niqqud="added-draft">שֵׁמוֹת — <source_pointing>עֻןָ</source_pointing> <source_pointing>בֻלָ</source_pointing> — מִתִּיֽקּוּן <abbr>ב&#x27;</abbr> <abbr>דא&quot;א</abbr> &quot;נָשָׂא <abbr>עון&quot;</abbr> — יְסוֹד <abbr>מקי&#x27;</abbr> חֶסֶד <abbr>פני&#x27;</abbr> שָׂפָה הָעֶלְיוֹנָה <abbr>דא&quot;א</abbr>. <shem recite="false">הי</shem> <abbr>דע&quot;ב</abbr> <abbr>א&#x27;</abbr> אוֹר. <shem recite="false">הי</shem> <abbr>דקס&quot;א</abbr> <abbr>א&#x27;</abbr> כְּלִי. <source_pointing>עֻבֻ</source_pointing> <source_pointing>נָלָ</source_pointing> אַדִּינ לְטַלָּא דִּבְדוֹלְחָא מוֹחָא <abbr>דנוק&#x27;</abbr>.</p>
+<lb source-line="522" />
+<p id="HB21518-L0523" source-line="523" niqqud="added-draft">וַיִּקְרָא — <source_pointing>הֻתָ</source_pointing> <source_pointing>בֻרָ</source_pointing> — <abbr>מתי&#x27;</abbr> <abbr>ג&#x27;</abbr> &quot;וְעוֹבֵר עַל <abbr>פשע&quot;</abbr> — <shem recite="false">הוד</shem> <abbr>מקי&#x27;</abbr> גְּבוּרָה <abbr>פני&#x27;</abbr> אוֹרְחָא דְּשָׂפָה הָעֶלְיוֹנָה. וִין <abbr>דע&quot;ב</abbr> <abbr>א&#x27;</abbr> אוֹר. <shem recite="false">יוד</shem> <abbr>דקס&quot;א</abbr> <abbr>א&#x27;</abbr> כְּלִי. <source_pointing>הֻבֻ</source_pointing> <source_pointing>תָרָ</source_pointing> לִקְרוּמָא דַּאֲוִירָא <abbr>דנוק&#x27;</abbr>.</p>
+<lb source-line="524" />
+<p id="HB21518-L0525" source-line="525" niqqud="added-draft">בַּמִּדְבָּר — <source_pointing>הֻתָ</source_pointing> <source_pointing>יֻןָ</source_pointing> — <abbr>מתי&#x27;</abbr> <abbr>ד&#x27;</abbr> &quot;לִשְׁאֵרִית <abbr>נחלתו&quot;</abbr> — נֶצַח <abbr>מקי&#x27;</abbr> <abbr>ת&quot;ת</abbr> <abbr>פני&#x27;</abbr> אוֹרְחָא שֶׁבַּשָּׂפָה הַתַּחְתּוֹנָה. <shem recite="false">הי</shem> <abbr>דע&quot;ב</abbr> <abbr>א&#x27;</abbr> אוֹר. <shem recite="false">הי</shem> <abbr>דקס&quot;א</abbr> <abbr>א&#x27;</abbr> כְּלִי. <shem recite="false">הֻיֻ</shem> <source_pointing>תָןָ</source_pointing> אַנִּיד לָעֹמֶר נָקִי <abbr>דנוק&#x27;</abbr>.</p>
+<lb source-line="526" />
+<p id="HB21518-L0527" source-line="527" niqqud="added-draft">דְּבָרִים — <source_pointing>הֻדָ</source_pointing> <source_pointing>נֻלָ</source_pointing> — <abbr>מתי&#x27;</abbr> <abbr>ה&#x27;</abbr> &quot;לֹֽא הֶחֱזִ֤יק לָעַד֙ <abbr>אפו&quot;</abbr> — <abbr>ת&quot;ת</abbr> <abbr>מקי&#x27;</abbr> נֶצַח <abbr>פני&#x27;</abbr> אוֹרְחָא שֶׁבְּאֶמְצַע הַזָּקָן. <shem recite="false">יוד</shem> <abbr>דע&quot;ב</abbr> <abbr>ב&#x27;</abbr> אוֹר. <shem recite="false">אלף</shem> <abbr>דקס&quot;א</abbr> <abbr>ב&#x27;</abbr> כְּלִי. <source_pointing>הֻנֻ</source_pointing> <source_pointing>דָלָ</source_pointing> אֵיֽדֵנ לְאוּדְנָא יַמִּינָא <abbr>דנוק&#x27;</abbr>.</p>
+<lb source-line="528" />
+<p id="HB21518-L0529" source-line="529" niqqud="added-draft">יְהוֹשֻׁעַ — <source_pointing>בֻןָ</source_pointing> <source_pointing>בֻרָ</source_pointing> — <abbr>מתי&#x27;</abbr> <abbr>ו&#x27;</abbr> &quot;כִּֽי חָפֵ֥ץ חֶ֖סֶד <abbr>הוא&quot;</abbr> — גְּבוּרָה <abbr>מקי&#x27;</abbr> <shem recite="false">הוד</shem> <abbr>פני&#x27;</abbr> מֶרְחָב הַלְּחָיַיִם <abbr>דא&quot;א</abbr>. <shem recite="false">הי</shem> <abbr>דע&quot;ב</abbr> <abbr>ב&#x27;</abbr> אוֹר. <shem recite="false">הי</shem> <abbr>דקס&quot;א</abbr> <abbr>ב&#x27;</abbr> כְּלִי. <source_pointing>בֻבֻ</source_pointing> <source_pointing>נָרָ</source_pointing> אֵיֽנְד לְאוּדְנָא שְׂמָאלָא <abbr>דנוק&#x27;</abbr>.</p>
+<lb source-line="530" />
+</page>
+<page id="HB21518-p010" pdf="10" folio="ה ע&quot;א" marker="━━━━━━━━━━  דף ה ע&quot;א   (PDF 10)  ━━━━━━━━━━">
+<lb source-line="532" />
+<p id="HB21518-L0533" source-line="533" niqqud="added-draft">שׁוֹפְטִים — <source_pointing>הֻםָ</source_pointing> <source_pointing>בֻןָ</source_pointing> — <abbr>מתי&#x27;</abbr> <abbr>ז&#x27;</abbr> &quot;יָשׁוּב <abbr>ירחמנו&quot;</abbr> — חֶסֶד <abbr>מקי&#x27;</abbr> יְסוֹד <abbr>פני&#x27;</abbr> תְּרֵין תַּפּוּחִין קַדִּישִׁין <abbr>דא&quot;א</abbr>. וִין <abbr>דע&quot;ב</abbr> <abbr>ב&#x27;</abbr> אוֹר. <shem recite="false">יוד</shem> <abbr>דקס&quot;א</abbr> <abbr>ב&#x27;</abbr> כְּלִי. <source_pointing>הֻבֻ</source_pointing> <source_pointing>מָןָ</source_pointing> דַּאֲנִי לְמִצִּחָא <abbr>דנוק&#x27;</abbr>.</p>
+<lb source-line="534" />
+<p id="HB21518-L0535" source-line="535" niqqud="added-draft">שְׁמוּאֵל — <source_pointing>שֻםָ</source_pointing> <source_pointing>מֻלָ</source_pointing> — <abbr>מתי&#x27;</abbr> <abbr>ח&#x27;</abbr> &quot;יִכְבֹּוֽשׁ <abbr>עונותינו&quot;</abbr> — בִּינָה <abbr>מקי&#x27;</abbr> מַלְכוּת <abbr>פני&#x27;</abbr> יְסוֹד חֶסֶד מַזָּל עֶלְיוֹן. <shem recite="false">הי</shem> <abbr>דע&quot;ב</abbr> <abbr>ב&#x27;</abbr> אוֹר. <shem recite="false">הי</shem> <abbr>דקס&quot;א</abbr> <abbr>ב&#x27;</abbr> כְּלִי. <source_pointing>שֻםֻ</source_pointing> <source_pointing>מָלָ</source_pointing> דְּאִינ לְעֵינָא יַמִּינָא <abbr>דנוק&#x27;</abbr>.</p>
+<lb source-line="536" />
+<p id="HB21518-L0537" source-line="537" niqqud="added-draft">מְלָכִים — <source_pointing>אֻתָ</source_pointing> <source_pointing>יֻיָ</source_pointing> — מַקִּיף <abbr>ט&#x27;</abbr> &quot;וְתַשְׁלִיךְ בִּמְצֻוֽלוֹת יָם כָּל <abbr>חטאתם&quot;</abbr> — <shem recite="false">הוד</shem> מַקִּיף גְּבוּרָה <abbr>פני&#x27;</abbr> שְׂעָרוֹת שֶׁבֵּין <abbr>ב&#x27;</abbr> הַמַּזָּלוֹת. <shem recite="false">יוד</shem> <abbr>דע&quot;ב</abbr> <abbr>ג&#x27;</abbr> אוֹר. <shem recite="false">אלף</shem> <abbr>דקס&quot;א</abbr> <abbr>ג&#x27;</abbr> כְּלִי. <source_pointing>אֻיֻ</source_pointing> <source_pointing>תָיָ</source_pointing> דְּנָאֵי לְעֵינָא שְׂמָאלָא <abbr>דנוק&#x27;</abbr>.</p>
+<lb source-line="538" />
+<p id="HB21518-L0539" source-line="539" niqqud="added-draft">יְשַׁעְיָה — <source_pointing>וֻןָ</source_pointing> <source_pointing>לֻלָ</source_pointing> — <abbr>מתי&#x27;</abbr> <abbr>י&quot;ב</abbr> &quot;אֲשֶׁר נִשְׁבַּעְתָּ <abbr>לאבתינו&quot;</abbr> — גְּבוּרָה <abbr>מקי&#x27;</abbr> <shem recite="false">הוד</shem> <abbr>פני&#x27;</abbr> פֻּוֽמָּא <abbr>דא&quot;א</abbr>. <shem recite="false">הי</shem> <abbr>דע&quot;ב</abbr> <abbr>ג&#x27;</abbr> אוֹר. <shem recite="false">הי</shem> <abbr>דקס&quot;א</abbr> <abbr>ג&#x27;</abbr> כְּלִי. <source_pointing>וֻלֻ</source_pointing> <source_pointing>ןָלָ</source_pointing> <shem recite="false">דינא</shem> לְפֻוֽמָּא <abbr>דנוק&#x27;</abbr>.</p>
+<lb source-line="540" />
+<p id="HB21518-L0541" source-line="541" niqqud="added-draft">יִרְמְיָה — <source_pointing>אֻתָ</source_pointing> <source_pointing>יֻיָ</source_pointing> — <abbr>מתי&#x27;</abbr> <abbr>י&#x27;</abbr> &quot;תִּתֵּן אֱמֶת <abbr>ליעקב&quot;</abbr> — נֶצַח <abbr>מקי&#x27;</abbr> <abbr>ת&quot;ת</abbr> <abbr>פני&#x27;</abbr> שְׂעָרוֹת שֶׁבְּגָרוֹן. <shem recite="false">הי</shem> <abbr>דע&quot;ב</abbr> <abbr>ג&#x27;</abbr> אוֹר. <shem recite="false">הי</shem> <abbr>דקס&quot;א</abbr> <abbr>ג&#x27;</abbr> כְּלִי. <source_pointing>אֻיֻ</source_pointing> <source_pointing>תָיָ</source_pointing> דַּנַּיָּא לְנֻוֽקְבָּא יַמִּינָא דְּחֻוֽטְמָא <abbr>דנוק&#x27;</abbr>.</p>
+<lb source-line="542" />
+<p id="HB21518-L0543" source-line="543" niqqud="added-draft">יְחֶזְקֵאל — <source_pointing>שֻהָ</source_pointing> <shem recite="false">יֻהָ</shem> — <abbr>מתי&#x27;</abbr> <abbr>י&quot;א</abbr> &quot;חֶסֶד <abbr>לאברהם&quot;</abbr> — <abbr>ת&quot;ת</abbr> מַקִּיף נֶצַח <abbr>פני&#x27;</abbr> שְׂעָרוֹת <abbr>הנ&quot;ל</abbr> הַשָּׁוִים. וִין <abbr>דע&quot;ב</abbr> <abbr>ג&#x27;</abbr> אוֹר. <shem recite="false">יוד</shem> <abbr>דקס&quot;א</abbr> <abbr>ג&#x27;</abbr> כְּלִי. <source_pointing>שֻיֻ</source_pointing> <shem recite="false">הָהָ</shem> <shem recite="false">דיאנ</shem> <abbr>לנוק&#x27;</abbr> שְׂמָאלָא <abbr>דנוק&#x27;</abbr>.</p>
+<lb source-line="544" />
+<p id="HB21518-L0545" source-line="545" niqqud="added-draft">וּבִסְגֻוֽלַּת <abbr>י&quot;ב</abbr> סְפָרִים אֲחֵרִים יִמָּשְׁכוּ <abbr>מג&#x27;</abbr> שֵׁמוֹת <shem recite="false">אהיה</shem> <abbr>די&quot;ב</abbr> תִּיֽקּוּנֵי דִּיקְנָא <abbr>דז&quot;א</abbr> <abbr>י&quot;ב</abbr> אוֹרוֹת <abbr>לי&quot;ב</abbr> פִּרְקִין דִּדְרוּעִין וְשׁוּקִין דְּנֻוֽקְבָּא קַדִּישָׁא <abbr>דז&quot;א</abbr>.</p>
+<lb source-line="546" />
+<p id="HB21518-L0547" source-line="547" niqqud="added-draft">תְּרֵי עֲשַׂר — <source_pointing>לֻבָ</source_pointing> <source_pointing>הֻץָ</source_pointing> — מִתִּיֽקּוּן <abbr>א&#x27;</abbr> <abbr>דז&quot;א</abbr> שֶׁהוּא הֶאָרַת תִּיֽקּוּן <abbr>א&#x27;</abbr> <abbr>דא&quot;א</abbr> שְׂעָרוֹת שֶׁבַּמֶּצֶר הַדִּיֽקְנָא <abbr>הנק&#x27;</abbr> &quot;<abbr>אל&quot;</abbr>. <letter recite="false">א</letter> <shem recite="false">דאהיה</shem> <abbr>א&#x27;</abbr>. <source_pointing>לֻהֻ</source_pointing> <source_pointing>בָץָ</source_pointing> <shem recite="false">נאדי</shem> <abbr>לפ&quot;ק</abbr> דִּדְרוּעָא יַמִּינָא <abbr>דנוק&#x27;</abbr>.</p>
+<lb source-line="548" />
+</page>
+<page id="HB21518-p011" pdf="11" folio="ה ע&quot;ב" marker="━━━━━━━━━━  דף ה ע&quot;ב   (PDF 11)  ━━━━━━━━━━">
+<lb source-line="550" />
+<p id="HB21518-L0551" source-line="551" niqqud="added-draft">רוּת — <source_pointing>הֻדָ</source_pointing> <source_pointing>אֻתָ</source_pointing> — <abbr>מתי&#x27;</abbr> <abbr>ב&#x27;</abbr> <abbr>דז&quot;א</abbr> שֶׁהוּא הֶאָרַת <abbr>תי&#x27;</abbr> <abbr>ב&#x27;</abbr> <abbr>דא&quot;א</abbr> שָׂפָה הָעֶלְיוֹנָה <abbr>הנק&#x27;</abbr> &quot;<abbr>רחום&quot;</abbr>. <letter recite="false">ה</letter> <shem recite="false">דאהיה</shem> <abbr>א&#x27;</abbr>. <shem recite="false">הֻאֻ</shem> <source_pointing>דָתָ</source_pointing> <shem recite="false">נאיד</shem> <abbr>לפ&quot;ק</abbr> דְּדִרוּעָא שְׂמָאלָא <abbr>דנוק&#x27;</abbr>.</p>
+<lb source-line="552" />
+<p id="HB21518-L0553" source-line="553" niqqud="added-draft">תְּהִלִּים — <shem recite="false">הֻהָ</shem> <shem recite="false">יֻהָ</shem> — <abbr>מתי&#x27;</abbr> <abbr>ג&#x27;</abbr> <abbr>דז&quot;א</abbr> שֶׁהוּא הֶאָרַת <abbr>תי&#x27;</abbr> <abbr>ג&#x27;</abbr> <abbr>דא&quot;א</abbr> אוֹרְחָא דְּשָׁפָה הָעֶלְיוֹנָה <abbr>הנק&#x27;</abbr> &quot;<abbr>וחנון&quot;</abbr>. <letter recite="false">י</letter> <shem recite="false">דאהיה</shem> <abbr>א&#x27;</abbr>. <shem recite="false">הֻיֻ</shem> <shem recite="false">הָהָ</shem> <shem recite="false">נדאי</shem> <abbr>לפ&quot;ב</abbr> דִּדְרוּעָא יַמִּינָא <abbr>דנוק&#x27;</abbr>.</p>
+<lb source-line="554" />
+<p id="HB21518-L0555" source-line="555" niqqud="added-draft">אִיּוֹב — <source_pointing>אֻבָ</source_pointing> <source_pointing>וֻעָ</source_pointing> — <abbr>מתי&#x27;</abbr> <abbr>ד&#x27;</abbr> <abbr>דז&quot;א</abbr> שֶׁהוּא הֶאָרַת <abbr>תי&#x27;</abbr> <abbr>ד&#x27;</abbr> <abbr>דא&quot;א</abbr> אוֹרְחָא דְּשָׁפָה הַתַּחְתּוֹנָה <abbr>הנק&#x27;</abbr> &quot;<abbr>ארך&quot;</abbr>. <letter recite="false">ה</letter> <abbr>דאהי&quot;ה</abbr> <abbr>א&#x27;</abbr>. <shem recite="false">אֻוֻ</shem> <source_pointing>בָעָ</source_pointing> נָדְיָא <abbr>לפ&quot;ב</abbr> דְּדִרוּעָא שְׂמָאלָא <abbr>דנוק&#x27;</abbr>.</p>
+<lb source-line="556" />
+<p id="HB21518-L0557" source-line="557" niqqud="added-draft">מִשְׁלֵי — <source_pointing>לֻהָ</source_pointing> <source_pointing>בֻמָ</source_pointing> — <abbr>מתי&#x27;</abbr> <abbr>ה&#x27;</abbr> <abbr>דז&quot;א</abbr> <abbr>הנק&#x27;</abbr> &quot;<abbr>ארך&quot;</abbr> עִם הֶאָרַת <abbr>תי&#x27;</abbr> <abbr>ה&#x27;</abbr> <abbr>דא&quot;א</abbr> אוֹרְחָא שֶׁבְּאֶמְצַע הַזָּקָן שֶׁהוּא <abbr>תי&#x27;</abbr> <abbr>א&#x27;</abbr> <abbr>דז&quot;א</abbr> <abbr>הנק&#x27;</abbr> &quot;<abbr>אפים&quot;</abbr>. <letter recite="false">א</letter> <abbr>דאהי&quot;ה</abbr> <abbr>ב&#x27;</abbr>. <source_pointing>לֻבֻ</source_pointing> <source_pointing>הָמָ</source_pointing> נֵיאֵד <abbr>לפ&quot;ג</abbr> דִּדְרוּעָא יַמִּינָא.</p>
+<lb source-line="558" />
+<p id="HB21518-L0559" source-line="559" niqqud="added-draft">קֹהֶלֶת — <source_pointing>אֻתָ</source_pointing> <source_pointing>וֻםָ</source_pointing> — <abbr>מתי&#x27;</abbr> <abbr>ו&#x27;</abbr> <abbr>דז&quot;א</abbr> <abbr>הנק&#x27;</abbr> &quot;וְרַב <abbr>חסד&quot;</abbr> שֶׁהוּא הֶאָרַת <abbr>תי&#x27;</abbr> <abbr>ו&#x27;</abbr> <abbr>דא&quot;א</abbr> וְהוּא <abbr>תי&#x27;</abbr> <abbr>ב&#x27;</abbr> <abbr>דז&quot;א</abbr> שְׂעָרוֹת שֶׁבַּשָּׂפָה עֶלְיוֹנָה וְתַחְתּוֹנָה <abbr>הנק&#x27;</abbr> &quot;<abbr>אפים&quot;</abbr>. <letter recite="false">ה</letter> <shem recite="false">דאהיה</shem> <abbr>ב&#x27;</abbr>. <shem recite="false">אֻוֻ</shem> <source_pointing>תָםָ</source_pointing> נִידָא <abbr>לפ&quot;ג</abbr> דִּדְרוּעָא שְׂמָאלָא.</p>
+<lb source-line="560" />
+<p id="HB21518-L0561" source-line="561" niqqud="added-draft">שִׁיר הַשִּׁירִים — <source_pointing>דֻיָ</source_pointing> <shem recite="false">הֻיָ</shem> — <abbr>מתי&#x27;</abbr> <abbr>ז&#x27;</abbr> <abbr>הנק&#x27;</abbr> &quot;<abbr>ואמת&quot;</abbr> שֶׁהוּא הֶאָרַת <abbr>תי&#x27;</abbr> <abbr>ז&#x27;</abbr> <abbr>דא&quot;א</abbr> תְּרֵין תַּפּוּחִין שֶׁהוּא <abbr>תי&#x27;</abbr> <abbr>ג&#x27;</abbr> <abbr>דט&#x27;</abbr> <abbr>תי&#x27;</abbr> <abbr>דז&quot;א</abbr> שְׂעָרוֹת קְטַנּוֹת שֶׁבְּאוֹרְחָא דִּתְחוֹת חֻוֽטְמָא <abbr>הנק&#x27;</abbr> &quot;וְרַב <abbr>חסד&quot;</abbr>. <letter recite="false">י</letter> <shem recite="false">דאהיה</shem> <abbr>ב&#x27;</abbr>. <source_pointing>דֻהֻ</source_pointing> <source_pointing>יָיָ</source_pointing> יאדנ <abbr>לפ&quot;א</abbr> דִּיֽרְכָּא יַמִּינָא.</p>
+<lb source-line="562" />
+<p id="HB21518-L0563" source-line="563" niqqud="added-draft">אֵיכָה — <source_pointing>אֻםָ</source_pointing> <source_pointing>עֻדָ</source_pointing> — <abbr>מתי&#x27;</abbr> <abbr>ח&#x27;</abbr> <abbr>הנק&#x27;</abbr> &quot;נוֹצֵר <abbr>חסד&quot;</abbr> שֶׁהוּא הֶאָרַת <abbr>תי&#x27;</abbr> <abbr>ח&#x27;</abbr> <abbr>דא&quot;א</abbr> מַזָּל הָעֶלְיוֹן שֶׁהוּא <abbr>תי&#x27;</abbr> <abbr>ד&#x27;</abbr> <abbr>דט&#x27;</abbr> <abbr>תי&#x27;</abbr> <abbr>דז&quot;א</abbr> שְׂעָרוֹת שֶׁבְּמֶרְחָב הַלְּחָיַיִם <abbr>הנק&#x27;</abbr> &quot;נֹוֽשֵׂא <abbr>עון&quot;</abbr>. <letter recite="false">ה</letter> <shem recite="false">דאהיה</shem> <abbr>ב&#x27;</abbr>. <source_pointing>אֻעֻ</source_pointing> <source_pointing>מָדָ</source_pointing> יָאנַד <abbr>לפ&quot;א</abbr> דִּיֽרְכָּא שְׂמָאלָא.</p>
+<lb source-line="564" />
+</page>
+<page id="HB21518-p012" pdf="12" folio="ו ע&quot;א" marker="━━━━━━━━━━  דף ו ע&quot;א   (PDF 12)  ━━━━━━━━━━">
+<lb source-line="566" />
+<p id="HB21518-L0567" source-line="567" niqqud="added-draft">דָּנִיֵּאל — <source_pointing>לֻדָ</source_pointing> <source_pointing>לֻץָ</source_pointing> — <abbr>מתי&#x27;</abbr> <abbr>ט&#x27;</abbr> <abbr>דז&quot;א</abbr> <abbr>הנק&#x27;</abbr> &quot;<abbr>לאלפים&quot;</abbr> שֶׁהוּא הֶאָרַת <abbr>תי&#x27;</abbr> <abbr>ט&#x27;</abbr> <abbr>דא&quot;א</abbr> שְׂעָרוֹת שֶׁבֵּין <abbr>ב&#x27;</abbr> הַמַּזָּלוֹת שֶׁהוּא תִּיֽקּוּן <abbr>ה&#x27;</abbr> <abbr>דט&#x27;</abbr> <abbr>תי&#x27;</abbr> <abbr>דז&quot;א</abbr> תְּרֵי תַּפּוּחִין סֻוֽמָּקִין <abbr>הנק&#x27;</abbr> &quot;<abbr>ופשע&quot;</abbr>. <letter recite="false">א</letter> <shem recite="false">דאהיה</shem> <abbr>הג&#x27;</abbr>. <source_pointing>לֻלֻ</source_pointing> <source_pointing>דָץָ</source_pointing> יְדָאָנ <abbr>לפ&quot;ב</abbr> דִּיֽרְכָּא יַמִּינָא:</p>
+<lb source-line="568" />
+<p id="HB21518-L0569" source-line="569" niqqud="added-draft">אֶסְתֵּר — <source_pointing>מֻיָ</source_pointing> <source_pointing>לֻדָ</source_pointing> — <abbr>מתי&#x27;</abbr> <abbr>י&#x27;</abbr> <abbr>דז&quot;א</abbr> <abbr>הנק&#x27;</abbr> &quot;נוֹשֵׂא <abbr>עון&quot;</abbr> שְׂעָרוֹת שֶׁבַּגָּרוֹן שֶׁהוּא <abbr>תי&#x27;</abbr> <abbr>ו&#x27;</abbr> <abbr>דט&#x27;</abbr> <abbr>תי&#x27;</abbr> <abbr>דז&quot;א</abbr> חֹלִי טוּבֵי הַזָּקָן הַנִּגְלֶה <abbr>הנק&#x27;</abbr> &quot;<abbr>ונקה&quot;</abbr>. <letter recite="false">ה</letter> <abbr>דאהי&quot;ה</abbr> <abbr>הג&#x27;</abbr>. <source_pointing>מֻלֻ</source_pointing> <source_pointing>יָדָ</source_pointing> יְדַנָא <abbr>לפ&quot;ב</abbr> דִּיֽרְכָּא שְׂמָאלָא:</p>
+<lb source-line="570" />
+<p id="HB21518-L0571" source-line="571" niqqud="added-draft">עֲזָרָה — <source_pointing>הֻמָ</source_pointing> <source_pointing>אֻיָ</source_pointing> — <abbr>מתי&#x27;</abbr> <abbr>י&quot;א</abbr> <abbr>דז&quot;א</abbr> <abbr>הנק&#x27;</abbr> &quot;<abbr>ופשע&quot;</abbr> שְׂעָרוֹת <abbr>הנ&quot;ל</abbr> הַשָּׁוִים שֶׁהוּא <abbr>תי&#x27;</abbr> <abbr>ז&#x27;</abbr> <abbr>דט&#x27;</abbr> <abbr>תי&#x27;</abbr> <abbr>דז&quot;א</abbr> פֶּה הַפָּנוּי מִשְּׂעָרוֹת <abbr>הנק&#x27;</abbr> &quot;<abbr>פוקד&quot;</abbr>. <letter recite="false">י</letter> <shem recite="false">דאהיה</shem> <abbr>הג&#x27;</abbr>. <shem recite="false">הֻאֻ</shem> <source_pointing>מָיָ</source_pointing> יִנְאַד <abbr>לפ&quot;ג</abbr> דִּיֽרְכָּא יַמִּינָא.</p>
+<lb source-line="572" />
+<p id="HB21518-L0573" source-line="573" niqqud="added-draft">דִּבְרֵי הַיָּמִים — <source_pointing>אֻרָ</source_pointing> <source_pointing>עֻןָ</source_pointing> — <abbr>מתי&#x27;</abbr> <abbr>י&quot;ב</abbr> <abbr>דז&quot;א</abbr> <abbr>הנק&#x27;</abbr> &quot;<abbr>וחטאה&quot;</abbr> פֻּוֽמָּא <abbr>דא&quot;א</abbr> שֶׁהוּא <abbr>תי&#x27;</abbr> <abbr>ח&#x27;</abbr> <abbr>דט&#x27;</abbr> <abbr>תי&#x27;</abbr> <abbr>דז&quot;א</abbr> שְׂעָרוֹת קְטַנּוֹת דְּחָפְיִין גְּרוֹנָא <abbr>הנק&#x27;</abbr> &quot;עַל <abbr>שלשים&quot;</abbr>. <letter recite="false">ה</letter> <abbr>דאהי&quot;ה</abbr> <abbr>הג&#x27;</abbr>. <source_pointing>אֻעֻ</source_pointing> <source_pointing>רָןָ</source_pointing> ינדא <abbr>לפ&quot;ג</abbr> דִּיֽרְכָּא שְׂמָאלָא.</p>
+<lb source-line="574" />
+<p id="HB21518-L0575" source-line="575" niqqud="added-draft">וּמִשָּׁם יֻוֽשְׁפַּע לָנוּ בְּנֵי מְלָכִים בְּנֵי רָחֵל אִמֵּנוּ שֶׁפַע יְשׁוּעָה וְרַחֲמִים לְכַפֵּר בַּעֲדֵיֽנוּ וְלִטְהָרֵינוּ מִגִּיֽעוּל זֻוֽהֲמַת הַנָּחָשׁ וּלְהוֹצִיא כָּל נִיצוֹצֵי תּוֹרָתֵיֽנוּ וּמַעֲשֵׂינוּ הַטּוֹב אֲשֶׁר נָדְדוּ <abbr>הלכו&#x27;</abbr> בַּעֲוֹן פְּשָׁעֵינוּ <shem recite="false">אל</shem> גְּבוּל הָרִשְׁעָה חַיִל בָּלַע וַיְקִיֽאֶנּוּ מִבִּטְנוֹ יוֹרִיֽשֶׁנּוּ <shem recite="false">אל</shem> בְּכֹחַ לִיֽמּוּדֵינוּ בַּלַּיְלָה הַזֹּאת וְנִזְכֶּה לִהְיוֹת מִשּׁוֹשְׁבִינָא דְּמַטְרוֹנִיתָא וּמִבְּנֵי הֵיכְלָא וְיַעֲלֶה וְיָבֹא וְיַגִּיעַ וְיֵרָצֶה וְיִשָּׁמַע וְיִפָּקֵד וְיִזָּכֵר זִכְרוֹנֵיֽנוּ לְטוֹבָה לְפָנֶיךָ לְחַתְּמֵנוּ בְּסֵפֶר זִכָּרוֹן וְרַחֲמִים וּמִזִּיו שִׁפְעָךְ אֲשֶׁר תִּשְׁפַּע בִּשְׁכִינַת עֻוֽזְּךָ לְבָנִים תָּבִיא לְנַפְשֵׁיֽנוּ רוּחֵיֽנוּ וְנִשְׁמָתֵיֽנוּ וּלְטַהֵר פְּגָמֵנוּ אֲשֶׁר פָּגַמְנוּ בִּכְבוֹד תּוֹרָתֶךָ הַתְּמִימָה וְתוֹצִיא לָאוֹר מִשְׁפָּטֵיֽנוּ בְּקוֹמָךְ לַמִּשְׁפָּט עַל פֵּיֽרוֹת הָאִילָן הַקָּדוֹשׁ וּבְכֹחַ סְגֻוֽלַּת לִיֽמּוּדֵינוּ בַּלַּיְלָה הַזֶּה נִזְכֶּה וּנְחַיֶּיֽה וְנִירַשׁ נַחֲלַת עַבְדֵי <abbr>ה&#x27;</abbr> וְצִדְקָתָם וְלֹא יָמוּשׁ סֵפֶר הַתּוֹרָה הַזֶּה מִפִּינוּ וּמִפִּי זְרָעֵינוּ וּמִפִּי זֶרַע זְרָעֵינוּ כְּדָבָר שֶׁנֶּאֱמַר וַאֲנִ֗י זֹ֣את בְּרִיתִ֤י אוֹתְךָ <abbr>וכו&#x27;</abbr> וַאֲשֶׁר קָמַטְנוּ שִׁיֽנָּה מֵעֵינֵינוּ נָהָר יוֹצֵק יִסּוּדֵינוּ כְּדָבָר שֶׁנֶּאֱמַר אֲשֶׁר קֻוֽמְּטוּ בְּלֹא עֵת נָהָר יוּצַק יְסוֹדָם אֲנִי בְּצֶדֶק אֶחֱזֶה פָנֶיךָ אֶשְׂבְּעָה בְהָקִיץ תְּמוּנָתֶךָ וּפְרֹוֽס עָלֵינוּ סֻכַּת שְׁלוֹמֶךָ מֵרֵאשִׁית הַשָּׁנָה עַד אַחֲרִית הַשָּׁנָה וּבְצֵל כְּנָפֶיךָ נֶחֱסֶה וְנִתְלוֹנָן לְהַצִּיל מִמָּוֶת נַפְשֵׁיֽנוּ וּלְחַיּוֹתֵינוּ חַיִּים שֶׁל שָׁלוֹם וְרַחֲמִים דִּשְׁנַיִם וְרַעֲנַנִּים וְלֹא יִכָּרֵת כָּל בָּשָׂר עוֹד:</p>
+<lb source-line="576" />
+</page>
+<page id="HB21518-p013" pdf="13" folio="ו ע&quot;ב" marker="━━━━━━━━━━  דף ו ע&quot;ב   (PDF 13)  ━━━━━━━━━━">
+<lb source-line="578" />
+<p id="HB21518-L0579" source-line="579" niqqud="added-draft">וּבִסְגֻוֽלַּת לִיֽמּוּדֵינוּ <abbr>ג&#x27;</abbr> פְּסוּקִים מִתְּחִיֽלָּה וְסוֹף כָּל סֵפֶר <abbr>מה&#x27;</abbr> סִפְרֵי תּוֹרָה יִמְשְׁכוּ <abbr>דת&quot;י</abbr> <abbr>דחו&quot;ג</abbr> <abbr>ד&#x27;</abbr> צַלְמֵי <abbr>המו&#x27;</abbr> <abbr>דמ&quot;ה</abbr> <abbr>וב&quot;ן</abbr> עִם <abbr>ההויו&quot;ת</abbr> <abbr>והאהי&quot;ה</abbr> דִּבְנִיֽקּוּד חוֹלָם <abbr>דקט&#x27;</abbr> <abbr>וגד&#x27;</abbr> רִאשׁוֹן וְשֵׁנִי <abbr>דמ&quot;ה</abbr> <abbr>דמ&quot;ה</abbr> <abbr>וב&quot;ן</abbr> <abbr>לדת&quot;י</abbr> <abbr>דג&#x27;</abbr> כֵּלִים <abbr>דת&quot;ת</abbr> דַּעֲשִׂיָּה <abbr>דז&quot;א</abbr> שֶׁהֵם כֶּתֶר דַּעֲשִׂיָּה <abbr>דז&quot;א</abbr> דַּעֲשִׂיָּה דַּעֲשָׂרָה <abbr>פרצו&#x27;</abbr> <abbr>מ&quot;ה</abbr> <abbr>וב&quot;ן</abbr> דְּחָכְמָה וּדְבִינָה הַכּוֹלְלִים <abbr>דז&quot;א</abbr> דַּאֲצִילוּת לְהָאִיר וּלְהַשְׁפִּיעַ <abbr>לג&#x27;</abbr> כְּלֵי כֶּתֶר דְּמַלְכוּת <abbr>נוק&#x27;</abbr> קַדִּישָׁא <abbr>דז&quot;א</abbr> דַּאֲצִילוּת:</p>
+<lb source-line="580" />
+<table id="HB21518-L0581" source-line="581" preserve-layout="true" niqqud="source-only" recite="false">
+<row id="HB21518-L0582" source-line="582" niqqud="source-preserved"><shem recite="false">אֹהֹיֹהֹ</shem> <shem recite="false">אֹהֹיֹהֹ</shem></row>
+<row id="HB21518-L0583" source-line="583" niqqud="source-preserved"><shem recite="false">יֹהֹוֹהֹ</shem> <shem recite="false">יֹהֹוֹהֹ</shem></row>
+<row id="HB21518-L0584" source-line="584" niqqud="source-preserved"><shem recite="false">יוד</shem> <shem recite="false">הא</shem> <shem recite="false">ואו</shem> <shem recite="false">הא</shem></row>
+<row id="HB21518-L0585" source-line="585" niqqud="source-preserved"><letter recite="false">י</letter> <shem recite="false">יה</shem> <shem recite="false">יהו</shem> <shem recite="false">יהוה</shem></row>
+<row id="HB21518-L0586" source-line="586" niqqud="source-preserved"><shem recite="false">יֹהֹוֹהֹ</shem></row>
+</table>
+<lb source-line="588" />
+<p id="HB21518-L0589" source-line="589" niqqud="added-draft">וְאֵלּוּ הַכֵּלִים <abbr>דת&quot;ת</abbr> <abbr>נה&quot;י</abbr> <abbr>דכחב&quot;ד</abbr> <abbr>חג&quot;ת</abbr> <abbr>נה&quot;י</abbr> דְּחָכְמָה וּדְבִינָה הַכּוֹלְלִים <abbr>דז&quot;א</abbr> וִיכַוֵּיֽן <abbr>להמשי&#x27;</abbr> תַּשְׁלוּם הִתְפַּשְּׁטוּת <abbr>המוחי&#x27;</abbr> <abbr>דקט&#x27;</abbr> <abbr>וגד&#x27;</abbr> <abbr>א&#x27;</abbr> <abbr>וב&#x27;</abbr> <abbr>ע&quot;י</abbr> לִיֽמּוּד <abbr>הכ&quot;ד</abbr> שֶׁהוּא <abbr>ג&#x27;</abbr> פְּסוּקִים <shem recite="false">כנגד</shem> <abbr>הנה&quot;י</abbr> כָּל פָּסוּק <shem recite="false">כנגד</shem> <abbr>ג&#x27;</abbr> כֵּלִים <abbr>וה&#x27;</abbr> חֻוֽמְשֵׁי תּוֹרָה לְהַמְשִׁיךְ הִתְפַּשְּׁטוּת <abbr>המוחי&#x27;</abbr> <abbr>לת&quot;ת</abbr> שֶׁהוּא כֶּתֶר <abbr>דנה&quot;י</abbr> דְּכָל <abbr>א&#x27;</abbr> <abbr>מי&quot;ס</abbr> דְּבִינָה וְדַחֲכָמָה וּדְכֶתֶר וְהַנְּבִיאִים לְהַמְשִׁיךְ <abbr>המוחי&#x27;</abbr> <abbr>לנו&quot;ה</abbr> דְּכֻוֽלָּם וְהַכְּתוּבִים לִיסוֹדוֹת דְּכֻוֽלָּם <abbr>והג&#x27;</abbr> פְּסוּקִים <shem recite="false">כנגד</shem> <abbr>הג&#x27;</abbr> כֵּלִים דְּכָל פְּרָט.</p>
+<lb source-line="590" />
+<table id="HB21518-L0591" source-line="591" preserve-layout="true" niqqud="source-only" recite="false">
+<row id="HB21518-L0592" source-line="592" niqqud="source-preserved">[ימין]</row>
+<row id="HB21518-L0593" source-line="593" niqqud="source-preserved"><shem recite="false">אִהִיִהִ</shem> <shem recite="false">אִהִיִהִ</shem></row>
+<row id="HB21518-L0594" source-line="594" niqqud="source-preserved"><shem recite="false">יִהִוִהִ</shem> <shem recite="false">יִהִוִהִ</shem></row>
+<row id="HB21518-L0595" source-line="595" niqqud="source-preserved"><shem recite="false">יהוה</shem></row>
+<row id="HB21518-L0596" source-line="596" niqqud="source-preserved"><letter recite="false">צ</letter> צב צבא</row>
+<row id="HB21518-L0597" source-line="597" niqqud="source-preserved">צבא</row>
+<lb source-line="598" />
+<row id="HB21518-L0599" source-line="599" niqqud="source-preserved">[שמאל]</row>
+<row id="HB21518-L0600" source-line="600" niqqud="source-preserved"><shem recite="false">אֻהֻיֻהֻ</shem> <shem recite="false">אֻהֻיֻהֻ</shem></row>
+<row id="HB21518-L0601" source-line="601" niqqud="source-preserved"><shem recite="false">יֻהֻוֻהֻ</shem> <shem recite="false">יֻהֻוֻהֻ</shem></row>
+<row id="HB21518-L0602" source-line="602" niqqud="source-preserved"><shem recite="false">אדני</shem></row>
+<row id="HB21518-L0603" source-line="603" niqqud="source-preserved"><letter recite="false">א</letter> <shem recite="false">צבאו</shem> <shem recite="false">צבאות</shem></row>
+<row id="HB21518-L0604" source-line="604" niqqud="source-preserved">אות</row>
+</table>
+<lb source-line="606" />
+<p id="HB21518-L0607" source-line="607" niqqud="added-draft">וּבִסְגֻוֽלַּת לִיֽמּוּדֵינוּ <abbr>ג&#x27;</abbr> פְּסוּקִים מִתְּחִיֽלָּה וְסוֹף כָּל סֵפֶר מִנְּבִיאִים יִמְשְׁכוּ <abbr>חח&quot;ן</abbr> <abbr>בג&quot;ה</abbr> דְּצַלְמֵי הַמֹּוֽחִין <abbr>דע&quot;ב</abbr> <abbr>וס&quot;ג</abbr> <abbr>דמ&quot;ה</abbr> <abbr>וב&quot;ן</abbr> עִם <abbr>ההויו&quot;ת</abbr> <abbr>והאהי&quot;ה</abbr> דִּבְנִיֽקּוּד חִירִיק וְקִיֽבּוּץ <abbr>דקט&#x27;</abbr> <abbr>וגד&#x27;</abbr> <abbr>א&#x27;</abbr> <abbr>וב&#x27;</abbr> <abbr>לחח&quot;ן</abbr> <abbr>ובג&quot;ה</abbr> <abbr>דג&#x27;</abbr> כְּלֵי נֶצַח <abbr>וג&#x27;</abbr> כְּלֵי <shem recite="false">הוד</shem> דַּעֲשִׂיָּה <abbr>דז&quot;א</abbr> שֶׁהֵם <abbr>חח&quot;ן</abbr> <abbr>ובג&quot;ה</abbr> דַּעֲשִׂיָּה דַּעֲשִׂיָּה דַּעֲשָׂרָה <abbr>פרצו&#x27;</abbr> <abbr>מ&quot;ה</abbr> <abbr>ב&quot;ן</abbr> דְּחָכְמָה וּדְבִינָה הַכּוֹלְלִים <abbr>דז&quot;א</abbr> דַּאֲצִילוּת לְהָאִיר וּלְהַשְׁפִּיעַ <abbr>לחח&quot;ן</abbr> <abbr>ובג&quot;ה</abbr> דְּמַלְכוּת <abbr>נוק&#x27;</abbr> קַדִּישָׁא <abbr>דז&quot;א</abbr> דַּאֲצִילוּת:</p>
+<lb source-line="608" />
+<p id="HB21518-L0609" source-line="609" niqqud="added-draft">וּבִסְגֻוֽלַּת לִיֽמּוּדֵינוּ <abbr>ג&#x27;</abbr> פְּסוּקִים מִתְּחִיֽלָּה וְסוֹף כָּל סֵפֶר מִכְּתוּבִים יִמְשְׁכוּ <abbr>דת&quot;י</abbr> <abbr>דחו&quot;ג</abbr> דְּצַלְמֵי <abbr>המו&#x27;</abbr> <abbr>דמ&quot;ה</abbr> <abbr>וב&quot;ן</abbr> עִם <abbr>ההויו&quot;ת</abbr> <abbr>והאהי&quot;ה</abbr> דִּבְנִיֽקּוּד שׁוּרֻק <abbr>דקט&#x27;</abbr> <abbr>וגד&#x27;</abbr> רִאשׁוֹן וְשֵׁנִי <abbr>לדת&quot;י</abbr> <abbr>דג&#x27;</abbr> כֵּלִים דִּיסוֹד דַּעֲשִׂיָּה <abbr>דז&quot;א</abbr> שֶׁהֵם <abbr>דת&quot;י</abbr> דַּעֲשִׂיָּה דַּעֲשִׂיָּה דַּעֲשָׂרָה <abbr>פרצו&#x27;</abbr> <abbr>מ&quot;ה</abbr> <abbr>וב&quot;ן</abbr> דְּחָכְמָה וּדְבִינָה הַכּוֹלְלִים <abbr>דז&quot;א</abbr> דַּאֲצִילוּת לְהָאִיר וּלְהַשְׁפִּיעַ <abbr>לדת&quot;י</abbr> וּלְשֵׁם <shem recite="false">אדני</shem> מָלֵא שֶׁהוּא כְּלִי הַחִיצוֹן דְּמַלְכוּת <abbr>דנוק&#x27;</abbr> קַדִּישָׁא <abbr>דז&quot;א</abbr> דַּאֲצִילוּת:</p>
+<lb source-line="610" />
+<table id="HB21518-L0611" source-line="611" preserve-layout="true" niqqud="source-only" recite="false">
+<row id="HB21518-L0612" source-line="612" niqqud="source-preserved"><shem recite="false">או</shem> <shem recite="false">הו</shem> <shem recite="false">יו</shem> <shem recite="false">הו</shem>   <shem recite="false">או</shem> <shem recite="false">הו</shem> <shem recite="false">יו</shem> <shem recite="false">הו</shem>   <shem recite="false">או</shem> <shem recite="false">הו</shem> <shem recite="false">יו</shem> <shem recite="false">הו</shem>   <shem recite="false">או</shem> <shem recite="false">הו</shem> <shem recite="false">יו</shem> <shem recite="false">הו</shem></row>
+<row id="HB21518-L0613" source-line="613" niqqud="source-preserved"><shem recite="false">יו</shem> <shem recite="false">הו</shem> <shem recite="false">וו</shem> <shem recite="false">הו</shem>   <shem recite="false">יו</shem> <shem recite="false">הו</shem> <shem recite="false">וו</shem> <shem recite="false">הו</shem>   <shem recite="false">יו</shem> <shem recite="false">הו</shem> <shem recite="false">וו</shem> <shem recite="false">הו</shem>   <shem recite="false">יו</shem> <shem recite="false">הו</shem> <shem recite="false">וו</shem> <shem recite="false">הו</shem></row>
+<row id="HB21518-L0614" source-line="614" niqqud="source-preserved"><shem recite="false">יאהדונהי</shem></row>
+<row id="HB21518-L0615" source-line="615" niqqud="source-preserved"><shem recite="false">שין</shem> <shem recite="false">שין</shem> <shem recite="false">דלת</shem> <shem recite="false">שין</shem> <shem recite="false">דלת</shem> <shem recite="false">יוד</shem></row>
+<row id="HB21518-L0616" source-line="616" niqqud="source-preserved"><shem recite="false">שין</shem> <shem recite="false">דלת</shem> <shem recite="false">יוד</shem></row>
+<row id="HB21518-L0617" source-line="617" niqqud="source-preserved"><shem recite="false">אלף</shem> <shem recite="false">דלת</shem> <shem recite="false">נון</shem> <shem recite="false">יוד</shem></row>
+</table>
+<lb source-line="619" />
+</page>
+<page id="HB21518-p014" pdf="14" folio="ז ע&quot;א" marker="━━━━━━━━━━  דף ז ע&quot;א   (PDF 14)  ━━━━━━━━━━">
+<lb source-line="621" />
+<p id="HB21518-L0622" source-line="622" niqqud="added-draft">וּבְכֵן תִּטְהַר וּתְזַכֵּךְ אֶת נַפְשֵׁיֽנוּ רוּחֵיֽנוּ וְנִשְׁמָתֵיֽנוּ שֶׁיִּהְיוּ רְאוּיִם לְעוֹרֵר <abbr>מ&quot;ן</abbr> וּלְהַמְשִׁיךְ <abbr>מ&quot;ד</abbr> בִּקְרִיאָתֵיֽנוּ זֹאת לְעוֹרֵר אַהֲבַת דּוֹדִים יַחַד לְמַעְלָה בִּיחוּדָא שְׁלִים וִיהִי נֹוֽעַם <abbr>ה&#x27;</abbr> <shem recite="false">אלהינו</shem> <abbr>וכו&#x27;</abbr>.</p>
+<lb source-line="623" />
+<heading id="HB21518-L0624" source-line="624" niqqud="added-draft">■ כַּוָּוֽנָה לִשְׁמָהּ ■</heading>
+<lb source-line="625" />
+<p id="HB21518-L0626" source-line="626" niqqud="added-draft">יְכַוֵּיֽן <abbr>שע&quot;י</abbr> עִסְקוֹ בַּתּוֹרָה לִשְׁמָהּ <abbr>ה&#x27;</abbr> הִיא <shem recite="false">לאה</shem> <abbr>להמשי&#x27;</abbr> לָהּ מִדַּת אוֹרוֹת מִתּוֹרָה שֶׁהוּא יְסוֹד דְּאַבָּא וּלְהַמְתִּיק דִּינֵיֽהּ. וִיכַוֵּיֽן כִּי <abbr>הה&quot;ן</abbr> <abbr>דחב&quot;ד</abbr> עִם <abbr>ה&#x27;</abbr> הַשָּׁוֽרְשִׁי <abbr>גי&#x27;</abbr> <shem recite="false">לאה</shem>:</p>
+<lb source-line="627" />
+<table id="HB21518-L0628" source-line="628" preserve-layout="true" niqqud="source-only" recite="false">
+<row id="HB21518-L0629" source-line="629" niqqud="source-preserved">חכמה: <shem recite="false">הי</shem>      דעת: <shem recite="false">הה</shem>      בינה: <shem recite="false">הא</shem></row>
+<row id="HB21518-L0630" source-line="630" niqqud="source-preserved"><letter recite="false">ה</letter> <shem recite="false">לאה</shem></row>
+</table>
+<lb source-line="632" />
+<p id="HB21518-L0633" source-line="633" niqqud="added-draft"><abbr>ודחג&quot;ת</abbr> עִם <abbr>הה&#x27;</abbr> <abbr>גי&#x27;</abbr> <abbr>הוי&quot;ה</abbr> <abbr>ואהי&quot;ה</abbr> וְעִם <shem recite="false">לאה</shem> <abbr>דחב&quot;ד</abbr> <abbr>גי&#x27;</abbr> מִיֽלּוּי <abbr>דע&quot;ב</abbr> <abbr>ס&quot;ג</abbr>:</p>
+<lb source-line="634" />
+<table id="HB21518-L0635" source-line="635" preserve-layout="true" niqqud="source-only" recite="false">
+<row id="HB21518-L0636" source-line="636" niqqud="source-preserved">חסד: די      תפארת: <letter recite="false">ו</letter> <letter recite="false">ו</letter> <letter recite="false">ו</letter> [<letter recite="false">ו</letter> שוכבת מלמעלה ושתי <abbr>ווי&quot;ן</abbr> תחתיה]      גבורה: דו</row>
+<row id="HB21518-L0637" source-line="637" niqqud="source-preserved"><letter recite="false">ה</letter> <shem recite="false">יאההויהה</shem> <shem recite="false">לאה</shem></row>
+<row id="HB21518-L0638" source-line="638" niqqud="source-preserved"><shem recite="false">יוד</shem> <shem recite="false">הי</shem> <shem recite="false">ויו</shem> <shem recite="false">הי</shem>      <shem recite="false">יוד</shem> <shem recite="false">הי</shem> <shem recite="false">ואו</shem> <shem recite="false">הי</shem></row>
+</table>
+<lb source-line="640" />
+<p id="HB21518-L0641" source-line="641" niqqud="added-draft"><abbr>ודנה&quot;י</abbr> עִם הַמִּיֽלּוּי <abbr>דע&quot;ב</abbr> <abbr>ס&quot;ג</abbr> <abbr>הנז&#x27;</abbr> <abbr>גי&#x27;</abbr> <abbr>מד&quot;ת</abbr> <abbr>כמס&#x27;</abbr> <abbr>ד&#x27;</abbr> אַלְפִין <abbr>דד&#x27;</abbr> <abbr>אהי&quot;ה</abbr>:</p>
+<lb source-line="642" />
+<table id="HB21518-L0643" source-line="643" preserve-layout="true" niqqud="source-only" recite="false">
+<row id="HB21518-L0644" source-line="644" niqqud="source-preserved">[נצח]</row>
+<row id="HB21518-L0645" source-line="645" niqqud="source-preserved"><shem recite="false">הי</shem> <shem recite="false">הי</shem> <shem recite="false">הי</shem> <shem recite="false">הי</shem></row>
+<row id="HB21518-L0646" source-line="646" niqqud="source-preserved"><shem recite="false">הי</shem> <shem recite="false">הי</shem> <shem recite="false">הי</shem> <shem recite="false">הי</shem></row>
+<row id="HB21518-L0647" source-line="647" niqqud="source-preserved"><shem recite="false">הי</shem> <shem recite="false">הי</shem> <shem recite="false">הי</shem> <shem recite="false">הי</shem></row>
+<row id="HB21518-L0648" source-line="648" niqqud="source-preserved"><shem recite="false">וד</shem> <letter recite="false">י</letter> ין <letter recite="false">י</letter></row>
+<lb source-line="649" />
+<row id="HB21518-L0650" source-line="650" niqqud="source-preserved">[יסוד]</row>
+<row id="HB21518-L0651" source-line="651" niqqud="source-preserved"><shem recite="false">הה</shem> <shem recite="false">הה</shem> <shem recite="false">הה</shem> <shem recite="false">הה</shem></row>
+<row id="HB21518-L0652" source-line="652" niqqud="source-preserved"><shem recite="false">הה</shem> <shem recite="false">הה</shem> <shem recite="false">הה</shem> <shem recite="false">הה</shem></row>
+<row id="HB21518-L0653" source-line="653" niqqud="source-preserved"><shem recite="false">הה</shem> <shem recite="false">הה</shem></row>
+<row id="HB21518-L0654" source-line="654" niqqud="source-preserved"><shem recite="false">אלף</shem> <shem recite="false">אלף</shem> <shem recite="false">אלף</shem></row>
+<lb source-line="655" />
+<row id="HB21518-L0656" source-line="656" niqqud="source-preserved">[<shem recite="false">הוד</shem>]</row>
+<row id="HB21518-L0657" source-line="657" niqqud="source-preserved"><shem recite="false">הא</shem> <shem recite="false">הא</shem></row>
+<row id="HB21518-L0658" source-line="658" niqqud="source-preserved"><shem recite="false">הא</shem> <shem recite="false">הא</shem></row>
+<row id="HB21518-L0659" source-line="659" niqqud="source-preserved"><shem recite="false">הא</shem></row>
+<row id="HB21518-L0660" source-line="660" niqqud="source-preserved"><shem recite="false">וד</shem> <letter recite="false">י</letter> <shem recite="false">או</shem> <letter recite="false">י</letter></row>
+</table>
+<lb source-line="662" />
+<p id="HB21518-L0663" source-line="663" niqqud="added-draft">כַּוָּוֽנַת הַמְשָׁכַת הַמֹּוֽחִין דִּכְתָרִים <abbr>די&quot;ס</abbr> <abbr>דקט&#x27;</abbr> <abbr>וגד&#x27;</abbr> רִאשׁוֹן וְשֵׁנִי שֶׁצָּרִיךְ לְכַוֵּיֽן בִּטְבִילַת לֵיל שְׁבוּעוֹת וּתְחִיֽלָּה יְכַוֵּיֽן לְהַעֲלוֹת אוֹר הַחוֹזֵר דַּחֲסָדִים <abbr>לכחב&quot;ד</abbr>. <abbr>ואח&quot;כ</abbr> יְכַוֵּיֽן לְהַמְשִׁיךְ הַכְּתָרִים <abbr>כנז&#x27;</abbr> בִּדְרוּשׁ שִׁשִּׁי מִשַּׁעַר <abbr>כ&quot;ה</abbr>.</p>
+<lb source-line="664" />
+<p id="HB21518-L0665" source-line="665" niqqud="added-draft">יְכַוֵּיֽן לְהַעֲלוֹת הַכֶּפֶל דִּשְׁנֵי שְׁלִישִׁי הָעֶלְיוֹנִים דְּחֶסֶד <abbr>הא&#x27;</abbr> הַמִּתְפַּשֵּׁט בִּסְפִירַת הַחֶסֶד <abbr>דז&quot;א</abbr> שֶׁהוּא אוֹר הַחוֹזֵר <abbr>דחח&quot;ן</abbr> דְּחָכְמָה וְחֶסֶד <abbr>דפר&#x27;</abbr> הָאֶמְצָעִי <abbr>חג&quot;ת</abbr> <abbr>דז&quot;א</abbr> <abbr>לחח&quot;ן</abbr> דְּחֶסֶד וְנֶצַח <abbr>דפר&#x27;</abbr> הַפְּנִימִי <abbr>חב&quot;ד</abbr> וְאוֹר הַחוֹזֵר דְּחֶסֶד <abbr>דחח&quot;ן</abbr> דְּנֶצַח <abbr>דפרצו&#x27;</abbr> הָאֶמְצָעִי <abbr>לדת&quot;י</abbr> <abbr>דת&quot;ת</abbr> <abbr>דפר&#x27;</abbr> הַפְּנִימִי <abbr>חב&quot;ד</abbr>.</p>
+<lb source-line="666" />
+</page>
+<page id="HB21518-p015" pdf="15" folio="ז ע&quot;ב" marker="━━━━━━━━━━  דף ז ע&quot;ב   (PDF 15)  ━━━━━━━━━━">
+<lb source-line="668" />
+<p id="HB21518-L0669" source-line="669" niqqud="added-draft">וְכֵן לְהַעֲלוֹת הַכֶּפֶל דִּשְׁנֵי שְׁלִישִׁי הָעֶלְיוֹנִים דְּחֶסֶד הַשֵּׁנִי הַמִּתְפַּשֵּׁט בִּסְפִירַת הַגְּבוּרָה <abbr>דז&quot;א</abbr> שֶׁהוּא אוֹר הַחוֹזֵר <abbr>דבג&quot;ה</abbr> דְּבִינָה וּגְבוּרָה <abbr>דפר&#x27;</abbr> הָאֶמְצָעִי <abbr>חג&quot;ת</abbr> <abbr>דז&quot;א</abbr> <abbr>לבג&quot;ה</abbr> דִּגְבוּרָה <shem recite="false">והוד</shem> <abbr>דפר&#x27;</abbr> הַפְּנִימִי <abbr>חב&quot;ד</abbr> <abbr>דז&quot;א</abbr> וְאוֹר הַחוֹזֵר דְּחֶסֶד <abbr>דבג&quot;ה</abbr> <shem recite="false">דהוד</shem> <abbr>דפר&#x27;</abbr> אֶמְצָעִי <abbr>לדת&quot;י</abbr> דִּיסוֹד <abbr>דפר&#x27;</abbr> הַפְּנִימִי <abbr>חב&quot;ד</abbr>:</p>
+<lb source-line="670" />
+<p id="HB21518-L0671" source-line="671" niqqud="added-draft">וְכֵן לְהַעֲלוֹת הַכֶּפֶל דְּשָׁלִישׁ הַתַּחְתּוֹן עִם הַכֶּפֶל דְּשָׁלִישׁ הָעֶלְיוֹן דְּחֶסֶד <abbr>הג&#x27;</abbr> הַמִּתְפַּשֵּׁט <abbr>בת&quot;ת</abbr> <abbr>דז&quot;א</abbr> שֶׁהוּא אוֹר הַחוֹזֵר <abbr>דדת&quot;י</abbr> דִּיסוֹד <abbr>ודדת&quot;י</abbr> דְּדַעַת <abbr>דפר&#x27;</abbr> הָאֶמְצָעִי <abbr>חג&quot;ת</abbr> <abbr>דז&quot;א</abbr> <abbr>לת&quot;ת</abbr> <abbr>דישסו&quot;ת</abbr> שֶׁבּוֹ מְלֻוֽבָּשִׁים שֹׁוֽרֶשׁ <abbr>ד&#x27;</abbr> מוֹחִין דְּכֶתֶר <abbr>דז&quot;א</abbr> <abbr>ועי&quot;כ</abbr> יְכַוֵּיֽן לְהַמְשִׁיךְ וּלְהַשְׁלִים הִתְפַּשְּׁטוּת חֵלֶק הָעֶלְיוֹן <abbr>דת&quot;ת</abbr> <abbr>הנז&#x27;</abbr> <abbr>דישסו&quot;ת</abbr>.</p>
+<lb source-line="672" />
+<p id="HB21518-L0673" source-line="673" niqqud="added-draft">וִיכַוֵּיֽן לְהַמְשִׁיךְ תַּשְׁלוּם הִתְפַּשְּׁטוּת <abbr>הת&quot;ת</abbr> <abbr>הנז&#x27;</abbr> <abbr>דישסו&quot;ת</abbr> מֵאֲחוֹרֵי רֵישָׁא <abbr>דז&quot;א</abbr> עִם עֲצָמוֹת אוֹרוֹת <abbr>דנה&quot;י</abbr> <abbr>דישסו&quot;ת</abbr> שֶׁבּוֹ שֶׁהֵם <abbr>הנה&quot;י</abbr> הַחֲדָשִׁים עַד <shem recite="false">כנגד</shem> הֶחָזֶה <abbr>דז&quot;א</abbr> מֵאֲחוֹרָיו:</p>
+<lb source-line="674" />
+<p id="HB21518-L0675" source-line="675" niqqud="added-draft">וִיכַוֵּיֽן לְהַעֲלוֹת הַכֶּפֶל דְּשָׁלִישׁ הָאֶמְצָעִי דְּחֶסֶד הַשְּׁלִישִׁי הַמִּתְפַּשֵּׁט <abbr>בת&quot;ת</abbr> <abbr>דז&quot;א</abbr> שֶׁהוּא אוֹר הַחוֹזֵר <abbr>דדת&quot;י</abbr> <abbr>דת&quot;ת</abbr> <abbr>דפר&#x27;</abbr> הָאֶמְצָעִי <abbr>חג&quot;ת</abbr> <abbr>דז&quot;א</abbr> לְתוֹךְ סִיּוּם <abbr>הת&quot;ת</abbr> <abbr>הנז&#x27;</abbr> <abbr>דישסו&quot;ת</abbr> שֶׁכְּנֶגֶד אֲחוֹרֵי הֶחָזֶה <abbr>דז&quot;א</abbr> וּלְהַמְשִׁיךְ סִיּוּם <abbr>הת&quot;ת</abbr> <abbr>הנז&#x27;</abbr> עִם <abbr>המוחי&#x27;</abbr> שֶׁבּוֹ <abbr>לפר&#x27;</abbr> הַכֶּתֶר <abbr>דנוק&#x27;</abbr> קַדִּישָׁא <abbr>דז&quot;א</abbr>.</p>
+<lb source-line="676" />
+<p id="HB21518-L0677" source-line="677" niqqud="added-draft">יְכַוֵּיֽן עַתָּה <abbr>להמשי&#x27;</abbr> <abbr>ג&#x27;</abbr> קֹוֵי <abbr>חח&quot;ן</abbr> <abbr>בג&quot;ה</abbr> <abbr>דת&quot;י</abbr> <abbr>דה&#x27;</abbr> <abbr>פרצו&#x27;</abbr> דְּכָל אֶחָד <abbr>מי&quot;ס</abbr> <abbr>חב&quot;ד</abbr> <abbr>חג&quot;ת</abbr> <abbr>נה&quot;י</abbr> <abbr>דישסו&quot;ת</abbr> <abbr>ודאו&quot;א</abbr> עִם <abbr>ג&#x27;</abbr> קֹוֵי <abbr>חח&quot;ן</abbr> <abbr>בג&quot;ה</abbr> <abbr>דת&quot;י</abbr> <abbr>דצ&#x27;</abbr> <abbr>ול&quot;ם</abbr> <abbr>דה&#x27;</abbr> צַלְמֵי <abbr>המוחי&#x27;</abbr> שֶׁבָּהֶם וּבְתוֹכָם שֵׁם <abbr>ההוי&quot;ה</abbr> עִם קוֹץ <abbr>היו&quot;ד</abbr> וַעֲלֵיהֶם שֵׁם <abbr>אהי&quot;ה</abbr> מַקִּיף בְּנִיֽקּוּד קָמַץ <abbr>לחח&quot;ן</abbr> <abbr>בג&quot;ה</abbr> <abbr>דת&quot;י</abbr> <abbr>דה&#x27;</abbr> <abbr>פרצו&#x27;</abbr> דְּכֶתֶר דְּכָל אֶחָד <abbr>מי&quot;ס</abbr> <abbr>חב&quot;ד</abbr> <abbr>חג&quot;ת</abbr> <abbr>נה&quot;י</abbr> <abbr>דמ&quot;ה</abbr> <abbr>וב&quot;ן</abbr> <abbr>דמ&quot;ה</abbr> <abbr>ומ&quot;ה</abbr> <abbr>וב&quot;ן</abbr> <abbr>דב&quot;ן</abbr> דְּבִינָה וּדְחָכְמָה <abbr>דז&quot;א</abbr> וּמִסְפָּרָם לְיַעֲקֹב וְרָחֵל <abbr>ע&quot;ד</abbr> <abbr>הנז&quot;ל</abbr> <abbr>בז&quot;א</abbr> מַמָּשׁ:</p>
+<lb source-line="678" />
+<table id="HB21518-L0679" source-line="679" preserve-layout="true" niqqud="source-only" recite="false">
+<row id="HB21518-L0680" source-line="680" niqqud="source-preserved">[כתר דחכמה]</row>
+<row id="HB21518-L0681" source-line="681" niqqud="source-preserved"><shem recite="false">אָהָיָהָ</shem> <shem recite="false">אָהָיָהָ</shem></row>
+<row id="HB21518-L0682" source-line="682" niqqud="source-preserved"><shem recite="false">יָהָוָהָ</shem> <shem recite="false">יָהָוָהָ</shem></row>
+<lb source-line="683" />
+<row id="HB21518-L0684" source-line="684" niqqud="source-preserved">[כתר דכתר]</row>
+<row id="HB21518-L0685" source-line="685" niqqud="source-preserved"><shem recite="false">אָהָיָהָ</shem> <shem recite="false">אָהָיָהָ</shem></row>
+<row id="HB21518-L0686" source-line="686" niqqud="source-preserved"><shem recite="false">יָהָוָהָ</shem> <shem recite="false">יָהָוָהָ</shem></row>
+<lb source-line="687" />
+<row id="HB21518-L0688" source-line="688" niqqud="source-preserved">[כתר דבינה]</row>
+<row id="HB21518-L0689" source-line="689" niqqud="source-preserved"><shem recite="false">אָהָיָהָ</shem> <shem recite="false">אָהָיָהָ</shem></row>
+<row id="HB21518-L0690" source-line="690" niqqud="source-preserved"><shem recite="false">יָהָוָהָ</shem> <shem recite="false">יָהָוָהָ</shem></row>
+<lb source-line="691" />
+<row id="HB21518-L0692" source-line="692" niqqud="source-preserved">[כתר דחסד]</row>
+<row id="HB21518-L0693" source-line="693" niqqud="source-preserved"><shem recite="false">אָהָיָהָ</shem> <shem recite="false">אָהָיָהָ</shem></row>
+<row id="HB21518-L0694" source-line="694" niqqud="source-preserved"><shem recite="false">יָהָוָהָ</shem> <shem recite="false">יָהָוָהָ</shem></row>
+<lb source-line="695" />
+<row id="HB21518-L0696" source-line="696" niqqud="source-preserved">[כתר דדעת]</row>
+<row id="HB21518-L0697" source-line="697" niqqud="source-preserved"><shem recite="false">אָהָיָהָ</shem> <shem recite="false">אָהָיָהָ</shem></row>
+<row id="HB21518-L0698" source-line="698" niqqud="source-preserved"><shem recite="false">יָהָוָהָ</shem> <shem recite="false">יָהָוָהָ</shem></row>
+<lb source-line="699" />
+<row id="HB21518-L0700" source-line="700" niqqud="source-preserved">[כתר דגבורה]</row>
+<row id="HB21518-L0701" source-line="701" niqqud="source-preserved"><shem recite="false">אָהָיָהָ</shem> <shem recite="false">אָהָיָהָ</shem></row>
+<row id="HB21518-L0702" source-line="702" niqqud="source-preserved"><shem recite="false">יָהָוָהָ</shem> <shem recite="false">יָהָוָהָ</shem></row>
+<lb source-line="703" />
+<row id="HB21518-L0704" source-line="704" niqqud="source-preserved">[כתר דנצח]</row>
+<row id="HB21518-L0705" source-line="705" niqqud="source-preserved"><shem recite="false">אָהָיָהָ</shem> <shem recite="false">אָהָיָהָ</shem></row>
+<row id="HB21518-L0706" source-line="706" niqqud="source-preserved"><shem recite="false">יָהָוָהָ</shem> <shem recite="false">יָהָוָהָ</shem></row>
+<lb source-line="707" />
+<row id="HB21518-L0708" source-line="708" niqqud="source-preserved">[כתר <abbr>דת&quot;ת</abbr>]</row>
+<row id="HB21518-L0709" source-line="709" niqqud="source-preserved"><shem recite="false">אָהָיָהָ</shem> <shem recite="false">אָהָיָהָ</shem></row>
+<row id="HB21518-L0710" source-line="710" niqqud="source-preserved"><shem recite="false">יָהָוָהָ</shem> <shem recite="false">יָהָוָהָ</shem></row>
+<lb source-line="711" />
+<row id="HB21518-L0712" source-line="712" niqqud="source-preserved">[כתר <shem recite="false">דהוד</shem>]</row>
+<row id="HB21518-L0713" source-line="713" niqqud="source-preserved"><shem recite="false">אָהָיָהָ</shem> <shem recite="false">אָהָיָהָ</shem></row>
+<row id="HB21518-L0714" source-line="714" niqqud="source-preserved"><shem recite="false">יָהָוָהָ</shem> <shem recite="false">יָהָוָהָ</shem></row>
+<lb source-line="715" />
+</table>
+<lb source-line="717" />
+</page>
+<page id="HB21518-p016" pdf="16" folio="ח ע&quot;א" marker="━━━━━━━━━━  דף ח ע&quot;א   (PDF 16)  ━━━━━━━━━━">
+<lb source-line="719" />
+<table id="HB21518-L0720" source-line="720" preserve-layout="true" niqqud="source-only" recite="false">
+<row id="HB21518-L0721" source-line="721" niqqud="source-preserved">[כתר דיסוד]</row>
+<row id="HB21518-L0722" source-line="722" niqqud="source-preserved"><shem recite="false">אָהָיָהָ</shem> <shem recite="false">אָהָיָהָ</shem></row>
+<row id="HB21518-L0723" source-line="723" niqqud="source-preserved"><shem recite="false">יָהָוָהָ</shem> <shem recite="false">יָהָוָהָ</shem></row>
+<lb source-line="724" />
+<row id="HB21518-L0725" source-line="725" niqqud="source-preserved">[כתר דמלכות]</row>
+<row id="HB21518-L0726" source-line="726" niqqud="source-preserved"><shem recite="false">אָהָיָהָ</shem> <shem recite="false">אָהָיָהָ</shem></row>
+<row id="HB21518-L0727" source-line="727" niqqud="source-preserved"><shem recite="false">יָהָוָהָ</shem> <shem recite="false">יָהָוָהָ</shem></row>
+<lb source-line="728" />
+<row id="HB21518-L0729" source-line="729" niqqud="source-preserved">[<abbr>ג&#x27;</abbr> כלי כתר <abbr>דז&quot;א</abbr>]</row>
+<row id="HB21518-L0730" source-line="730" niqqud="source-preserved"><shem recite="false">אלף</shem> <shem recite="false">הי</shem> <shem recite="false">יוד</shem> <shem recite="false">הי</shem></row>
+<row id="HB21518-L0731" source-line="731" niqqud="source-preserved"><shem recite="false">יוד</shem> <shem recite="false">הי</shem> <shem recite="false">ויו</shem> <shem recite="false">הא</shem></row>
+<row id="HB21518-L0732" source-line="732" niqqud="source-preserved"><shem recite="false">יוד</shem> <shem recite="false">יוד</shem> <shem recite="false">הי</shem> <shem recite="false">יוד</shem> <shem recite="false">הי</shem> <shem recite="false">ויו</shem> <shem recite="false">יוד</shem> <shem recite="false">הי</shem> <shem recite="false">ויו</shem> <shem recite="false">הא</shem></row>
+</table>
+<lb source-line="734" />
+<p id="HB21518-L0735" source-line="735" niqqud="added-draft"><abbr>ואח&quot;כ</abbr> יְכַוֵּיֽן לְהַעֲלוֹת <abbr>ע&quot;ד</abbr> <abbr>הנז&quot;ל</abbr> לְהַעֲלוֹת אוֹר הַחוֹזֵר <abbr>דפר&#x27;</abbr> חָכְמָה וּלְהַמְשִׁיךְ הַכְּתָרִים כַּסֵּדֶר הַזֶּה מַמָּשׁ.</p>
+<lb source-line="736" />
+<p id="HB21518-L0737" source-line="737" niqqud="added-draft"><abbr>ואח&quot;כ</abbr> יְכַוֵּיֽן <abbr>ע&quot;ד</abbr> <abbr>הנז&quot;ל</abbr> מַמָּשׁ לְהַעֲלוֹת אוֹר הַחוֹזֵר <abbr>דפר&#x27;</abbr> כֶּתֶר <abbr>דז&quot;א</abbr> וּלְהַמְשִׁיךְ <abbr>הת&quot;ת</abbr> <abbr>דא&quot;א</abbr> כֶּתֶר <abbr>לז&quot;א</abbr> <abbr>ולנוק&#x27;</abbr> <abbr>ע&quot;ד</abbr> <abbr>הנז&quot;ל</abbr>:</p>
+<lb source-line="738" />
+<p id="HB21518-L0739" source-line="739" niqqud="added-draft">וִיכַוֵּיֽן לְהַמְשִׁיךְ <abbr>ג&#x27;</abbr> קֹוֵי <abbr>חח&quot;ן</abbr> <abbr>בג&quot;ה</abbr> <abbr>דת&quot;י</abbr> <abbr>דה&#x27;</abbr> <abbr>פרצו&#x27;</abbr> דְּכֶתֶר <abbr>דמ&quot;ה</abbr> <abbr>וב&quot;ן</abbr> <abbr>די&quot;ס</abbr> חָכְמָה <abbr>דא&quot;א</abbr> עִם <abbr>ג&#x27;</abbr> קֹוֵי <abbr>חח&quot;ן</abbr> <abbr>בג&quot;ה</abbr> <abbr>דת&quot;י</abbr> <abbr>דצ&#x27;</abbr> <abbr>ול&quot;מ</abbr> <abbr>דה&#x27;</abbr> צַלְמֵי <abbr>המוחי&#x27;</abbr> שֶׁבָּהֶם וּבְתוֹכָם שֵׁם <abbr>הוי&quot;ה</abbr> עִם קוֹץ <abbr>היו&quot;ד</abbr> וַעֲלֵיהֶם שֵׁם <abbr>אהי&quot;ה</abbr> <abbr>מק&#x27;</abbr> בְּנִיֽקּוּד קָמָץ.</p>
+<lb source-line="740" />
+<table id="HB21518-L0741" source-line="741" preserve-layout="true" niqqud="source-only" recite="false">
+<row id="HB21518-L0742" source-line="742" niqqud="source-preserved">[כתר <abbr>דפר&#x27;</abbr> חכמה <abbr>דא&quot;א</abbr>]</row>
+<row id="HB21518-L0743" source-line="743" niqqud="source-preserved"><shem recite="false">אָהָיָהָ</shem> <shem recite="false">אָהָיָהָ</shem></row>
+<row id="HB21518-L0744" source-line="744" niqqud="source-preserved"><shem recite="false">יָהָוָהָ</shem> <shem recite="false">יָהָוָהָ</shem></row>
+<row id="HB21518-L0745" source-line="745" niqqud="source-preserved"><shem recite="false">אלף</shem> <shem recite="false">הי</shem> <shem recite="false">יוד</shem> <shem recite="false">הי</shem></row>
+<row id="HB21518-L0746" source-line="746" niqqud="source-preserved"><shem recite="false">יוד</shem> <shem recite="false">הי</shem> <shem recite="false">ויו</shem> <shem recite="false">הא</shem></row>
+<row id="HB21518-L0747" source-line="747" niqqud="source-preserved"><shem recite="false">יוד</shem> <shem recite="false">יוד</shem> <shem recite="false">הי</shem> <shem recite="false">יוד</shem> <shem recite="false">הי</shem> <shem recite="false">ויו</shem> <shem recite="false">יוד</shem> <shem recite="false">הי</shem> <shem recite="false">ויו</shem> <shem recite="false">הא</shem></row>
+</table>
+<lb source-line="749" />
+<p id="HB21518-L0750" source-line="750" niqqud="added-draft">*) יְכַוֵּיֽן לְהַמְשִׁיךְ <abbr>ג&#x27;</abbr> קֹוֵי <abbr>חח&quot;ן</abbr> <abbr>בג&quot;ה</abbr> <abbr>דת&quot;י</abbr> <abbr>דה&#x27;</abbr> <abbr>פר&#x27;</abbr> הַכֶּתֶר <abbr>דמ&quot;ה</abbr> <abbr>וב&quot;ן</abbr> <abbr>די&quot;ס</abbr> דְּפַרְצוּף כֶּתֶר <abbr>דא&quot;א</abbr> עִם <abbr>ג&#x27;</abbr> קֹוֵי <abbr>חח&quot;ן</abbr> <abbr>בג&quot;ה</abbr> <abbr>דת&quot;י</abbr> <abbr>דצ&#x27;</abbr> <abbr>ול&quot;מ</abbr> <abbr>דה&#x27;</abbr> צַלְמֵי הַמֹּוֽחִין שֶׁבָּהֶם וּבְתוֹכָם שֵׁם <abbr>הוי&quot;ה</abbr> עִם קוֹץ <abbr>היו&quot;ד</abbr> וַעֲלֵיהֶם שֵׁם <shem recite="false">אהיה</shem> מַקִּיף בְּנִיֽקּוּד קָמָץ.</p>
+<lb source-line="751" />
+<table id="HB21518-L0752" source-line="752" preserve-layout="true" niqqud="source-only" recite="false">
+<row id="HB21518-L0753" source-line="753" niqqud="source-preserved">[כתר דפרצוף כתר <abbr>דא&quot;א</abbr>]</row>
+<row id="HB21518-L0754" source-line="754" niqqud="source-preserved"><shem recite="false">אָהָיָהָ</shem> <shem recite="false">אָהָיָהָ</shem></row>
+<row id="HB21518-L0755" source-line="755" niqqud="source-preserved"><shem recite="false">יָהָוָהָ</shem> <shem recite="false">יָהָוָהָ</shem></row>
+<row id="HB21518-L0756" source-line="756" niqqud="source-preserved"><shem recite="false">אלף</shem> <shem recite="false">הי</shem> <shem recite="false">יוד</shem> <shem recite="false">הי</shem></row>
+<row id="HB21518-L0757" source-line="757" niqqud="source-preserved"><shem recite="false">יוד</shem> <shem recite="false">הי</shem> <shem recite="false">ויו</shem> <shem recite="false">הא</shem></row>
+<row id="HB21518-L0758" source-line="758" niqqud="source-preserved"><shem recite="false">יוד</shem> <shem recite="false">יוד</shem> <shem recite="false">הי</shem> <shem recite="false">יוד</shem> <shem recite="false">הי</shem> <shem recite="false">ויו</shem> <shem recite="false">יוד</shem> <shem recite="false">הי</shem> <shem recite="false">ויו</shem> <shem recite="false">הא</shem></row>
+</table>
+<lb source-line="760" />
+<p id="HB21518-L0761" source-line="761" niqqud="added-draft">— <abbr>הג&quot;ה</abbr> בְּתַחְתִּית הָעַמּוּד —</p>
+<p id="HB21518-L0762" source-line="762" niqqud="added-draft">*) <abbr>א&quot;ה</abbr> עַיֵּיֽן <abbr>בנה&quot;ש</abbr> <abbr>דכ&quot;ט</abbr> <abbr>ע&quot;ב</abbr> <abbr>וז&quot;ל</abbr> <abbr>וצ&quot;ל</abbr> אֵימָתַי נֶמְשֵׁיכֶם <abbr>ומתפשטי&#x27;</abbr> <abbr>הל&quot;מ</abbr> הַכּוֹלְלִים דְּצַלְמֵי הַמֹּוֽחִין שֶׁנִּמְשְׁכוּ וְנִתְפַּשְּׁטוּ <abbr>בזו&quot;ן</abbr> בִּתְחִיֽלַּת הָעֹוֽמֶר וְעַד עַתָּה כִּי עַתָּה הוּא זְמַן הַמְשָׁכָתָם אַחֲרֵי בִּיאַת הַכְּתָרִים <abbr>דזו&quot;ן</abbr> כַּיָּדוּעַ וְאֶפְשָׁר שֶׁצָּרִיךְ לְהַמְשִׁיךְ אוֹתָם בִּטְבִילָה אַחַר הַכְּתָרִים <shem recite="false">או</shem> אֶפְשָׁר לוֹמַר שֶׁנִּמְשָׁכִים בַּקָּרְבָּנוֹת וּבְנִשְׁמַת <abbr>ע&quot;ד</abbr> הַמְשָׁכַת <abbr>מ&#x27;</abbr> דְּצֶלֶם בְּשַׁבָּת <abbr>ע&quot;ש</abbr> וְעַיֵּיֽן בְּפֶתַח עֵינַיִם <abbr>בד&quot;צ</abbr> <abbr>ע&quot;ג</abbr> <abbr>וז&quot;ל</abbr> וּבְעִנְיַן <abbr>המקי&#x27;</abbr> <abbr>ל&quot;מ</abbr> הַכּוֹלְלִים <abbr>דפר&#x27;</abbr> בִּינָה וְחָכְמָה וְכֶתֶר <abbr>וכו&#x27;</abbr> <abbr>ובק&quot;ק</abbr> בֵּית <shem recite="false">אל</shem> <abbr>יכב&quot;ץ</abbr> הַמִּנְהָג לְכַוֵּיֽן תֵּכֶף אַחַר כַּוָּנַת הַטְּבִילָה קֹוֽדֶם צֵאת מִן הַטְּבִילָה <abbr>עכ&quot;ל</abbr> <abbr>וא&quot;כ</abbr> כָּאן אַחַר הַכַּוָּנָה הַזֹּאת צָרִיךְ לְכַוֵּיֽן לְהַמְשִׁיךְ <abbr>ל&quot;מ</abbr> הַכּוֹלְלִים <abbr>דפר&#x27;</abbr> בִּינָה וְחָכְמָה וְכֶתֶר <abbr>כנז&#x27;</abbr> <abbr>ויעב&quot;א</abbr>:</p>
+<p id="HB21518-L0763" source-line="763" niqqud="added-draft">— <abbr>א&quot;א</abbr> <abbr>מהרי&quot;ט</abbr> <abbr>נ&quot;י</abbr> וְהַצָּעִיר אֱלִיעֶזֶר יְדִיד הַלֵּוִי</p>
+<lb source-line="764" />
+</page>
+<page id="HB21518-p017" pdf="17" folio="ח ע&quot;ב" marker="━━━━━━━━━━  דף ח ע&quot;ב   (PDF 17)  ━━━━━━━━━━">
+<lb source-line="766" />
+<p id="HB21518-L0767" source-line="767" niqqud="added-draft">וּמִסְפָּרָם <abbr>לג&#x27;</abbr> כְּלֵי יַעֲקֹב וְרָחֵל:</p>
+<lb source-line="768" />
+<table id="HB21518-L0769" source-line="769" preserve-layout="true" niqqud="source-only" recite="false">
+<row id="HB21518-L0770" source-line="770" niqqud="source-preserved"><shem recite="false">יוד</shem> <shem recite="false">הא</shem> <shem recite="false">ואו</shem> <shem recite="false">הה</shem></row>
+<row id="HB21518-L0771" source-line="771" niqqud="source-preserved"><shem recite="false">יוד</shem> <shem recite="false">יוד</shem> <shem recite="false">הא</shem> <shem recite="false">יוד</shem> <shem recite="false">הא</shem> <shem recite="false">ואו</shem> <shem recite="false">יוד</shem> <shem recite="false">הא</shem> <shem recite="false">ואו</shem> <shem recite="false">הה</shem></row>
+<row id="HB21518-L0772" source-line="772" niqqud="source-preserved"><letter recite="false">י</letter> <shem recite="false">יה</shem> <shem recite="false">יהו</shem> <shem recite="false">יהוה</shem></row>
+</table>
+<lb source-line="774" />
+<heading id="HB21518-L0775" source-line="775" niqqud="added-draft">■ כַּוָּנַת תְּפִיֽלַּת שַׁחֲרִית וּמוּסָף דְּיוֹם שְׁבוּעוֹת ■</heading>
+<lb source-line="776" />
+<p id="HB21518-L0777" source-line="777" niqqud="added-draft">הִנֵּה נוֹדַע דְּכָל מַה שֶׁנַּמְשִׁיךְ <abbr>במ&quot;ט</abbr> יָמִים עַד אַשְׁמֹוֽרֶת הַבֹּוֽקֶר דִּשְׁבוּעוֹת הוּא הַמֹּוֽחִין דְּאָחוֹר בְּאָחוֹר וְלָכֵן לֹא יֵשׁ זִיֽוּוּג בְּכָל אֵלּוּ הַיָּמִים <abbr>ואפי&#x27;</abbr> בְּלֵיל שְׁבוּעוֹת עַד הַיּוֹם <abbr>ואח&quot;כ</abbr> <abbr>ע&quot;י</abbr> תְּפִלַּת שַׁחֲרִית וּמוּסָף יְכַוֵּיֽן לְהַמְשִׁיךְ מוֹחִין דְּאָחוֹר וּפָנִים דְּפָנִים <abbr>דישסו&quot;ת</abbr> <abbr>ודאו&quot;א</abbr> <abbr>ודא&quot;א</abbr> <abbr>לג&#x27;</abbr> פַּרְצוּפֵי בִּינָה וְחָכְמָה וְכֶתֶר הַכּוֹלְלִים <abbr>דזו&quot;ן</abbr> וְהֵם הַמֹּוֽחִין דְּחִיָּה <abbr>דאבי&quot;ע</abbr> דְּכָל אוֹתָם הַבְּחִינוֹת:</p>
+<lb source-line="778" />
+<p id="HB21518-L0779" source-line="779" niqqud="added-draft">וְכָתַב הָרַב <abbr>ז&quot;ל</abbr> בְּסוֹף <abbr>פ&quot;ה</abbr> מִשַּׁעַר <abbr>כ&quot;ה</abbr> וּבְכַמָּה מְקוֹמוֹת <abbr>וז&quot;ל</abbr> וְדַע כִּי זֶה שֶׁאָמַרְנוּ שֶׁרָחֵל אֵינָהּ לוֹקַחַת רַק סִיּוּם הָאֲחוֹרַיִם זֶה הוּא עַתָּה בִּהְיוֹתָהּ בַּאֲחוֹרָיו כִּי אַחֲרֵי שֶׁתִּגְדַּל <abbr>וכו&#x27;</abbr> <abbr>ע&quot;ש</abbr> שֶׁכָּתַב שֶׁכָּל אֵלּוּ הַמֹּוֽחִין הֵם מוֹחִין דְּאָחוֹר <abbr>ואח&quot;כ</abbr> בָּאִים הַמֹּוֽחִין דְּפָנִים בְּפָנִים וְנִגְדֶּלֶת כָּמוֹהוּ בְּפַעַם אֶחָד שָׁוֶה לִשְׁנֵיהֶם מִזֶּה נִרְאֶה שֶׁאֵין לְכַוֵּיֽן בִּתְפִלּוֹת הַיּוֹם דִּשְׁבוּעוֹת רַק מִמִּלַּת &quot;<abbr>באהבה&quot;</abbr> דַּעֲמִידָה וְאֵילָךְ:</p>
+<lb source-line="780" />
+<p id="HB21518-L0781" source-line="781" niqqud="added-draft">וְהוּא שֶׁיְּכַוֵּיֽן בְּמִלַּת &quot;<abbr>באהבה&quot;</abbr> דִּתְפִלַּת שַׁחֲרִית דְּלַחַשׁ דְּיוֹם שְׁבוּעוֹת לְסַלֵּק הַמֹּוֽחִין <abbr>דישסו&quot;ת</abbr> מִפַּרְצוּף הַבִּינָה הַכּוֹלֵל <abbr>דז&quot;א</abbr> וּלְהַמְשִׁיךְ הַצֶּלֶם דְּמוֹחִין דִּתְבוּנָה לְפַרְצוּף הַבִּינָה הַכּוֹלֵל דְּנֻוֽקְבָּא וְצֶלֶם הַמֹּוֽחִין <abbr>דיש&quot;ס</abbr> <abbr>ע&quot;ג</abbr> רֵישָׁא <abbr>דז&quot;א</abbr> וְלִיֽנַסַּר הַנֻּוֽקְבָּא <abbr>הנז&#x27;</abbr> וְלַהֲבִיאָהּ לְפָנִים וּלְהַעֲלוֹת אֶת שְׁנֵי צַלְמֵי הַמֹּוֽחִין <abbr>הנז&#x27;</abbr> <abbr>למ&quot;ן</abbr> וּלְזַוְּוֽגָם לְהַמְשִׁיךְ הַמֹּוֽחִין דְּפָנִים וְנִמְשָׁכִים וּמִתְפַּשְּׁטִים לִנְקֻוֽדַּת הַפָּנִים דְּנֻוֽקְבָּא דְּבִינָה <abbr>ב&quot;מלך</abbr> עוֹזֵר <abbr>וכו&#x27;&quot;</abbr> וְנִגְדֶּלֶת וְחוֹזְרִים וּמִסְתַּלְּקִין מִמֶּנָּה הַמֹּוֽחִין וּמִתְפַּשְּׁטִים בִּכְרִיעוֹת וּבִזְקִיפוֹת עַל דֶּרֶךְ <abbr>הנז&#x27;</abbr> בִּתְפִלַּת הַחֹוֽל וּבַחֲזָרָה דְּשַׁחֲרִית יְכַוֵּיֽן <abbr>ע&quot;ד</abbr> <abbr>הנז&#x27;</abbr> בְּפַרְצוּף הַכּוֹלֵל דְּחָכְמָה <abbr>דזו&quot;ן</abbr> הַנִּתְקָן <abbr>ע&quot;י</abbr> <abbr>או&quot;א</abbr> עִיֽלָּאִין וּבְלַחַשׁ דְּמוּסָף <abbr>נר&quot;ן</abbr> דְּפַרְצוּף הַכֶּתֶר <abbr>דזו&quot;ן</abbr> וּבַחֲזָרָה פַּרְצוּף חָכְמָה דְּכֶתֶר <abbr>הנז&#x27;</abbr> <abbr>דזו&quot;ן</abbr> וּבִקְדֻוֽשַּׁת הַכֶּתֶר פַּרְצוּף הַכֶּתֶר <abbr>הנז&#x27;</abbr> <abbr>דזו&quot;ן</abbr> <abbr>ע&quot;ד</abbr> <abbr>הנז&#x27;</abbr>:</p>
+<lb source-line="782" />
+</page>
+<page id="HB21518-p018" pdf="18" folio="ט ע&quot;א" marker="━━━━━━━━━━  דף ט ע&quot;א   (PDF 18)  ━━━━━━━━━━">
+<lb source-line="784" />
+<heading id="HB21518-L0785" source-line="785" niqqud="added-draft">■ *) לַחַשׁ וַחֲזָרָה דְּשַׁחֲרִית וְלַחַשׁ וַחֲזָרָה דְּמוּסָף ■</heading>
+<lb source-line="786" />
+<p id="HB21518-L0787" source-line="787" niqqud="added-draft"><shem recite="false">אדני</shem> שְׂפָתַי תִּפְתָּח וּפִי יַגִּיד תְּהִלָּתֶךָ:</p>
+<p id="HB21518-L0788" source-line="788" niqqud="added-draft">בָּרוּךְ אַתָּה <shem recite="false">יהוה</shem> (<shem recite="false">אדני</shem>) <shem recite="false">יאהדונהי</shem> <shem recite="false">אלהינו</shem> <shem recite="false">ואלהי</shem> אֲבוֹתֵינוּ. <shem recite="false">אלהי</shem> אַבְרָהָם <shem recite="false">אלהי</shem> יִצְחָק <shem recite="false">ואלהי</shem> יַעֲקֹב. <shem recite="false">האל</shem> הַגָּדוֹל הַגִּבּוֹר וְהַנּוֹרָא <shem recite="false">אל</shem> עֶלְיוֹן גּוֹמֵל חֲסָדִים טוֹבִים קוֹנֵה הַכֹּל וְזוֹכֵר חַסְדֵּי אָבוֹת וּמֵבִיא גוֹאֵל לִבְנֵי בְנֵיהֶם לְמַֽעַן שְׁמוֹ בְּאַֽהֲבָה: [לִמְסוֹר עַצְמוֹ <abbr>עק&quot;ה</abbr> וּלְקַבֵּל עָלָיו <abbr>דמב&quot;ד</abbr>]</p>
+<lb source-line="789" />
+<table id="HB21518-L0790" source-line="790" preserve-layout="true" niqqud="source-only" recite="false">
+<row id="HB21518-L0791" source-line="791" niqqud="source-preserved"><letter recite="false">י</letter> <letter recite="false">א</letter> <letter recite="false">א</letter>   <shem recite="false">יוד</shem> <shem recite="false">הי</shem> <shem recite="false">ויו</shem> <shem recite="false">הי</shem></row>
+<row id="HB21518-L0792" source-line="792" niqqud="source-preserved"><letter recite="false">ה</letter> <letter recite="false">ד</letter> <letter recite="false">ה</letter>   <shem recite="false">יוד</shem> <shem recite="false">הי</shem> <shem recite="false">ואו</shem> <shem recite="false">הי</shem></row>
+<row id="HB21518-L0793" source-line="793" niqqud="source-preserved"><letter recite="false">ו</letter> <letter recite="false">נ</letter> <letter recite="false">י</letter>   <shem recite="false">יוד</shem> <shem recite="false">הא</shem> <shem recite="false">ואו</shem> <shem recite="false">הא</shem></row>
+<row id="HB21518-L0794" source-line="794" niqqud="source-preserved"><letter recite="false">ה</letter> <letter recite="false">י</letter> <letter recite="false">ה</letter>   <shem recite="false">יוד</shem> <shem recite="false">הה</shem> <shem recite="false">וו</shem> <shem recite="false">הה</shem></row>
+</table>
+<lb source-line="796" />
+<p id="HB21518-L0797" source-line="797" niqqud="added-draft">וּלְהַעֲלוֹת נִשְׁמָתוֹ לַהֵיכָל <abbr>ק&quot;ק</abbr> (לַחַשׁ דְּשַׁחֲרִית <abbr>דישסו&quot;ת</abbr> דִּבְרִיאָה וּבַחֲזָרָה דְּאַבָּא שֶׁהֵם <abbr>או&quot;א</abbr> <abbr>ע&quot;י</abbr> דִּבְרִיאָה לַחַשׁ דְּמוּסָף <abbr>נר&quot;ן</abbr> דְּכֶתֶר <abbr>דזו&quot;ן</abbr> חֲזָרָה דְּמוּסָף חַיָּה וִיחִידָה) וּלְהַעֲלוֹת <abbr>מ&quot;ן</abbr> מֵהֵיכָל אַהֲבָה <abbr>דברי&#x27;</abbr> וּלְהַעֲלוֹתָם עִם נִשְׁמָתוֹ עַד <abbr>הז&quot;א</abbr> <abbr>דאצי&#x27;</abbr>.</p>
+<lb source-line="798" />
+<p id="HB21518-L0799" source-line="799" niqqud="added-draft">וְאָז מִסְתַּלְּקִים מִמֶּנּוּ <abbr>ב&#x27;</abbr> צַלְמֵי <abbr>המו&#x27;</abbr> <abbr>דאחו&quot;פ</abbr> <abbr>דאח&#x27;</abbr> לַחַשׁ דְּשַׁחֲרִית <abbr>דישסו&quot;ת</abbr> וּבַחֲזָרָה <abbr>דאו&quot;א</abbr> <abbr>ע&quot;י</abbr> עַם הַהֲוָיוֹת <abbr>והאהי&quot;ה</abbr> <abbr>המנוקדו&#x27;</abbr> <abbr>המלובשי&#x27;</abbr> בָּהֶם וְיוֹצְאִים מִן הַכֵּלִים <abbr>דה&quot;פ</abbr> בִּינָה <shem recite="false">או</shem> <abbr>ה&quot;פ</abbr> חָכְמָה <abbr>דז&quot;א</abbr> וְעוֹלִים וְעוֹמְדִים לְמַעְלָה <abbr>ע&quot;ג</abbr> כְּלֵיהֶם. וְאָז הַחֲכָמוֹת וְהַחֲסָדִים דְּפָנִים <abbr>דאח&#x27;</abbr> <abbr>דמו&#x27;</abbr> <abbr>הנז&#x27;</abbr> עִם <abbr>ההויו&quot;ת</abbr> <abbr>ואהי&quot;ה</abbr> <abbr>המלובשי&#x27;</abbr> בָּהֶם נִשְׁאָרִים <abbr>ע&quot;ג</abbr> רֵישָׁא <abbr>דז&quot;א</abbr> <abbr>דפר&#x27;</abbr> <abbr>הנז&#x27;</abbr>.</p>
+<lb source-line="800" />
+<table id="HB21518-L0801" source-line="801" preserve-layout="true" niqqud="source-only" recite="false">
+<row id="HB21518-L0802" source-line="802" niqqud="source-preserved"><shem recite="false">אָהָיָהָ</shem></row>
+<row id="HB21518-L0803" source-line="803" niqqud="source-preserved"><shem recite="false">יָהָוָהָ</shem></row>
+<lb source-line="804" />
+<row id="HB21518-L0805" source-line="805" niqqud="source-preserved">[טור ימין]</row>
+<row id="HB21518-L0806" source-line="806" niqqud="source-preserved"><shem recite="false">אַהַיַהַ</shem></row>
+<row id="HB21518-L0807" source-line="807" niqqud="source-preserved"><shem recite="false">יַהַוַהַ</shem></row>
+<row id="HB21518-L0808" source-line="808" niqqud="source-preserved"><shem recite="false">אֶהֶיֶהֶ</shem></row>
+<row id="HB21518-L0809" source-line="809" niqqud="source-preserved"><shem recite="false">יֶהֶוֶהֶ</shem></row>
+<row id="HB21518-L0810" source-line="810" niqqud="source-preserved"><shem recite="false">אִהִיִהִ</shem></row>
+<row id="HB21518-L0811" source-line="811" niqqud="source-preserved"><shem recite="false">יִהִוִהִ</shem></row>
+<lb source-line="812" />
+<row id="HB21518-L0813" source-line="813" niqqud="source-preserved">[טור אמצעי]</row>
+<row id="HB21518-L0814" source-line="814" niqqud="source-preserved"><shem recite="false">אֹהֵיָהֵ</shem> <shem recite="false">אֹהֵיָהֵ</shem></row>
+<row id="HB21518-L0815" source-line="815" niqqud="source-preserved"><shem recite="false">יֹהֵוָהֵ</shem> <shem recite="false">יֹהֵוָהֵ</shem></row>
+<row id="HB21518-L0816" source-line="816" niqqud="source-preserved"><shem recite="false">אֹהֹיֹהֹ</shem> <shem recite="false">אֹהֹיֹהֹ</shem></row>
+<row id="HB21518-L0817" source-line="817" niqqud="source-preserved"><shem recite="false">יֹהֹוֹהֹ</shem> <shem recite="false">יֹהֹוֹהֹ</shem></row>
+<row id="HB21518-L0818" source-line="818" niqqud="source-preserved"><source_pointing>אוּהוּיוּהוּ</source_pointing> <source_pointing>אוּהוּיוּהוּ</source_pointing></row>
+<row id="HB21518-L0819" source-line="819" niqqud="source-preserved"><source_pointing>יוּהוּווּהוּ</source_pointing> <source_pointing>יוּהוּווּהוּ</source_pointing></row>
+<lb source-line="820" />
+<row id="HB21518-L0821" source-line="821" niqqud="source-preserved">[טור שמאל]</row>
+<row id="HB21518-L0822" source-line="822" niqqud="source-preserved"><shem recite="false">אֵהֵיֵהֵ</shem></row>
+<row id="HB21518-L0823" source-line="823" niqqud="source-preserved"><shem recite="false">יֵהֵוֵהֵ</shem></row>
+<row id="HB21518-L0824" source-line="824" niqqud="source-preserved"><shem recite="false">אְהְיְהְ</shem></row>
+<row id="HB21518-L0825" source-line="825" niqqud="source-preserved"><shem recite="false">יְהְוְהְ</shem></row>
+<row id="HB21518-L0826" source-line="826" niqqud="source-preserved"><shem recite="false">אֻהֻיֻהֻ</shem></row>
+<row id="HB21518-L0827" source-line="827" niqqud="source-preserved"><shem recite="false">יֻהֻוֻהֻ</shem></row>
+</table>
+<lb source-line="829" />
+<p id="HB21518-L0830" source-line="830" niqqud="added-draft">— <abbr>הג&quot;ה</abbr> בְּתַחְתִּית הָעַמּוּד —</p>
+<p id="HB21518-L0831" source-line="831" niqqud="added-draft">*) <abbr>א&quot;ה</abbr> עַיֵּיֽן בְּשֶׁמֶן שָׂשׂוֹן <abbr>ח&quot;ד</abbr> <abbr>ד&quot;ל</abbr> <abbr>ע&quot;ב</abbr> <abbr>וז&quot;ל</abbr> בְּעִנְיַן הַמִּנְהָגִים <abbr>בק&quot;ק</abbr> בֵּית <shem recite="false">אל</shem> <abbr>יכב&quot;ץ</abbr> בְּסֵדֶר הַכַּוָּנוֹת בְּלֵיל שְׁבוּעוֹת אֵין לְכַוֵּיֽן שׁוּם כַּוָּנָה רַק יֹאמַר עַרְבִית פָּשׁוּט וְכֵן בְּיוֹם תְּפִלָּה פְּשׁוּטָה עַד מִלַּת בְּאַהֲבָה שֶׁל הָעֲמִידָה וּמִשָּׁם וְאֵילָךְ יַתְחִיל בְּסֵדֶר הַכַּוָּנָה <abbr>כנז&#x27;</abbr> בַּסִּיֽדּוּרִים לְכַוֵּיֽן קַבָּלַת <abbr>דמב&quot;ד</abbr> וּבֵרוּרֵי <abbr>רפ&quot;ח</abbr> דְּכָל בְּחִינָה לְצֹוֽרֶךְ <abbr>מו&#x27;</abbr> <abbr>דאחו&quot;פ</abbr> דְּפָנִים כַּנּוֹדָע <abbr>וכמ&quot;ש</abbr> <abbr>בנ&quot;ש</abbr> <abbr>דכ&quot;ט</abbr> <abbr>ע&quot;א</abbr> <abbr>וע&quot;ג</abbr> <abbr>ע&quot;ש</abbr> וְכֵן אָנוּ נוֹהֲגִים וְכֵן כָּתַב הָרַב <abbr>היר&quot;א</abbr> <abbr>בסי&#x27;</abbr> <abbr>וז&quot;ל</abbr> לַחַשׁ דְּשַׁחֲרִית יְכַוֵּיֽן בְּסִיֽדּוּר הַחוֹל לִנְסֹוֽר <abbr>ב&quot;פ</abbr> <abbr>אחו&quot;פ</abbr> <abbr>דאח&#x27;</abbr> דְּבִינָה <abbr>דזו&quot;ן</abbr> וּלְהָבִיא לָהֶם <abbr>ב&#x27;</abbr> צַלְמֵי <abbr>המו&#x27;</abbr> <abbr>דאחו&quot;פ</abbr> דְּפָנִים. וְהַכְּרִיעוֹת וְהַזְּקִיפוֹת וְזִוּוּג שִׂים שָׁלוֹם כְּמוֹ בְּחוֹל מַמָּשׁ אֶלָּא שֶׁהַזִּוּוּג הוּא <abbr>בזו&quot;ן</abbr> הַגְּדוֹלִים <abbr>דפר&#x27;</abbr> <abbr>בי&#x27;</abbr> וְיַעֲקֹב וְרָחֵל נִכְלָלִים בָּהֶם. חֲזָרַת שַׁחֲרִית <abbr>פר&#x27;</abbr> חָכְמָה <abbr>דזו&quot;ן</abbr> לַחַשׁ דְּמוּסָף <abbr>נר&quot;ן</abbr> דְּכֶתֶר <abbr>דזו&quot;ן</abbr> חֲזָרָה דְּמוּסָף חָכְמָה דְּכֶתֶר <abbr>דזו&quot;ן</abbr> קְדֻוֽשַּׁת כֶּתֶר כֶּתֶר דְּכֶתֶר <abbr>דזו&quot;ן</abbr> <abbr>ע&quot;ש</abbr>.</p>
+<lb source-line="832" />
+</page>
+<page id="HB21518-p019" pdf="19" folio="ט ע&quot;ב" marker="━━━━━━━━━━  דף ט ע&quot;ב   (PDF 19)  ━━━━━━━━━━">
+<lb source-line="834" />
+<table id="HB21518-L0835" source-line="835" preserve-layout="true" niqqud="source-only" recite="false">
+<row id="HB21518-L0836" source-line="836" niqqud="source-preserved">[<abbr>ג&#x27;</abbr> כלי חכמה]</row>
+<row id="HB21518-L0837" source-line="837" niqqud="source-preserved"><shem recite="false">יוד</shem> <shem recite="false">הי</shem> <shem recite="false">ואו</shem> <shem recite="false">הא</shem></row>
+<row id="HB21518-L0838" source-line="838" niqqud="source-preserved"><letter recite="false">י</letter> <shem recite="false">יה</shem> <shem recite="false">יהו</shem> <shem recite="false">יהוה</shem></row>
+<row id="HB21518-L0839" source-line="839" niqqud="source-preserved"><shem recite="false">יוד</shem> <shem recite="false">הא</shem> <shem recite="false">ואו</shem> <shem recite="false">הא</shem></row>
+<lb source-line="840" />
+<row id="HB21518-L0841" source-line="841" niqqud="source-preserved">[<abbr>ג&#x27;</abbr> כלי דעת]</row>
+<row id="HB21518-L0842" source-line="842" niqqud="source-preserved"><shem recite="false">יוד</shem> <shem recite="false">הי</shem> <shem recite="false">ויו</shem> <shem recite="false">הי</shem></row>
+<row id="HB21518-L0843" source-line="843" niqqud="source-preserved"><shem recite="false">יוד</shem> <shem recite="false">הי</shem> <shem recite="false">ואו</shem> <shem recite="false">הי</shem></row>
+<row id="HB21518-L0844" source-line="844" niqqud="source-preserved"><shem recite="false">יוד</shem> <shem recite="false">הה</shem> <shem recite="false">וו</shem> <shem recite="false">הה</shem></row>
+<lb source-line="845" />
+<row id="HB21518-L0846" source-line="846" niqqud="source-preserved">[<abbr>ג&#x27;</abbr> כלי בינה]</row>
+<row id="HB21518-L0847" source-line="847" niqqud="source-preserved"><shem recite="false">אלף</shem> <shem recite="false">אלף</shem> <shem recite="false">הא</shem> <shem recite="false">אלף</shem> <shem recite="false">הא</shem> <shem recite="false">יוד</shem></row>
+<row id="HB21518-L0848" source-line="848" niqqud="source-preserved"><shem recite="false">אלף</shem> <shem recite="false">הא</shem> <shem recite="false">יוד</shem> <shem recite="false">הא</shem></row>
+<row id="HB21518-L0849" source-line="849" niqqud="source-preserved"><shem recite="false">אלף</shem> <shem recite="false">הא</shem> <shem recite="false">יוד</shem> <shem recite="false">הא</shem></row>
+<row id="HB21518-L0850" source-line="850" niqqud="source-preserved"><shem recite="false">אהיה</shem></row>
+</table>
+<lb source-line="852" />
+<p id="HB21518-L0853" source-line="853" niqqud="added-draft">וּלְהַמְשִׁיךְ הֲבִינוֹתָ <abbr>והגבורו&#x27;</abbr> שֶׁהוּא צֶלֶם <abbr>דאח&#x27;</abbr> <abbr>דאח&#x27;</abbr> תּוֹךְ <shem recite="false">לאה</shem> וְרָחֵל <abbr>דפר&#x27;</abbr> <abbr>הנז&#x27;</abbr> וּמִתְחַבְּרִים <shem recite="false">לאה</shem> וְרָחֵל וְנַעֲשִׂים <abbr>פר&#x27;</abbr> אֶחָד וּלְהַמְשִׁיךְ הֶאָרַת <abbr>ה&quot;ם</abbr> עֶלְיוֹנוֹת שֶׁהֵם <abbr>חב&quot;ד</abbr> <abbr>חו&quot;ג</abbr> <abbr>דז&quot;א</abbr> <abbr>לנוק&#x27;</abbr> וְלִנְסֹוֽר אוֹתָהּ וְלַהֲבִיאָהּ <abbr>פב&quot;פ</abbr>.</p>
+<lb source-line="854" />
+<table id="HB21518-L0855" source-line="855" preserve-layout="true" niqqud="source-only" recite="false">
+<row id="HB21518-L0856" source-line="856" niqqud="source-preserved"><shem recite="false">אָהָיָהָ</shem></row>
+<row id="HB21518-L0857" source-line="857" niqqud="source-preserved"><shem recite="false">יָהָוָהָ</shem></row>
+<lb source-line="858" />
+<row id="HB21518-L0859" source-line="859" niqqud="source-preserved">[טור ימין]</row>
+<row id="HB21518-L0860" source-line="860" niqqud="source-preserved"><shem recite="false">אַהַיַהַ</shem></row>
+<row id="HB21518-L0861" source-line="861" niqqud="source-preserved"><shem recite="false">יַהַוַהַ</shem></row>
+<row id="HB21518-L0862" source-line="862" niqqud="source-preserved"><letter recite="false">י</letter> <shem recite="false">יה</shem> <shem recite="false">יהו</shem> <shem recite="false">יהוה</shem></row>
+<row id="HB21518-L0863" source-line="863" niqqud="source-preserved"><shem recite="false">אֶהֶיֶהֶ</shem></row>
+<row id="HB21518-L0864" source-line="864" niqqud="source-preserved"><shem recite="false">יֶהֶוֶהֶ</shem></row>
+<row id="HB21518-L0865" source-line="865" niqqud="source-preserved"><letter recite="false">י</letter> <shem recite="false">יה</shem> <shem recite="false">יהו</shem> <shem recite="false">יהוה</shem></row>
+<row id="HB21518-L0866" source-line="866" niqqud="source-preserved"><shem recite="false">אִהִיִהִ</shem></row>
+<row id="HB21518-L0867" source-line="867" niqqud="source-preserved"><shem recite="false">יִהִוִהִ</shem></row>
+<row id="HB21518-L0868" source-line="868" niqqud="source-preserved"><letter recite="false">י</letter> <shem recite="false">יה</shem> <shem recite="false">יהו</shem> <shem recite="false">יהוה</shem></row>
+<lb source-line="869" />
+<row id="HB21518-L0870" source-line="870" niqqud="source-preserved">[טור אמצעי]</row>
+<row id="HB21518-L0871" source-line="871" niqqud="source-preserved"><shem recite="false">אֹהֵיָהֵ</shem> <shem recite="false">אֹהֵיָהֵ</shem></row>
+<row id="HB21518-L0872" source-line="872" niqqud="source-preserved"><shem recite="false">יֹהֵוָהֵ</shem> <shem recite="false">יֹהֵוָהֵ</shem></row>
+<row id="HB21518-L0873" source-line="873" niqqud="source-preserved"><letter recite="false">י</letter> <shem recite="false">יה</shem> <shem recite="false">יהו</shem> <shem recite="false">יהוה</shem></row>
+<row id="HB21518-L0874" source-line="874" niqqud="source-preserved"><shem recite="false">אֹהֹיֹהֹ</shem> <shem recite="false">אֹהֹיֹהֹ</shem></row>
+<row id="HB21518-L0875" source-line="875" niqqud="source-preserved"><shem recite="false">יֹהֹוֹהֹ</shem> <shem recite="false">יֹהֹוֹהֹ</shem></row>
+<row id="HB21518-L0876" source-line="876" niqqud="source-preserved"><letter recite="false">י</letter> <shem recite="false">יה</shem> <shem recite="false">יהו</shem> <shem recite="false">יהוה</shem></row>
+<row id="HB21518-L0877" source-line="877" niqqud="source-preserved"><source_pointing>אוּהוּיוּהוּ</source_pointing> <source_pointing>אוּהוּיוּהוּ</source_pointing></row>
+<row id="HB21518-L0878" source-line="878" niqqud="source-preserved"><source_pointing>יוּהוּווּהוּ</source_pointing> <source_pointing>יוּהוּווּהוּ</source_pointing></row>
+<row id="HB21518-L0879" source-line="879" niqqud="source-preserved"><letter recite="false">י</letter> <shem recite="false">יה</shem> <shem recite="false">יהו</shem> <shem recite="false">יהוה</shem></row>
+<lb source-line="880" />
+<row id="HB21518-L0881" source-line="881" niqqud="source-preserved">[טור שמאל]</row>
+<row id="HB21518-L0882" source-line="882" niqqud="source-preserved"><shem recite="false">אֵהֵיֵהֵ</shem></row>
+<row id="HB21518-L0883" source-line="883" niqqud="source-preserved"><shem recite="false">יֵהֵוֵהֵ</shem></row>
+<row id="HB21518-L0884" source-line="884" niqqud="source-preserved"><letter recite="false">י</letter> <shem recite="false">יה</shem> <shem recite="false">יהו</shem> <shem recite="false">יהוה</shem></row>
+<row id="HB21518-L0885" source-line="885" niqqud="source-preserved"><shem recite="false">אְהְיְהְ</shem></row>
+<row id="HB21518-L0886" source-line="886" niqqud="source-preserved"><shem recite="false">יְהְוְהְ</shem></row>
+<row id="HB21518-L0887" source-line="887" niqqud="source-preserved"><letter recite="false">י</letter> <shem recite="false">יה</shem> <shem recite="false">יהו</shem> <shem recite="false">יהוה</shem></row>
+<row id="HB21518-L0888" source-line="888" niqqud="source-preserved"><shem recite="false">אֻהֻיֻהֻ</shem></row>
+<row id="HB21518-L0889" source-line="889" niqqud="source-preserved"><shem recite="false">יֻהֻוֻהֻ</shem></row>
+<row id="HB21518-L0890" source-line="890" niqqud="source-preserved"><letter recite="false">י</letter> <shem recite="false">יה</shem> <shem recite="false">יהו</shem> <shem recite="false">יהוה</shem></row>
+</table>
+<lb source-line="892" />
+</page>
+<page id="HB21518-p020" pdf="20" folio="י ע&quot;א" marker="━━━━━━━━━━  דף י ע&quot;א   (PDF 20)  ━━━━━━━━━━">
+<lb source-line="894" />
+<table id="HB21518-L0895" source-line="895" preserve-layout="true" niqqud="source-only" recite="false">
+<row id="HB21518-L0896" source-line="896" niqqud="source-preserved">[חכמה <abbr>דנוק&#x27;</abbr>]</row>
+<row id="HB21518-L0897" source-line="897" niqqud="source-preserved"><shem recite="false">יוד</shem> <shem recite="false">הא</shem> <shem recite="false">וו</shem> <shem recite="false">הה</shem></row>
+<row id="HB21518-L0898" source-line="898" niqqud="source-preserved"><shem recite="false">יוד</shem> <shem recite="false">יוד</shem> <shem recite="false">הא</shem></row>
+<row id="HB21518-L0899" source-line="899" niqqud="source-preserved"><shem recite="false">יוד</shem> <shem recite="false">הא</shem> <shem recite="false">וו</shem></row>
+<row id="HB21518-L0900" source-line="900" niqqud="source-preserved"><shem recite="false">יוד</shem> <shem recite="false">הא</shem> <shem recite="false">וו</shem> <shem recite="false">הה</shem></row>
+<row id="HB21518-L0901" source-line="901" niqqud="source-preserved"><letter recite="false">י</letter> <shem recite="false">יה</shem> <shem recite="false">יהו</shem> <shem recite="false">יהוה</shem></row>
+<lb source-line="902" />
+<row id="HB21518-L0903" source-line="903" niqqud="source-preserved">[דעת <abbr>דנוק&#x27;</abbr>]</row>
+<row id="HB21518-L0904" source-line="904" niqqud="source-preserved"><shem recite="false">יוד</shem> <shem recite="false">הה</shem> <shem recite="false">וו</shem> <shem recite="false">הה</shem></row>
+<row id="HB21518-L0905" source-line="905" niqqud="source-preserved"><shem recite="false">יוד</shem> <shem recite="false">יוד</shem> <shem recite="false">הה</shem> <shem recite="false">יוד</shem> <shem recite="false">הה</shem></row>
+<row id="HB21518-L0906" source-line="906" niqqud="source-preserved"><shem recite="false">וו</shem> <shem recite="false">יוד</shem> <shem recite="false">הה</shem> <shem recite="false">וו</shem> <shem recite="false">הה</shem></row>
+<row id="HB21518-L0907" source-line="907" niqqud="source-preserved"><shem recite="false">יוד</shem> <shem recite="false">יוד</shem> <shem recite="false">הא</shem> <shem recite="false">יוד</shem> <shem recite="false">הא</shem></row>
+<row id="HB21518-L0908" source-line="908" niqqud="source-preserved"><shem recite="false">ואו</shem> <shem recite="false">יוד</shem> <shem recite="false">הא</shem> <shem recite="false">ואו</shem> <shem recite="false">הא</shem></row>
+<lb source-line="909" />
+<row id="HB21518-L0910" source-line="910" niqqud="source-preserved">[בינה <abbr>דנוק&#x27;</abbr>]</row>
+<row id="HB21518-L0911" source-line="911" niqqud="source-preserved"><shem recite="false">אלף</shem> <shem recite="false">הה</shem> <shem recite="false">יוד</shem> <shem recite="false">הה</shem></row>
+<row id="HB21518-L0912" source-line="912" niqqud="source-preserved"><letter recite="false">א</letter> <letter recite="false">ה</letter> <letter recite="false">י</letter> <letter recite="false">ה</letter></row>
+<row id="HB21518-L0913" source-line="913" niqqud="source-preserved"><letter recite="false">א</letter> <shem recite="false">אה</shem> <shem recite="false">אהי</shem> <shem recite="false">אהיה</shem></row>
+<lb source-line="914" />
+<row id="HB21518-L0915" source-line="915" niqqud="source-preserved">[חסד <abbr>דנוק&#x27;</abbr>]</row>
+<row id="HB21518-L0916" source-line="916" niqqud="source-preserved"><shem recite="false">אלף</shem> <shem recite="false">למד</shem></row>
+<row id="HB21518-L0917" source-line="917" niqqud="source-preserved"><shem recite="false">אלף</shem> <shem recite="false">אלף</shem> <shem recite="false">למד</shem></row>
+<row id="HB21518-L0918" source-line="918" niqqud="source-preserved"><shem recite="false">אל</shem></row>
+<lb source-line="919" />
+<row id="HB21518-L0920" source-line="920" niqqud="source-preserved">[<abbr>ת&quot;ת</abbr> <abbr>דנוק&#x27;</abbr>]</row>
+<row id="HB21518-L0921" source-line="921" niqqud="source-preserved"><shem recite="false">אלף</shem> <shem recite="false">למד</shem> <shem recite="false">הי</shem> <shem recite="false">יוד</shem> <shem recite="false">מם</shem></row>
+<row id="HB21518-L0922" source-line="922" niqqud="source-preserved"><letter recite="false">צ</letter> <letter recite="false">ב</letter> <letter recite="false">א</letter> <letter recite="false">ו</letter> <letter recite="false">ת</letter></row>
+<row id="HB21518-L0923" source-line="923" niqqud="source-preserved"><letter recite="false">ה</letter> <letter recite="false">ש</letter> <letter recite="false">ת</letter> <letter recite="false">פ</letter> <letter recite="false">א</letter></row>
+<lb source-line="924" />
+<row id="HB21518-L0925" source-line="925" niqqud="source-preserved">[גבורה <abbr>דנוק&#x27;</abbr>]</row>
+<row id="HB21518-L0926" source-line="926" niqqud="source-preserved"><shem recite="false">יֱהֹוִה</shem></row>
+<row id="HB21518-L0927" source-line="927" niqqud="source-preserved"><shem recite="false">אלהים</shem></row>
+<row id="HB21518-L0928" source-line="928" niqqud="source-preserved"><shem recite="false">אכדטם</shem></row>
+<lb source-line="929" />
+<row id="HB21518-L0930" source-line="930" niqqud="source-preserved">[נצח <abbr>דנוק&#x27;</abbr>]</row>
+<row id="HB21518-L0931" source-line="931" niqqud="source-preserved"><shem recite="false">אל</shem></row>
+<row id="HB21518-L0932" source-line="932" niqqud="source-preserved"><letter recite="false">א</letter> <shem recite="false">אל</shem></row>
+<row id="HB21518-L0933" source-line="933" niqqud="source-preserved">בם</row>
+<lb source-line="934" />
+<row id="HB21518-L0935" source-line="935" niqqud="source-preserved">[יסוד <abbr>דנוק&#x27;</abbr>]</row>
+<row id="HB21518-L0936" source-line="936" niqqud="source-preserved"><shem recite="false">שין</shem> <shem recite="false">דלת</shem> <shem recite="false">יוד</shem></row>
+<row id="HB21518-L0937" source-line="937" niqqud="source-preserved"><letter recite="false">ש</letter> <letter recite="false">ד</letter> <letter recite="false">י</letter></row>
+<row id="HB21518-L0938" source-line="938" niqqud="source-preserved"><letter recite="false">ש</letter> <shem recite="false">שד</shem> <shem recite="false">שדי</shem></row>
+<lb source-line="939" />
+<row id="HB21518-L0940" source-line="940" niqqud="source-preserved">[<shem recite="false">הוד</shem> <abbr>דנוק&#x27;</abbr>]</row>
+<row id="HB21518-L0941" source-line="941" niqqud="source-preserved"><shem recite="false">אלהים</shem></row>
+<row id="HB21518-L0942" source-line="942" niqqud="source-preserved"><letter recite="false">א</letter> <shem recite="false">אל</shem> אלה <shem recite="false">אלהי</shem> <shem recite="false">אלהים</shem></row>
+<row id="HB21518-L0943" source-line="943" niqqud="source-preserved">במוכן</row>
+<lb source-line="944" />
+<row id="HB21518-L0945" source-line="945" niqqud="source-preserved">[<abbr>מל&#x27;</abbr> <abbr>דנוק&#x27;</abbr>]</row>
+<row id="HB21518-L0946" source-line="946" niqqud="source-preserved"><shem recite="false">אלף</shem> <shem recite="false">דלת</shem> <shem recite="false">נון</shem> <shem recite="false">יוד</shem></row>
+<row id="HB21518-L0947" source-line="947" niqqud="source-preserved"><letter recite="false">א</letter> <letter recite="false">ד</letter> <letter recite="false">נ</letter> <letter recite="false">י</letter></row>
+<row id="HB21518-L0948" source-line="948" niqqud="source-preserved"><letter recite="false">א</letter> אד אדנ <shem recite="false">אדני</shem></row>
+</table>
+<lb source-line="950" />
+<p id="HB21518-L0951" source-line="951" niqqud="added-draft">וְעַתָּה יְכַוֵּיֽן לַהֲבִיאָם <abbr>פב&quot;פ</abbr> וְהוּא שֶׁיְּכַוֵּיֽן לְהַעֲלוֹת הַחֲכָמוֹת וְהַחֲסָדִים <abbr>הנז&#x27;</abbr> עִם <abbr>הנרנח&quot;י</abbr> שֶׁבָּהֶם שֶׁנִּשְׁאֲרוּ עוֹמְדִים <abbr>ע&quot;ג</abbr> <abbr>חב&quot;ד</abbr> <abbr>דפר&#x27;</abbr> <abbr>הנז&#x27;</abbr> <abbr>דז&quot;א</abbr> עִם <abbr>הרפ&quot;ח</abbr> וְנִשְׁמָתוֹ לְעוֹרֵר <abbr>מ&quot;ד</abbr> <abbr>ומ&quot;ן</abbr> <abbr>דאו&quot;א</abbr> וְהֵם מְעוֹרְרִים <abbr>לא&quot;א</abbr> <abbr>וא&quot;א</abbr> לָעַתִּיק וְכֵן <abbr>עד&quot;ז</abbr> עַד רוּם הַמַּעֲלוֹת שֹׁוֽרֶשׁ הָעֶלְיוֹן <abbr>ע&quot;ב</abbr> <abbr>ס&quot;ג</abbr> <abbr>דחו&quot;ב</abbr> <abbr>דא&quot;ק</abbr> וּמִזְדַּוְּוֽגִים <shem recite="false">איההיוהה</shem> וּמוֹצִיאִים <abbr>ט&quot;ס</abbr> עֶלְיוֹנוֹת <abbr>דאחו&quot;פ</abbr> דְּפָנִים <abbr>דמ&quot;ה</abbr> <abbr>וב&quot;ן</abbr> <abbr>דב&quot;ן</abbr> <abbr>וי&quot;ס</abbr> <abbr>דאחו&quot;פ</abbr> דְּפָנִים <abbr>דמ&quot;ה</abbr> <abbr>וב&quot;ן</abbr> <abbr>דמ&quot;ה</abbr> הַחֹדֶשׁ עִם <abbr>הנרנח&quot;י</abbr> וּלְהַמְשִׁיכָם דֶּרֶךְ הַמַּדְרֵגוֹת לָעַתִּיק וְאָז נִבְקַע הַיְּסוֹד דְּעַתִּיק וּמִתְגַּלִּים כָּל <abbr>החו&quot;ג</abbr> וּמִתְחַבְּרִים אַבָּא עִם <abbr>יש&quot;ס</abbr> בְּפַרְצוּף <abbr>א&#x27;</abbr> וְאִיֽמָּא וּתְבוּנָה בְּפַרְצוּף <abbr>א&#x27;</abbr>:</p>
+<lb source-line="952" />
+<p id="HB21518-L0953" source-line="953" niqqud="added-draft">וּלְזַוֵּוֽג <abbr>חב&quot;ד</abbr> <abbr>דנה&quot;י</abbr> דְּעַתִּיק וּלְהַמְשִׁיךְ הַמֹּוֽחִין <abbr>דחו&quot;ב</abbr> דְּחָכְמָה <abbr>דז&quot;א</abbr>:</p>
+<p id="HB21518-L0954" source-line="954" niqqud="source-preserved"><shem recite="false">איההיוהה</shem></p>
+<lb source-line="955" />
+<p id="HB21518-L0956" source-line="956" niqqud="added-draft">גַּם לְזִוּוּג <abbr>חג&quot;ת</abbr> דְּפַרְצוּף <abbr>הנז&#x27;</abbr> וּלְהַמְשִׁיךְ הַמֹּוֽחִין <abbr>דחו&quot;ב</abbr> דְּבִינָה <abbr>דז&quot;א</abbr>:</p>
+<p id="HB21518-L0957" source-line="957" niqqud="source-preserved"><shem recite="false">איההיוהה</shem></p>
+<lb source-line="958" />
+<p id="HB21518-L0959" source-line="959" niqqud="added-draft">גַּם לְזִוּוּג <abbr>נה&quot;י</abbr> דְּפַרְצוּף <abbr>הנז&#x27;</abbr> וּלְהַמְשִׁיךְ הַמֹּוֽחִין <abbr>דחו&quot;ג</abbr> <abbr>דחו&quot;ב</abbr> וּלְהַמְשִׁיךְ כָּל הַמֹּוֽחִין <abbr>הנז&#x27;</abbr> לְפַרְצוּף <abbr>חג&quot;ת</abbr> <abbr>דא&quot;א</abbr>:</p>
+<p id="HB21518-L0960" source-line="960" niqqud="source-preserved"><shem recite="false">איההיוהה</shem></p>
+<lb source-line="961" />
+<p id="HB21518-L0962" source-line="962" niqqud="added-draft">וּלְזַוֵּוֽג פַּרְצוּף <abbr>חג&quot;ת</abbr> <abbr>הנז&#x27;</abbr>:</p>
+<p id="HB21518-L0963" source-line="963" niqqud="source-preserved"><shem recite="false">איההיוהה</shem></p>
+<lb source-line="964" />
+<p id="HB21518-L0965" source-line="965" niqqud="added-draft">וּלְהַמְשִׁיכָם לִתְרֵין מַזָּלִין:</p>
+<p id="HB21518-L0966" source-line="966" niqqud="source-preserved"><shem recite="false">אלף</shem> <shem recite="false">יוד</shem> <shem recite="false">הי</shem> <shem recite="false">הי</shem> <shem recite="false">יוד</shem> <shem recite="false">ויו</shem> <shem recite="false">הי</shem> <shem recite="false">הי</shem></p>
+<lb source-line="967" />
+</page>
+<page id="HB21518-p021" pdf="21" folio="י ע&quot;ב" marker="━━━━━━━━━━  דף י ע&quot;ב   (PDF 21)  ━━━━━━━━━━">
+<lb source-line="969" />
+<p id="HB21518-L0970" source-line="970" niqqud="added-draft">וּלְזַוֵּוֽג הַתְּרֵין מַזָּלִין וּלְהַמְשִׁיךְ הַמֹּוֽחִין <abbr>לחב&quot;ד</abbr> <abbr>דאו&quot;א</abbr> <abbr>וישסו&quot;ת</abbr> וּלְזַוְּוֽגָם וְאִיֽמָּא מַעֲלֶה <abbr>מ&quot;ן</abbr> שֶׁהֵם חָכְמוֹת וַחֲסָדִים לְאַבָּא וְאַבָּא מַמְשִׁיךְ <abbr>מ&quot;ד</abbr> שֶׁהֵם בֵּינוֹת וּגְבוּרוֹת לְאִיֽמָּא וּלְהַמְשִׁיךְ הַמֹּוֽחִין <abbr>הנז&#x27;</abbr> <abbr>לחג&quot;ת</abbr> <abbr>דאו&quot;א</abbr> <abbr>וישסו&quot;ת</abbr> וְהֵם <abbr>ישסו&quot;ת</abbr> הָרִאשׁוֹנִים:</p>
+<p id="HB21518-L0971" source-line="971" niqqud="source-preserved"><shem recite="false">איההיוהה</shem></p>
+<lb source-line="972" />
+<p id="HB21518-L0973" source-line="973" niqqud="added-draft">וּלְזַוֵּוֽג כָּל הַפַּרְצוּפִים <abbr>הנז&#x27;</abbr> וּלְהַמְשִׁיךְ הַמֹּוֽחִין <abbr>הנז&#x27;</abbr> <abbr>לחב&quot;ד</abbr> <abbr>דישסו&quot;ת</abbr> <abbr>הב&#x27;</abbr> וְהִיא <abbr>מ&#x27;</abbr> דְּצֶלֶם וְשָׁם נִשְׁאַר שָׁרְשׁוֹ וּשְׁאֵרִית הַמֹּוֽחִין <abbr>לחג&quot;ת</abbr> דְּפַרְצוּף <abbr>הנז&#x27;</abbr> וְהוּא <abbr>ל&#x27;</abbr> דְּצֶלֶם וְשָׁם נִשְׁאַר שָׁוֽרְשׁוֹ וְאָז מִסְתַּלְּקִים חַיּוֹת וְאוֹרוֹת דַּחֲצִי הַתַּחְתּוֹן <abbr>דת&quot;ת</abbr> <abbr>ונהי&quot;ם</abbr> וְעוֹלִים בַּחֲצִי הָעֶלְיוֹן <abbr>דת&quot;ת</abbr> <abbr>דישסו&quot;ת</abbr> וּשְׁאֵרִית הַמֹּוֽחִין לְהַמְשִׁיכָם <abbr>לנה&quot;י</abbr> דְּפַרְצוּף <abbr>הנז&#x27;</abbr> וְעַתָּה יְכַוֵּיֽן <abbr>להמשי&#x27;</abbr> הַצֶּלֶם <abbr>דמו&#x27;</abbr> דְּפָנִים <abbr>דאח&#x27;</abbr> דְּאַבָּא שֶׁעָלָה <abbr>למ&quot;ד</abbr> <abbr>ומ&quot;ן</abbr> לְהַלְבִּישׁוֹ בִּמְקוֹמוֹ. &quot;מֶלֶךְ עוֹזֵר <abbr>וכו&#x27;&quot;</abbr> עַד סוֹף כָּל הָעֲמִידָה יְכַוֵּיֽן <abbr>כנז&quot;ל</abbr> <abbr>בס&#x27;</abbr> עַרְבִית דְּלֵיל פֶּסַח.</p>
+<lb source-line="974" />
+<p id="HB21518-L0975" source-line="975" niqqud="added-draft">מוּסָף — יֹאמַר &quot;אַתָּה <abbr>בחרתנו&quot;</abbr> עַד &quot;זֵכֶר לִיצִיאַת <abbr>מצרים&quot;</abbr> <abbr>מס&#x27;</abbr> <abbr>הנז&quot;ל</abbr>:</p>
+<lb source-line="976" />
+<p id="HB21518-L0977" source-line="977" niqqud="added-draft"><shem recite="false">אלהינו</shem> <shem recite="false">ואלהי</shem> אֲבוֹתֵֽינוּ מִפְּנֵי חֲטָאֵינוּ גָּלִינוּ מֵאַרְצֵנוּ [אֵימָא בִּהְיוֹתָהּ <abbr>בחי&#x27;</abbr> רַחֲמִים] וְנִתְרַחַקְנוּ מֵעַל אַדְמָתֵנוּ וְאֵין אָנוּ יְכוֹלִין לַעֲלוֹת וְלֵרָאוֹת וּלְהִשְׁתַּחֲוֹת לְפָנֶיךָ בְּבֵית בְּחִירָתָךְ בִּנְוֵה הֲדָרָךְ בַּבַּיִת הַגָּדוֹל וְהַקָּדוֹשׁ שֶׁנִּקְרָא שִׁמְךָ עָלָיו מִפְּנֵי הַיָּד שֶׁנִּשְׁתַּלְּחָה בְּמִקְדָּשָׁךְ: יְהִי רָצוֹן מִלְּפָנֶיךָ <shem recite="false">יהוה</shem> (<shem recite="false">אדני</shem>) <shem recite="false">יאהדונהי</shem> [<abbr>א&quot;א</abbr>] <shem recite="false">אלהינו</shem> <shem recite="false">ואלהי</shem> אֲבוֹתֵינוּ [<abbr>חו&quot;ב</abbr>] מֶלֶךְ רַחֲמָן [<abbr>א&quot;א</abbr>] שֶׁתָּשׁוּב וּתְרַחֵם עָלֵינוּ וְעַל מִקְדָּשְׁךָ בְּרַחֲמֶיךָ הָרַבִּים וְתִבְנֵהוּ מְהֵרָה [<abbr>בני&#x27;</abbr> <abbr>פרצו&#x27;</abbr> <abbr>הנוק&#x27;</abbr>] וְתִגְדַּל [גַּדְלוּת] כְּבוֹדוֹ אָבִינוּ מַלְכֵּנוּ <shem recite="false">אלהינו</shem> גַּלֵּה כְּבוֹד מַלְכוּתְךָ [מַלְכוּת] עָלֵינוּ מְהֵרָה וְהוֹפַע וְהִנָּשֵׂא עָלֵינוּ לְעֵינֵי כָל חַי וְקָרֵב פְּזוּרֵינוּ [<abbr>זו&quot;ן</abbr>] מִבֵּין הַגּוֹיִם וּנְפוּצוֹתֵינוּ כַּנֵּס [נְשָׁמוֹת שֶׁנְּפוֹלוֹת <abbr>בקלי&#x27;</abbr>] מִיַּרְכְּתֵי אָרֶץ. וַהֲבִיאֵנוּ <shem recite="false">יהוה</shem> (<shem recite="false">אדני</shem>) <shem recite="false">יאהדונהי</shem> <shem recite="false">אלהינו</shem> לְצִיּוֹן עִירָךְ [יְסוֹד <abbr>דנוק&#x27;</abbr>] בְּרִנָּה וְלִירוּשָׁלַיִם עִיר מִקְדָּשְׁךָ [<abbr>מ&#x27;</abbr> <abbr>דנוק&#x27;</abbr>] בְּשִׂמְחַת עוֹלָם. אָנָּא <shem recite="false">אלהינו</shem>. וְשָׁם נַעֲשֶׂה לְפָנֶיךָ אֶת קָרְבְּנוֹת חוֹבוֹתֵינוּ תְּמִידִין כְּסִדְרָן וּמוּסָפִין [מִיְּסוֹד] כְּהִלְכָתָן. אֶת מוּסָף</p>
+<lb source-line="978" />
+</page>
+<page id="HB21518-p022" pdf="22" folio="יא ע&quot;א" marker="━━━━━━━━━━  דף יא ע&quot;א   (PDF 22)  ━━━━━━━━━━">
+<lb source-line="980" />
+<p id="HB21518-L0981" source-line="981" niqqud="added-draft">יוֹם חַג הַשָּׁבֻעוֹת הַזֶּה וְיוֹם טוֹב מִקְרָא קֹדֶשׁ הַזֶּה נַעֲשֶׂה וְנַקְרִיב לְפָנֶיךָ בְּאַהֲבָה כְּמִצְוַת רְצוֹנָךְ כְּמוֹ שֶׁכָּתַבְתָּ עָלֵינוּ בְּתוֹרָתָךְ עַל יְדֵי מֹשֶׁה עַבְדְּךָ:</p>
+<lb source-line="982" />
+<p id="HB21518-L0983" source-line="983" niqqud="added-draft"><shem recite="false">אלהינו</shem> <shem recite="false">ואלהי</shem> אֲבוֹתֵינוּ מֶלֶךְ רַחֲמָן רַחֵם עָלֵינוּ טוֹב וּמֵטִיב הִדָּרֶשׁ לָנוּ שׁוּבָה עָלֵינוּ בַּהֲמוֹן רַחֲמֶיךָ בִּגְלַל אָבוֹת שֶׁעָשׂוּ רְצוֹנֶךָ בְּנֵה בֵיתְךָ כְּבַתְּחִלָּה. כּוֹנֵן בֵּית מִקְדָּשְׁךָ עַל מְכוֹנוֹ. הַרְאֵנוּ בְּבִנְיָנוֹ. שַׂמְּחֵנוּ בְּתִיֽקּוּנוֹ. וְהָשֵׁב שְׁכִינָתְךָ לְתוֹכוֹ. וְהָשֵׁב כֹּהֲנִים לַעֲבוֹדָתָם. וּלְוִיִּם לְדוּכָנָם. לְשִׁירָם וּלְזִמְרָם. וְהָשֵׁב יִשְׂרָאֵל לִנְוֵיהֶם. וְשָׁם נַעֲלֶה וְנֵרָאֶה וְנִשְׁתַּחֲוֶה לְפָנֶיךָ בְּשָׁלֹשׁ פַּעֲמֵי רְגָלֵינוּ בְּכָל שָׁנָה וְשָׁנָה. כַּכָּתוּב בַּתּוֹרָה. שָׁלֹשׁ פְּעָמִ֣ים בַּשָּׁנָ֡ה יֵרָאֶ֨ה כׇל זְכוּרְךָ֜ אֶת פְּנֵ֣י <shem recite="false">יהוה</shem> (<shem recite="false">אדני</shem>) <shem recite="false">יאהדונהי</shem> אֱלֹהֶ֗יךָ בַּמָּקוֹם֙ אֲשֶׁ֣ר יִבְחָ֔ר. בְּחַ֧ג הַמַּצּ֛וֹת וּבְחַ֥ג הַשָּׁבֻוֽעוֹת וּבְחַ֣ג הַסֻּכּ֑וֹת וְלֹ֧א יֵרָאֶ֛ה אֶת פְּנֵ֥י <shem recite="false">יהוה</shem> (<shem recite="false">אדני</shem>) <shem recite="false">יאהדונהי</shem> רֵיקָם. אִ֖ישׁ כְּמַתְּנַ֣ת יָד֑וֹ כְּבִרְכַּ֛ת <shem recite="false">יהוה</shem> (<shem recite="false">אדני</shem>) <shem recite="false">יאהדונהי</shem> אֱלֹהֶ֖יךָ אֲשֶׁ֥ר נָֽתַן לָךְ:</p>
+<lb source-line="984" />
+<p id="HB21518-L0985" source-line="985" niqqud="added-draft">וְהַשִּׂיאֵנוּ <shem recite="false">יהוה</shem> (<shem recite="false">אדני</shem>) <shem recite="false">יאהדונהי</shem> <shem recite="false">אלהינו</shem> אֶת בִּרְכַּת מוֹעֲדֶיךָ לְחַיִּים בְּשִׂמְחָה וּבְשָׁלוֹם. כַּאֲשֶׁר רָצִיתָ וְאָמַרְתָּ לְבָרְכֵנוּ. כֵּן תְּבָרְכֵנוּ סֶלָה. קִדְּשָׁנוּ בְּמִצְוֹתֶיךָ. שִׂים חֶלְקֵנוּ בְּתוֹרָתָךְ. [מִזְּעֵיר] שָׂבַעְנוּ מִטּוּבְךָ. [יְסוֹד] שַׂמֵּחַ נַפְשֵׁנוּ בִּישׁוּעָתָךְ וְטַהֵר לִבֵּנוּ [דְּהַיְיֽנוּ <abbr>המ&#x27;</abbr> <abbr>שתהי&#x27;</abbr> <abbr>ראוי&#x27;</abbr> <abbr>ומתו&#x27;</abbr> לְזִוּוּג] לְעָבְדְךָ בֶּאֱמֶת. וְהַנְחִילֵנוּ</p>
+<lb source-line="986" />
+</page>
+<page id="HB21518-p023" pdf="23" folio="יא ע&quot;ב" marker="━━━━━━━━━━  דף יא ע&quot;ב   (PDF 23)  ━━━━━━━━━━">
+<lb source-line="988" />
+<p id="HB21518-L0989" source-line="989" niqqud="added-draft"><shem recite="false">יהוה</shem> (<shem recite="false">אדני</shem>) <shem recite="false">יאהדונהי</shem> <shem recite="false">אלהינו</shem> בְּשִׂמְחָה וּבְשָׂשׂוֹן מוֹעֲדֵי קָדְשֶׁךָ וְיִשְׂמְחוּ בְּךָ כָּל יִשְׂרָאֵל מִקָּדְשֵׁי שִׁמְךָ: בָּרוּךְ אַתָּה <shem recite="false">יהוה</shem> (<shem recite="false">אדני</shem>) <shem recite="false">יאהדונהי</shem> [<letter recite="false">ה</letter> <shem recite="false">אלף</shem> <shem recite="false">הה</shem> <shem recite="false">יוד</shem> <shem recite="false">הה</shem>] מְקַדֵּשׁ יִשְׂרָאֵל וְהַזְּמַנִּים:</p>
+<lb source-line="990" />
+<p id="HB21518-L0991" source-line="991" niqqud="added-draft">&quot;<abbr>רצה&quot;</abbr> <abbr>וכו&#x27;</abbr> <abbr>כנז&quot;ל</abbr> <abbr>בס&#x27;</abbr> לֵיל פֶּסַח עַד סוֹף כָּל הָעֲמִידָה. וּבַחֲזָרָה מוּסָף <abbr>או&#x27;</abbr>:</p>
+<lb source-line="992" />
+<p id="HB21518-L0993" source-line="993" niqqud="added-draft">כֶּתֶר יִתְּנוּ לְךָ <shem recite="false">יהוה</shem> (<shem recite="false">אדני</shem>) <shem recite="false">יאהדונהי</shem> <shem recite="false">אלהינו</shem> מַלְאָכִים הֲמוֹנֵי מַעֲלֶה [<abbr>או&quot;א</abbr> <abbr>ר&quot;ל</abbr> שֶׁעוֹלִים <abbr>זו&quot;ן</abbr> בְּכֶתֶר <abbr>דאו&quot;א</abbr>] עַם עַמְּךָ יִשְׂרָאֵל קִבּוּצֵי מַטֵּה [<abbr>ע&quot;י</abbr> הַצַּדִּיקִים] יַחַד כֻּלָּם קְדֻשָּׁה לְךָ יְשַׁלְּשׁוּ כְּדָבָר הָאָמוּר עַל יַד נְבִיאָךְ וְקָרָ֨א זֶ֤ה <shem recite="false">אל</shem> זֶה֙ וְאָמַ֔ר קָד֧וֹשׁ קָד֛וֹשׁ קָד֖וֹשׁ <shem recite="false">יהוה</shem> (<shem recite="false">אדני</shem>) <shem recite="false">יאהדונהי</shem> <shem recite="false">צבאות</shem> מְלֹ֥א כׇל הָאָ֖רֶץ כְּבוֹדֽוֹ: כְּבוֹדוֹ מָלֵא עוֹלָם וּמְשָׁרְתָיו שׁוֹאֲלִים אַיֵּה מְקוֹם כְּבוֹדוֹ לְהַעֲרִיצוֹ: לְעֻמָּתָם מְשַׁבְּחִים וְאוֹמְרִים בָּר֥וּךְ כְּבוֹד <shem recite="false">יהוה</shem> (<shem recite="false">אדני</shem>) <shem recite="false">יאהדונהי</shem> מִמְּקוֹמוֹ: מִמְּקוֹמוֹ הוּא יִפֶן בְּרַחֲמָיו לְעַמּוֹ הַמְיַחֲדִים שְׁמוֹ עֶרֶב וָבֹקֶר בְּכָל יוֹם תָּמִיד אוֹמְרִים פַּעֲמַיִם בְּאַהֲבָה [יְכַוֵּיֽן לְזִוּוּג <abbr>פר&#x27;</abbr> הַכֶּתֶר הַכְּלָלִי <abbr>דזו&quot;ן</abbr> שֶׁכְּבָר נִשְׁלַם תִּיֽקּוּנוֹ בְּלִיֽמּוּד לֵיל שְׁבוּעוֹת <abbr>באח&#x27;</abbr> וּמִתֵּיֽבַת בְּאַהֲבָה דְּלַחַשׁ וַחֲזָרָה דְּמוּסָף בִּפְנִים] שְׁמַ֖ע יִשְׂרָאֵ֑ל <shem recite="false">יהוה</shem> (<shem recite="false">אדני</shem>) <shem recite="false">יאהדונהי</shem> <shem recite="false">אלהינו</shem> <shem recite="false">יהוה</shem> (<shem recite="false">אדני</shem>) <shem recite="false">יאהדונהי</shem> אֶחָד: [יְכַוֵּיֽן לִמְסוֹר עַצְמוֹ <abbr>עק&quot;ה</abbr> וּלְקַבֵּל עָלָיו <abbr>דמב&quot;ד</abbr>]</p>
+<lb source-line="994" />
+<p id="HB21518-L0995" source-line="995" niqqud="added-draft">וּלְהַעֲלוֹת <abbr>נר&quot;ן</abbr> שֶׁלּוֹ <abbr>למ&quot;ן</abbr> <abbr>לזו&quot;ן</abbr> וּלְזַוֵּוֽג <abbr>זו&quot;ן</abbr> וְהִיא מַעֲלָה <abbr>מ&quot;ן</abbr> <abbr>ה&quot;ג</abbr> <abbr>דב&quot;ן</abbr> וְהוּא מַשְׁפִּיעַ <abbr>מ&quot;ד</abbr> <abbr>ה&quot;ח</abbr> <abbr>דמ&quot;ה</abbr> <abbr>ה&#x27;</abbr> <shem recite="false">אלהים</shem> <abbr>וה&#x27;</abbr> הֲוָיוֹת <abbr>ה&quot;פ</abbr> <abbr>יב&quot;ק</abbr>.</p>
+<lb source-line="996" />
+</page>
+<page id="HB21518-p024" pdf="24" folio="יב ע&quot;א" marker="━━━━━━━━━━  דף יב ע&quot;א   (PDF 24)  ━━━━━━━━━━">
+<lb source-line="998" />
+<table id="HB21518-L0999" source-line="999" preserve-layout="true" niqqud="source-only" recite="false">
+<row id="HB21518-L1000" source-line="1000" niqqud="source-preserved">סקילה   <letter recite="false">י</letter> <letter recite="false">א</letter> <letter recite="false">א</letter>   <shem recite="false">יוד</shem> <shem recite="false">הי</shem> <shem recite="false">ויו</shem> <shem recite="false">הי</shem></row>
+<row id="HB21518-L1001" source-line="1001" niqqud="source-preserved">שריפה   <letter recite="false">ה</letter> <letter recite="false">ד</letter> <letter recite="false">ה</letter>   <shem recite="false">יוד</shem> <shem recite="false">הי</shem> <shem recite="false">ואו</shem> <shem recite="false">הי</shem></row>
+<row id="HB21518-L1002" source-line="1002" niqqud="source-preserved">הרג     <letter recite="false">ו</letter> <letter recite="false">נ</letter> <letter recite="false">י</letter>   <shem recite="false">יוד</shem> <shem recite="false">הא</shem> <shem recite="false">ואו</shem> <shem recite="false">הא</shem></row>
+<row id="HB21518-L1003" source-line="1003" niqqud="source-preserved">וחנק    <letter recite="false">ה</letter> <letter recite="false">י</letter> <letter recite="false">ה</letter>   <shem recite="false">יוד</shem> <shem recite="false">הה</shem> <shem recite="false">וו</shem> <shem recite="false">הה</shem></row>
+<lb source-line="1004" />
+<row id="HB21518-L1005" source-line="1005" niqqud="source-preserved">[כתר]</row>
+<row id="HB21518-L1006" source-line="1006" niqqud="source-preserved">זיווג <abbr>עי&quot;ו</abbr>: <shem recite="false">איההיוהה</shem></row>
+<row id="HB21518-L1007" source-line="1007" niqqud="source-preserved">זיווג <abbr>א&quot;א</abbr> <abbr>ונוק&#x27;</abbr>: <shem recite="false">יאההויהה</shem></row>
+<lb source-line="1008" />
+<row id="HB21518-L1009" source-line="1009" niqqud="source-preserved">[<abbr>חב&quot;ד</abbr>]</row>
+<row id="HB21518-L1010" source-line="1010" niqqud="source-preserved">זיווג <abbr>או&quot;א</abbr> <abbr>עי&#x27;</abbr>: <shem recite="false">אילההויהם</shem></row>
+<row id="HB21518-L1011" source-line="1011" niqqud="source-preserved">זיווג <abbr>ישסו&quot;ת</abbr>: <shem recite="false">אילההויהם</shem></row>
+<lb source-line="1012" />
+<row id="HB21518-L1013" source-line="1013" niqqud="source-preserved">[<abbr>ו&quot;ק</abbr>]</row>
+<row id="HB21518-L1014" source-line="1014" niqqud="source-preserved">זיווג <abbr>זו&quot;ן</abbr>: <shem recite="false">יאהדונהי</shem></row>
+<row id="HB21518-L1015" source-line="1015" niqqud="source-preserved">זיווג יעקב ורחל: <shem recite="false">יאהדונהי</shem></row>
+</table>
+<lb source-line="1017" />
+<p id="HB21518-L1018" source-line="1018" niqqud="added-draft">יִחוּד הָעוֹלָמוֹת <abbr>וי&quot;ס</abbr> דִּדְכוֹרָא <abbr>בי&quot;ס</abbr> <abbr>דנוק&#x27;</abbr>:</p>
+<p id="HB21518-L1019" source-line="1019" niqqud="source-preserved"><source_pointing>יוּהוּווּהוּ</source_pointing></p>
+<lb source-line="1020" />
+<table id="HB21518-L1021" source-line="1021" preserve-layout="true" niqqud="source-only" recite="false">
+<row id="HB21518-L1022" source-line="1022" niqqud="source-preserved">[<abbr>ה&quot;ח</abbr> מיסוד דדכורא]</row>
+<row id="HB21518-L1023" source-line="1023" niqqud="source-preserved"><letter recite="false">י</letter>   <shem recite="false">יהוה</shem></row>
+<row id="HB21518-L1024" source-line="1024" niqqud="source-preserved"><letter recite="false">ה</letter>   <shem recite="false">יהוה</shem></row>
+<row id="HB21518-L1025" source-line="1025" niqqud="source-preserved"><letter recite="false">ו</letter>   <shem recite="false">יהוה</shem></row>
+<row id="HB21518-L1026" source-line="1026" niqqud="source-preserved"><letter recite="false">ה</letter>   <shem recite="false">יהוה</shem></row>
+<row id="HB21518-L1027" source-line="1027" niqqud="source-preserved">יסוד   <shem recite="false">יהוה</shem></row>
+<lb source-line="1028" />
+<row id="HB21518-L1029" source-line="1029" niqqud="source-preserved">[חיבור <abbr>חו&quot;ג</abbr> ביסודה]</row>
+<row id="HB21518-L1030" source-line="1030" niqqud="source-preserved"><shem recite="false">יוד</shem> <shem recite="false">הי</shem> <shem recite="false">ויו</shem> <shem recite="false">הי</shem></row>
+<row id="HB21518-L1031" source-line="1031" niqqud="source-preserved"><shem recite="false">אילההויהם</shem></row>
+<row id="HB21518-L1032" source-line="1032" niqqud="source-preserved"><shem recite="false">אילההויהם</shem></row>
+<row id="HB21518-L1033" source-line="1033" niqqud="source-preserved"><shem recite="false">אילההויהם</shem></row>
+<row id="HB21518-L1034" source-line="1034" niqqud="source-preserved"><shem recite="false">אילההויהם</shem></row>
+<row id="HB21518-L1035" source-line="1035" niqqud="source-preserved"><shem recite="false">אילההויהם</shem></row>
+<row id="HB21518-L1036" source-line="1036" niqqud="source-preserved">חיבור <abbr>חו&quot;ג</abbr> ביסודה:</row>
+<row id="HB21518-L1037" source-line="1037" niqqud="source-preserved"><shem recite="false">שין</shem> <shem recite="false">דלת</shem> <shem recite="false">יוד</shem></row>
+<row id="HB21518-L1038" source-line="1038" niqqud="source-preserved"><shem recite="false">שדי</shem></row>
+<row id="HB21518-L1039" source-line="1039" niqqud="source-preserved"><letter recite="false">ש</letter> <shem recite="false">שד</shem> <shem recite="false">שדי</shem></row>
+<lb source-line="1040" />
+<row id="HB21518-L1041" source-line="1041" niqqud="source-preserved">[<abbr>ה&quot;ג</abbr> מיסוד דנוקבא]</row>
+<row id="HB21518-L1042" source-line="1042" niqqud="source-preserved"><shem recite="false">אלהים</shem>   <letter recite="false">א</letter></row>
+<row id="HB21518-L1043" source-line="1043" niqqud="source-preserved"><shem recite="false">אלהים</shem>   <letter recite="false">ל</letter></row>
+<row id="HB21518-L1044" source-line="1044" niqqud="source-preserved"><shem recite="false">אלהים</shem>   <letter recite="false">ה</letter></row>
+<row id="HB21518-L1045" source-line="1045" niqqud="source-preserved"><shem recite="false">אלהים</shem>   <letter recite="false">י</letter></row>
+<row id="HB21518-L1046" source-line="1046" niqqud="source-preserved"><shem recite="false">אלהים</shem>   <letter recite="false">ם</letter></row>
+<lb source-line="1047" />
+<row id="HB21518-L1048" source-line="1048" niqqud="source-preserved">[חיבור <abbr>חו&quot;ג</abbr>]</row>
+<row id="HB21518-L1049" source-line="1049" niqqud="source-preserved"><shem recite="false">אילההויהם</shem></row>
+<row id="HB21518-L1050" source-line="1050" niqqud="source-preserved"><shem recite="false">יאהדונהי</shem></row>
+<lb source-line="1051" />
+<row id="HB21518-L1052" source-line="1052" niqqud="source-preserved">[חיבור <abbr>זו&quot;ן</abbr> והיכלין]</row>
+<row id="HB21518-L1053" source-line="1053" niqqud="source-preserved"><shem recite="false">יאהדונהי</shem></row>
+<row id="HB21518-L1054" source-line="1054" niqqud="source-preserved"><shem recite="false">אילההויהם</shem></row>
+</table>
+<lb source-line="1056" />
+<p id="HB21518-L1057" source-line="1057" niqqud="source-preserved"><abbr>לחו&quot;ב</abbr> <abbr>וחו&quot;ג</abbr> <abbr>דנוק&#x27;</abbr>:</p>
+<lb source-line="1058" />
+<table id="HB21518-L1059" source-line="1059" preserve-layout="true" niqqud="source-only" recite="false">
+<row id="HB21518-L1060" source-line="1060" niqqud="source-preserved"><shem recite="false">יוד</shem> <shem recite="false">הי</shem> <shem recite="false">ויו</shem> <shem recite="false">הי</shem>      <shem recite="false">יוד</shem> <shem recite="false">הי</shem> <shem recite="false">ואו</shem> <shem recite="false">הי</shem></row>
+<row id="HB21518-L1061" source-line="1061" niqqud="source-preserved"><shem recite="false">יוד</shem> <shem recite="false">הא</shem> <shem recite="false">ואו</shem> <shem recite="false">הא</shem>      <shem recite="false">יוד</shem> <shem recite="false">הה</shem> <shem recite="false">וו</shem> <shem recite="false">הה</shem></row>
+</table>
+<lb source-line="1063" />
+<p id="HB21518-L1064" source-line="1064" niqqud="added-draft">וְנוֹתֵן לָהּ דַּעַת פְּנִימִי <shem recite="false">יוד</shem> <shem recite="false">הי</shem> <shem recite="false">ואו</shem> <shem recite="false">הי</shem> וּלְהַמְשִׁיךְ מִיְּסוֹד <abbr>דז&quot;א</abbr> לִיסוֹד <abbr>דנוק&#x27;</abbr> <abbr>ע&quot;י</abbr> <abbr>ה&quot;ח</abbr> שֶׁהֵם <abbr>כ&quot;ב</abbr> אַתָּוָוֽן:</p>
+<p id="HB21518-L1065" source-line="1065" niqqud="source-preserved"><letter recite="false">א</letter> <letter recite="false">ב</letter> <letter recite="false">ג</letter> <letter recite="false">ד</letter> <letter recite="false">ה</letter> <letter recite="false">ו</letter> <letter recite="false">ז</letter> <letter recite="false">ח</letter> <letter recite="false">ט</letter> <letter recite="false">י</letter> <letter recite="false">כ</letter> <letter recite="false">ל</letter> <letter recite="false">מ</letter> <letter recite="false">נ</letter> <letter recite="false">ס</letter> <letter recite="false">ע</letter> <letter recite="false">פ</letter> <letter recite="false">צ</letter> <letter recite="false">ק</letter> <letter recite="false">ר</letter> <letter recite="false">ש</letter> <letter recite="false">ת</letter></p>
+<lb source-line="1066" />
+</page>
+<page id="HB21518-p025" pdf="25" folio="יב ע&quot;ב" marker="━━━━━━━━━━  דף יב ע&quot;ב   (PDF 25)  ━━━━━━━━━━">
+<lb source-line="1068" />
+<p id="HB21518-L1069" source-line="1069" niqqud="added-draft">הוּא <shem recite="false">אלהינו</shem>. הוּא אָבִינוּ הוּא מַלְכֵּנוּ. הוּא מוֹשִׁיעֵנוּ. הוּא יוֹשִׁיעֵנוּ. וְיִגְאָלֵנוּ שֵׁנִית. וְיַשְׁמִיעֵנוּ בְּרַחֲמָיו לְעֵינֵי כָּל חַי לֵאמֹר. הֵן גָּאַלְתִּי אֶתְכֶם אַחֲרִית כְּרֵאשִׁית לִהְיוֹת לָכֶם <shem recite="false">לאלהים</shem>. אֲנִי <shem recite="false">יהוה</shem> (<shem recite="false">אדני</shem>) <shem recite="false">יאהדונהי</shem> <shem recite="false">אלהיכם</shem>: וּבְדִבְרֵי קָדְשְׁךָ כָּתוּב לֵאמֹר יִמְלֹ֤ךְ <shem recite="false">יהוה</shem> (<shem recite="false">אדני</shem>) <shem recite="false">יאהדונהי</shem> לְעוֹלָ֗ם אֱלֹהַ֣יִךְ צִ֭יּוֹן לְדֹ֥ר וָדֹ֗ר הַֽלְלוּיָֽהּ:</p>
+<lb source-line="1070" />
+<p id="HB21518-L1071" source-line="1071" niqqud="added-draft">וּבִסְעוּדָה דְּיוֹם שְׁבוּעוֹת יְכַוֵּיֽן לְהַמְשִׁיךְ הַמֹּוֽחִין דְּאָחוֹר וּפָנִים דְּפָנִים דְּחִיצוֹנִיּוֹת אֲשֶׁר כְּבָר נִמְשְׁכוּ הַמֹּוֽחִין דְּאָחוֹר בְּאָחוֹר דְּכָל הַבְּחִינוֹת <abbr>הנז&quot;ל</abbr> לַחִיצוֹנִיּוֹת <abbr>דזו&quot;ן</abbr> <abbr>ע&quot;י</abbr> מִנְחַת שְׂעוֹרִים וְעַתָּה יְכַוֵּיֽן לְהַמְשִׁיךְ הַמֹּוֽחִין <abbr>דפב&quot;פ</abbr> וּלְזַוְּוֽגָם דֻּוֽגְמַת מַה שֶׁנַּעֲשָׂה בִּתְפִיֽלּוֹת וּלְהַמְשִׁיךְ טִיֽפַּת <abbr>ה&quot;ח</abbr> הַנִּמְשָׁכִים <abbr>ע&quot;י</abbr> שְׁתֵּי הַלֶּחֶם כִּי חִטָּה <abbr>גי&#x27;</abbr> <abbr>כ&quot;ב</abbr> אַתָּוָוֽן סוֹד <abbr>ה&quot;ח</abbr> כַּנּוֹדָע:</p>
+<lb source-line="1072" />
+<p id="HB21518-L1073" source-line="1073" niqqud="source-preserved">* * *</p>
+<lb source-line="1074" />
+<p id="HB21518-L1075" source-line="1075" niqqud="added-draft"><abbr>א&quot;ה</abbr> עַיֵּיֽן בְּפֶתַח עֵינַיִם <abbr>ד&quot;ל</abbr> <abbr>ע&quot;ג</abbr> <abbr>וז&quot;ל</abbr> וּבְעִנְיַן הַמִּנְהָגִים בְּיוֹם אִסְרוּ חַג <abbr>בק&quot;ק</abbr> בֵּית <shem recite="false">אל</shem> <abbr>יכב&quot;ץ</abbr> הַמִּנְהָג לְכַוֵּיֽן מַעֲרָבִית דְּיוֹם אַחַר אִסְרוּ חַג שֶׁהוּא לֵיל <abbr>כ&quot;ג</abbr> <abbr>לח&#x27;</abbr> נִיסָן וְלֵיל <abbr>ח&#x27;</abbr> דְּסִיוָן וְחַג הַסֻּוֽכּוֹת דְּיוֹם <abbr>כ&quot;ד</abbr> וְאִם חָל אִסְרוּ חַג בְּעֶרֶב שַׁבָּת יֵשׁ לְכַוֵּיֽן בַּעֲלִיּוֹת <abbr>העו&#x27;</abbr> שֶׁבִּתְפִלַּת מִנְחָה וַעֲלִיַּיֽת <abbr>קב&quot;ש</abbr> מִזְמוֹר לְדָוִד דְּנִקְשַׁר עִם תְּפִלַּת עַרְבִית כַּנּוֹדָע <abbr>יעו&quot;ש</abbr> וְכֵן נוֹהֲגִים בִּישִׁיבָתֵיֽנוּ יְשִׁיבַת רְחוֹבוֹת הַנָּהָר <abbr>תכב&quot;ץ</abbr> <abbr>ויעב&quot;א</abbr>. וּבָא לְצִיּוֹן גּוֹאֵל אָמֵן <abbr>כי&quot;ר</abbr>.</p>
+<lb source-line="1076" />
+<p id="HB21518-L1077" source-line="1077" niqqud="added-draft">הַצָּעִיר אֱלִיעֶזֶר יְדִיד הַלֵּוִי.      הַצָּעִיר יוֹם טוֹב יְדִיד הַלֵּוִי.</p>
+</page>
+</siddur>

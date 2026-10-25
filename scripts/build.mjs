@@ -22,5 +22,6 @@ for(const f of await readdir('data')) if(f.endsWith('.json')) await cp('data/'+f
 const assets=JSON.parse(await readFile('data/repository-assets.json','utf8'));
 for(const a of assets){if(!existsSync(a.path))continue;await mkdir(path.dirname('dist/'+a.path),{recursive:true});await cp(a.path,'dist/'+a.path);}
 await cp('docs','dist/docs',{recursive:true});
+if(existsSync('texts'))await cp('texts','dist/texts',{recursive:true});
 await writeFile('dist/.nojekyll','');
 console.log(`Built Azara: ${sections.length} Siddur sections, ${assets.length} original source assets.`);

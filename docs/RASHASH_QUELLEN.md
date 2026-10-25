@@ -15,6 +15,6 @@ Neun vorhandene PDFs; zwei davon mit parallel paginiertem ähnlichem Inhalt. All
 
 ## Fehlstellen und Rechte
 
-Eigenständige mit IV oder V bezeichnete Dateien liegen nicht vor; die Teilnummer von 21521 darf deshalb trotzdem nicht als IV festgelegt werden. Eine vollständige Rashash-Abfolge für das gesamte Jahr wurde nicht aus diesen PDFs hergestellt. Verlässlicher Modus: Originalseiten als prioritäre Rashash-Quellenansicht, ausdrücklich gekennzeichnete Edot-HaMizrach-Texte als separate Ergänzung.
+Eigenständige mit IV oder V bezeichnete Dateien liegen nicht vor; die Teilnummer von 21521 darf deshalb trotzdem nicht als IV festgelegt werden. Eine vollständige Rashash-Abfolge für das gesamte Jahr wurde nicht aus diesen PDFs hergestellt. Für III, VI und IX sind jetzt die vom Nutzer gelieferten Transkriptionen als Niqqud-Arbeitsfassungen erschlossen. Originalscans bleiben zum Vergleich erreichbar; Edot HaMizrach bleibt eine getrennte Ergänzung.
 
-Die Scans tragen auf S. 2 Hinweise, dass HebrewBooks sie für persönliche Nutzung verbreiten darf und weitere Kopien/Abdrucke untersagt sind. Der Nutzer hat diese PDFs bereits selbst hochgeladen. Unverändert verlinken; nicht erneut kopieren, keine neue veröffentlichte OCR-Kopie erzeugen.
+Die Scans tragen auf S. 2 Hinweise, dass HebrewBooks sie für persönliche Nutzung verbreiten darf und weitere Kopien/Abdrucke untersagt sind. Der Nutzer hat diese PDFs bereits selbst hochgeladen. Die vorhandenen Originaldateien bleiben unverändert. Die nun eingebundenen Textfassungen stammen aus den drei vom Nutzer ausdrücklich zur Bearbeitung und Einbindung übergebenen Transkriptionen.

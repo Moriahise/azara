@@ -12,3 +12,7 @@ npm run dev
 ```
 
 Die unveränderten hochgeladenen MP3s, Texte und PDF-Scans bleiben Teil des Repositorys. Die App baut sie zusammen mit der Oberfläche nach `dist/`.
+
+## Rashash-Transkriptionen
+
+Die Teile III (HB21520), VI (HB21518) und IX (HB21723) sind als Niqqud-Arbeitsfassungen unter **Siddur & Kavvanot → HaRashash · Text mit Niqqud** eingebunden. Jede Fassung besitzt Seitenindex, Suche ohne Niqqud, TXT mit XML-Tags und Scanseitenvergleich. Vorhandene Punktierung und alle Tabellen bleiben unverändert. Bekannte Lücken tragen Prüfvermerke. [Verfahren, Tags und offene Stellen](docs/RASHASH_TRANSKRIPTIONEN.md).

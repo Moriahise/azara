@@ -140,7 +140,47 @@
         }
       ],
       "source": "https://hebrewbooks.org/21520",
-      "note": "Inhaltlich weitgehend paralleler Scan zu 21519; beide Originaldateien bleiben erhalten."
+      "note": "Inhaltlich weitgehend paralleler Scan zu 21519; beide Originaldateien bleiben erhalten.",
+      "transcription": {
+        "id": "21520",
+        "part": 3,
+        "title": "Erev Schabbat · Kabbalat Schabbat & Arvit",
+        "pages": 72,
+        "pdfPages": 73,
+        "txtPath": "texts/rashash/Siddur_HaRashash_Teil_3_HB21520_Erev_Schabbat_Niqqud_Tags.txt",
+        "sourcePath": "texts/rashash/sources/HB21520_Original.txt",
+        "jsonPath": "data/rashash-text-21520.json",
+        "status": "Niqqud-Arbeitsfassung · redaktionell zu prüfen",
+        "statistics": {
+          "table_lines_preserved": 1568,
+          "words_with_added_niqqud": 6252,
+          "protected_abbr": 3811,
+          "protected_shem": 3362,
+          "words_with_siddur_phrase_reference": 991,
+          "protected_letter": 392,
+          "protected_source_pointing": 201
+        },
+        "flags": [
+          {
+            "volume": "21520",
+            "pdfPages": [
+              1
+            ],
+            "kind": "transcription_typo",
+            "quote": "בשער פקרי הצלם",
+            "note": "Im Scan steht בשער פרקי הצלם. Die hochgeladene Buchstabenfolge bleibt erhalten; zur Korrektur markiert."
+          },
+          {
+            "volume": "21520",
+            "pdfPages": [
+              19
+            ],
+            "kind": "missing_source_niqqud",
+            "quote": "[בניקוד הנדפס תחת האותיות]",
+            "note": "Zwei Tabellenzeilen haben einen Platzhalter statt des gedruckten Niqqud. Die Originalpunktierung muss noch aus dem Scan übertragen werden."
+          }
+        ]
+      }
     },
     {
       "id": "21521",
@@ -198,7 +238,38 @@
         }
       ],
       "source": "https://hebrewbooks.org/21518",
-      "note": "Die erste Seite nennt חלק ששי. PDF-Seite 22 nennt יום חג השבועות הזה ausdrücklich. Keine vollständige Omer-Zählfolge in dieser Datei belegt."
+      "note": "Die erste Seite nennt חלק ששי. PDF-Seite 22 nennt יום חג השבועות הזה ausdrücklich. Keine vollständige Omer-Zählfolge in dieser Datei belegt.",
+      "transcription": {
+        "id": "21518",
+        "part": 6,
+        "title": "Schawuot · Lernen in der Nacht, Schacharit & Musaf",
+        "pages": 24,
+        "pdfPages": 25,
+        "txtPath": "texts/rashash/Siddur_HaRashash_Teil_6_HB21518_Schawuot_Niqqud_Tags.txt",
+        "sourcePath": "texts/rashash/sources/HB21518_Original.txt",
+        "jsonPath": "data/rashash-text-21518.json",
+        "status": "Niqqud-Arbeitsfassung · redaktionell zu prüfen",
+        "statistics": {
+          "table_lines_preserved": 723,
+          "words_with_added_niqqud": 2467,
+          "protected_abbr": 1391,
+          "protected_shem": 1509,
+          "protected_source_pointing": 119,
+          "protected_letter": 231,
+          "words_with_siddur_phrase_reference": 347
+        },
+        "flags": [
+          {
+            "volume": "21518",
+            "pdfPages": [
+              1,
+              3
+            ],
+            "kind": "page_anchor_imprecision",
+            "note": "Die Fußnote unter PDF 1 setzt sich unter PDF 3 fort. In der gelieferten Transkription steht die gesamte Fußnote bei PDF 1."
+          }
+        ]
+      }
     },
     {
       "id": "21721",
@@ -299,14 +370,155 @@
         }
       ],
       "source": "https://hebrewbooks.org/21723",
-      "note": "Die erste Seite nennt חלק תשיעי und כונת נענוע הברכה דיום ראשון. Die Hakafot hier sind Sukkot-Umzüge, nicht automatisch Simchat-Tora-Hakafot."
+      "note": "Die erste Seite nennt חלק תשיעי und כונת נענוע הברכה דיום ראשון. Die Hakafot hier sind Sukkot-Umzüge, nicht automatisch Simchat-Tora-Hakafot.",
+      "transcription": {
+        "id": "21723",
+        "part": 9,
+        "title": "Sukkot · Na’anuim, Hallel, Hakafot & Hoschana Rabba",
+        "pages": 42,
+        "pdfPages": 43,
+        "txtPath": "texts/rashash/Siddur_HaRashash_Teil_9_HB21723_Sukkot_Niqqud_Tags.txt",
+        "sourcePath": "texts/rashash/sources/HB21723_Original.txt",
+        "jsonPath": "data/rashash-text-21723.json",
+        "status": "Niqqud-Arbeitsfassung · redaktionell zu prüfen",
+        "statistics": {
+          "table_lines_preserved": 1165,
+          "words_with_added_niqqud": 2929,
+          "protected_abbr": 2641,
+          "protected_letter": 300,
+          "protected_shem": 2465,
+          "words_with_siddur_phrase_reference": 429,
+          "protected_source_pointing": 65
+        },
+        "flags": [
+          {
+            "volume": "21723",
+            "pdfPages": [
+              43
+            ],
+            "kind": "omitted_footnote",
+            "note": "Die untere Schlussfußnote und die Unterschriften fehlen in der gelieferten Transkription. Im Scan nachlesen; nicht aus dem Sprachmodell ergänzt."
+          }
+        ]
+      }
     }
   ],
   "warnings": [
     "Keine eigenständigen Dateien mit Dateinamensangaben Teil IV oder Teil V wurden geliefert. Die als Teil I benannte Datei 21521 enthält Schabbatgebete; ihre tatsächliche Teilnummer ist nicht verifiziert.",
     "Die beiden Dateien 21519 und 21520 haben parallel paginierten ähnlichen Inhalt. Weder PDF-Dateien noch OCR-Texte sind identisch; daher nicht automatisch deduplizieren.",
-    "Die gesamte Abfolge der Rashash-Kavvanot wurde nicht transkribiert und nicht als vollständig maschinenlesbar überprüft. Die Originalseiten sind maßgebend.",
     "Auf Scan-Seite 2 stehen Vertriebs- und Kopierbeschränkungen des Scan-Anbieters. Vorhandene Nutzerdateien nicht weiter vervielfältigen; bevorzugt auf bestehende Originaldateien oder HebrewBooks verlinken.",
-    "Pessach und Omer sind in Teil I nur in Übersichten belegt. Ein vollständiger Pessach-/Omer-Band ist im gelieferten Bestand nicht verifiziert."
-  ]
+    "Pessach und Omer sind in Teil I nur in Übersichten belegt. Ein vollständiger Pessach-/Omer-Band ist im gelieferten Bestand nicht verifiziert.",
+    "Drei Transkriptionen (III, VI, IX) sind strukturiert und mit zusätzlichem Niqqud erschlossen. Die Gesamtjahresfolge und die ergänzte Punktierung sind nicht vollständig am Scan geprüft; bekannte Lücken tragen Prüfmarkierungen.",
+    "Drei Transkriptionen (III, VI, IX) sind strukturiert und mit zusätzlichem Niqqud erschlossen. Die Gesamtjahresfolge und die ergänzte Punktierung sind nicht vollständig am Scan geprüft; bekannte Lücken tragen Prüfmarkierungen.",
+    "Drei Transkriptionen (III, VI, IX) sind strukturiert und mit zusätzlichem Niqqud erschlossen. Die Gesamtjahresfolge und die ergänzte Punktierung sind nicht vollständig am Scan geprüft; bekannte Lücken tragen Prüfmarkierungen.",
+    "Drei Transkriptionen (III, VI, IX) sind strukturiert und mit zusätzlichem Niqqud erschlossen. Die Gesamtjahresfolge und die ergänzte Punktierung sind nicht vollständig am Scan geprüft; bekannte Lücken tragen Prüfmarkierungen."
+  ],
+  "transcriptions": {
+    "schemaVersion": 1,
+    "date": "2026-10-25",
+    "volumes": [
+      {
+        "id": "21520",
+        "part": 3,
+        "title": "Erev Schabbat · Kabbalat Schabbat & Arvit",
+        "pages": 72,
+        "pdfPages": 73,
+        "txtPath": "texts/rashash/Siddur_HaRashash_Teil_3_HB21520_Erev_Schabbat_Niqqud_Tags.txt",
+        "sourcePath": "texts/rashash/sources/HB21520_Original.txt",
+        "jsonPath": "data/rashash-text-21520.json",
+        "status": "Niqqud-Arbeitsfassung · redaktionell zu prüfen",
+        "statistics": {
+          "table_lines_preserved": 1568,
+          "words_with_added_niqqud": 6252,
+          "protected_abbr": 3811,
+          "protected_shem": 3362,
+          "words_with_siddur_phrase_reference": 991,
+          "protected_letter": 392,
+          "protected_source_pointing": 201
+        },
+        "flags": [
+          {
+            "volume": "21520",
+            "pdfPages": [
+              1
+            ],
+            "kind": "transcription_typo",
+            "quote": "בשער פקרי הצלם",
+            "note": "Im Scan steht בשער פרקי הצלם. Die hochgeladene Buchstabenfolge bleibt erhalten; zur Korrektur markiert."
+          },
+          {
+            "volume": "21520",
+            "pdfPages": [
+              19
+            ],
+            "kind": "missing_source_niqqud",
+            "quote": "[בניקוד הנדפס תחת האותיות]",
+            "note": "Zwei Tabellenzeilen haben einen Platzhalter statt des gedruckten Niqqud. Die Originalpunktierung muss noch aus dem Scan übertragen werden."
+          }
+        ]
+      },
+      {
+        "id": "21518",
+        "part": 6,
+        "title": "Schawuot · Lernen in der Nacht, Schacharit & Musaf",
+        "pages": 24,
+        "pdfPages": 25,
+        "txtPath": "texts/rashash/Siddur_HaRashash_Teil_6_HB21518_Schawuot_Niqqud_Tags.txt",
+        "sourcePath": "texts/rashash/sources/HB21518_Original.txt",
+        "jsonPath": "data/rashash-text-21518.json",
+        "status": "Niqqud-Arbeitsfassung · redaktionell zu prüfen",
+        "statistics": {
+          "table_lines_preserved": 723,
+          "words_with_added_niqqud": 2467,
+          "protected_abbr": 1391,
+          "protected_shem": 1509,
+          "protected_source_pointing": 119,
+          "protected_letter": 231,
+          "words_with_siddur_phrase_reference": 347
+        },
+        "flags": [
+          {
+            "volume": "21518",
+            "pdfPages": [
+              1,
+              3
+            ],
+            "kind": "page_anchor_imprecision",
+            "note": "Die Fußnote unter PDF 1 setzt sich unter PDF 3 fort. In der gelieferten Transkription steht die gesamte Fußnote bei PDF 1."
+          }
+        ]
+      },
+      {
+        "id": "21723",
+        "part": 9,
+        "title": "Sukkot · Na’anuim, Hallel, Hakafot & Hoschana Rabba",
+        "pages": 42,
+        "pdfPages": 43,
+        "txtPath": "texts/rashash/Siddur_HaRashash_Teil_9_HB21723_Sukkot_Niqqud_Tags.txt",
+        "sourcePath": "texts/rashash/sources/HB21723_Original.txt",
+        "jsonPath": "data/rashash-text-21723.json",
+        "status": "Niqqud-Arbeitsfassung · redaktionell zu prüfen",
+        "statistics": {
+          "table_lines_preserved": 1165,
+          "words_with_added_niqqud": 2929,
+          "protected_abbr": 2641,
+          "protected_letter": 300,
+          "protected_shem": 2465,
+          "words_with_siddur_phrase_reference": 429,
+          "protected_source_pointing": 65
+        },
+        "flags": [
+          {
+            "volume": "21723",
+            "pdfPages": [
+              43
+            ],
+            "kind": "omitted_footnote",
+            "note": "Die untere Schlussfußnote und die Unterschriften fehlen in der gelieferten Transkription. Im Scan nachlesen; nicht aus dem Sprachmodell ergänzt."
+          }
+        ]
+      }
+    ],
+    "policy": "Maschinell unterstützte Niqqud-Arbeitsfassungen der hochgeladenen Transkriptionen. Keine vollständige Kollation; Originalscan bleibt maßgebend."
+  }
 }
