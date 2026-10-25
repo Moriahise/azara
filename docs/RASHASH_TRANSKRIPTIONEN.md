@@ -1,9 +1,10 @@
-# Vier Rashash-Textbände · Prüfvermerk vom 25. Oktober 2026
+# Fünf Rashash-Textfassungen · Prüfvermerk vom 25. Oktober 2026
 
-Die vier hochgeladenen Transkriptionen sind in Azara unter **Siddur & Kavvanot → HaRashash · Text mit Niqqud** erschlossen. Die TXT-Downloads enthalten XML-Struktur-Tags und sind UTF-8-Dateien. Die hochgeladenen Originaltranskriptionen werden daneben unverändert erhalten.
+Die fünf hochgeladenen Transkriptionen sind in Azara unter **Siddur & Kavvanot → HaRashash · Text mit Niqqud** erschlossen. Teil III liegt in zwei getrennten Scanfassungen vor. Die TXT-Downloads enthalten XML-Struktur-Tags und sind UTF-8-Dateien. Die hochgeladenen Originaltranskriptionen werden daneben unverändert erhalten.
 
 | Band | Thema | HebrewBooks | Textseiten | Tabellen |
 |---|---|---|---:|---:|
+| III | Erev Schabbat, Kabbalat Schabbat und Arvit | 21519 | 72 | 149 |
 | III | Erev Schabbat, Kabbalat Schabbat und Arvit | 21520 | 72 | 149 |
 | VI | Schawuot, Lernen in der Nacht, Schacharit und Musaf | 21518 | 24 | 28 |
 | VIII | Jom Kippur, Gebete, Kavvanot und Seder haAvoda | 21722 | 138 | 416 |
@@ -22,7 +23,7 @@ Schutzregeln:
 - Alle ursprünglichen Buchstaben, Leerzeichen und Satzzeichen bleiben im Text erhalten.
 - Jedes bereits vokalisierte Quellwort bleibt unverändert.
 - Gottesnamen, erkannte Buchstabenkombinationen, Abkürzungen und Einzelbuchstaben erhalten kein automatisch vorgeschlagenes neues Niqqud.
-- Sämtliche 690 Tabellen bleiben einschließlich ihrer Punktierung und Abstände unverändert. Es wird kein fehlendes Namen-Niqqud aus einem Sprachmodell ergänzt.
+- Sämtliche 839 Tabellen bleiben einschließlich ihrer Punktierung und Abstände unverändert. Es wird kein fehlendes Namen-Niqqud aus einem Sprachmodell ergänzt.
 - In den Tabellen enthaltene Gebetswörter bleiben deshalb ebenfalls im ursprünglichen Transkriptionsstand.
 - Die lineare Transkription rekonstruiert keine verlorene räumliche Anordnung der handschriftlichen Diagramme. Dafür dient der Originalscan.
 
@@ -55,7 +56,7 @@ Beispiel einer stabilen ID: `HB21520-L1840`. Sie bezieht sich auf die ursprüngl
 
 ## Einbindung und Audio
 
-Die vier Bände besitzen Seitenwahl, Suche auch ohne Niqqud, Schriftgrößensteuerung, TXT-Download und einen Direktverweis zum Originalscan derselben Seite. Vom Scan lässt sich die entsprechende Textseite öffnen. Im Tagesablauf wird bei einem passenden Band auch dessen Textfassung angeboten.
+Die fünf Textfassungen besitzen Seitenwahl, Suche auch ohne Niqqud, Schriftgrößensteuerung, TXT-Download und einen Direktverweis zum Originalscan derselben Seite. Vom Scan lässt sich die entsprechende Textseite öffnen. Im Tagesablauf wird bei einem passenden Band auch dessen Textfassung angeboten.
 
 Die Bände enthalten vielfach einzelne Gebetswörter, Kavvanot und Tabellen statt einer durchgehenden Gebetsrezitation. Sie ersetzen deshalb nicht automatisch den zusammenhängenden Edot-HaMizrach-Mitlesetext einer Aufnahme. Die vorhandene Audio-Mitlesefunktion bleibt erhalten. Kabbalistische Namen und Tabellen werden nicht künstlich vorgelesen.
 
@@ -64,6 +65,27 @@ Die Bände enthalten vielfach einzelne Gebetswörter, Kavvanot und Tabellen stat
 `python3 scripts/validate-rashash.py` prüft offline Seitenfolge, alle Textzeilen, unveränderte Konsonanten und Satzzeichen, ursprüngliche Punktierung, geschützte Wörter, Tabellenidentität, XML und die Übereinstimmung mit den Webdaten. Die Prüfroutine läuft auch in `npm test`.
 
 Eine erneute Niqqud-Vorbereitung erfolgt nur ausdrücklich mit `scripts/prepare-rashash.py`, einem Pfad zu den ursprünglichen Nutzer-TXT-Dateien und einem Cacheverzeichnis. Für einen einzelnen neuen Band dient `--volume 21722`; bereits erschlossene Bände bleiben dabei unverändert. Sie benötigt Python mit `requests` und den externen Nakdan-Dienst. Der normale Seitenaufbau benötigt weder den Dienst noch einen API-Schlüssel.
+
+## Ergänzung: Teil III · Erev Schabbat · HB21519
+
+Die separat gelieferte und zuvor visuell durchgesehene Transkription von HB21519 wird als eigene Fassung eingebunden: 72 Textseiten (PDF 1 und 3–73), 149 Tabellen. Sie ersetzt HB21520 nicht. Beide Fassungsköpfe, Quelltexte und Prüflisten bleiben getrennt. Die neue Fassung ist die anfänglich ausgewählte Textfassung. Der Tagesablauf öffnet bei HB21519 nun dessen eigenen Text und Scan.
+
+Die acht ursprünglichen `[?]`-Markierungen bleiben sichtbar und tragen zusätzlich `<unclear>`-Tags sowie seitenbezogene Prüfvermerke. Sie betreffen die gedruckte Punktierung des verschränkten Namens `אידהנויה` in jeweils drei Amen-Zeilen:
+
+| Folio | PDF-Seite |
+|---|---:|
+| י ע"ב | 21 |
+| יא ע"ב | 23 |
+| כד ע"ב | 49 |
+| כה ע"ב | 51 |
+| לא ע"ב | 63 |
+| לב ע"ב | 65 |
+| לד ע"ב | 69 |
+| לה ע"ב | 71 |
+
+Die ausdrücklich ausgewiesenen Namenslisten über den Schema-Wörtern bleiben ohne neues Niqqud erhalten und werden mit geschützten Namen-Tags erschlossen. Das gilt auch für Buchstabenkombinationen, die wie gewöhnliche Wörter aussehen, etwa `אני` und `כלי`. Die Tabellen bleiben zeichengetreu einschließlich Wiederholungen und vorhandener Punktierung. Die typografische Sicherheit der Transkription und die sprachliche Prüfung des ergänzten Niqqud sind unterschiedliche Prüfungen: das zusätzliche Niqqud bleibt eine redaktionell zu prüfende Arbeitsfassung.
+
+Die letzte Seite enthält zusätzlich `אתה יצרת` für Mussaf an Schabbat Rosch Chodesch. Der erhaltene Kopfblock der Originaltranskription beschreibt deren ursprünglichen unvokalisierten Gebetstext; die Metadaten der neuen Datei kennzeichnen das nachträglich ergänzte Niqqud.
 
 ## Ergänzung: Teil VIII · Jom Kippur · HB21722
 

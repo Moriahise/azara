@@ -4,9 +4,10 @@ import {execFileSync} from 'node:child_process';
 import {readFile} from 'node:fs/promises';
 import {RashashTextStore,renderRashashReader,renderRashashPage,searchableHebrew} from '../src/rashash-reader.js';
 
-test('All four Rashash editions retain every source letter, original vowel and all tables',()=>{
+test('All five Rashash editions retain every source letter, original vowel and all tables',()=>{
  const report=JSON.parse(execFileSync('python3',['scripts/validate-rashash.py'],{encoding:'utf8'}));
- assert.equal(report.reduce((n,v)=>n+v.pages,0),276);assert.equal(report.reduce((n,v)=>n+v.tables,0),690);
+ assert.deepEqual(report.map(v=>v.id),['21519','21520','21518','21722','21723']);
+ assert.equal(report.reduce((n,v)=>n+v.pages,0),348);assert.equal(report.reduce((n,v)=>n+v.tables,0),839);
  assert.ok(report.every(v=>v.addedMarks>1000&&v.protectedTokens>100));
 });
 test('Rashash Hebrew search works with or without Niqqud and quote variants',()=>{
@@ -40,7 +41,7 @@ test('The checked Jom Kippur prayer distinguishes imperative mecheh from partici
 });
 test('Text edition keeps review flags visible and links the exact TXT and scan page',async()=>{
  const index=JSON.parse(await readFile('data/rashash.json','utf8'));
- for(const id of ['21520','21518','21722','21723']){
+ for(const id of ['21519','21520','21518','21722','21723']){
   const metadata=index.documents.find(d=>d.id===id).transcription;
   const volume=JSON.parse(await readFile(metadata.jsonPath,'utf8'));
   const page=metadata.flags.at(-1).pdfPages.at(-1);
@@ -49,6 +50,42 @@ test('Text edition keeps review flags visible and links the exact TXT and scan p
   assert.ok(html.includes('offene Prüfstelle'));assert.ok(html.includes('redaktionell zu prüfen'));
   assert.ok(html.includes('--reading-size:32px'));assert.ok(!html.includes('speak-section'));
  }
+});
+test('HB21519 keeps its own scan, all eight uncertain name pointings and the Shema name lists',async()=>{
+ const volume=JSON.parse(await readFile('data/rashash-text-21519.json','utf8'));
+ const original=(await readFile(volume.sourcePath,'utf8')).split(/\r?\n/);
+ const uncertain=[];let count=0;const protectedLists=[];
+ for(const page of volume.pages){
+  let occurrences=0;
+  for(const block of page.blocks)for(const line of block.kind==='table'?block.rows:[block]){
+   occurrences+=(line.text.match(/\[\?\]/g)||[]).length;
+   if(line.text.includes('[?]'))assert.ok(line.html.includes('rashash-unclear'));
+   if(line.text.includes('שמות ע"ב מעל התיבות:')||line.text.includes('שמות מעל התיבות:')){
+    assert.equal(line.text,original[line.line-1]);assert.ok(line.html.includes('rashash-shem'));protectedLists.push(line.text);
+   }
+   if(original[line.line-1]==='[אני חעם רהע ייז]'){
+    assert.equal(line.text,original[line.line-1]);assert.equal((line.html.match(/rashash-shem/g)||[]).length,4);
+   }
+  }
+  count+=occurrences;
+  if(occurrences){uncertain.push(page.pdfPage);assert.equal(page.flags.find(f=>f.kind==='source_uncertainty').occurrences,occurrences);}
+ }
+ assert.equal(count,8);assert.deepEqual(uncertain,[21,23,49,51,63,65,69,71]);assert.equal(protectedLists.length,4);
+ assert.equal(volume.pages.length,72);assert.equal(volume.id,'21519');
+ const index=JSON.parse(await readFile('data/rashash.json','utf8'));
+ const html=renderRashashReader({documents:index.documents,id:'21519',pageNumber:21,volume});
+ assert.ok(html.includes('data-open-rashash="21519" data-page="21"'));
+ assert.ok(html.includes(volume.txtPath));assert.ok(!html.includes('data-open-rashash="21520"'));
+ const app=await readFile('src/app.js','utf8');assert.ok(!app.includes("doc.id==='21519'?'21520':doc.id"));
+});
+test('HB21519 contextual review distinguishes ordinary prayer words from symbolic names',async()=>{
+ const volume=JSON.parse(await readFile('data/rashash-text-21519.json','utf8'));
+ const text=n=>volume.pages.find(p=>p.pdfPage===n).blocks.filter(b=>b.text).map(b=>b.text).join(' ');
+ assert.ok(text(3).includes('בּוֹאוּ וְנֵצֵא'));
+ assert.ok(text(3).includes('בוה זו"ן'));assert.ok(!text(3).includes('בּוֹֽהַּ'));
+ assert.ok(text(19).includes('קַבֵּל וּשְׁמַע'));
+ assert.ok(text(42).includes('אֹתָם [א] לְאוֹת'));
+ assert.ok(text(73).includes('וְגָלָה יְקָרֵנוּ. וְנִטַּל כָּבוֹד'));
 });
 test('Rashash text loader deduplicates requests, caches only matching volumes and retries failure',async()=>{
  let calls=0,fail=true;const metadata={id:'21520',jsonPath:'data/rashash-text-21520.json'};

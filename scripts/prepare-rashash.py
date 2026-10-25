@@ -33,6 +33,7 @@ SACRED = {'יהוה','אהיה','אדני','אלהים','אלהינו','אלהי
           'אלם','בוכו','כוזו','במוכסז','למד','שין','מם','נון','צדי','קוף','ריש','תיו',
           'יאהלוההים','יאהי','אאללההייםם','תצמץ','אכתריאל'}
 VOLUMES = [
+ ('21519',3,'Erev_Schabbat','Erev Schabbat · Kabbalat Schabbat & Arvit · HB21519',73),
  ('21520',3,'Erev_Schabbat','Erev Schabbat · Kabbalat Schabbat & Arvit',73),
  ('21518',6,'Schawuot','Schawuot · Lernen in der Nacht, Schacharit & Musaf',25),
  ('21722',8,'Jom_Kippur','Jom Kippur · Gebete, Kavvanot & Seder haAvoda',139),
@@ -210,13 +211,51 @@ def refine_prayer_line(original,pointed,indexes,stats):
     chunks.append(pointed[last:]);stats['words_with_siddur_phrase_reference']+=len(replaced)
     return ''.join(chunks)
 
-def inline_xml(text,original):
+def hb21519_readings(original):
+    """Contextual readings checked during review of this new working edition."""
+    readings={}
+    if original.startswith('בואו ונצא'):
+        readings['בואו']='בּוֹאוּ'
+    if 'שם יה או"א בוה זו"ן' in original:
+        readings['בוה']='בוה' # Symbolic combination, not an ordinary word.
+    if 'וישים לנגד עיניו' in original:
+        readings['לנגד']='לְנֶגֶד'
+    if 'והיו הדברים' in original or 'והיו [א]' in original:
+        readings['והיו']='וְהָיוּ'
+    if 'והיה לכם' in original:
+        readings['והיה']='וְהָיָה'
+    if original.startswith('לשם יחוד קודשא'):
+        readings.update({'שורשה':'שׁוֹרְשָׁהּ','קבל':'קַבֵּל'})
+    if 'וגלה יקרנו' in original:
+        readings.update({'וגלה':'וְגָלָה','יקרנו':'יְקָרֵנוּ','ונטל':'וְנִטַּל'})
+    if original.startswith('אתם [א]') or 'ולמדתם [א] אתם [ה]' in original or original.startswith('אתם ולא תתורו'):
+        readings['אתם']='אֹתָם'
+    return readings
+
+def refine_hb21519_line(original,pointed):
+    readings=hb21519_readings(original)
+    old=list(WORD.finditer(original));new=list(WORD.finditer(pointed));changes=[]
+    for a,b in zip(old,new):
+        if a.group() in readings and not MARK.search(a.group()):
+            value,ok=graft(a.group(),readings[a.group()]);assert ok
+            changes.append((b.start(),b.end(),value))
+    for start,end,value in reversed(changes):
+        pointed=pointed[:start]+value+pointed[end:]
+    return pointed
+
+def inline_xml(text,original,names_line=False,volume=None):
     """Protected names and original pointing are independently addressable."""
     orig=list(WORD.finditer(original));now=list(WORD.finditer(text))
     assert len(orig)==len(now)
     out=[];last=0
     for a,b in zip(orig,now):
         out.append(escape(text[last:b.start()]));tag=protected(a.group())
+        if volume=='21519' and a.group() in hb21519_readings(original):
+            tag='shem' if a.group()=='בוה' else None
+        # HB21519 explicitly labels the names placed above the Shema words.
+        # Even ordinary-looking combinations such as אני remain source names.
+        if names_line and a.start() > original.find(':'):
+            tag='shem'
         if tag=='shem' and bare(a.group())=='מנגד' and 'מחה והעבר פשענו מנגד עיניך' in original:
             tag=None # Verified ordinary preposition, not the name נג״ד יכ״ש.
         if tag:
@@ -226,6 +265,15 @@ def inline_xml(text,original):
         else: out.append(escape(b.group()))
         last=b.end()
     out.append(escape(text[last:]));return ''.join(out).replace('[?]','<unclear reason="source-transcription">[?]</unclear>')
+
+def source_name_line(line):
+    """Recognize explicit Shema name lists, without classifying prayer prose."""
+    if line.startswith('[שמות '):
+        return True
+    if not (line.startswith('[') and line.endswith(']')):
+        return False
+    content=line[1:-1].replace('—',' ').strip()
+    return bool(re.fullmatch(r'[א-ת ]+',content)) and len(content.split())>=2 and all(2<=len(w)<=3 for w in content.split())
 
 def main():
     ap=argparse.ArgumentParser();ap.add_argument('input',type=Path);ap.add_argument('cache',type=Path);ap.add_argument('--volume',choices=[v[0] for v in VOLUMES]);args=ap.parse_args()
@@ -238,7 +286,7 @@ def main():
         if args.volume and ident!=args.volume:continue
         source=next(args.input.glob('*HB'+ident+'*.txt'));raw=source.read_text();lines=raw.splitlines()
         volume_flags=[f for f in FLAGS if f['volume']==ident]
-        if ident=='21722':
+        if ident in ('21519','21722'):
             uncertain={};current_page=0
             for line_no,line in enumerate(lines,1):
                 marker=PAGE.fullmatch(line)
@@ -249,6 +297,7 @@ def main():
                 volume_flags.append({'volume':ident,'pdfPages':[number],'kind':'source_uncertainty',
                   'sourceLines':[p['line'] for p in places],'occurrences':count,
                   'note':f'Die gelieferte Transkription markiert hier {count} unsichere Lesart(en) mit [?] (Quellzeile(n) '+', '.join(str(p['line']) for p in places)+'). Die Markierungen und die unmittelbar davor stehenden Wörter bleiben erhalten; am Scan prüfen.'})
+        if ident=='21722':
             volume_flags.append({'volume':ident,'pdfPages':[132],'kind':'service_cross_reference',
               'note':'Der Hinweis zu Mincha und Neila verweist auf bereits erklärte gemeinsame Kavvanot. Diese Seite ist kein eigenständiger vollständiger Neila-Gebetstext.'})
             volume_flags.append({'volume':ident,'pdfPages':[3,4],'kind':'page_anchor_imprecision',
@@ -259,7 +308,7 @@ def main():
               'note':'Die mit [?] markierte Buchstabenkombination אאללההייםם bleibt unverändert. Die Lesart ist am Originalscan zu prüfen.'})
         all_flags=[f for f in all_flags if f['volume']!=ident]+volume_flags
         first=next(i for i,x in enumerate(lines) if PAGE.fullmatch(x));prefix=lines[:first]
-        stats=Counter();newlines=lines.copy();chunks=[];indices=[];size=0;in_table=False;table_lines=set()
+        stats=Counter();newlines=lines.copy();chunks=[];indices=[];size=0;in_table=False;table_lines=set();name_lines=set()
         for n in range(first,len(lines)):
             # Names in diagrams are not ordinary words. Keep whole tables, even
             # their labels, exactly as supplied; do not infer missing pointing.
@@ -267,6 +316,8 @@ def main():
             if lines[n]=='=== סוף טבלה ===': in_table=False;continue
             if in_table:
                 stats['table_lines_preserved']+=1;table_lines.add(n)
+            if ident=='21519' and not in_table and source_name_line(lines[n]):
+                name_lines.add(n);stats['source_name_lines_preserved']+=1
             # Structural delimiters remain source text; only textual lines sent.
             if PAGE.fullmatch(lines[n]) or lines[n].startswith('===') or not letters(lines[n]):continue
             if size+len(lines[n])>5500 and indices:chunks.append(indices);indices=[];size=0
@@ -277,8 +328,9 @@ def main():
             result=vocalize_chunk(text,args.cache,stats).split('\n')
             assert len(result)==len(indices)
             for n,value in zip(indices,result):
-                if n not in table_lines:
+                if n not in table_lines and n not in name_lines:
                     value=refine_prayer_line(lines[n],value,phrase_index,stats)
+                    if ident=='21519':value=refine_hb21519_line(lines[n],value)
                     # Do not settle a word which the transcriber marked uncertain.
                     old_words=list(WORD.finditer(lines[n]));new_words=list(WORD.finditer(value))
                     replacements=[]
@@ -319,7 +371,7 @@ def main():
             tag='row' if table is not None else 'heading' if orig.strip().startswith('■') else 'p'
             if not orig.strip():
                 xml.append(f'<lb source-line="{n+1}" />');continue
-            content=inline_xml(value,orig)
+            content=inline_xml(value,orig,names_line=n in name_lines,volume=ident)
             status='added-draft' if value!=orig else 'source-preserved'
             xml.append(f'<{tag} id="{identline}" source-line="{n+1}" niqqud="{status}">{content}</{tag}>')
             # Only generated, escaped markup; no source HTML is trusted.
@@ -343,10 +395,10 @@ def main():
         summaries[ident]=entry
         doc=next(x for x in docs['documents'] if x['id']==ident);doc['transcription']=entry
         print(json.dumps({'volume':ident,'pages':len(pages),'statistics':dict(stats)},ensure_ascii=False),flush=True)
-    ordered=sorted(summaries.values(),key=lambda v:v['part'])
+    ordered=sorted(summaries.values(),key=lambda v:(v['part'],v['id']))
     docs['transcriptions']={'schemaVersion':1,'date':'2026-10-25','volumes':ordered,
       'policy':'Maschinell unterstützte Niqqud-Arbeitsfassungen der hochgeladenen Transkriptionen. Keine vollständige Kollation; Originalscan bleibt maßgebend.'}
-    docs['warnings']=[w for w in docs['warnings'] if not w.startswith(('Die gesamte Abfolge','Drei Transkriptionen','4 Transkriptionen'))]
+    docs['warnings']=[w for w in docs['warnings'] if not w.startswith(('Die gesamte Abfolge','Drei Transkriptionen')) and not re.match(r'\d+ Transkriptionen',w)]
     docs['warnings'].append(f'{len(ordered)} Transkriptionen sind strukturiert und mit zusätzlichem Niqqud erschlossen. Die Gesamtjahresfolge und die ergänzte Punktierung sind nicht vollständig am Scan geprüft; bekannte Lücken tragen Prüfmarkierungen.')
     (ROOT/'data/rashash.json').write_text(json.dumps(docs,ensure_ascii=False,indent=2)+'\n')
     (ROOT/'data/rashash-text-audit.json').write_text(json.dumps({'date':'2026-10-25','flags':all_flags,'volumes':ordered},ensure_ascii=False,indent=2)+'\n')
