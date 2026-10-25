@@ -55,3 +55,13 @@ Ein Neubau aktualisiert den Textkatalog aus `Shaliehsaboo Edition.txt`. Neue MP3
 ## Prüfung
 
 Automatisierte Prüfungen decken Grundzahlen der Alijot, Maftir, Schabbat-Mincha, Festkollisionen, Fasttagsvarianten, Rosch-Chodesch/Chanukka, Abendwechsel, Sommerzeit und die Jahre 5787–5789 in Israel und Diaspora ab. Browserprüfung prüft Navigation, Darstellung, Kalender, Porträts, Textleser und Player. Die WebGL-Darstellung kann in einer Umgebung mit deaktiviertem Grafiktreiber nicht bildlich geprüft werden; dort wird der Software-Renderer geprüft.
+
+## Automatisch mitlesen
+
+Beim Start einer MP3 öffnet sich **Hören & Mitlesen**. Gebete verwenden den lesbaren Edot-HaMizrach-Siddur; Tora und Haftara laden den hebräischen Bibeltext mit Vokalzeichen und Kantillation. Die Rashash-Scans werden hierfür noch nicht verwendet; die spätere Transkription kann als zusätzliche Textquelle ergänzt werden.
+
+Die Wiedergabe bereitet die passende Passage vor dem Start vor. Beim Wechsel zu einer anderen Audiodatei oder Alija wechselt der Text automatisch. Pause, Fortsetzen und die Zeitanzeige bleiben mit dem Audioplayer verbunden. Texte bleiben während einer Pause offen; die Schriftgröße lässt sich anpassen. Über **Andere Passage zuordnen** kann eine nicht eindeutig bezeichnete eigene Aufnahme lokal mit einem Text verbunden werden.
+
+Die Synchronisierung gilt für Aufnahmeabschnitte und Alijot. Für die MP3s liegen keine geprüften Wort-/Verszeitmarken vor; deshalb werden weder eine wortgenaue Hervorhebung noch ein geschätzter synchroner Textlauf behauptet. Syrische Alija-Grenzen können von den Versbereichen des Lesekalenders abweichen. Diese Zuordnungsgrenze wird am Text angezeigt.
+
+Die Prüfung umfasst alle 540 einzelnen Alija-URLs, die vollständigen Parascha- und Haftara-Aufnahmen, die 13 Gebetsaufnahmen, Textcaching und verspätete Antworten beim Wechsel/Abbruch. Eine verspätet geladene alte Passage darf weder den neuen Text ersetzen noch eine gestoppte Aufnahme wieder starten.

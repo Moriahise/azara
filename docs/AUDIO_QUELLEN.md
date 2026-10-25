@@ -31,3 +31,9 @@ The seven Shabbat files use source names Rishon, Sheni, Shelishi, Rebii, Hamishi
 - The Torah portion recordings cover all 54 portions. Festival-specific Torah readings are not separately assembled by this manifest.
 - Several prayer entries are clearly samples, some maqam demonstrations or a large collection (notably the Kedusha collection). The full weekday Amidah is explicitly labelled full; other entries must not be described as complete services.
 - A browser may require a user click before audio and some networks may block the original host. Provide a source-page link and honest error state.
+
+## Mitlesezuordnung
+
+Die Mitleseansicht verwendet die tatsächliche Audio-URL bzw. die festgehaltene Bibelstelle oder Gebetsbezeichnung. Kaddisch, Keduscha und weitere Gebetsstücke werden aus dem entsprechenden Edot-HaMizrach-Abschnitt ausgeschnitten. Unklare Dateinamen (z. B. lediglich „Mizmor L’Dovid“ oder „Rosh hashana“) erhalten ohne zusätzliche Zuordnung keinen geratenen Text. Die Ansicht bietet dafür eine lokale Textzuordnung an.
+
+Keine der vorhandenen Aufnahmen besitzt bislang eine geprüfte wortgenaue Zeitleiste. Der Text folgt daher der Aufnahme/Alija, nicht einer künstlich geschätzten Wortposition.
