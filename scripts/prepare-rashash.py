@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Prepare the three user transcriptions. Run manually; builds need no API.
+"""Prepare supplied user transcriptions. Run manually; builds need no API.
 
 Usage: python scripts/prepare-rashash.py /absolute/upload/directory /absolute/cache
 Requires requests. Dicta's rabbinic Nakdan supplies proposed vowels, never text.
@@ -30,10 +30,12 @@ SACRED = {'יהוה','אהיה','אדני','אלהים','אלהינו','אלהי
           'אל','אלוה','אלהי','שדי','צבאות','צבאו','אכדטם','אילההויהם','מנצפך',
           'יהאהלוההים','יאההוהה','יאהדונהי','דינא','דיאנ','נאדי','נאיד','נדאי',
           'יה','יו','הו','וד','או','מצפץ','מצפ','יאאא','דני','אה','אהי','שד','ץיהא',
-          'אלם','בוכו','כוזו','במוכסז','למד','שין','מם','נון','צדי','קוף','ריש','תיו'}
+          'אלם','בוכו','כוזו','במוכסז','למד','שין','מם','נון','צדי','קוף','ריש','תיו',
+          'יאהלוההים','יאהי','אאללההייםם','תצמץ','אכתריאל'}
 VOLUMES = [
  ('21520',3,'Erev_Schabbat','Erev Schabbat · Kabbalat Schabbat & Arvit',73),
  ('21518',6,'Schawuot','Schawuot · Lernen in der Nacht, Schacharit & Musaf',25),
+ ('21722',8,'Jom_Kippur','Jom Kippur · Gebete, Kavvanot & Seder haAvoda',139),
  ('21723',9,'Sukkot','Sukkot · Na’anuim, Hallel, Hakafot & Hoschana Rabba',43),
 ]
 FLAGS = [
@@ -97,7 +99,12 @@ def graft(original, candidate):
             if i in mapping: result.append(units[mapping[i]][1])
             if i in added: result.append(added[i])
             i+=1
-    return ''.join(result),True
+    # Keep plene ו in its usual pointed spelling: חוֹל, not חֹוֽל. This
+    # normalization only affects proposed marks; protected source words bypass it.
+    result=''.join(result)
+    result=re.sub(r'([א-ת])([\u05b0-\u05c7]*)ו([\u05bd]*)(?![\u05b0-\u05bd\u05bf\u05c1\u05c2\u05c7])',
+      lambda m:m[1]+m[2].replace('\u05b9','')+'ו\u05b9'+m[3] if '\u05b9' in m[2] else m[0],result)
+    return result,True
 
 def call_nakdan(text,cache):
     key=sha256((VERSION+text).encode()).hexdigest();p=cache/(key+'.json')
@@ -188,6 +195,15 @@ def refine_prayer_line(original,pointed,indexes,stats):
     for i,key in enumerate(keys):
         if key in corrections and not protected(source[i].group()):
             result[i],ok=graft(source[i].group(),corrections[key]);replaced.add(i)
+    # HB21722 PDF99: visually checked imperative. The later מֹחֶה quotation
+    # has a different grammatical form and must not be globally overwritten.
+    if 'מחה והעבר פשענו מנגד עיניך' in original:
+        if 'מחול' in keys:
+            i=keys.index('מחול');result[i],ok=graft(source[i].group(),'מְחוֹל')
+        for i in range(len(keys)-4):
+            if keys[i:i+5]==['מחה','והעבר','פשענו','מנגד','עיניך']:
+                for j,candidate in enumerate(['מְחֵה','וְהַעֲבֵר','פְשָׁעֵנוּ','מִנֶּגֶד','עֵינֶיךָ'],i):
+                    if not MARK.search(source[j].group()):result[j],ok=graft(source[j].group(),candidate)
     chunks=[];last=0
     for m,value in zip(WORD.finditer(pointed),result):
         chunks.extend([pointed[last:m.start()],value]);last=m.end()
@@ -201,22 +217,47 @@ def inline_xml(text,original):
     out=[];last=0
     for a,b in zip(orig,now):
         out.append(escape(text[last:b.start()]));tag=protected(a.group())
+        if tag=='shem' and bare(a.group())=='מנגד' and 'מחה והעבר פשענו מנגד עיניך' in original:
+            tag=None # Verified ordinary preposition, not the name נג״ד יכ״ש.
         if tag:
             assert a.group()==b.group()
             attrs=' recite="false"' if tag in ['shem','letter'] else ''
             out.append(f'<{tag}{attrs}>{escape(b.group())}</{tag}>')
         else: out.append(escape(b.group()))
         last=b.end()
-    out.append(escape(text[last:]));return ''.join(out)
+    out.append(escape(text[last:]));return ''.join(out).replace('[?]','<unclear reason="source-transcription">[?]</unclear>')
 
 def main():
-    ap=argparse.ArgumentParser();ap.add_argument('input',type=Path);ap.add_argument('cache',type=Path);args=ap.parse_args()
+    ap=argparse.ArgumentParser();ap.add_argument('input',type=Path);ap.add_argument('cache',type=Path);ap.add_argument('--volume',choices=[v[0] for v in VOLUMES]);args=ap.parse_args()
     args.cache.mkdir(parents=True,exist_ok=True)
     output=ROOT/'texts/rashash';(output/'sources').mkdir(parents=True,exist_ok=True)
     docs=json.loads((ROOT/'data/rashash.json').read_text())
-    summaries=[];phrase_index=prayer_phrases()
+    summaries={v['id']:v for v in docs.get('transcriptions',{}).get('volumes',[])};phrase_index=prayer_phrases()
+    all_flags=[f for v in summaries.values() for f in v.get('flags',[])]
     for ident,part,slug,title,total in VOLUMES:
+        if args.volume and ident!=args.volume:continue
         source=next(args.input.glob('*HB'+ident+'*.txt'));raw=source.read_text();lines=raw.splitlines()
+        volume_flags=[f for f in FLAGS if f['volume']==ident]
+        if ident=='21722':
+            uncertain={};current_page=0
+            for line_no,line in enumerate(lines,1):
+                marker=PAGE.fullmatch(line)
+                if marker:current_page=int(marker[2])
+                if '[?]' in line:uncertain.setdefault(current_page,[]).append({'line':line_no,'count':line.count('[?]')})
+            for number,places in uncertain.items():
+                count=sum(p['count'] for p in places)
+                volume_flags.append({'volume':ident,'pdfPages':[number],'kind':'source_uncertainty',
+                  'sourceLines':[p['line'] for p in places],'occurrences':count,
+                  'note':f'Die gelieferte Transkription markiert hier {count} unsichere Lesart(en) mit [?] (Quellzeile(n) '+', '.join(str(p['line']) for p in places)+'). Die Markierungen und die unmittelbar davor stehenden Wörter bleiben erhalten; am Scan prüfen.'})
+            volume_flags.append({'volume':ident,'pdfPages':[132],'kind':'service_cross_reference',
+              'note':'Der Hinweis zu Mincha und Neila verweist auf bereits erklärte gemeinsame Kavvanot. Diese Seite ist kein eigenständiger vollständiger Neila-Gebetstext.'})
+            volume_flags.append({'volume':ident,'pdfPages':[3,4],'kind':'page_anchor_imprecision',
+              'note':'Die Fußnote beginnt unter PDF 3 und setzt sich unter PDF 4 fort. In der gelieferten Transkription steht die gesamte Fußnote einschließlich Unterschriften unter PDF 3.'})
+            volume_flags.append({'volume':ident,'pdfPages':[128,129,130],'kind':'uncertain_source_pointing',
+              'note':'Mehrere Gottesnamen und ihre besondere Punktierung sind mit [?] markiert. Die Originalzeichen bleiben erhalten; keine Namenpunktierung aus dem Sprachmodell rekonstruiert.'})
+            volume_flags.append({'volume':ident,'pdfPages':[132],'kind':'uncertain_name_combination',
+              'note':'Die mit [?] markierte Buchstabenkombination אאללההייםם bleibt unverändert. Die Lesart ist am Originalscan zu prüfen.'})
+        all_flags=[f for f in all_flags if f['volume']!=ident]+volume_flags
         first=next(i for i,x in enumerate(lines) if PAGE.fullmatch(x));prefix=lines[:first]
         stats=Counter();newlines=lines.copy();chunks=[];indices=[];size=0;in_table=False;table_lines=set()
         for n in range(first,len(lines)):
@@ -236,7 +277,15 @@ def main():
             result=vocalize_chunk(text,args.cache,stats).split('\n')
             assert len(result)==len(indices)
             for n,value in zip(indices,result):
-                if n not in table_lines:newlines[n]=refine_prayer_line(lines[n],value,phrase_index,stats)
+                if n not in table_lines:
+                    value=refine_prayer_line(lines[n],value,phrase_index,stats)
+                    # Do not settle a word which the transcriber marked uncertain.
+                    old_words=list(WORD.finditer(lines[n]));new_words=list(WORD.finditer(value))
+                    replacements=[]
+                    for a,b in zip(old_words,new_words):
+                        if re.match(r'\s*\[\?\]',lines[n][a.end():]):replacements.append((b.start(),b.end(),a.group()))
+                    for start,end,original_word in reversed(replacements):value=value[:start]+original_word+value[end:]
+                    newlines[n]=value
             print(f'HB{ident}: {i+1}/{len(chunks)} chunks vocalized',flush=True)
         stats['words_with_added_niqqud']=sum(a.group()!=b.group() for old,new in zip(lines,newlines) for a,b in zip(WORD.finditer(old),WORD.finditer(new)))
         pages=[];page=None;table=None;blocks=[]
@@ -257,7 +306,7 @@ def main():
         for n in range(first,len(lines)):
             orig=lines[n];value=newlines[n];m=PAGE.fullmatch(orig)
             if m:
-                close_page();blocks=[];number=int(m[2]);page={'pdfPage':number,'folio':m[1],'flags':[f for f in FLAGS if f['volume']==ident and number in f['pdfPages']]}
+                close_page();blocks=[];number=int(m[2]);page={'pdfPage':number,'folio':m[1],'flags':[f for f in volume_flags if number in f['pdfPages']]}
                 xml.append(f'<page id="HB{ident}-p{number:03}" pdf="{number}" folio="{escape(m[1],quote=True)}" marker="{escape(orig,quote=True)}">')
                 for flag in page['flags']:xml.append(f'<review kind="{flag["kind"]}" status="open">{escape(flag["note"])}</review>')
                 continue
@@ -276,6 +325,7 @@ def main():
             # Only generated, escaped markup; no source HTML is trusted.
             html=re.sub(r'<(shem|abbr|source_pointing|letter)(?: recite="false")?>',lambda m:f'<span class="rashash-{m[1]}">',content)
             html=re.sub(r'</(?:shem|abbr|source_pointing|letter)>','</span>',html)
+            html=html.replace('<unclear reason="source-transcription">','<span class="rashash-unclear" title="Unsichere Lesart der Transkription">').replace('</unclear>','</span>')
             block={'id':identline,'line':n+1,'kind':tag,'text':value,'html':html}
             if table is not None:table['rows'].append(block)
             else:blocks.append(block)
@@ -288,16 +338,17 @@ def main():
         (output/name).write_text(tagged)
         entry={'id':ident,'part':part,'title':title,'pages':len(pages),'pdfPages':total,'txtPath':'texts/rashash/'+name,
                'sourcePath':'texts/rashash/sources/'+sourcepath.name,'jsonPath':f'data/rashash-text-{ident}.json',
-               'status':'Niqqud-Arbeitsfassung · redaktionell zu prüfen','statistics':dict(stats),'flags':[x for x in FLAGS if x['volume']==ident]}
+               'status':'Niqqud-Arbeitsfassung · redaktionell zu prüfen','statistics':dict(stats),'flags':volume_flags}
         (ROOT/entry['jsonPath']).write_text(json.dumps({**entry,'pages':pages},ensure_ascii=False,separators=(',',':'))+'\n')
-        summaries.append(entry)
+        summaries[ident]=entry
         doc=next(x for x in docs['documents'] if x['id']==ident);doc['transcription']=entry
         print(json.dumps({'volume':ident,'pages':len(pages),'statistics':dict(stats)},ensure_ascii=False),flush=True)
-    docs['transcriptions']={'schemaVersion':1,'date':'2026-10-25','volumes':summaries,
+    ordered=sorted(summaries.values(),key=lambda v:v['part'])
+    docs['transcriptions']={'schemaVersion':1,'date':'2026-10-25','volumes':ordered,
       'policy':'Maschinell unterstützte Niqqud-Arbeitsfassungen der hochgeladenen Transkriptionen. Keine vollständige Kollation; Originalscan bleibt maßgebend.'}
-    docs['warnings']=[w for w in docs['warnings'] if not w.startswith('Die gesamte Abfolge')]
-    docs['warnings'].append('Drei Transkriptionen (III, VI, IX) sind strukturiert und mit zusätzlichem Niqqud erschlossen. Die Gesamtjahresfolge und die ergänzte Punktierung sind nicht vollständig am Scan geprüft; bekannte Lücken tragen Prüfmarkierungen.')
+    docs['warnings']=[w for w in docs['warnings'] if not w.startswith(('Die gesamte Abfolge','Drei Transkriptionen','4 Transkriptionen'))]
+    docs['warnings'].append(f'{len(ordered)} Transkriptionen sind strukturiert und mit zusätzlichem Niqqud erschlossen. Die Gesamtjahresfolge und die ergänzte Punktierung sind nicht vollständig am Scan geprüft; bekannte Lücken tragen Prüfmarkierungen.')
     (ROOT/'data/rashash.json').write_text(json.dumps(docs,ensure_ascii=False,indent=2)+'\n')
-    (ROOT/'data/rashash-text-audit.json').write_text(json.dumps({'date':'2026-10-25','flags':FLAGS,'volumes':summaries},ensure_ascii=False,indent=2)+'\n')
+    (ROOT/'data/rashash-text-audit.json').write_text(json.dumps({'date':'2026-10-25','flags':all_flags,'volumes':ordered},ensure_ascii=False,indent=2)+'\n')
 
 if __name__=='__main__':main()

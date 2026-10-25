@@ -1,11 +1,12 @@
-# Drei Rashash-Textbände · Prüfvermerk vom 25. Oktober 2026
+# Vier Rashash-Textbände · Prüfvermerk vom 25. Oktober 2026
 
-Die drei hochgeladenen Transkriptionen sind in Azara unter **Siddur & Kavvanot → HaRashash · Text mit Niqqud** erschlossen. Die TXT-Downloads enthalten XML-Struktur-Tags und sind UTF-8-Dateien. Die hochgeladenen Originaltranskriptionen werden daneben unverändert erhalten.
+Die vier hochgeladenen Transkriptionen sind in Azara unter **Siddur & Kavvanot → HaRashash · Text mit Niqqud** erschlossen. Die TXT-Downloads enthalten XML-Struktur-Tags und sind UTF-8-Dateien. Die hochgeladenen Originaltranskriptionen werden daneben unverändert erhalten.
 
 | Band | Thema | HebrewBooks | Textseiten | Tabellen |
 |---|---|---|---:|---:|
 | III | Erev Schabbat, Kabbalat Schabbat und Arvit | 21520 | 72 | 149 |
 | VI | Schawuot, Lernen in der Nacht, Schacharit und Musaf | 21518 | 24 | 28 |
+| VIII | Jom Kippur, Gebete, Kavvanot und Seder haAvoda | 21722 | 138 | 416 |
 | IX | Sukkot, Na’anuim, Hallel, Hakafot und Hoschana Rabba | 21723 | 42 | 97 |
 
 Die Textseitenfolge umfasst in jedem Band PDF 1 und PDF 3 bis zur jeweiligen Schlussseite. PDF 2 ist jeweils der Scannerhinweis. **Seitenfolge vollständig verankert** bedeutet nicht, dass jeder Satz des Scans vollständig transkribiert wurde: siehe die unten genannten Lücken.
@@ -21,7 +22,7 @@ Schutzregeln:
 - Alle ursprünglichen Buchstaben, Leerzeichen und Satzzeichen bleiben im Text erhalten.
 - Jedes bereits vokalisierte Quellwort bleibt unverändert.
 - Gottesnamen, erkannte Buchstabenkombinationen, Abkürzungen und Einzelbuchstaben erhalten kein automatisch vorgeschlagenes neues Niqqud.
-- Sämtliche 274 Tabellen bleiben einschließlich ihrer Punktierung und Abstände unverändert. Es wird kein fehlendes Namen-Niqqud aus einem Sprachmodell ergänzt.
+- Sämtliche 690 Tabellen bleiben einschließlich ihrer Punktierung und Abstände unverändert. Es wird kein fehlendes Namen-Niqqud aus einem Sprachmodell ergänzt.
 - In den Tabellen enthaltene Gebetswörter bleiben deshalb ebenfalls im ursprünglichen Transkriptionsstand.
 - Die lineare Transkription rekonstruiert keine verlorene räumliche Anordnung der handschriftlichen Diagramme. Dafür dient der Originalscan.
 
@@ -48,12 +49,13 @@ Die TXT-Dateien sind wohlgeformtes XML mit der Wurzel `<siddur>`. Die Dateiendun
 | `niqqud="added-draft"` | Zeile mit ergänztem Niqqud als Arbeitsfassung |
 | `niqqud="source-preserved"` | Unveränderte Textzeile |
 | `lb source-line="…"` | Erhaltene Leerzeile |
+| `unclear reason="source-transcription"` | Erhaltene unsichere Lesart `[?]` |
 
 Beispiel einer stabilen ID: `HB21520-L1840`. Sie bezieht sich auf die ursprüngliche Zeilennummer der Nutzerdatei. Diese IDs sind keine Audio-Zeitmarken.
 
 ## Einbindung und Audio
 
-Die drei Bände besitzen Seitenwahl, Suche auch ohne Niqqud, Schriftgrößensteuerung, TXT-Download und einen Direktverweis zum Originalscan derselben Seite. Vom Scan lässt sich die entsprechende Textseite öffnen. Im Tagesablauf wird bei einem passenden Band auch dessen Textfassung angeboten.
+Die vier Bände besitzen Seitenwahl, Suche auch ohne Niqqud, Schriftgrößensteuerung, TXT-Download und einen Direktverweis zum Originalscan derselben Seite. Vom Scan lässt sich die entsprechende Textseite öffnen. Im Tagesablauf wird bei einem passenden Band auch dessen Textfassung angeboten.
 
 Die Bände enthalten vielfach einzelne Gebetswörter, Kavvanot und Tabellen statt einer durchgehenden Gebetsrezitation. Sie ersetzen deshalb nicht automatisch den zusammenhängenden Edot-HaMizrach-Mitlesetext einer Aufnahme. Die vorhandene Audio-Mitlesefunktion bleibt erhalten. Kabbalistische Namen und Tabellen werden nicht künstlich vorgelesen.
 
@@ -61,4 +63,20 @@ Die Bände enthalten vielfach einzelne Gebetswörter, Kavvanot und Tabellen stat
 
 `python3 scripts/validate-rashash.py` prüft offline Seitenfolge, alle Textzeilen, unveränderte Konsonanten und Satzzeichen, ursprüngliche Punktierung, geschützte Wörter, Tabellenidentität, XML und die Übereinstimmung mit den Webdaten. Die Prüfroutine läuft auch in `npm test`.
 
-Eine erneute Niqqud-Vorbereitung erfolgt nur ausdrücklich mit `scripts/prepare-rashash.py`, einem Pfad zu den drei ursprünglichen Nutzer-TXT-Dateien und einem Cacheverzeichnis. Sie benötigt Python mit `requests` und den externen Nakdan-Dienst. Der normale Seitenaufbau benötigt weder den Dienst noch einen API-Schlüssel.
+Eine erneute Niqqud-Vorbereitung erfolgt nur ausdrücklich mit `scripts/prepare-rashash.py`, einem Pfad zu den ursprünglichen Nutzer-TXT-Dateien und einem Cacheverzeichnis. Für einen einzelnen neuen Band dient `--volume 21722`; bereits erschlossene Bände bleiben dabei unverändert. Sie benötigt Python mit `requests` und den externen Nakdan-Dienst. Der normale Seitenaufbau benötigt weder den Dienst noch einen API-Schlüssel.
+
+## Ergänzung: Teil VIII · Jom Kippur · HB21722
+
+Die neue Transkription umfasst 138 Textseiten (PDF 1 und 3–139) mit 416 ausgeglichenen Tabellenpaaren. Alle 27 ursprünglichen `[?]`-Marker auf 19 Seiten bleiben erhalten und sind zusätzlich mit `<unclear reason="source-transcription">` markiert. Auch das unmittelbar vor einem Marker stehende Wort wird nicht automatisch neu vokalisiert. Seitenbezogene Prüfvermerke führen Quellzeilen und Anzahl der Unsicherheiten auf.
+
+Gezielt visuell verglichen wurden PDF 1, 3, 4, 98, 99, 126, 128, 130, 132, 138 und 139. Dies ist eine Stichprobe, keine vollständige philologische Kollation.
+
+- **PDF 3–4:** Die Fußnote läuft im Scan über beide Seiten, wurde in der gelieferten Textfassung jedoch einschließlich Unterschriften unter PDF 3 zusammengefasst.
+- **PDF 128–130:** Die Vorlage markiert teils unsichere Punktierungen von Gottesnamen. Sie bleiben unverändert, statt aus gewöhnlicher Aussprache rekonstruiert zu werden.
+- **PDF 132:** Die unsichere Buchstabenkombination `אאללההייםם [?]` bleibt erhalten. Die dortigen Mincha-/Neila-Anweisungen sind Querverweise auf die Arvit-Kavvanot, kein eigenständiger vollständiger Neila-Text.
+- **PDF 126:** Übergang zu Schacharit mit Verweisen auf gemeinsame Kriat-Schema-, Amida- und Musaf-Kavvanot.
+- Die ungewöhnliche Überschrift `קדיש דקודם דיוצר` auf PDF 3 steht tatsächlich im Scan und bleibt erhalten.
+
+Die zuvor veröffentlichten Textfassungen der Teile III, VI und IX werden durch diese Ergänzung nicht neu erzeugt oder verändert.
+
+Auf PDF 99 wurden außerdem die Wörter `מְחוֹל`, der Imperativ `מְחֵה` und `פְשָׁעֵנוּ` sowie die Passage `מִנֶּגֶד עֵינֶיךָ` direkt am Scan geprüft. Das spätere `מֹחֶה` in der Schriftstelle bleibt als Partizip unterschieden. Die ergänzte Punktierung voller Schreibweisen mit Waw wird entsprechend lesbar gesetzt.

@@ -4,18 +4,43 @@ import {execFileSync} from 'node:child_process';
 import {readFile} from 'node:fs/promises';
 import {RashashTextStore,renderRashashReader,renderRashashPage,searchableHebrew} from '../src/rashash-reader.js';
 
-test('All 138 Rashash pages retain every source letter, original vowel and all 274 tables',()=>{
+test('All four Rashash editions retain every source letter, original vowel and all tables',()=>{
  const report=JSON.parse(execFileSync('python3',['scripts/validate-rashash.py'],{encoding:'utf8'}));
- assert.equal(report.reduce((n,v)=>n+v.pages,0),138);assert.equal(report.reduce((n,v)=>n+v.tables,0),274);
+ assert.equal(report.reduce((n,v)=>n+v.pages,0),276);assert.equal(report.reduce((n,v)=>n+v.tables,0),690);
  assert.ok(report.every(v=>v.addedMarks>1000&&v.protectedTokens>100));
 });
 test('Rashash Hebrew search works with or without Niqqud and quote variants',()=>{
  assert.equal(searchableHebrew('שַׁבָּת'),searchableHebrew('שבת'));
  assert.equal(searchableHebrew('רש״ש'),searchableHebrew('רש"ש'));
 });
+test('Jom Kippur preserves and exposes all 27 uncertain readings on their 19 source pages',async()=>{
+ const volume=JSON.parse(await readFile('data/rashash-text-21722.json','utf8'));
+ const original=(await readFile(volume.sourcePath,'utf8')).split(/\r?\n/);
+ let count=0;const uncertainPages=[];
+ for(const page of volume.pages){
+  let occurrences=0;
+  for(const block of page.blocks)for(const line of block.kind==='table'?block.rows:[block]){
+   const matches=[...line.text.matchAll(/\[\?\]/g)];occurrences+=matches.length;
+   const wordBeforeMarker=/([א-ת\u0591-\u05c7"'״׳]+)\s*\[\?\]/g;
+   assert.deepEqual([...line.text.matchAll(wordBeforeMarker)].map(x=>x[1]),[...original[line.line-1].matchAll(wordBeforeMarker)].map(x=>x[1]));
+   if(matches.length)assert.ok(line.html.includes('rashash-unclear'));
+  }
+  count+=occurrences;
+  if(occurrences){uncertainPages.push(page.pdfPage);const flag=page.flags.find(f=>f.kind==='source_uncertainty');assert.equal(flag.occurrences,occurrences);}
+ }
+ assert.equal(count,27);assert.equal(uncertainPages.length,19);
+ assert.equal(volume.pages.length,138);assert.ok(volume.pages.find(p=>p.pdfPage===132).flags.some(f=>f.kind==='service_cross_reference'));
+ const xml=await readFile(volume.txtPath,'utf8');assert.equal((xml.match(/<unclear /g)||[]).length,27);
+});
+test('The checked Jom Kippur prayer distinguishes imperative mecheh from participle mocheh',async()=>{
+ const volume=JSON.parse(await readFile('data/rashash-text-21722.json','utf8'));
+ const text=volume.pages.find(p=>p.pdfPage===99).blocks.filter(b=>b.text).map(b=>b.text).join(' ');
+ assert.ok(text.includes('מְחֵה וְהַעֲבֵר פְשָׁעֵנוּ מִנֶּגֶד עֵינֶיךָ'));
+ assert.ok(text.includes('הוּא מֹחֶה'));
+});
 test('Text edition keeps review flags visible and links the exact TXT and scan page',async()=>{
  const index=JSON.parse(await readFile('data/rashash.json','utf8'));
- for(const id of ['21520','21518','21723']){
+ for(const id of ['21520','21518','21722','21723']){
   const metadata=index.documents.find(d=>d.id===id).transcription;
   const volume=JSON.parse(await readFile(metadata.jsonPath,'utf8'));
   const page=metadata.flags.at(-1).pdfPages.at(-1);
