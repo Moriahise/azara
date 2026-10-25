@@ -1,0 +1,2528 @@
+{
+  "source": "Sephardic Pizmonim Project",
+  "tradition": "Syrian Sephardic / Aleppo; not specifically Siddur HaRashash",
+  "sourcePages": [
+    "https://www.pizmonim.org/section.php?maqam=Pentateuch",
+    "https://www.pizmonim.org/section.php?maqam=Haftarot",
+    "https://www.pizmonim.org/festivals.php?holiday=pieces",
+    "https://www.pizmonim.org/section.php?maqam=Minha-Arbit"
+  ],
+  "recordings": [
+    {
+      "kind": "torah",
+      "id": "3500",
+      "title": "פרשת בראשית",
+      "description": "Bereshit (Genesis 1:1-6:8). From Adam until Noah. Leningrad Codex",
+      "page": "https://www.pizmonim.org/book.php?recording=3054",
+      "label": "Abe Zami- Bereshit- Full",
+      "url": "https://www.pizmonim.org/MP3/Bereshit%20Full.mp3",
+      "verified": "exact media URL extracted from source player HTML; playback not audited",
+      "index": 1,
+      "canonical": "Bereshit"
+    },
+    {
+      "kind": "torah",
+      "id": "3508",
+      "title": "פרשת נח",
+      "description": "Noah (Genesis 6:9-11:32). From Noah until Abraham. Leningrad Codex",
+      "page": "https://www.pizmonim.org/book.php?recording=3065",
+      "label": "Abe Zami- Noah- Full",
+      "url": "https://www.pizmonim.org/MP3/Noah%20Full.mp3",
+      "verified": "exact media URL extracted from source player HTML; playback not audited",
+      "index": 2,
+      "canonical": "Noach"
+    },
+    {
+      "kind": "torah",
+      "id": "3516",
+      "title": "פרשת לך לך",
+      "description": "Lekh Lekha (Genesis 12:1-17:27). The Trials of Abraham. Leningrad Codex",
+      "page": "https://www.pizmonim.org/book.php?recording=3076",
+      "label": "Abe Zami- Lekh Lekha- Full",
+      "url": "https://www.pizmonim.org/MP3/Lekh%20Lekha%20Full.mp3",
+      "verified": "exact media URL extracted from source player HTML; playback not audited",
+      "index": 3,
+      "canonical": "Lech-Lecha"
+    },
+    {
+      "kind": "torah",
+      "id": "3524",
+      "title": "פרשת וירא",
+      "description": "Vayera (Genesis 18:1-22:24). The Trials of Abraham continued. Leningrad Codex",
+      "page": "https://www.pizmonim.org/book.php?recording=3087",
+      "label": "Abe Zami- Vayera- Full",
+      "url": "https://www.pizmonim.org/MP3/Vayera%20Full.mp3",
+      "verified": "exact media URL extracted from source player HTML; playback not audited",
+      "index": 4,
+      "canonical": "Vayera"
+    },
+    {
+      "kind": "torah",
+      "id": "3532",
+      "title": "פרשת חיי שרה",
+      "description": "Haye Sarah (Genesis 23:1-25:18). Continuity from Abraham to Isaac. Leningrad Codex",
+      "page": "https://www.pizmonim.org/book.php?recording=3098",
+      "label": "Abe Zami- Haye Sarah- Full",
+      "url": "https://www.pizmonim.org/MP3/Haye%20Sarah%20Full.mp3",
+      "verified": "exact media URL extracted from source player HTML; playback not audited",
+      "index": 5,
+      "canonical": "Chayei Sara"
+    },
+    {
+      "kind": "torah",
+      "id": "3540",
+      "title": "פרשת תולדות",
+      "description": "Toledot (Genesis 25:19-28:9). From Isaac to Jacob. Leningrad Codex",
+      "page": "https://www.pizmonim.org/book.php?recording=3109",
+      "label": "Abe Zami- Toledot- Full",
+      "url": "https://www.pizmonim.org/MP3/Toledot%20Full.mp3",
+      "verified": "exact media URL extracted from source player HTML; playback not audited",
+      "index": 6,
+      "canonical": "Toldot"
+    },
+    {
+      "kind": "torah",
+      "id": "3548",
+      "title": "פרשת ויצא",
+      "description": "Vayesse (Genesis 28:10-32:3). Israel's exile in the Land of Aram. Leningrad Codex",
+      "page": "https://www.pizmonim.org/book.php?recording=3120",
+      "label": "Abe Zami- Vayesse- Full",
+      "url": "https://www.pizmonim.org/MP3/Vayesse%20Full.mp3",
+      "verified": "exact media URL extracted from source player HTML; playback not audited",
+      "index": 7,
+      "canonical": "Vayetzei"
+    },
+    {
+      "kind": "torah",
+      "id": "3556",
+      "title": "פרשת וישלח",
+      "description": "Vayishlah (Genesis 32:4-36:43). Israel's Return to Canaan. Leningrad Codex",
+      "page": "https://www.pizmonim.org/book.php?recording=3131",
+      "label": "Abe Zami- Vayishlah- Full",
+      "url": "https://www.pizmonim.org/MP3/Vayishlah%20Full.mp3",
+      "verified": "exact media URL extracted from source player HTML; playback not audited",
+      "index": 8,
+      "canonical": "Vayishlach"
+    },
+    {
+      "kind": "torah",
+      "id": "3564",
+      "title": "פרשת וישב",
+      "description": "Vayesheb (Genesis 37:1-40:23). Leadership of The Next Generation: Joseph and Judah. Leningrad Codex",
+      "page": "https://www.pizmonim.org/book.php?recording=3142",
+      "label": "Abe Zami- Vayesheb- Full",
+      "url": "https://www.pizmonim.org/MP3/Vayesheb%20Full.mp3",
+      "verified": "exact media URL extracted from source player HTML; playback not audited",
+      "index": 9,
+      "canonical": "Vayeshev"
+    },
+    {
+      "kind": "torah",
+      "id": "3572",
+      "title": "פרשת מקץ",
+      "description": "Miqes (Genesis 41:1-44:17). The Rise of Joseph. Leningrad Codex",
+      "page": "https://www.pizmonim.org/book.php?recording=3153",
+      "label": "Abe Zami- Miqes- Full",
+      "url": "https://www.pizmonim.org/MP3/Miqes%20Full.mp3",
+      "verified": "exact media URL extracted from source player HTML; playback not audited",
+      "index": 10,
+      "canonical": "Miketz"
+    },
+    {
+      "kind": "torah",
+      "id": "3580",
+      "title": "פרשת ויגש",
+      "description": "Vayigash (Genesis 44:18-47:27). Reunification of Israel. Leningrad Codex",
+      "page": "https://www.pizmonim.org/book.php?recording=3164",
+      "label": "Abe Zami- Vayigash- Full",
+      "url": "https://www.pizmonim.org/MP3/Vayigash%20Full.mp3",
+      "verified": "exact media URL extracted from source player HTML; playback not audited",
+      "index": 11,
+      "canonical": "Vayigash"
+    },
+    {
+      "kind": "torah",
+      "id": "3588",
+      "title": "פרשת ויחי",
+      "description": "Vayehi (Genesis 47:28-50:26). The Blessings and Fates of the Tribes. Leningrad Codex",
+      "page": "https://www.pizmonim.org/book.php?recording=3176",
+      "label": "Abe Zami- Vayehi- Full",
+      "url": "https://www.pizmonim.org/MP3/Vayehi%20Full.mp3",
+      "verified": "exact media URL extracted from source player HTML; playback not audited",
+      "index": 12,
+      "canonical": "Vayechi"
+    },
+    {
+      "kind": "torah",
+      "id": "3596",
+      "title": "פרשת שמות",
+      "description": "Shemot (Exodus 1:1-6:1). Bondage.",
+      "page": "https://www.pizmonim.org/book.php?recording=3187",
+      "label": "Abe Zami- Shemot- Full",
+      "url": "https://www.pizmonim.org/MP3/Shemot%20Full.mp3",
+      "verified": "exact media URL extracted from source player HTML; playback not audited",
+      "index": 13,
+      "canonical": "Shemot"
+    },
+    {
+      "kind": "torah",
+      "id": "3604",
+      "title": "פרשת וארא",
+      "description": "Vaera (Exodus 6:2-9:35). Plagues.",
+      "page": "https://www.pizmonim.org/book.php?recording=3198",
+      "label": "Abe Zami- Vaera- Full",
+      "url": "https://www.pizmonim.org/MP3/Vaera%20Full.mp3",
+      "verified": "exact media URL extracted from source player HTML; playback not audited",
+      "index": 14,
+      "canonical": "Vaera"
+    },
+    {
+      "kind": "torah",
+      "id": "3612",
+      "title": "פרשת בא",
+      "description": "Bo (Exodus 10:1-13:16). Deliverance.",
+      "page": "https://www.pizmonim.org/book.php?recording=3209",
+      "label": "Abe Zami- Bo- Full",
+      "url": "https://www.pizmonim.org/MP3/Bo%20Full.mp3",
+      "verified": "exact media URL extracted from source player HTML; playback not audited",
+      "index": 15,
+      "canonical": "Bo"
+    },
+    {
+      "kind": "torah",
+      "id": "3620",
+      "title": "פרשת בשלח",
+      "description": "Beshalah (Exodus 13:17-17:16). Trials in the Desert.",
+      "page": "https://www.pizmonim.org/book.php?recording=3220",
+      "label": "Abe Zami- Beshalah- Full",
+      "url": "https://www.pizmonim.org/MP3/Beshalah%20Full.mp3",
+      "verified": "exact media URL extracted from source player HTML; playback not audited",
+      "index": 16,
+      "canonical": "Beshalach"
+    },
+    {
+      "kind": "torah",
+      "id": "3628",
+      "title": "פרשת יתרו",
+      "description": "Yitro (Exodus 18:1-20:23). The Law.",
+      "page": "https://www.pizmonim.org/book.php?recording=3231",
+      "label": "Abe Zami- Yitro- Full",
+      "url": "https://www.pizmonim.org/MP3/Yitro%20Full.mp3",
+      "verified": "exact media URL extracted from source player HTML; playback not audited",
+      "index": 17,
+      "canonical": "Yitro"
+    },
+    {
+      "kind": "torah",
+      "id": "3636",
+      "title": "פרשת משפטים",
+      "description": "Mishpatim (Exodus 21:1-24:18). Chapters 21-23 is referred to as the Covenant Code. Chapter 24 discusses the receiving of the Torah commandments.",
+      "page": "https://www.pizmonim.org/book.php?recording=3242",
+      "label": "Abe Zami- Mishpatim- Full",
+      "url": "https://www.pizmonim.org/MP3/Mishpatim%20Full.mp3",
+      "verified": "exact media URL extracted from source player HTML; playback not audited",
+      "index": 18,
+      "canonical": "Mishpatim"
+    },
+    {
+      "kind": "torah",
+      "id": "3644",
+      "title": "פרשת תרומה",
+      "description": "Terumah (Exodus 25:1-27:19). The Tabernacle Instruction.",
+      "page": "https://www.pizmonim.org/book.php?recording=3253",
+      "label": "Abe Zami- Terumah- Full",
+      "url": "https://www.pizmonim.org/MP3/Terumah%20Full.mp3",
+      "verified": "exact media URL extracted from source player HTML; playback not audited",
+      "index": 19,
+      "canonical": "Terumah"
+    },
+    {
+      "kind": "torah",
+      "id": "3652",
+      "title": "פרשת תצוה",
+      "description": "Tessave (Exodus 27:10-30:10). Garments of the Priesthood.",
+      "page": "https://www.pizmonim.org/book.php?recording=3264",
+      "label": "Abe Zami- Tessave- Full",
+      "url": "https://www.pizmonim.org/MP3/Tessave%20Full.mp3",
+      "verified": "exact media URL extracted from source player HTML; playback not audited",
+      "index": 20,
+      "canonical": "Tetzaveh"
+    },
+    {
+      "kind": "torah",
+      "id": "3660",
+      "title": "פרשת כי תשא",
+      "description": "Ki Tissa (Exodus 30:11-34:35).",
+      "page": "https://www.pizmonim.org/book.php?recording=3275",
+      "label": "Abe Zami- Ki Tisa- Full",
+      "url": "https://www.pizmonim.org/MP3/Ki%20Tisa%20Full.mp3",
+      "verified": "exact media URL extracted from source player HTML; playback not audited",
+      "index": 21,
+      "canonical": "Ki Tisa"
+    },
+    {
+      "kind": "torah",
+      "id": "3668",
+      "title": "פרשת ויקהל",
+      "description": "Vayaqhel (Exodus 35:1-38:20). Execution of the Tabernacle instruction.",
+      "page": "https://www.pizmonim.org/book.php?recording=3286",
+      "label": "Abe Zami- Vayaqhel- Full",
+      "url": "https://www.pizmonim.org/MP3/Vayaqhel%20Full.mp3",
+      "verified": "exact media URL extracted from source player HTML; playback not audited",
+      "index": 22,
+      "canonical": "Vayakhel"
+    },
+    {
+      "kind": "torah",
+      "id": "3676",
+      "title": "פרשת פקודי",
+      "description": "Pequdei (Exodus 38:21-40:38).",
+      "page": "https://www.pizmonim.org/book.php?recording=3297",
+      "label": "Abe Zami- Pequdei- Full",
+      "url": "https://www.pizmonim.org/MP3/Pequdei%20Full.mp3",
+      "verified": "exact media URL extracted from source player HTML; playback not audited",
+      "index": 23,
+      "canonical": "Pekudei"
+    },
+    {
+      "kind": "torah",
+      "id": "3684",
+      "title": "פרשת ויקרא",
+      "description": "Vayiqra (Leviticus 1:1-5:26). Priestly Codes.",
+      "page": "https://www.pizmonim.org/book.php?recording=2723",
+      "label": "Abe Zami- Vayiqra- Full",
+      "url": "https://www.pizmonim.org/MP3/Vayiqra%20Full.mp3",
+      "verified": "exact media URL extracted from source player HTML; playback not audited",
+      "index": 24,
+      "canonical": "Vayikra"
+    },
+    {
+      "kind": "torah",
+      "id": "3692",
+      "title": "פרשת צו",
+      "description": "Sav (Leviticus 6:1-8:36). Leningrad Codex- Sav 1",
+      "page": "https://www.pizmonim.org/book.php?recording=2735",
+      "label": "Abe Zami- Sav- Full",
+      "url": "https://www.pizmonim.org/MP3/Sav%20Full.mp3",
+      "verified": "exact media URL extracted from source player HTML; playback not audited",
+      "index": 25,
+      "canonical": "Tzav"
+    },
+    {
+      "kind": "torah",
+      "id": "3700",
+      "title": "פרשת שמיני",
+      "description": "Shemini (Leviticus 9:1-11:47).",
+      "page": "https://www.pizmonim.org/book.php?recording=2712",
+      "label": "Abe Zami- Shemini- Full",
+      "url": "https://www.pizmonim.org/MP3/Shemini%20Full.mp3",
+      "verified": "exact media URL extracted from source player HTML; playback not audited",
+      "index": 26,
+      "canonical": "Shmini"
+    },
+    {
+      "kind": "torah",
+      "id": "3708",
+      "title": "פרשת תזריע",
+      "description": "Tazria (Leviticus 12: 1-13:59).",
+      "page": "https://www.pizmonim.org/book.php?recording=2746",
+      "label": "Abe Zami- Tazria- Full",
+      "url": "https://www.pizmonim.org/MP3/Tazria%20Full.mp3",
+      "verified": "exact media URL extracted from source player HTML; playback not audited",
+      "index": 27,
+      "canonical": "Tazria"
+    },
+    {
+      "kind": "torah",
+      "id": "3716",
+      "title": "פרשת מצורע",
+      "description": "Mesora (Leviticus 14:1-15:33).",
+      "page": "https://www.pizmonim.org/book.php?recording=2757",
+      "label": "Abe Zami- Mesora- Full",
+      "url": "https://www.pizmonim.org/MP3/Mesora%20Full.mp3",
+      "verified": "exact media URL extracted from source player HTML; playback not audited",
+      "index": 28,
+      "canonical": "Metzora"
+    },
+    {
+      "kind": "torah",
+      "id": "3724",
+      "title": "פרשת אחרי מות",
+      "description": "Ahare Mot (Leviticus 16: 1-18:30).",
+      "page": "https://www.pizmonim.org/book.php?recording=2768",
+      "label": "Abe Zami- Ahare- Full",
+      "url": "https://www.pizmonim.org/MP3/Ahare%20Full.mp3",
+      "verified": "exact media URL extracted from source player HTML; playback not audited",
+      "index": 29,
+      "canonical": "Achrei Mot"
+    },
+    {
+      "kind": "torah",
+      "id": "3732",
+      "title": "פרשת קדשים",
+      "description": "Qedoshim (Leviticus 19:1-20:27).",
+      "page": "https://www.pizmonim.org/book.php?recording=2779",
+      "label": "Abe Zami- Qedoshim- Full",
+      "url": "https://www.pizmonim.org/MP3/Qedoshim%20Full.mp3",
+      "verified": "exact media URL extracted from source player HTML; playback not audited",
+      "index": 30,
+      "canonical": "Kedoshim"
+    },
+    {
+      "kind": "torah",
+      "id": "3740",
+      "title": "פרשת אמור",
+      "description": "Emor (Leviticus 21:1-24:23).",
+      "page": "https://www.pizmonim.org/book.php?recording=2790",
+      "label": "Abe Zami- Emor- Full",
+      "url": "https://www.pizmonim.org/MP3/Emor%20Full.mp3",
+      "verified": "exact media URL extracted from source player HTML; playback not audited",
+      "index": 31,
+      "canonical": "Emor"
+    },
+    {
+      "kind": "torah",
+      "id": "3748",
+      "title": "פרשת בהר",
+      "description": "Behar (Leviticus 25:1-26:2).",
+      "page": "https://www.pizmonim.org/book.php?recording=2801",
+      "label": "Abe Zami- Behar- Full",
+      "url": "https://www.pizmonim.org/MP3/Behar%20Full.mp3",
+      "verified": "exact media URL extracted from source player HTML; playback not audited",
+      "index": 32,
+      "canonical": "Behar"
+    },
+    {
+      "kind": "torah",
+      "id": "3756",
+      "title": "פרשת בחוקתי",
+      "description": "Behuqotai (Leviticus 26:3-27:34).",
+      "page": "https://www.pizmonim.org/book.php?recording=2812",
+      "label": "Abe Zami- Behuqotai- Full",
+      "url": "https://www.pizmonim.org/MP3/Behuqotai%20Full.mp3",
+      "verified": "exact media URL extracted from source player HTML; playback not audited",
+      "index": 33,
+      "canonical": "Bechukotai"
+    },
+    {
+      "kind": "torah",
+      "id": "3764",
+      "title": "פרשת במדבר",
+      "description": "Bemidbar (Numbers 1:1-4:20). \"In the wilderness.\"",
+      "page": "https://www.pizmonim.org/book.php?recording=2823",
+      "label": "Abe Zami- Bemidbar- Full",
+      "url": "https://www.pizmonim.org/MP3/Bemidbar%20Full.mp3",
+      "verified": "exact media URL extracted from source player HTML; playback not audited",
+      "index": 34,
+      "canonical": "Bamidbar"
+    },
+    {
+      "kind": "torah",
+      "id": "3772",
+      "title": "פרשת נשא",
+      "description": "Naso (Numbers 4:21-7:89).",
+      "page": "https://www.pizmonim.org/book.php?recording=2834",
+      "label": "Abe Zami- Naso- Full",
+      "url": "https://www.pizmonim.org/MP3/Naso%20Full.mp3",
+      "verified": "exact media URL extracted from source player HTML; playback not audited",
+      "index": 35,
+      "canonical": "Nasso"
+    },
+    {
+      "kind": "torah",
+      "id": "3780",
+      "title": "פרשת בהעלותך",
+      "description": "Behaalotekha (Numbers 8:1-12:16). Menorah Illustration",
+      "page": "https://www.pizmonim.org/book.php?recording=2845",
+      "label": "Abe Zami- Behaalotekha- Full",
+      "url": "https://www.pizmonim.org/MP3/Behaalotekha%20Full.mp3",
+      "verified": "exact media URL extracted from source player HTML; playback not audited",
+      "index": 36,
+      "canonical": "Beha'alotcha"
+    },
+    {
+      "kind": "torah",
+      "id": "3788",
+      "title": "פרשת שלח",
+      "description": "Shelah (Numbers 13:1-15:41). The Spies.",
+      "page": "https://www.pizmonim.org/book.php?recording=2856",
+      "label": "Abe Zami- Shelah- Full",
+      "url": "https://www.pizmonim.org/MP3/Shelah%20Full.mp3",
+      "verified": "exact media URL extracted from source player HTML; playback not audited",
+      "index": 37,
+      "canonical": "Sh'lach"
+    },
+    {
+      "kind": "torah",
+      "id": "3796",
+      "title": "פרשת קורח",
+      "description": "Qorah (Numbers 16:1-18:32).",
+      "page": "https://www.pizmonim.org/book.php?recording=2867",
+      "label": "Abe Zami- Qorah- Full",
+      "url": "https://www.pizmonim.org/MP3/Qorah%20Full.mp3",
+      "verified": "exact media URL extracted from source player HTML; playback not audited",
+      "index": 38,
+      "canonical": "Korach"
+    },
+    {
+      "kind": "torah",
+      "id": "3804",
+      "title": "פרשת חוקת",
+      "description": "Huqat (Numbers 19:1-22:1).",
+      "page": "https://www.pizmonim.org/book.php?recording=2878",
+      "label": "Abe Zami- Huqat- Full",
+      "url": "https://www.pizmonim.org/MP3/Huqat%20Full.mp3",
+      "verified": "exact media URL extracted from source player HTML; playback not audited",
+      "index": 39,
+      "canonical": "Chukat"
+    },
+    {
+      "kind": "torah",
+      "id": "3812",
+      "title": "פרשת בלק",
+      "description": "Balaq (Numbers 22:2-25:9).",
+      "page": "https://www.pizmonim.org/book.php?recording=2889",
+      "label": "Abe Zami- Balaq- Full",
+      "url": "https://www.pizmonim.org/MP3/Balaq%20Full.mp3",
+      "verified": "exact media URL extracted from source player HTML; playback not audited",
+      "index": 40,
+      "canonical": "Balak"
+    },
+    {
+      "kind": "torah",
+      "id": "3820",
+      "title": "פרשת פינחס",
+      "description": "Pinehas (Numbers 25:10-30:1).",
+      "page": "https://www.pizmonim.org/book.php?recording=2900",
+      "label": "Abe Zami- Pinehas- Full",
+      "url": "https://www.pizmonim.org/MP3/Pinehas%20Full.mp3",
+      "verified": "exact media URL extracted from source player HTML; playback not audited",
+      "index": 41,
+      "canonical": "Pinchas"
+    },
+    {
+      "kind": "torah",
+      "id": "3828",
+      "title": "פרשת מטות",
+      "description": "Matot (Numbers 30:2-32:42).",
+      "page": "https://www.pizmonim.org/book.php?recording=2911",
+      "label": "Abe Zami- Matot- Full",
+      "url": "https://www.pizmonim.org/MP3/Matot%20Full.mp3",
+      "verified": "exact media URL extracted from source player HTML; playback not audited",
+      "index": 42,
+      "canonical": "Matot"
+    },
+    {
+      "kind": "torah",
+      "id": "3836",
+      "title": "פרשת מסעי",
+      "description": "Masei (Numbers 33:1-36:13).",
+      "page": "https://www.pizmonim.org/book.php?recording=2922",
+      "label": "Abe Zami- Masei- Full",
+      "url": "https://www.pizmonim.org/MP3/Masei%20Full.mp3",
+      "verified": "exact media URL extracted from source player HTML; playback not audited",
+      "index": 43,
+      "canonical": "Masei"
+    },
+    {
+      "kind": "torah",
+      "id": "3844",
+      "title": "פרשת דברים",
+      "description": "Debarim (Deuteronomy 1:1-3:22). Moses' Introduction.",
+      "page": "https://www.pizmonim.org/book.php?recording=2933",
+      "label": "Abe Zami- Debarim- Full",
+      "url": "https://www.pizmonim.org/MP3/Debarim%20Full.mp3",
+      "verified": "exact media URL extracted from source player HTML; playback not audited",
+      "index": 44,
+      "canonical": "Devarim"
+    },
+    {
+      "kind": "torah",
+      "id": "3852",
+      "title": "פרשת ואתחנן",
+      "description": "Vaethanan (Deuteronomy 3:23-7:11). Moses' Introduction.",
+      "page": "https://www.pizmonim.org/book.php?recording=2944",
+      "label": "Abe Zami- Vaethanan- Full",
+      "url": "https://www.pizmonim.org/MP3/Vaethanan%20Full.mp3",
+      "verified": "exact media URL extracted from source player HTML; playback not audited",
+      "index": 45,
+      "canonical": "Vaetchanan"
+    },
+    {
+      "kind": "torah",
+      "id": "3860",
+      "title": "פרשת עקב",
+      "description": "Eqeb (Deuteronomy 7:12-11:25). Introduction to Law Code.",
+      "page": "https://www.pizmonim.org/book.php?recording=2955",
+      "label": "Abe Zami- Eqeb- Full",
+      "url": "https://www.pizmonim.org/MP3/Eqeb%20Full.mp3",
+      "verified": "exact media URL extracted from source player HTML; playback not audited",
+      "index": 46,
+      "canonical": "Eikev"
+    },
+    {
+      "kind": "torah",
+      "id": "3868",
+      "title": "פרשת ראה",
+      "description": "Reeh (Deuteronomy 11:26-16:17). Introduction to Law Code. Law Code (12:1-27:10).",
+      "page": "https://www.pizmonim.org/book.php?recording=2966",
+      "label": "Abe Zami- Reeh- Full",
+      "url": "https://www.pizmonim.org/MP3/Reeh%20Full.mp3",
+      "verified": "exact media URL extracted from source player HTML; playback not audited",
+      "index": 47,
+      "canonical": "Re'eh"
+    },
+    {
+      "kind": "torah",
+      "id": "3876",
+      "title": "פרשת שפטים",
+      "description": "Shofetim (Deuteronomy 16:18-21:9). Law Code.",
+      "page": "https://www.pizmonim.org/book.php?recording=2977",
+      "label": "Abe Zami- Shofetim- Full",
+      "url": "https://www.pizmonim.org/MP3/Shofetim%20Full.mp3",
+      "verified": "exact media URL extracted from source player HTML; playback not audited",
+      "index": 48,
+      "canonical": "Shoftim"
+    },
+    {
+      "kind": "torah",
+      "id": "3884",
+      "title": "פרשת כי תצא",
+      "description": "Ki Tesse (Deuteronomy 21:10-25:19). Law Code.",
+      "page": "https://www.pizmonim.org/book.php?recording=2988",
+      "label": "Abe Zami- Ki Tesse- Full",
+      "url": "https://www.pizmonim.org/MP3/Ki%20Tesse%20Full.mp3",
+      "verified": "exact media URL extracted from source player HTML; playback not audited",
+      "index": 49,
+      "canonical": "Ki Teitzei"
+    },
+    {
+      "kind": "torah",
+      "id": "3892",
+      "title": "פרשת כי תבוא",
+      "description": "Ki Tabo (Deuteronomy 26:1-29:8). Conclusion of Law Code. Covenant Ceremony (27:11-26).",
+      "page": "https://www.pizmonim.org/book.php?recording=2999",
+      "label": "Abe Zami- Ki Tabo- Full",
+      "url": "https://www.pizmonim.org/MP3/Ki%20Tabo%20Full.mp3",
+      "verified": "exact media URL extracted from source player HTML; playback not audited",
+      "index": 50,
+      "canonical": "Ki Tavo"
+    },
+    {
+      "kind": "torah",
+      "id": "3900",
+      "title": "פרשת נצבים",
+      "description": "Nissabim (Deuteronomy 29:9-28). Moses' conclusion.",
+      "page": "https://www.pizmonim.org/book.php?recording=3010",
+      "label": "Abe Zami- Nissabim- Full",
+      "url": "https://www.pizmonim.org/MP3/Nissabim%20Full.mp3",
+      "verified": "exact media URL extracted from source player HTML; playback not audited",
+      "index": 51,
+      "canonical": "Nitzavim"
+    },
+    {
+      "kind": "torah",
+      "id": "3908",
+      "title": "פרשת וילך",
+      "description": "Vayelekh (Deuteronomy 31:1-30).",
+      "page": "https://www.pizmonim.org/book.php?recording=3021",
+      "label": "Abe Zami- Vayelekh- Full",
+      "url": "https://www.pizmonim.org/MP3/Vayelekh%20Full.mp3",
+      "verified": "exact media URL extracted from source player HTML; playback not audited",
+      "index": 52,
+      "canonical": "Vayelech"
+    },
+    {
+      "kind": "torah",
+      "id": "3916",
+      "title": "פרשת האזינו",
+      "description": "Haazinu (Deuteronomy 32:1-52). The Song of Moses. Aliyot Stops: הזי''ו ל''ך. Aleppo Codex- Haazinu 1",
+      "page": "https://www.pizmonim.org/book.php?recording=3032",
+      "label": "Abe Zami- Haazinu- Full",
+      "url": "https://www.pizmonim.org/MP3/Haazinu%20Full.mp3",
+      "verified": "exact media URL extracted from source player HTML; playback not audited",
+      "index": 53,
+      "canonical": "Ha'Azinu"
+    },
+    {
+      "kind": "torah",
+      "id": "3924",
+      "title": "פרשת וזאת הברכה",
+      "description": "VeZot Haberakha (Deuteronomy 33:1-52). The Blessing of Moses. Aleppo Codex- VeZot HaBerakha 1",
+      "page": "https://www.pizmonim.org/book.php?recording=3043",
+      "label": "Abe Zami- VeZot HaBerakha- Full",
+      "url": "https://www.pizmonim.org/MP3/VeZot%20Full.mp3",
+      "verified": "exact media URL extracted from source player HTML; playback not audited",
+      "index": 54,
+      "canonical": "Vezot Haberakhah"
+    },
+    {
+      "kind": "haftarah",
+      "id": "3932",
+      "title": "הפטרת בראשית",
+      "description": "Isaiah 42:5–21.",
+      "page": "https://www.pizmonim.org/book.php?recording=3351",
+      "label": "M Kairey",
+      "url": "https://www.pizmonim.org/MP3/Haftarat%20Bereshit.mp3",
+      "verified": "exact media URL extracted from source player HTML; playback not audited",
+      "index": 1,
+      "canonical": "Bereshit"
+    },
+    {
+      "kind": "haftarah",
+      "id": "3933",
+      "title": "הפטרת נח",
+      "description": "Isaiah 54:1–10.",
+      "page": "https://www.pizmonim.org/book.php?recording=3352",
+      "label": "M Kairey",
+      "url": "https://www.pizmonim.org/MP3/Haftarat%20Noah.mp3",
+      "verified": "exact media URL extracted from source player HTML; playback not audited",
+      "index": 2,
+      "canonical": "Noach"
+    },
+    {
+      "kind": "haftarah",
+      "id": "3934",
+      "title": "הפטרת לך לך",
+      "description": "Isaiah 40:27-41:16.",
+      "page": "https://www.pizmonim.org/book.php?recording=3353",
+      "label": "M Kairey",
+      "url": "https://www.pizmonim.org/MP3/Haftarat%20Lekh%20Lekha.mp3",
+      "verified": "exact media URL extracted from source player HTML; playback not audited",
+      "index": 3,
+      "canonical": "Lech-Lecha"
+    },
+    {
+      "kind": "haftarah",
+      "id": "3935",
+      "title": "הפטרת וירא",
+      "description": "2 Kings 4:1-23.",
+      "page": "https://www.pizmonim.org/book.php?recording=3354",
+      "label": "M Kairey",
+      "url": "https://www.pizmonim.org/MP3/Haftarat%20Vayera.mp3",
+      "verified": "exact media URL extracted from source player HTML; playback not audited",
+      "index": 4,
+      "canonical": "Vayera"
+    },
+    {
+      "kind": "haftarah",
+      "id": "3936",
+      "title": "הפטרת חיי שרה",
+      "description": "1 Kings 1:1-31.",
+      "page": "https://www.pizmonim.org/book.php?recording=3355",
+      "label": "M Kairey",
+      "url": "https://www.pizmonim.org/MP3/Haftarat%20Haye%20Sarah.mp3",
+      "verified": "exact media URL extracted from source player HTML; playback not audited",
+      "index": 5,
+      "canonical": "Chayei Sara"
+    },
+    {
+      "kind": "haftarah",
+      "id": "3937",
+      "title": "הפטרת תולדות",
+      "description": "Malachi 1:1–2:7.",
+      "page": "https://www.pizmonim.org/book.php?recording=3356",
+      "label": "M Kairey",
+      "url": "https://www.pizmonim.org/MP3/Haftarat%20Toledot.mp3",
+      "verified": "exact media URL extracted from source player HTML; playback not audited",
+      "index": 6,
+      "canonical": "Toldot"
+    },
+    {
+      "kind": "haftarah",
+      "id": "3938",
+      "title": "הפטרת ויצא",
+      "description": "Hosea 11:7–12:12.",
+      "page": "https://www.pizmonim.org/book.php?recording=3357",
+      "label": "M Kairey",
+      "url": "https://www.pizmonim.org/MP3/Haftarat%20Vayesse.mp3",
+      "verified": "exact media URL extracted from source player HTML; playback not audited",
+      "index": 7,
+      "canonical": "Vayetzei"
+    },
+    {
+      "kind": "haftarah",
+      "id": "3939",
+      "title": "הפטרת וישלח",
+      "description": "Obadiah 1:1–21.",
+      "page": "https://www.pizmonim.org/book.php?recording=3358",
+      "label": "M Kairey",
+      "url": "https://www.pizmonim.org/MP3/Haftarat%20Vayishlah.mp3",
+      "verified": "exact media URL extracted from source player HTML; playback not audited",
+      "index": 8,
+      "canonical": "Vayishlach"
+    },
+    {
+      "kind": "haftarah",
+      "id": "3940",
+      "title": "הפטרת וישב",
+      "description": "Amos 2:6–3:8.",
+      "page": "https://www.pizmonim.org/book.php?recording=3359",
+      "label": "M Kairey",
+      "url": "https://www.pizmonim.org/MP3/Haftarat%20Vayesheb.mp3",
+      "verified": "exact media URL extracted from source player HTML; playback not audited",
+      "index": 9,
+      "canonical": "Vayeshev"
+    },
+    {
+      "kind": "haftarah",
+      "id": "3941",
+      "title": "הפטרת מקץ",
+      "description": "1 Kings 3:15–4:1.",
+      "page": "https://www.pizmonim.org/book.php?recording=3360",
+      "label": "M Kairey",
+      "url": "https://www.pizmonim.org/MP3/Haftarat%20Miqes.mp3",
+      "verified": "exact media URL extracted from source player HTML; playback not audited",
+      "index": 10,
+      "canonical": "Miketz"
+    },
+    {
+      "kind": "haftarah",
+      "id": "3942",
+      "title": "הפטרת ויגש",
+      "description": "Ezekiel 37:15–28.",
+      "page": "https://www.pizmonim.org/book.php?recording=3361",
+      "label": "M Kairey",
+      "url": "https://www.pizmonim.org/MP3/Haftarat%20Vayigash.mp3",
+      "verified": "exact media URL extracted from source player HTML; playback not audited",
+      "index": 11,
+      "canonical": "Vayigash"
+    },
+    {
+      "kind": "haftarah",
+      "id": "3943",
+      "title": "הפטרת ויחי",
+      "description": "1 Kings 2:1–12.",
+      "page": "https://www.pizmonim.org/book.php?recording=3362",
+      "label": "M Kairey",
+      "url": "https://www.pizmonim.org/MP3/Haftarat%20Vayehi.mp3",
+      "verified": "exact media URL extracted from source player HTML; playback not audited",
+      "index": 12,
+      "canonical": "Vayechi"
+    },
+    {
+      "kind": "haftarah",
+      "id": "3944",
+      "title": "הפטרת שמות",
+      "description": "Jeremiah 1:1–2:3.",
+      "page": "https://www.pizmonim.org/book.php?recording=3363",
+      "label": "M Kairey",
+      "url": "https://www.pizmonim.org/MP3/Haftarat%20Shemot.mp3",
+      "verified": "exact media URL extracted from source player HTML; playback not audited",
+      "index": 13,
+      "canonical": "Shemot"
+    },
+    {
+      "kind": "haftarah",
+      "id": "3945",
+      "title": "הפטרת וארא",
+      "description": "Ezekiel 28:25–29:21.",
+      "page": "https://www.pizmonim.org/book.php?recording=3364",
+      "label": "M Kairey",
+      "url": "https://www.pizmonim.org/MP3/Haftarat%20Vaera.mp3",
+      "verified": "exact media URL extracted from source player HTML; playback not audited",
+      "index": 14,
+      "canonical": "Vaera"
+    },
+    {
+      "kind": "haftarah",
+      "id": "3946",
+      "title": "הפטרת בא",
+      "description": "Jeremiah 46:13–28.",
+      "page": "https://www.pizmonim.org/book.php?recording=3365",
+      "label": "M Kairey",
+      "url": "https://www.pizmonim.org/MP3/Haftarat%20Bo.mp3",
+      "verified": "exact media URL extracted from source player HTML; playback not audited",
+      "index": 15,
+      "canonical": "Bo"
+    },
+    {
+      "kind": "haftarah",
+      "id": "3947",
+      "title": "הפטרת בשלח",
+      "description": "Judges 5:1–31. Aleppo Codex- Shirat Deborah 1",
+      "page": "https://www.pizmonim.org/book.php?recording=6053",
+      "label": "Moshe Dwek",
+      "url": "https://www.pizmonim.org/MP3/md%20cd15%2006.mp3",
+      "verified": "exact media URL extracted from source player HTML; playback not audited",
+      "index": 16,
+      "canonical": "Beshalach"
+    },
+    {
+      "kind": "haftarah",
+      "id": "3948",
+      "title": "הפטרת יתרו",
+      "description": "Isaiah 6:1–13.",
+      "page": "https://www.pizmonim.org/book.php?recording=3367",
+      "label": "M Kairey",
+      "url": "https://www.pizmonim.org/MP3/Haftarat%20Yitro.mp3",
+      "verified": "exact media URL extracted from source player HTML; playback not audited",
+      "index": 17,
+      "canonical": "Yitro"
+    },
+    {
+      "kind": "haftarah",
+      "id": "3949",
+      "title": "הפטרת משפטים",
+      "description": "Jeremiah 34:8–22 & 33:25–26.",
+      "page": "https://www.pizmonim.org/book.php?recording=3368",
+      "label": "M Kairey",
+      "url": "https://www.pizmonim.org/MP3/Haftarat%20Mishpatim.mp3",
+      "verified": "exact media URL extracted from source player HTML; playback not audited",
+      "index": 18,
+      "canonical": "Mishpatim"
+    },
+    {
+      "kind": "haftarah",
+      "id": "3951",
+      "title": "הפטרת תצוה",
+      "description": "Ezekiel 43:10–27",
+      "page": "https://www.pizmonim.org/book.php?recording=3370",
+      "label": "M Kairey",
+      "url": "https://www.pizmonim.org/MP3/Haftarat%20Tessave.mp3",
+      "verified": "exact media URL extracted from source player HTML; playback not audited",
+      "index": 20,
+      "canonical": "Tetzaveh"
+    },
+    {
+      "kind": "haftarah",
+      "id": "3952",
+      "title": "הפטרת כי תשא",
+      "description": "1 Kings 18:20–39.",
+      "page": "https://www.pizmonim.org/book.php?recording=3371",
+      "label": "M Kairey",
+      "url": "https://www.pizmonim.org/MP3/Haftarat%20Ki%20Tisa.mp3",
+      "verified": "exact media URL extracted from source player HTML; playback not audited",
+      "index": 21,
+      "canonical": "Ki Tisa"
+    },
+    {
+      "kind": "haftarah",
+      "id": "3953",
+      "title": "הפטרת ויקהל",
+      "description": "1 Kings 7:13–26.",
+      "page": "https://www.pizmonim.org/book.php?recording=3372",
+      "label": "M Kairey",
+      "url": "https://www.pizmonim.org/MP3/Haftarat%20Vayaqhel.mp3",
+      "verified": "exact media URL extracted from source player HTML; playback not audited",
+      "index": 22,
+      "canonical": "Vayakhel"
+    },
+    {
+      "kind": "haftarah",
+      "id": "3955",
+      "title": "הפטרת ויקרא",
+      "description": "Isaiah 43:21–44:23.",
+      "page": "https://www.pizmonim.org/book.php?recording=3374",
+      "label": "M Kairey",
+      "url": "https://www.pizmonim.org/MP3/Haftarat%20Vayiqra.mp3",
+      "verified": "exact media URL extracted from source player HTML; playback not audited",
+      "index": 24,
+      "canonical": "Vayikra"
+    },
+    {
+      "kind": "haftarah",
+      "id": "3956",
+      "title": "הפטרת צו",
+      "description": "Jeremiah 7:21–8:3; 9:22–23.",
+      "page": "https://www.pizmonim.org/book.php?recording=3375",
+      "label": "M Kairey",
+      "url": "https://www.pizmonim.org/MP3/Haftarat%20Sav.mp3",
+      "verified": "exact media URL extracted from source player HTML; playback not audited",
+      "index": 25,
+      "canonical": "Tzav"
+    },
+    {
+      "kind": "haftarah",
+      "id": "3957",
+      "title": "הפטרת שמיני",
+      "description": "2 Samuel 6:1-19.",
+      "page": "https://www.pizmonim.org/book.php?recording=3376",
+      "label": "M Kairey",
+      "url": "https://www.pizmonim.org/MP3/Haftarat%20Shemini.mp3",
+      "verified": "exact media URL extracted from source player HTML; playback not audited",
+      "index": 26,
+      "canonical": "Shmini"
+    },
+    {
+      "kind": "haftarah",
+      "id": "3958",
+      "title": "הפטרת תזריע",
+      "description": "2 Kings 4:42–5:19.",
+      "page": "https://www.pizmonim.org/book.php?recording=3377",
+      "label": "M Kairey",
+      "url": "https://www.pizmonim.org/MP3/Haftarat%20Tazria.mp3",
+      "verified": "exact media URL extracted from source player HTML; playback not audited",
+      "index": 27,
+      "canonical": "Tazria"
+    },
+    {
+      "kind": "haftarah",
+      "id": "3959",
+      "title": "הפטרת מצורע",
+      "description": "2 Kings 7:3–20.",
+      "page": "https://www.pizmonim.org/book.php?recording=3378",
+      "label": "M Kairey",
+      "url": "https://www.pizmonim.org/MP3/Haftarat%20Messora.mp3",
+      "verified": "exact media URL extracted from source player HTML; playback not audited",
+      "index": 28,
+      "canonical": "Metzora"
+    },
+    {
+      "kind": "haftarah",
+      "id": "3960",
+      "title": "הפטרת אחרי מות",
+      "description": "Ezekiel 22:1–16.",
+      "page": "https://www.pizmonim.org/book.php?recording=3379",
+      "label": "M Kairey",
+      "url": "https://www.pizmonim.org/MP3/Haftarat%20Ahare.mp3",
+      "verified": "exact media URL extracted from source player HTML; playback not audited",
+      "index": 29,
+      "canonical": "Achrei Mot"
+    },
+    {
+      "kind": "haftarah",
+      "id": "3962",
+      "title": "הפטרת אמור",
+      "description": "Ezekiel 44:15–31.",
+      "page": "https://www.pizmonim.org/book.php?recording=3381",
+      "label": "M Kairey",
+      "url": "https://www.pizmonim.org/MP3/Haftarat%20Emor.mp3",
+      "verified": "exact media URL extracted from source player HTML; playback not audited",
+      "index": 31,
+      "canonical": "Emor"
+    },
+    {
+      "kind": "haftarah",
+      "id": "3963",
+      "title": "הפטרת בהר",
+      "description": "Jeremiah 32:6–22.",
+      "page": "https://www.pizmonim.org/book.php?recording=3382",
+      "label": "M Kairey",
+      "url": "https://www.pizmonim.org/MP3/Haftarat%20Behar.mp3",
+      "verified": "exact media URL extracted from source player HTML; playback not audited",
+      "index": 32,
+      "canonical": "Behar"
+    },
+    {
+      "kind": "haftarah",
+      "id": "3964",
+      "title": "הפטרת בחוקתי",
+      "description": "Jeremiah 16:19–17:14. Aleppo Codex- Jeremiah 16",
+      "page": "https://www.pizmonim.org/book.php?recording=3383",
+      "label": "M Kairey",
+      "url": "https://www.pizmonim.org/MP3/Haftarat%20Behuqotai.mp3",
+      "verified": "exact media URL extracted from source player HTML; playback not audited",
+      "index": 33,
+      "canonical": "Bechukotai"
+    },
+    {
+      "kind": "haftarah",
+      "id": "3965",
+      "title": "הפטרת במדבר",
+      "description": "Hosea 2:1–22.",
+      "page": "https://www.pizmonim.org/book.php?recording=3384",
+      "label": "M Kairey",
+      "url": "https://www.pizmonim.org/MP3/Haftarat%20Bemidbar.mp3",
+      "verified": "exact media URL extracted from source player HTML; playback not audited",
+      "index": 34,
+      "canonical": "Bamidbar"
+    },
+    {
+      "kind": "haftarah",
+      "id": "3966",
+      "title": "הפטרת נשא",
+      "description": "Judges 13:2–25.",
+      "page": "https://www.pizmonim.org/book.php?recording=3385",
+      "label": "M Kairey",
+      "url": "https://www.pizmonim.org/MP3/Haftarat%20Naso.mp3",
+      "verified": "exact media URL extracted from source player HTML; playback not audited",
+      "index": 35,
+      "canonical": "Nasso"
+    },
+    {
+      "kind": "haftarah",
+      "id": "3967",
+      "title": "הפטרת בהעלותך",
+      "description": "Zechariah 2:14–4:7.",
+      "page": "https://www.pizmonim.org/book.php?recording=3386",
+      "label": "M Kairey",
+      "url": "https://www.pizmonim.org/MP3/Haftarat%20Behalotekha.mp3",
+      "verified": "exact media URL extracted from source player HTML; playback not audited",
+      "index": 36,
+      "canonical": "Beha'alotcha"
+    },
+    {
+      "kind": "haftarah",
+      "id": "3968",
+      "title": "הפטרת שלח",
+      "description": "Joshua 2:1–24.",
+      "page": "https://www.pizmonim.org/book.php?recording=3387",
+      "label": "M Kairey",
+      "url": "https://www.pizmonim.org/MP3/Haftarat%20Shelah.mp3",
+      "verified": "exact media URL extracted from source player HTML; playback not audited",
+      "index": 37,
+      "canonical": "Sh'lach"
+    },
+    {
+      "kind": "haftarah",
+      "id": "3969",
+      "title": "הפטרת קורח",
+      "description": "1 Samuel 11:14–12:22.",
+      "page": "https://www.pizmonim.org/book.php?recording=3388",
+      "label": "M Kairey",
+      "url": "https://www.pizmonim.org/MP3/Haftarat%20Qorah.mp3",
+      "verified": "exact media URL extracted from source player HTML; playback not audited",
+      "index": 38,
+      "canonical": "Korach"
+    },
+    {
+      "kind": "haftarah",
+      "id": "3970",
+      "title": "הפטרת חוקת",
+      "description": "Judges 11:1–33.",
+      "page": "https://www.pizmonim.org/book.php?recording=3389",
+      "label": "M Kairey",
+      "url": "https://www.pizmonim.org/MP3/Haftarat%20Huqat.mp3",
+      "verified": "exact media URL extracted from source player HTML; playback not audited",
+      "index": 39,
+      "canonical": "Chukat"
+    },
+    {
+      "kind": "haftarah",
+      "id": "3971",
+      "title": "הפטרת בלק",
+      "description": "Micah 5:6–6:8.",
+      "page": "https://www.pizmonim.org/book.php?recording=3390",
+      "label": "M Kairey",
+      "url": "https://www.pizmonim.org/MP3/Haftarat%20Balaq.mp3",
+      "verified": "exact media URL extracted from source player HTML; playback not audited",
+      "index": 40,
+      "canonical": "Balak"
+    },
+    {
+      "kind": "haftarah",
+      "id": "3972",
+      "title": "הפטרת פינחס",
+      "description": "1 Kings 18:46-19:21.",
+      "page": "https://www.pizmonim.org/book.php?recording=3391",
+      "label": "M Kairey",
+      "url": "https://www.pizmonim.org/MP3/Haftarat%20Pinehas.mp3",
+      "verified": "exact media URL extracted from source player HTML; playback not audited",
+      "index": 41,
+      "canonical": "Pinchas"
+    },
+    {
+      "kind": "haftarah",
+      "id": "3973",
+      "title": "הפטרת מטות",
+      "description": "Jeremiah 1:1-2:3.",
+      "page": "https://www.pizmonim.org/book.php?recording=3392",
+      "label": "M Kairey",
+      "url": "https://www.pizmonim.org/MP3/Haftarat%20Matot.mp3",
+      "verified": "exact media URL extracted from source player HTML; playback not audited",
+      "index": 42,
+      "canonical": "Matot"
+    },
+    {
+      "kind": "haftarah",
+      "id": "3974",
+      "title": "הפטרת מסעי",
+      "description": "Jeremiah 2:4-28 & 4:1-2.",
+      "page": "https://www.pizmonim.org/book.php?recording=3393",
+      "label": "M Kairey",
+      "url": "https://www.pizmonim.org/MP3/Haftarat%20Masei.mp3",
+      "verified": "exact media URL extracted from source player HTML; playback not audited",
+      "index": 43,
+      "canonical": "Masei"
+    },
+    {
+      "kind": "haftarah",
+      "id": "3975",
+      "title": "הפטרת דברים",
+      "description": "Isaiah 1:1–27.",
+      "page": "https://www.pizmonim.org/book.php?recording=3394",
+      "label": "M Kairey",
+      "url": "https://www.pizmonim.org/MP3/Haftarat%20Debarim.mp3",
+      "verified": "exact media URL extracted from source player HTML; playback not audited",
+      "index": 44,
+      "canonical": "Devarim"
+    },
+    {
+      "kind": "haftarah",
+      "id": "3976",
+      "title": "הפטרת ואתחנן",
+      "description": "Isaiah 40:1–26. Week 1 of Consolation.",
+      "page": "https://www.pizmonim.org/book.php?recording=3395",
+      "label": "M Kairey",
+      "url": "https://www.pizmonim.org/MP3/Haftarat%20Vaethanan.mp3",
+      "verified": "exact media URL extracted from source player HTML; playback not audited",
+      "index": 45,
+      "canonical": "Vaetchanan"
+    },
+    {
+      "kind": "haftarah",
+      "id": "3977",
+      "title": "הפטרת עקב",
+      "description": "Isaiah 49:14–51:3. Week 2 of Consolation.",
+      "page": "https://www.pizmonim.org/book.php?recording=3396",
+      "label": "M Kairey",
+      "url": "https://www.pizmonim.org/MP3/Haftarat%20Eqeb.mp3",
+      "verified": "exact media URL extracted from source player HTML; playback not audited",
+      "index": 46,
+      "canonical": "Eikev"
+    },
+    {
+      "kind": "haftarah",
+      "id": "3978",
+      "title": "הפטרת ראה",
+      "description": "Isaiah 54:11–55:5. Week 3 of Consolation.",
+      "page": "https://www.pizmonim.org/book.php?recording=3397",
+      "label": "M Kairey",
+      "url": "https://www.pizmonim.org/MP3/Haftarat%20Reeh.mp3",
+      "verified": "exact media URL extracted from source player HTML; playback not audited",
+      "index": 47,
+      "canonical": "Re'eh"
+    },
+    {
+      "kind": "haftarah",
+      "id": "3979",
+      "title": "הפטרת שפטים",
+      "description": "Isaiah 51:12–52:12. Week 4 of Consolation.",
+      "page": "https://www.pizmonim.org/book.php?recording=3398",
+      "label": "M Kairey",
+      "url": "https://www.pizmonim.org/MP3/Haftarat%20Shofetim.mp3",
+      "verified": "exact media URL extracted from source player HTML; playback not audited",
+      "index": 48,
+      "canonical": "Shoftim"
+    },
+    {
+      "kind": "haftarah",
+      "id": "3980",
+      "title": "הפטרת כי תצא",
+      "description": "Isaiah 54:1-10. Week 5 of Consolation.",
+      "page": "https://www.pizmonim.org/book.php?recording=3399",
+      "label": "M Kairey",
+      "url": "https://www.pizmonim.org/MP3/Haftarat%20Ki%20Tesse.mp3",
+      "verified": "exact media URL extracted from source player HTML; playback not audited",
+      "index": 49,
+      "canonical": "Ki Teitzei"
+    },
+    {
+      "kind": "haftarah",
+      "id": "3981",
+      "title": "הפטרת כי תבוא",
+      "description": "Isaiah 60:1-22. Week 6 of Consolation.",
+      "page": "https://www.pizmonim.org/book.php?recording=3400",
+      "label": "M Kairey",
+      "url": "https://www.pizmonim.org/MP3/Haftarat%20Ki%20Tabo.mp3",
+      "verified": "exact media URL extracted from source player HTML; playback not audited",
+      "index": 50,
+      "canonical": "Ki Tavo"
+    },
+    {
+      "kind": "haftarah",
+      "id": "3982",
+      "title": "הפטרת נצבים",
+      "description": "Isaiah 61:10-63:9. Week 7 of Consolation.",
+      "page": "https://www.pizmonim.org/book.php?recording=3401",
+      "label": "M Kairey",
+      "url": "https://www.pizmonim.org/MP3/Haftarat%20Nissabim.mp3",
+      "verified": "exact media URL extracted from source player HTML; playback not audited",
+      "index": 51,
+      "canonical": "Nitzavim"
+    },
+    {
+      "kind": "haftarah",
+      "id": "3983",
+      "title": "הפטרת וילך",
+      "description": "Hosea 14:2-10 & Micah 7:18-20. Shabbat Shubah.",
+      "page": "https://www.pizmonim.org/book.php?recording=3402",
+      "label": "M Kairey",
+      "url": "https://www.pizmonim.org/MP3/Haftarat%20Vayelekh.mp3",
+      "verified": "exact media URL extracted from source player HTML; playback not audited",
+      "index": 52,
+      "canonical": "Vayelech"
+    },
+    {
+      "kind": "haftarah",
+      "id": "3984",
+      "title": "הפטרת האזינו",
+      "description": "2 Samuel 22:1-51. Shabbat between Yom Kippur and Sukkot.",
+      "page": "https://www.pizmonim.org/book.php?recording=3403",
+      "label": "M Kairey",
+      "url": "https://www.pizmonim.org/MP3/Haftarat%20Haazinu.mp3",
+      "verified": "exact media URL extracted from source player HTML; playback not audited",
+      "index": 53,
+      "canonical": "Ha'Azinu"
+    },
+    {
+      "kind": "haftarah",
+      "id": "3985",
+      "title": "הפטרת וזאת הברכה",
+      "description": "Joshua 1:1–9. Simhat Torah. Aleppo Codex- Joshua 1",
+      "page": "https://www.pizmonim.org/book.php?recording=4469",
+      "label": "Eli Cabasso- Joshua Ch 1",
+      "url": "https://www.pizmonim.org/MP3/joshua1.mp3",
+      "verified": "exact media URL extracted from source player HTML; playback not audited",
+      "index": 54,
+      "canonical": "Vezot Haberakhah"
+    },
+    {
+      "kind": "haftarah",
+      "id": "3997",
+      "title": "הפטרת ב חנוכה",
+      "description": "1 Kings 7:40-50.",
+      "page": "https://www.pizmonim.org/book.php?recording=3373",
+      "label": "M Kairey",
+      "url": "https://www.pizmonim.org/MP3/Haftarat%20Pequdei.mp3",
+      "verified": "exact media URL extracted from source player HTML; playback not audited"
+    },
+    {
+      "kind": "prayer",
+      "id": "",
+      "title": "כי לה' המלוכה",
+      "description": "",
+      "page": "https://www.pizmonim.org/book.php?recording=312",
+      "label": "Ezra A. Tawil: Rast",
+      "url": "https://www.pizmonim.org/MP3/167-06%20Tawil.mp3",
+      "verified": "exact media URL extracted from source player HTML; playback not audited"
+    },
+    {
+      "kind": "prayer",
+      "id": "",
+      "title": "נשמת",
+      "description": "Pillar #1 of Shaharit. Heavy musical style.",
+      "page": "https://www.pizmonim.org/book.php?recording=4266",
+      "label": "D Riahi- Bayat",
+      "url": "https://www.pizmonim.org/MP3/riahi%20bayat%20nishmat.mp3",
+      "verified": "exact media URL extracted from source player HTML; playback not audited"
+    },
+    {
+      "kind": "prayer",
+      "id": "",
+      "title": "שועת עניים",
+      "description": "Light musical style.",
+      "page": "https://www.pizmonim.org/book.php?recording=2428",
+      "label": "A Mouhadeb- Rast",
+      "url": "https://www.pizmonim.org/MP3/mouhadeb%20shavat%20rast.mp3",
+      "verified": "exact media URL extracted from source player HTML; playback not audited"
+    },
+    {
+      "kind": "prayer",
+      "id": "",
+      "title": "אל ההודאות",
+      "description": "Light musical style.",
+      "page": "https://www.pizmonim.org/book.php?recording=2305",
+      "label": "R Barzani- Hahodaot",
+      "url": "https://www.pizmonim.org/MP3/barzani%20lener%20ubesamim%20hahodaot.mp3",
+      "verified": "exact media URL extracted from source player HTML; playback not audited"
+    },
+    {
+      "kind": "prayer",
+      "id": "",
+      "title": "קדיש",
+      "description": "Maqam Baqashot",
+      "page": "https://www.pizmonim.org/book.php?recording=448",
+      "label": "Y Hamaoui- Ajam",
+      "url": "https://www.pizmonim.org/MP3/254-94%20Hamaoui.mp3",
+      "verified": "exact media URL extracted from source player HTML; playback not audited"
+    },
+    {
+      "kind": "prayer",
+      "id": "",
+      "title": "שמחים",
+      "description": "Light musical style. Cornerstone of the prayers. Typically used to announce upcoming holiday.",
+      "page": "https://www.pizmonim.org/book.php?recording=450",
+      "label": "Yosef Hamaoui- Ajam Semehim",
+      "url": "https://www.pizmonim.org/MP3/254-96%20Hamaoui.mp3",
+      "verified": "exact media URL extracted from source player HTML; playback not audited"
+    },
+    {
+      "kind": "prayer",
+      "id": "",
+      "title": "קריאת שמע",
+      "description": "Sample of the Shema portion.",
+      "page": "https://www.pizmonim.org/book.php?recording=2216",
+      "label": "Y. Nahari",
+      "url": "https://www.pizmonim.org/MP3/qeriatshema.mp3",
+      "verified": "exact media URL extracted from source player HTML; playback not audited"
+    },
+    {
+      "kind": "prayer",
+      "id": "",
+      "title": "ממצרים",
+      "description": "Light musical style.",
+      "page": "https://www.pizmonim.org/book.php?recording=2419",
+      "label": "Moe Tawil- Mimisrayim- Ajam",
+      "url": "https://www.pizmonim.org/MP3/tawil%20mimisrayim%20ajam.mp3",
+      "verified": "exact media URL extracted from source player HTML; playback not audited"
+    },
+    {
+      "kind": "prayer",
+      "id": "",
+      "title": "נקדישך",
+      "description": "Pillar #3 of Shaharit. Heavy musical style.",
+      "page": "https://www.pizmonim.org/book.php?recording=6377",
+      "label": "Isaac Cabasso - Naqdishakh Collection",
+      "url": "https://www.pizmonim.org/MP3/Beth%20Torah%20Qedusha.mp3",
+      "verified": "exact media URL extracted from source player HTML; playback not audited"
+    },
+    {
+      "kind": "prayer",
+      "id": "2382",
+      "title": "פתיחת אליהו ז''ל",
+      "description": "",
+      "page": "https://www.pizmonim.org/book.php?recording=5103",
+      "label": "M Habusha",
+      "url": "https://www.pizmonim.org/MP3/habusha%20petah%20eliahou.mp3",
+      "verified": "exact media URL extracted from source player HTML; playback not audited"
+    },
+    {
+      "kind": "prayer",
+      "id": "2385",
+      "title": "פטום הקטרת",
+      "description": "The Qetoret Passage. Mahzor Aram Soba 1560",
+      "page": "https://www.pizmonim.org/book.php?recording=5028",
+      "label": "G Shrem",
+      "url": "https://www.pizmonim.org/MP3/Qetoret.mp3",
+      "verified": "exact media URL extracted from source player HTML; playback not audited"
+    },
+    {
+      "kind": "prayer",
+      "id": "2386",
+      "title": "אשרי יושבי ביתך",
+      "description": "Ashrei (Psalm 145). Mahzor Aram Soba 1560",
+      "page": "https://www.pizmonim.org/book.php?recording=350",
+      "label": "G. Shrem: Mahour",
+      "url": "https://www.pizmonim.org/MP3/197-2%20Shrem.mp3",
+      "verified": "exact media URL extracted from source player HTML; playback not audited"
+    },
+    {
+      "kind": "prayer",
+      "id": "2386.5",
+      "title": "Full Weekday Amidah",
+      "description": "",
+      "page": "https://www.pizmonim.org/book.php?recording=4782",
+      "label": "David Tawil",
+      "url": "https://www.pizmonim.org/MP3/dtawil%20amida.mp3",
+      "verified": "exact media URL extracted from source player HTML; playback not audited"
+    },
+    {
+      "kind": "haftarah",
+      "id": "3997",
+      "title": "הפטרת פקודי",
+      "description": "1 Kings 7:40–50. Primary Haftarot index explicitly points to second Shabbat Chanukah for this reading.",
+      "page": "https://www.pizmonim.org/book.php?recording=3373",
+      "label": "M Kairey",
+      "url": "https://www.pizmonim.org/MP3/Haftarat%20Pequdei.mp3",
+      "verified": "exact media URL extracted from source player HTML; playback not audited",
+      "index": 23,
+      "canonical": "Pekudei",
+      "reuseNote": "Exact same passage as second Shabbat Chanukah; source original recording reused by reference."
+    }
+  ],
+  "torahAliyot": [
+    {
+      "index": 1,
+      "canonical": "Bereshit",
+      "stem": "Bereshit",
+      "full": "https://www.pizmonim.org/MP3/Bereshit%20Full.mp3",
+      "shabbat": {
+        "1": "https://www.pizmonim.org/MP3/Bereshit%20Rishon.mp3",
+        "2": "https://www.pizmonim.org/MP3/Bereshit%20Sheni.mp3",
+        "3": "https://www.pizmonim.org/MP3/Bereshit%20Shelishi.mp3",
+        "4": "https://www.pizmonim.org/MP3/Bereshit%20Rebii.mp3",
+        "5": "https://www.pizmonim.org/MP3/Bereshit%20Hamishi.mp3",
+        "6": "https://www.pizmonim.org/MP3/Bereshit%20Shishi.mp3",
+        "7": "https://www.pizmonim.org/MP3/Bereshit%20Shebii.mp3"
+      },
+      "weekday": {
+        "1": "https://www.pizmonim.org/MP3/Bereshit%20Kohen.mp3",
+        "2": "https://www.pizmonim.org/MP3/Bereshit%20Levi.mp3",
+        "3": "https://www.pizmonim.org/MP3/Bereshit%20Yisrael.mp3"
+      }
+    },
+    {
+      "index": 2,
+      "canonical": "Noach",
+      "stem": "Noah",
+      "full": "https://www.pizmonim.org/MP3/Noah%20Full.mp3",
+      "shabbat": {
+        "1": "https://www.pizmonim.org/MP3/Noah%20Rishon.mp3",
+        "2": "https://www.pizmonim.org/MP3/Noah%20Sheni.mp3",
+        "3": "https://www.pizmonim.org/MP3/Noah%20Shelishi.mp3",
+        "4": "https://www.pizmonim.org/MP3/Noah%20Rebii.mp3",
+        "5": "https://www.pizmonim.org/MP3/Noah%20Hamishi.mp3",
+        "6": "https://www.pizmonim.org/MP3/Noah%20Shishi.mp3",
+        "7": "https://www.pizmonim.org/MP3/Noah%20Shebii.mp3"
+      },
+      "weekday": {
+        "1": "https://www.pizmonim.org/MP3/Noah%20Kohen.mp3",
+        "2": "https://www.pizmonim.org/MP3/Noah%20Levi.mp3",
+        "3": "https://www.pizmonim.org/MP3/Noah%20Yisrael.mp3"
+      }
+    },
+    {
+      "index": 3,
+      "canonical": "Lech-Lecha",
+      "stem": "Lekh Lekha",
+      "full": "https://www.pizmonim.org/MP3/Lekh%20Lekha%20Full.mp3",
+      "shabbat": {
+        "1": "https://www.pizmonim.org/MP3/Lekh%20Lekha%20Rishon.mp3",
+        "2": "https://www.pizmonim.org/MP3/Lekh%20Lekha%20Sheni.mp3",
+        "3": "https://www.pizmonim.org/MP3/Lekh%20Lekha%20Shelishi.mp3",
+        "4": "https://www.pizmonim.org/MP3/Lekh%20Lekha%20Rebii.mp3",
+        "5": "https://www.pizmonim.org/MP3/Lekh%20Lekha%20Hamishi.mp3",
+        "6": "https://www.pizmonim.org/MP3/Lekh%20Lekha%20Shishi.mp3",
+        "7": "https://www.pizmonim.org/MP3/Lekh%20Lekha%20Shebii.mp3"
+      },
+      "weekday": {
+        "1": "https://www.pizmonim.org/MP3/Lekh%20Lekha%20Kohen.mp3",
+        "2": "https://www.pizmonim.org/MP3/Lekh%20Lekha%20Levi.mp3",
+        "3": "https://www.pizmonim.org/MP3/Lekh%20Lekha%20Yisrael.mp3"
+      }
+    },
+    {
+      "index": 4,
+      "canonical": "Vayera",
+      "stem": "Vayera",
+      "full": "https://www.pizmonim.org/MP3/Vayera%20Full.mp3",
+      "shabbat": {
+        "1": "https://www.pizmonim.org/MP3/Vayera%20Rishon.mp3",
+        "2": "https://www.pizmonim.org/MP3/Vayera%20Sheni.mp3",
+        "3": "https://www.pizmonim.org/MP3/Vayera%20Shelishi.mp3",
+        "4": "https://www.pizmonim.org/MP3/Vayera%20Rebii.mp3",
+        "5": "https://www.pizmonim.org/MP3/Vayera%20Hamishi.mp3",
+        "6": "https://www.pizmonim.org/MP3/Vayera%20Shishi.mp3",
+        "7": "https://www.pizmonim.org/MP3/Vayera%20Shebii.mp3"
+      },
+      "weekday": {
+        "1": "https://www.pizmonim.org/MP3/Vayera%20Kohen.mp3",
+        "2": "https://www.pizmonim.org/MP3/Vayera%20Levi.mp3",
+        "3": "https://www.pizmonim.org/MP3/Vayera%20Yisrael.mp3"
+      }
+    },
+    {
+      "index": 5,
+      "canonical": "Chayei Sara",
+      "stem": "Haye Sarah",
+      "full": "https://www.pizmonim.org/MP3/Haye%20Sarah%20Full.mp3",
+      "shabbat": {
+        "1": "https://www.pizmonim.org/MP3/Haye%20Sarah%20Rishon.mp3",
+        "2": "https://www.pizmonim.org/MP3/Haye%20Sarah%20Sheni.mp3",
+        "3": "https://www.pizmonim.org/MP3/Haye%20Sarah%20Shelishi.mp3",
+        "4": "https://www.pizmonim.org/MP3/Haye%20Sarah%20Rebii.mp3",
+        "5": "https://www.pizmonim.org/MP3/Haye%20Sarah%20Hamishi.mp3",
+        "6": "https://www.pizmonim.org/MP3/Haye%20Sarah%20Shishi.mp3",
+        "7": "https://www.pizmonim.org/MP3/Haye%20Sarah%20Shebii.mp3"
+      },
+      "weekday": {
+        "1": "https://www.pizmonim.org/MP3/Haye%20Sarah%20Kohen.mp3",
+        "2": "https://www.pizmonim.org/MP3/Haye%20Sarah%20Levi.mp3",
+        "3": "https://www.pizmonim.org/MP3/Haye%20Sarah%20Yisrael.mp3"
+      }
+    },
+    {
+      "index": 6,
+      "canonical": "Toldot",
+      "stem": "Toledot",
+      "full": "https://www.pizmonim.org/MP3/Toledot%20Full.mp3",
+      "shabbat": {
+        "1": "https://www.pizmonim.org/MP3/Toledot%20Rishon.mp3",
+        "2": "https://www.pizmonim.org/MP3/Toledot%20Sheni.mp3",
+        "3": "https://www.pizmonim.org/MP3/Toledot%20Shelishi.mp3",
+        "4": "https://www.pizmonim.org/MP3/Toledot%20Rebii.mp3",
+        "5": "https://www.pizmonim.org/MP3/Toledot%20Hamishi.mp3",
+        "6": "https://www.pizmonim.org/MP3/Toledot%20Shishi.mp3",
+        "7": "https://www.pizmonim.org/MP3/Toledot%20Shebii.mp3"
+      },
+      "weekday": {
+        "1": "https://www.pizmonim.org/MP3/Toledot%20Kohen.mp3",
+        "2": "https://www.pizmonim.org/MP3/Toledot%20Levi.mp3",
+        "3": "https://www.pizmonim.org/MP3/Toledot%20Yisrael.mp3"
+      }
+    },
+    {
+      "index": 7,
+      "canonical": "Vayetzei",
+      "stem": "Vayesse",
+      "full": "https://www.pizmonim.org/MP3/Vayesse%20Full.mp3",
+      "shabbat": {
+        "1": "https://www.pizmonim.org/MP3/Vayesse%20Rishon.mp3",
+        "2": "https://www.pizmonim.org/MP3/Vayesse%20Sheni.mp3",
+        "3": "https://www.pizmonim.org/MP3/Vayesse%20Shelishi.mp3",
+        "4": "https://www.pizmonim.org/MP3/Vayesse%20Rebii.mp3",
+        "5": "https://www.pizmonim.org/MP3/Vayesse%20Hamishi.mp3",
+        "6": "https://www.pizmonim.org/MP3/Vayesse%20Shishi.mp3",
+        "7": "https://www.pizmonim.org/MP3/Vayesse%20Shebii.mp3"
+      },
+      "weekday": {
+        "1": "https://www.pizmonim.org/MP3/Vayesse%20Kohen.mp3",
+        "2": "https://www.pizmonim.org/MP3/Vayesse%20Levi.mp3",
+        "3": "https://www.pizmonim.org/MP3/Vayesse%20Yisrael.mp3"
+      }
+    },
+    {
+      "index": 8,
+      "canonical": "Vayishlach",
+      "stem": "Vayishlah",
+      "full": "https://www.pizmonim.org/MP3/Vayishlah%20Full.mp3",
+      "shabbat": {
+        "1": "https://www.pizmonim.org/MP3/Vayishlah%20Rishon.mp3",
+        "2": "https://www.pizmonim.org/MP3/Vayishlah%20Sheni.mp3",
+        "3": "https://www.pizmonim.org/MP3/Vayishlah%20Shelishi.mp3",
+        "4": "https://www.pizmonim.org/MP3/Vayishlah%20Rebii.mp3",
+        "5": "https://www.pizmonim.org/MP3/Vayishlah%20Hamishi.mp3",
+        "6": "https://www.pizmonim.org/MP3/Vayishlah%20Shishi.mp3",
+        "7": "https://www.pizmonim.org/MP3/Vayishlah%20Shebii.mp3"
+      },
+      "weekday": {
+        "1": "https://www.pizmonim.org/MP3/Vayishlah%20Kohen.mp3",
+        "2": "https://www.pizmonim.org/MP3/Vayishlah%20Levi.mp3",
+        "3": "https://www.pizmonim.org/MP3/Vayishlah%20Yisrael.mp3"
+      }
+    },
+    {
+      "index": 9,
+      "canonical": "Vayeshev",
+      "stem": "Vayesheb",
+      "full": "https://www.pizmonim.org/MP3/Vayesheb%20Full.mp3",
+      "shabbat": {
+        "1": "https://www.pizmonim.org/MP3/Vayesheb%20Rishon.mp3",
+        "2": "https://www.pizmonim.org/MP3/Vayesheb%20Sheni.mp3",
+        "3": "https://www.pizmonim.org/MP3/Vayesheb%20Shelishi.mp3",
+        "4": "https://www.pizmonim.org/MP3/Vayesheb%20Rebii.mp3",
+        "5": "https://www.pizmonim.org/MP3/Vayesheb%20Hamishi.mp3",
+        "6": "https://www.pizmonim.org/MP3/Vayesheb%20Shishi.mp3",
+        "7": "https://www.pizmonim.org/MP3/Vayesheb%20Shebii.mp3"
+      },
+      "weekday": {
+        "1": "https://www.pizmonim.org/MP3/Vayesheb%20Kohen.mp3",
+        "2": "https://www.pizmonim.org/MP3/Vayesheb%20Levi.mp3",
+        "3": "https://www.pizmonim.org/MP3/Vayesheb%20Yisrael.mp3"
+      }
+    },
+    {
+      "index": 10,
+      "canonical": "Miketz",
+      "stem": "Miqes",
+      "full": "https://www.pizmonim.org/MP3/Miqes%20Full.mp3",
+      "shabbat": {
+        "1": "https://www.pizmonim.org/MP3/Miqes%20Rishon.mp3",
+        "2": "https://www.pizmonim.org/MP3/Miqes%20Sheni.mp3",
+        "3": "https://www.pizmonim.org/MP3/Miqes%20Shelishi.mp3",
+        "4": "https://www.pizmonim.org/MP3/Miqes%20Rebii.mp3",
+        "5": "https://www.pizmonim.org/MP3/Miqes%20Hamishi.mp3",
+        "6": "https://www.pizmonim.org/MP3/Miqes%20Shishi.mp3",
+        "7": "https://www.pizmonim.org/MP3/Miqes%20Shebii.mp3"
+      },
+      "weekday": {
+        "1": "https://www.pizmonim.org/MP3/Miqes%20Kohen.mp3",
+        "2": "https://www.pizmonim.org/MP3/Miqes%20Levi.mp3",
+        "3": "https://www.pizmonim.org/MP3/Miqes%20Yisrael.mp3"
+      }
+    },
+    {
+      "index": 11,
+      "canonical": "Vayigash",
+      "stem": "Vayigash",
+      "full": "https://www.pizmonim.org/MP3/Vayigash%20Full.mp3",
+      "shabbat": {
+        "1": "https://www.pizmonim.org/MP3/Vayigash%20Rishon.mp3",
+        "2": "https://www.pizmonim.org/MP3/Vayigash%20Sheni.mp3",
+        "3": "https://www.pizmonim.org/MP3/Vayigash%20Shelishi.mp3",
+        "4": "https://www.pizmonim.org/MP3/Vayigash%20Rebii.mp3",
+        "5": "https://www.pizmonim.org/MP3/Vayigash%20Hamishi.mp3",
+        "6": "https://www.pizmonim.org/MP3/Vayigash%20Shishi.mp3",
+        "7": "https://www.pizmonim.org/MP3/Vayigash%20Shebii.mp3"
+      },
+      "weekday": {
+        "1": "https://www.pizmonim.org/MP3/Vayigash%20Kohen.mp3",
+        "2": "https://www.pizmonim.org/MP3/Vayigash%20Levi.mp3",
+        "3": "https://www.pizmonim.org/MP3/Vayigash%20Yisrael.mp3"
+      }
+    },
+    {
+      "index": 12,
+      "canonical": "Vayechi",
+      "stem": "Vayehi",
+      "full": "https://www.pizmonim.org/MP3/Vayehi%20Full.mp3",
+      "shabbat": {
+        "1": "https://www.pizmonim.org/MP3/Vayehi%20Rishon.mp3",
+        "2": "https://www.pizmonim.org/MP3/Vayehi%20Sheni.mp3",
+        "3": "https://www.pizmonim.org/MP3/Vayehi%20Shelishi.mp3",
+        "4": "https://www.pizmonim.org/MP3/Vayehi%20Rebii.mp3",
+        "5": "https://www.pizmonim.org/MP3/Vayehi%20Hamishi.mp3",
+        "6": "https://www.pizmonim.org/MP3/Vayehi%20Shishi.mp3",
+        "7": "https://www.pizmonim.org/MP3/Vayehi%20Shebii.mp3"
+      },
+      "weekday": {
+        "1": "https://www.pizmonim.org/MP3/Vayehi%20Kohen.mp3",
+        "2": "https://www.pizmonim.org/MP3/Vayehi%20Levi.mp3",
+        "3": "https://www.pizmonim.org/MP3/Vayehi%20Yisrael.mp3"
+      }
+    },
+    {
+      "index": 13,
+      "canonical": "Shemot",
+      "stem": "Shemot",
+      "full": "https://www.pizmonim.org/MP3/Shemot%20Full.mp3",
+      "shabbat": {
+        "1": "https://www.pizmonim.org/MP3/Shemot%20Rishon.mp3",
+        "2": "https://www.pizmonim.org/MP3/Shemot%20Sheni.mp3",
+        "3": "https://www.pizmonim.org/MP3/Shemot%20Shelishi.mp3",
+        "4": "https://www.pizmonim.org/MP3/Shemot%20Rebii.mp3",
+        "5": "https://www.pizmonim.org/MP3/Shemot%20Hamishi.mp3",
+        "6": "https://www.pizmonim.org/MP3/Shemot%20Shishi.mp3",
+        "7": "https://www.pizmonim.org/MP3/Shemot%20Shebii.mp3"
+      },
+      "weekday": {
+        "1": "https://www.pizmonim.org/MP3/Shemot%20Kohen.mp3",
+        "2": "https://www.pizmonim.org/MP3/Shemot%20Levi.mp3",
+        "3": "https://www.pizmonim.org/MP3/Shemot%20Yisrael.mp3"
+      }
+    },
+    {
+      "index": 14,
+      "canonical": "Vaera",
+      "stem": "Vaera",
+      "full": "https://www.pizmonim.org/MP3/Vaera%20Full.mp3",
+      "shabbat": {
+        "1": "https://www.pizmonim.org/MP3/Vaera%20Rishon.mp3",
+        "2": "https://www.pizmonim.org/MP3/Vaera%20Sheni.mp3",
+        "3": "https://www.pizmonim.org/MP3/Vaera%20Shelishi.mp3",
+        "4": "https://www.pizmonim.org/MP3/Vaera%20Rebii.mp3",
+        "5": "https://www.pizmonim.org/MP3/Vaera%20Hamishi.mp3",
+        "6": "https://www.pizmonim.org/MP3/Vaera%20Shishi.mp3",
+        "7": "https://www.pizmonim.org/MP3/Vaera%20Shebii.mp3"
+      },
+      "weekday": {
+        "1": "https://www.pizmonim.org/MP3/Vaera%20Kohen.mp3",
+        "2": "https://www.pizmonim.org/MP3/Vaera%20Levi.mp3",
+        "3": "https://www.pizmonim.org/MP3/Vaera%20Yisrael.mp3"
+      }
+    },
+    {
+      "index": 15,
+      "canonical": "Bo",
+      "stem": "Bo",
+      "full": "https://www.pizmonim.org/MP3/Bo%20Full.mp3",
+      "shabbat": {
+        "1": "https://www.pizmonim.org/MP3/Bo%20Rishon.mp3",
+        "2": "https://www.pizmonim.org/MP3/Bo%20Sheni.mp3",
+        "3": "https://www.pizmonim.org/MP3/Bo%20Shelishi.mp3",
+        "4": "https://www.pizmonim.org/MP3/Bo%20Rebii.mp3",
+        "5": "https://www.pizmonim.org/MP3/Bo%20Hamishi.mp3",
+        "6": "https://www.pizmonim.org/MP3/Bo%20Shishi.mp3",
+        "7": "https://www.pizmonim.org/MP3/Bo%20Shebii.mp3"
+      },
+      "weekday": {
+        "1": "https://www.pizmonim.org/MP3/Bo%20Kohen.mp3",
+        "2": "https://www.pizmonim.org/MP3/Bo%20Levi.mp3",
+        "3": "https://www.pizmonim.org/MP3/Bo%20Yisrael.mp3"
+      }
+    },
+    {
+      "index": 16,
+      "canonical": "Beshalach",
+      "stem": "Beshalah",
+      "full": "https://www.pizmonim.org/MP3/Beshalah%20Full.mp3",
+      "shabbat": {
+        "1": "https://www.pizmonim.org/MP3/Beshalah%20Rishon.mp3",
+        "2": "https://www.pizmonim.org/MP3/Beshalah%20Sheni.mp3",
+        "3": "https://www.pizmonim.org/MP3/Beshalah%20Shelishi.mp3",
+        "4": "https://www.pizmonim.org/MP3/Beshalah%20Rebii.mp3",
+        "5": "https://www.pizmonim.org/MP3/Beshalah%20Hamishi.mp3",
+        "6": "https://www.pizmonim.org/MP3/Beshalah%20Shishi.mp3",
+        "7": "https://www.pizmonim.org/MP3/Beshalah%20Shebii.mp3"
+      },
+      "weekday": {
+        "1": "https://www.pizmonim.org/MP3/Beshalah%20Kohen.mp3",
+        "2": "https://www.pizmonim.org/MP3/Beshalah%20Levi.mp3",
+        "3": "https://www.pizmonim.org/MP3/Beshalah%20Yisrael.mp3"
+      }
+    },
+    {
+      "index": 17,
+      "canonical": "Yitro",
+      "stem": "Yitro",
+      "full": "https://www.pizmonim.org/MP3/Yitro%20Full.mp3",
+      "shabbat": {
+        "1": "https://www.pizmonim.org/MP3/Yitro%20Rishon.mp3",
+        "2": "https://www.pizmonim.org/MP3/Yitro%20Sheni.mp3",
+        "3": "https://www.pizmonim.org/MP3/Yitro%20Shelishi.mp3",
+        "4": "https://www.pizmonim.org/MP3/Yitro%20Rebii.mp3",
+        "5": "https://www.pizmonim.org/MP3/Yitro%20Hamishi.mp3",
+        "6": "https://www.pizmonim.org/MP3/Yitro%20Shishi.mp3",
+        "7": "https://www.pizmonim.org/MP3/Yitro%20Shebii.mp3"
+      },
+      "weekday": {
+        "1": "https://www.pizmonim.org/MP3/Yitro%20Kohen.mp3",
+        "2": "https://www.pizmonim.org/MP3/Yitro%20Levi.mp3",
+        "3": "https://www.pizmonim.org/MP3/Yitro%20Yisrael.mp3"
+      }
+    },
+    {
+      "index": 18,
+      "canonical": "Mishpatim",
+      "stem": "Mishpatim",
+      "full": "https://www.pizmonim.org/MP3/Mishpatim%20Full.mp3",
+      "shabbat": {
+        "1": "https://www.pizmonim.org/MP3/Mishpatim%20Rishon.mp3",
+        "2": "https://www.pizmonim.org/MP3/Mishpatim%20Sheni.mp3",
+        "3": "https://www.pizmonim.org/MP3/Mishpatim%20Shelishi.mp3",
+        "4": "https://www.pizmonim.org/MP3/Mishpatim%20Rebii.mp3",
+        "5": "https://www.pizmonim.org/MP3/Mishpatim%20Hamishi.mp3",
+        "6": "https://www.pizmonim.org/MP3/Mishpatim%20Shishi.mp3",
+        "7": "https://www.pizmonim.org/MP3/Mishpatim%20Shebii.mp3"
+      },
+      "weekday": {
+        "1": "https://www.pizmonim.org/MP3/Mishpatim%20Kohen.mp3",
+        "2": "https://www.pizmonim.org/MP3/Mishpatim%20Levi.mp3",
+        "3": "https://www.pizmonim.org/MP3/Mishpatim%20Yisrael.mp3"
+      }
+    },
+    {
+      "index": 19,
+      "canonical": "Terumah",
+      "stem": "Terumah",
+      "full": "https://www.pizmonim.org/MP3/Terumah%20Full.mp3",
+      "shabbat": {
+        "1": "https://www.pizmonim.org/MP3/Terumah%20Rishon.mp3",
+        "2": "https://www.pizmonim.org/MP3/Terumah%20Sheni.mp3",
+        "3": "https://www.pizmonim.org/MP3/Terumah%20Shelishi.mp3",
+        "4": "https://www.pizmonim.org/MP3/Terumah%20Rebii.mp3",
+        "5": "https://www.pizmonim.org/MP3/Terumah%20Hamishi.mp3",
+        "6": "https://www.pizmonim.org/MP3/Terumah%20Shishi.mp3",
+        "7": "https://www.pizmonim.org/MP3/Terumah%20Shebii.mp3"
+      },
+      "weekday": {
+        "1": "https://www.pizmonim.org/MP3/Terumah%20Kohen.mp3",
+        "2": "https://www.pizmonim.org/MP3/Terumah%20Levi.mp3",
+        "3": "https://www.pizmonim.org/MP3/Terumah%20Yisrael.mp3"
+      }
+    },
+    {
+      "index": 20,
+      "canonical": "Tetzaveh",
+      "stem": "Tessave",
+      "full": "https://www.pizmonim.org/MP3/Tessave%20Full.mp3",
+      "shabbat": {
+        "1": "https://www.pizmonim.org/MP3/Tessave%20Rishon.mp3",
+        "2": "https://www.pizmonim.org/MP3/Tessave%20Sheni.mp3",
+        "3": "https://www.pizmonim.org/MP3/Tessave%20Shelishi.mp3",
+        "4": "https://www.pizmonim.org/MP3/Tessave%20Rebii.mp3",
+        "5": "https://www.pizmonim.org/MP3/Tessave%20Hamishi.mp3",
+        "6": "https://www.pizmonim.org/MP3/Tessave%20Shishi.mp3",
+        "7": "https://www.pizmonim.org/MP3/Tessave%20Shebii.mp3"
+      },
+      "weekday": {
+        "1": "https://www.pizmonim.org/MP3/Tessave%20Kohen.mp3",
+        "2": "https://www.pizmonim.org/MP3/Tessave%20Levi.mp3",
+        "3": "https://www.pizmonim.org/MP3/Tessave%20Yisrael.mp3"
+      }
+    },
+    {
+      "index": 21,
+      "canonical": "Ki Tisa",
+      "stem": "Ki Tisa",
+      "full": "https://www.pizmonim.org/MP3/Ki%20Tisa%20Full.mp3",
+      "shabbat": {
+        "1": "https://www.pizmonim.org/MP3/Ki%20Tisa%20Rishon.mp3",
+        "2": "https://www.pizmonim.org/MP3/Ki%20Tisa%20Sheni.mp3",
+        "3": "https://www.pizmonim.org/MP3/Ki%20Tisa%20Shelishi.mp3",
+        "4": "https://www.pizmonim.org/MP3/Ki%20Tisa%20Rebii.mp3",
+        "5": "https://www.pizmonim.org/MP3/Ki%20Tisa%20Hamishi.mp3",
+        "6": "https://www.pizmonim.org/MP3/Ki%20Tisa%20Shishi.mp3",
+        "7": "https://www.pizmonim.org/MP3/Ki%20Tisa%20Shebii.mp3"
+      },
+      "weekday": {
+        "1": "https://www.pizmonim.org/MP3/Ki%20Tisa%20Kohen.mp3",
+        "2": "https://www.pizmonim.org/MP3/Ki%20Tisa%20Levi.mp3",
+        "3": "https://www.pizmonim.org/MP3/Ki%20Tisa%20Yisrael.mp3"
+      }
+    },
+    {
+      "index": 22,
+      "canonical": "Vayakhel",
+      "stem": "Vayaqhel",
+      "full": "https://www.pizmonim.org/MP3/Vayaqhel%20Full.mp3",
+      "shabbat": {
+        "1": "https://www.pizmonim.org/MP3/Vayaqhel%20Rishon.mp3",
+        "2": "https://www.pizmonim.org/MP3/Vayaqhel%20Sheni.mp3",
+        "3": "https://www.pizmonim.org/MP3/Vayaqhel%20Shelishi.mp3",
+        "4": "https://www.pizmonim.org/MP3/Vayaqhel%20Rebii.mp3",
+        "5": "https://www.pizmonim.org/MP3/Vayaqhel%20Hamishi.mp3",
+        "6": "https://www.pizmonim.org/MP3/Vayaqhel%20Shishi.mp3",
+        "7": "https://www.pizmonim.org/MP3/Vayaqhel%20Shebii.mp3"
+      },
+      "weekday": {
+        "1": "https://www.pizmonim.org/MP3/Vayaqhel%20Kohen.mp3",
+        "2": "https://www.pizmonim.org/MP3/Vayaqhel%20Levi.mp3",
+        "3": "https://www.pizmonim.org/MP3/Vayaqhel%20Yisrael.mp3"
+      }
+    },
+    {
+      "index": 23,
+      "canonical": "Pekudei",
+      "stem": "Pequdei",
+      "full": "https://www.pizmonim.org/MP3/Pequdei%20Full.mp3",
+      "shabbat": {
+        "1": "https://www.pizmonim.org/MP3/Pequdei%20Rishon.mp3",
+        "2": "https://www.pizmonim.org/MP3/Pequdei%20Sheni.mp3",
+        "3": "https://www.pizmonim.org/MP3/Pequdei%20Shelishi.mp3",
+        "4": "https://www.pizmonim.org/MP3/Pequdei%20Rebii.mp3",
+        "5": "https://www.pizmonim.org/MP3/Pequdei%20Hamishi.mp3",
+        "6": "https://www.pizmonim.org/MP3/Pequdei%20Shishi.mp3",
+        "7": "https://www.pizmonim.org/MP3/Pequdei%20Shebii.mp3"
+      },
+      "weekday": {
+        "1": "https://www.pizmonim.org/MP3/Pequdei%20Kohen.mp3",
+        "2": "https://www.pizmonim.org/MP3/Pequdei%20Levi.mp3",
+        "3": "https://www.pizmonim.org/MP3/Pequdei%20Yisrael.mp3"
+      }
+    },
+    {
+      "index": 24,
+      "canonical": "Vayikra",
+      "stem": "Vayiqra",
+      "full": "https://www.pizmonim.org/MP3/Vayiqra%20Full.mp3",
+      "shabbat": {
+        "1": "https://www.pizmonim.org/MP3/Vayiqra%20Rishon.mp3",
+        "2": "https://www.pizmonim.org/MP3/Vayiqra%20Sheni.mp3",
+        "3": "https://www.pizmonim.org/MP3/Vayiqra%20Shelishi.mp3",
+        "4": "https://www.pizmonim.org/MP3/Vayiqra%20Rebii.mp3",
+        "5": "https://www.pizmonim.org/MP3/Vayiqra%20Hamishi.mp3",
+        "6": "https://www.pizmonim.org/MP3/Vayiqra%20Shishi.mp3",
+        "7": "https://www.pizmonim.org/MP3/Vayiqra%20Shebii.mp3"
+      },
+      "weekday": {
+        "1": "https://www.pizmonim.org/MP3/Vayiqra%20Kohen.mp3",
+        "2": "https://www.pizmonim.org/MP3/Vayiqra%20Levi.mp3",
+        "3": "https://www.pizmonim.org/MP3/Vayiqra%20Yisrael.mp3"
+      }
+    },
+    {
+      "index": 25,
+      "canonical": "Tzav",
+      "stem": "Sav",
+      "full": "https://www.pizmonim.org/MP3/Sav%20Full.mp3",
+      "shabbat": {
+        "1": "https://www.pizmonim.org/MP3/Sav%20Rishon.mp3",
+        "2": "https://www.pizmonim.org/MP3/Sav%20Sheni.mp3",
+        "3": "https://www.pizmonim.org/MP3/Sav%20Shelishi.mp3",
+        "4": "https://www.pizmonim.org/MP3/Sav%20Rebii.mp3",
+        "5": "https://www.pizmonim.org/MP3/Sav%20Hamishi.mp3",
+        "6": "https://www.pizmonim.org/MP3/Sav%20Shishi.mp3",
+        "7": "https://www.pizmonim.org/MP3/Sav%20Shebii.mp3"
+      },
+      "weekday": {
+        "1": "https://www.pizmonim.org/MP3/Sav%20Kohen.mp3",
+        "2": "https://www.pizmonim.org/MP3/Sav%20Levi.mp3",
+        "3": "https://www.pizmonim.org/MP3/Sav%20Yisrael.mp3"
+      }
+    },
+    {
+      "index": 26,
+      "canonical": "Shmini",
+      "stem": "Shemini",
+      "full": "https://www.pizmonim.org/MP3/Shemini%20Full.mp3",
+      "shabbat": {
+        "1": "https://www.pizmonim.org/MP3/Shemini%20Rishon.mp3",
+        "2": "https://www.pizmonim.org/MP3/Shemini%20Sheni.mp3",
+        "3": "https://www.pizmonim.org/MP3/Shemini%20Shelishi.mp3",
+        "4": "https://www.pizmonim.org/MP3/Shemini%20Rebii.mp3",
+        "5": "https://www.pizmonim.org/MP3/Shemini%20Hamishi.mp3",
+        "6": "https://www.pizmonim.org/MP3/Shemini%20Shishi.mp3",
+        "7": "https://www.pizmonim.org/MP3/Shemini%20Shebii.mp3"
+      },
+      "weekday": {
+        "1": "https://www.pizmonim.org/MP3/Shemini%20Kohen.mp3",
+        "2": "https://www.pizmonim.org/MP3/Shemini%20Levi.mp3",
+        "3": "https://www.pizmonim.org/MP3/Shemini%20Yisrael.mp3"
+      }
+    },
+    {
+      "index": 27,
+      "canonical": "Tazria",
+      "stem": "Tazria",
+      "full": "https://www.pizmonim.org/MP3/Tazria%20Full.mp3",
+      "shabbat": {
+        "1": "https://www.pizmonim.org/MP3/Tazria%20Rishon.mp3",
+        "2": "https://www.pizmonim.org/MP3/Tazria%20Sheni.mp3",
+        "3": "https://www.pizmonim.org/MP3/Tazria%20Shelishi.mp3",
+        "4": "https://www.pizmonim.org/MP3/Tazria%20Rebii.mp3",
+        "5": "https://www.pizmonim.org/MP3/Tazria%20Hamishi.mp3",
+        "6": "https://www.pizmonim.org/MP3/Tazria%20Shishi.mp3",
+        "7": "https://www.pizmonim.org/MP3/Tazria%20Shebii.mp3"
+      },
+      "weekday": {
+        "1": "https://www.pizmonim.org/MP3/Tazria%20Kohen.mp3",
+        "2": "https://www.pizmonim.org/MP3/Tazria%20Levi.mp3",
+        "3": "https://www.pizmonim.org/MP3/Tazria%20Yisrael.mp3"
+      }
+    },
+    {
+      "index": 28,
+      "canonical": "Metzora",
+      "stem": "Mesora",
+      "full": "https://www.pizmonim.org/MP3/Mesora%20Full.mp3",
+      "shabbat": {
+        "1": "https://www.pizmonim.org/MP3/Mesora%20Rishon.mp3",
+        "2": "https://www.pizmonim.org/MP3/Mesora%20Sheni.mp3",
+        "3": "https://www.pizmonim.org/MP3/Mesora%20Shelishi.mp3",
+        "4": "https://www.pizmonim.org/MP3/Mesora%20Rebii.mp3",
+        "5": "https://www.pizmonim.org/MP3/Mesora%20Hamishi.mp3",
+        "6": "https://www.pizmonim.org/MP3/Mesora%20Shishi.mp3",
+        "7": "https://www.pizmonim.org/MP3/Mesora%20Shebii.mp3"
+      },
+      "weekday": {
+        "1": "https://www.pizmonim.org/MP3/Mesora%20Kohen.mp3",
+        "2": "https://www.pizmonim.org/MP3/Mesora%20Levi.mp3",
+        "3": "https://www.pizmonim.org/MP3/Mesora%20Yisrael.mp3"
+      }
+    },
+    {
+      "index": 29,
+      "canonical": "Achrei Mot",
+      "stem": "Ahare",
+      "full": "https://www.pizmonim.org/MP3/Ahare%20Full.mp3",
+      "shabbat": {
+        "1": "https://www.pizmonim.org/MP3/Ahare%20Rishon.mp3",
+        "2": "https://www.pizmonim.org/MP3/Ahare%20Sheni.mp3",
+        "3": "https://www.pizmonim.org/MP3/Ahare%20Shelishi.mp3",
+        "4": "https://www.pizmonim.org/MP3/Ahare%20Rebii.mp3",
+        "5": "https://www.pizmonim.org/MP3/Ahare%20Hamishi.mp3",
+        "6": "https://www.pizmonim.org/MP3/Ahare%20Shishi.mp3",
+        "7": "https://www.pizmonim.org/MP3/Ahare%20Shebii.mp3"
+      },
+      "weekday": {
+        "1": "https://www.pizmonim.org/MP3/Ahare%20Kohen.mp3",
+        "2": "https://www.pizmonim.org/MP3/Ahare%20Levi.mp3",
+        "3": "https://www.pizmonim.org/MP3/Ahare%20Yisrael.mp3"
+      }
+    },
+    {
+      "index": 30,
+      "canonical": "Kedoshim",
+      "stem": "Qedoshim",
+      "full": "https://www.pizmonim.org/MP3/Qedoshim%20Full.mp3",
+      "shabbat": {
+        "1": "https://www.pizmonim.org/MP3/Qedoshim%20Rishon.mp3",
+        "2": "https://www.pizmonim.org/MP3/Qedoshim%20Sheni.mp3",
+        "3": "https://www.pizmonim.org/MP3/Qedoshim%20Shelishi.mp3",
+        "4": "https://www.pizmonim.org/MP3/Qedoshim%20Rebii.mp3",
+        "5": "https://www.pizmonim.org/MP3/Qedoshim%20Hamishi.mp3",
+        "6": "https://www.pizmonim.org/MP3/Qedoshim%20Shishi.mp3",
+        "7": "https://www.pizmonim.org/MP3/Qedoshim%20Shebii.mp3"
+      },
+      "weekday": {
+        "1": "https://www.pizmonim.org/MP3/Qedoshim%20Kohen.mp3",
+        "2": "https://www.pizmonim.org/MP3/Qedoshim%20Levi.mp3",
+        "3": "https://www.pizmonim.org/MP3/Qedoshim%20Yisrael.mp3"
+      }
+    },
+    {
+      "index": 31,
+      "canonical": "Emor",
+      "stem": "Emor",
+      "full": "https://www.pizmonim.org/MP3/Emor%20Full.mp3",
+      "shabbat": {
+        "1": "https://www.pizmonim.org/MP3/Emor%20Rishon.mp3",
+        "2": "https://www.pizmonim.org/MP3/Emor%20Sheni.mp3",
+        "3": "https://www.pizmonim.org/MP3/Emor%20Shelishi.mp3",
+        "4": "https://www.pizmonim.org/MP3/Emor%20Rebii.mp3",
+        "5": "https://www.pizmonim.org/MP3/Emor%20Hamishi.mp3",
+        "6": "https://www.pizmonim.org/MP3/Emor%20Shishi.mp3",
+        "7": "https://www.pizmonim.org/MP3/Emor%20Shebii.mp3"
+      },
+      "weekday": {
+        "1": "https://www.pizmonim.org/MP3/Emor%20Kohen.mp3",
+        "2": "https://www.pizmonim.org/MP3/Emor%20Levi.mp3",
+        "3": "https://www.pizmonim.org/MP3/Emor%20Yisrael.mp3"
+      }
+    },
+    {
+      "index": 32,
+      "canonical": "Behar",
+      "stem": "Behar",
+      "full": "https://www.pizmonim.org/MP3/Behar%20Full.mp3",
+      "shabbat": {
+        "1": "https://www.pizmonim.org/MP3/Behar%20Rishon.mp3",
+        "2": "https://www.pizmonim.org/MP3/Behar%20Sheni.mp3",
+        "3": "https://www.pizmonim.org/MP3/Behar%20Shelishi.mp3",
+        "4": "https://www.pizmonim.org/MP3/Behar%20Rebii.mp3",
+        "5": "https://www.pizmonim.org/MP3/Behar%20Hamishi.mp3",
+        "6": "https://www.pizmonim.org/MP3/Behar%20Shishi.mp3",
+        "7": "https://www.pizmonim.org/MP3/Behar%20Shebii.mp3"
+      },
+      "weekday": {
+        "1": "https://www.pizmonim.org/MP3/Behar%20Kohen.mp3",
+        "2": "https://www.pizmonim.org/MP3/Behar%20Levi.mp3",
+        "3": "https://www.pizmonim.org/MP3/Behar%20Yisrael.mp3"
+      }
+    },
+    {
+      "index": 33,
+      "canonical": "Bechukotai",
+      "stem": "Behuqotai",
+      "full": "https://www.pizmonim.org/MP3/Behuqotai%20Full.mp3",
+      "shabbat": {
+        "1": "https://www.pizmonim.org/MP3/Behuqotai%20Rishon.mp3",
+        "2": "https://www.pizmonim.org/MP3/Behuqotai%20Sheni.mp3",
+        "3": "https://www.pizmonim.org/MP3/Behuqotai%20Shelishi.mp3",
+        "4": "https://www.pizmonim.org/MP3/Behuqotai%20Rebii.mp3",
+        "5": "https://www.pizmonim.org/MP3/Behuqotai%20Hamishi.mp3",
+        "6": "https://www.pizmonim.org/MP3/Behuqotai%20Shishi.mp3",
+        "7": "https://www.pizmonim.org/MP3/Behuqotai%20Shebii.mp3"
+      },
+      "weekday": {
+        "1": "https://www.pizmonim.org/MP3/Behuqotai%20Kohen.mp3",
+        "2": "https://www.pizmonim.org/MP3/Behuqotai%20Levi.mp3",
+        "3": "https://www.pizmonim.org/MP3/Behuqotai%20Yisrael.mp3"
+      }
+    },
+    {
+      "index": 34,
+      "canonical": "Bamidbar",
+      "stem": "Bemidbar",
+      "full": "https://www.pizmonim.org/MP3/Bemidbar%20Full.mp3",
+      "shabbat": {
+        "1": "https://www.pizmonim.org/MP3/Bemidbar%20Rishon.mp3",
+        "2": "https://www.pizmonim.org/MP3/Bemidbar%20Sheni.mp3",
+        "3": "https://www.pizmonim.org/MP3/Bemidbar%20Shelishi.mp3",
+        "4": "https://www.pizmonim.org/MP3/Bemidbar%20Rebii.mp3",
+        "5": "https://www.pizmonim.org/MP3/Bemidbar%20Hamishi.mp3",
+        "6": "https://www.pizmonim.org/MP3/Bemidbar%20Shishi.mp3",
+        "7": "https://www.pizmonim.org/MP3/Bemidbar%20Shebii.mp3"
+      },
+      "weekday": {
+        "1": "https://www.pizmonim.org/MP3/Bemidbar%20Kohen.mp3",
+        "2": "https://www.pizmonim.org/MP3/Bemidbar%20Levi.mp3",
+        "3": "https://www.pizmonim.org/MP3/Bemidbar%20Yisrael.mp3"
+      }
+    },
+    {
+      "index": 35,
+      "canonical": "Nasso",
+      "stem": "Naso",
+      "full": "https://www.pizmonim.org/MP3/Naso%20Full.mp3",
+      "shabbat": {
+        "1": "https://www.pizmonim.org/MP3/Naso%20Rishon.mp3",
+        "2": "https://www.pizmonim.org/MP3/Naso%20Sheni.mp3",
+        "3": "https://www.pizmonim.org/MP3/Naso%20Shelishi.mp3",
+        "4": "https://www.pizmonim.org/MP3/Naso%20Rebii.mp3",
+        "5": "https://www.pizmonim.org/MP3/Naso%20Hamishi.mp3",
+        "6": "https://www.pizmonim.org/MP3/Naso%20Shishi.mp3",
+        "7": "https://www.pizmonim.org/MP3/Naso%20Shebii.mp3"
+      },
+      "weekday": {
+        "1": "https://www.pizmonim.org/MP3/Naso%20Kohen.mp3",
+        "2": "https://www.pizmonim.org/MP3/Naso%20Levi.mp3",
+        "3": "https://www.pizmonim.org/MP3/Naso%20Yisrael.mp3"
+      }
+    },
+    {
+      "index": 36,
+      "canonical": "Beha'alotcha",
+      "stem": "Behaalotekha",
+      "full": "https://www.pizmonim.org/MP3/Behaalotekha%20Full.mp3",
+      "shabbat": {
+        "1": "https://www.pizmonim.org/MP3/Behaalotekha%20Rishon.mp3",
+        "2": "https://www.pizmonim.org/MP3/Behaalotekha%20Sheni.mp3",
+        "3": "https://www.pizmonim.org/MP3/Behaalotekha%20Shelishi.mp3",
+        "4": "https://www.pizmonim.org/MP3/Behaalotekha%20Rebii.mp3",
+        "5": "https://www.pizmonim.org/MP3/Behaalotekha%20Hamishi.mp3",
+        "6": "https://www.pizmonim.org/MP3/Behaalotekha%20Shishi.mp3",
+        "7": "https://www.pizmonim.org/MP3/Behaalotekha%20Shebii.mp3"
+      },
+      "weekday": {
+        "1": "https://www.pizmonim.org/MP3/Behaalotekha%20Kohen.mp3",
+        "2": "https://www.pizmonim.org/MP3/Behaalotekha%20Levi.mp3",
+        "3": "https://www.pizmonim.org/MP3/Behaalotekha%20Yisrael.mp3"
+      }
+    },
+    {
+      "index": 37,
+      "canonical": "Sh'lach",
+      "stem": "Shelah",
+      "full": "https://www.pizmonim.org/MP3/Shelah%20Full.mp3",
+      "shabbat": {
+        "1": "https://www.pizmonim.org/MP3/Shelah%20Rishon.mp3",
+        "2": "https://www.pizmonim.org/MP3/Shelah%20Sheni.mp3",
+        "3": "https://www.pizmonim.org/MP3/Shelah%20Shelishi.mp3",
+        "4": "https://www.pizmonim.org/MP3/Shelah%20Rebii.mp3",
+        "5": "https://www.pizmonim.org/MP3/Shelah%20Hamishi.mp3",
+        "6": "https://www.pizmonim.org/MP3/Shelah%20Shishi.mp3",
+        "7": "https://www.pizmonim.org/MP3/Shelah%20Shebii.mp3"
+      },
+      "weekday": {
+        "1": "https://www.pizmonim.org/MP3/Shelah%20Kohen.mp3",
+        "2": "https://www.pizmonim.org/MP3/Shelah%20Levi.mp3",
+        "3": "https://www.pizmonim.org/MP3/Shelah%20Yisrael.mp3"
+      }
+    },
+    {
+      "index": 38,
+      "canonical": "Korach",
+      "stem": "Qorah",
+      "full": "https://www.pizmonim.org/MP3/Qorah%20Full.mp3",
+      "shabbat": {
+        "1": "https://www.pizmonim.org/MP3/Qorah%20Rishon.mp3",
+        "2": "https://www.pizmonim.org/MP3/Qorah%20Sheni.mp3",
+        "3": "https://www.pizmonim.org/MP3/Qorah%20Shelishi.mp3",
+        "4": "https://www.pizmonim.org/MP3/Qorah%20Rebii.mp3",
+        "5": "https://www.pizmonim.org/MP3/Qorah%20Hamishi.mp3",
+        "6": "https://www.pizmonim.org/MP3/Qorah%20Shishi.mp3",
+        "7": "https://www.pizmonim.org/MP3/Qorah%20Shebii.mp3"
+      },
+      "weekday": {
+        "1": "https://www.pizmonim.org/MP3/Qorah%20Kohen.mp3",
+        "2": "https://www.pizmonim.org/MP3/Qorah%20Levi.mp3",
+        "3": "https://www.pizmonim.org/MP3/Qorah%20Yisrael.mp3"
+      }
+    },
+    {
+      "index": 39,
+      "canonical": "Chukat",
+      "stem": "Huqat",
+      "full": "https://www.pizmonim.org/MP3/Huqat%20Full.mp3",
+      "shabbat": {
+        "1": "https://www.pizmonim.org/MP3/Huqat%20Rishon.mp3",
+        "2": "https://www.pizmonim.org/MP3/Huqat%20Sheni.mp3",
+        "3": "https://www.pizmonim.org/MP3/Huqat%20Shelishi.mp3",
+        "4": "https://www.pizmonim.org/MP3/Huqat%20Rebii.mp3",
+        "5": "https://www.pizmonim.org/MP3/Huqat%20Hamishi.mp3",
+        "6": "https://www.pizmonim.org/MP3/Huqat%20Shishi.mp3",
+        "7": "https://www.pizmonim.org/MP3/Huqat%20Shebii.mp3"
+      },
+      "weekday": {
+        "1": "https://www.pizmonim.org/MP3/Huqat%20Kohen.mp3",
+        "2": "https://www.pizmonim.org/MP3/Huqat%20Levi.mp3",
+        "3": "https://www.pizmonim.org/MP3/Huqat%20Yisrael.mp3"
+      }
+    },
+    {
+      "index": 40,
+      "canonical": "Balak",
+      "stem": "Balaq",
+      "full": "https://www.pizmonim.org/MP3/Balaq%20Full.mp3",
+      "shabbat": {
+        "1": "https://www.pizmonim.org/MP3/Balaq%20Rishon.mp3",
+        "2": "https://www.pizmonim.org/MP3/Balaq%20Sheni.mp3",
+        "3": "https://www.pizmonim.org/MP3/Balaq%20Shelishi.mp3",
+        "4": "https://www.pizmonim.org/MP3/Balaq%20Rebii.mp3",
+        "5": "https://www.pizmonim.org/MP3/Balaq%20Hamishi.mp3",
+        "6": "https://www.pizmonim.org/MP3/Balaq%20Shishi.mp3",
+        "7": "https://www.pizmonim.org/MP3/Balaq%20Shebii.mp3"
+      },
+      "weekday": {
+        "1": "https://www.pizmonim.org/MP3/Balaq%20Kohen.mp3",
+        "2": "https://www.pizmonim.org/MP3/Balaq%20Levi.mp3",
+        "3": "https://www.pizmonim.org/MP3/Balaq%20Yisrael.mp3"
+      }
+    },
+    {
+      "index": 41,
+      "canonical": "Pinchas",
+      "stem": "Pinehas",
+      "full": "https://www.pizmonim.org/MP3/Pinehas%20Full.mp3",
+      "shabbat": {
+        "1": "https://www.pizmonim.org/MP3/Pinehas%20Rishon.mp3",
+        "2": "https://www.pizmonim.org/MP3/Pinehas%20Sheni.mp3",
+        "3": "https://www.pizmonim.org/MP3/Pinehas%20Shelishi.mp3",
+        "4": "https://www.pizmonim.org/MP3/Pinehas%20Rebii.mp3",
+        "5": "https://www.pizmonim.org/MP3/Pinehas%20Hamishi.mp3",
+        "6": "https://www.pizmonim.org/MP3/Pinehas%20Shishi.mp3",
+        "7": "https://www.pizmonim.org/MP3/Pinehas%20Shebii.mp3"
+      },
+      "weekday": {
+        "1": "https://www.pizmonim.org/MP3/Pinehas%20Kohen.mp3",
+        "2": "https://www.pizmonim.org/MP3/Pinehas%20Levi.mp3",
+        "3": "https://www.pizmonim.org/MP3/Pinehas%20Yisrael.mp3"
+      }
+    },
+    {
+      "index": 42,
+      "canonical": "Matot",
+      "stem": "Matot",
+      "full": "https://www.pizmonim.org/MP3/Matot%20Full.mp3",
+      "shabbat": {
+        "1": "https://www.pizmonim.org/MP3/Matot%20Rishon.mp3",
+        "2": "https://www.pizmonim.org/MP3/Matot%20Sheni.mp3",
+        "3": "https://www.pizmonim.org/MP3/Matot%20Shelishi.mp3",
+        "4": "https://www.pizmonim.org/MP3/Matot%20Rebii.mp3",
+        "5": "https://www.pizmonim.org/MP3/Matot%20Hamishi.mp3",
+        "6": "https://www.pizmonim.org/MP3/Matot%20Shishi.mp3",
+        "7": "https://www.pizmonim.org/MP3/Matot%20Shebii.mp3"
+      },
+      "weekday": {
+        "1": "https://www.pizmonim.org/MP3/Matot%20Kohen.mp3",
+        "2": "https://www.pizmonim.org/MP3/Matot%20Levi.mp3",
+        "3": "https://www.pizmonim.org/MP3/Matot%20Yisrael.mp3"
+      }
+    },
+    {
+      "index": 43,
+      "canonical": "Masei",
+      "stem": "Masei",
+      "full": "https://www.pizmonim.org/MP3/Masei%20Full.mp3",
+      "shabbat": {
+        "1": "https://www.pizmonim.org/MP3/Masei%20Rishon.mp3",
+        "2": "https://www.pizmonim.org/MP3/Masei%20Sheni.mp3",
+        "3": "https://www.pizmonim.org/MP3/Masei%20Shelishi.mp3",
+        "4": "https://www.pizmonim.org/MP3/Masei%20Rebii.mp3",
+        "5": "https://www.pizmonim.org/MP3/Masei%20Hamishi.mp3",
+        "6": "https://www.pizmonim.org/MP3/Masei%20Shishi.mp3",
+        "7": "https://www.pizmonim.org/MP3/Masei%20Shebii.mp3"
+      },
+      "weekday": {
+        "1": "https://www.pizmonim.org/MP3/Masei%20Kohen.mp3",
+        "2": "https://www.pizmonim.org/MP3/Masei%20Levi.mp3",
+        "3": "https://www.pizmonim.org/MP3/Masei%20Yisrael.mp3"
+      }
+    },
+    {
+      "index": 44,
+      "canonical": "Devarim",
+      "stem": "Debarim",
+      "full": "https://www.pizmonim.org/MP3/Debarim%20Full.mp3",
+      "shabbat": {
+        "1": "https://www.pizmonim.org/MP3/Debarim%20Rishon.mp3",
+        "2": "https://www.pizmonim.org/MP3/Debarim%20Sheni.mp3",
+        "3": "https://www.pizmonim.org/MP3/Debarim%20Shelishi.mp3",
+        "4": "https://www.pizmonim.org/MP3/Debarim%20Rebii.mp3",
+        "5": "https://www.pizmonim.org/MP3/Debarim%20Hamishi.mp3",
+        "6": "https://www.pizmonim.org/MP3/Debarim%20Shishi.mp3",
+        "7": "https://www.pizmonim.org/MP3/Debarim%20Shebii.mp3"
+      },
+      "weekday": {
+        "1": "https://www.pizmonim.org/MP3/Debarim%20Kohen.mp3",
+        "2": "https://www.pizmonim.org/MP3/Debarim%20Levi.mp3",
+        "3": "https://www.pizmonim.org/MP3/Debarim%20Yisrael.mp3"
+      }
+    },
+    {
+      "index": 45,
+      "canonical": "Vaetchanan",
+      "stem": "Vaethanan",
+      "full": "https://www.pizmonim.org/MP3/Vaethanan%20Full.mp3",
+      "shabbat": {
+        "1": "https://www.pizmonim.org/MP3/Vaethanan%20Rishon.mp3",
+        "2": "https://www.pizmonim.org/MP3/Vaethanan%20Sheni.mp3",
+        "3": "https://www.pizmonim.org/MP3/Vaethanan%20Shelishi.mp3",
+        "4": "https://www.pizmonim.org/MP3/Vaethanan%20Rebii.mp3",
+        "5": "https://www.pizmonim.org/MP3/Vaethanan%20Hamishi.mp3",
+        "6": "https://www.pizmonim.org/MP3/Vaethanan%20Shishi.mp3",
+        "7": "https://www.pizmonim.org/MP3/Vaethanan%20Shebii.mp3"
+      },
+      "weekday": {
+        "1": "https://www.pizmonim.org/MP3/Vaethanan%20Kohen.mp3",
+        "2": "https://www.pizmonim.org/MP3/Vaethanan%20Levi.mp3",
+        "3": "https://www.pizmonim.org/MP3/Vaethanan%20Yisrael.mp3"
+      }
+    },
+    {
+      "index": 46,
+      "canonical": "Eikev",
+      "stem": "Eqeb",
+      "full": "https://www.pizmonim.org/MP3/Eqeb%20Full.mp3",
+      "shabbat": {
+        "1": "https://www.pizmonim.org/MP3/Eqeb%20Rishon.mp3",
+        "2": "https://www.pizmonim.org/MP3/Eqeb%20Sheni.mp3",
+        "3": "https://www.pizmonim.org/MP3/Eqeb%20Shelishi.mp3",
+        "4": "https://www.pizmonim.org/MP3/Eqeb%20Rebii.mp3",
+        "5": "https://www.pizmonim.org/MP3/Eqeb%20Hamishi.mp3",
+        "6": "https://www.pizmonim.org/MP3/Eqeb%20Shishi.mp3",
+        "7": "https://www.pizmonim.org/MP3/Eqeb%20Shebii.mp3"
+      },
+      "weekday": {
+        "1": "https://www.pizmonim.org/MP3/Eqeb%20Kohen.mp3",
+        "2": "https://www.pizmonim.org/MP3/Eqeb%20Levi.mp3",
+        "3": "https://www.pizmonim.org/MP3/Eqeb%20Yisrael.mp3"
+      }
+    },
+    {
+      "index": 47,
+      "canonical": "Re'eh",
+      "stem": "Reeh",
+      "full": "https://www.pizmonim.org/MP3/Reeh%20Full.mp3",
+      "shabbat": {
+        "1": "https://www.pizmonim.org/MP3/Reeh%20Rishon.mp3",
+        "2": "https://www.pizmonim.org/MP3/Reeh%20Sheni.mp3",
+        "3": "https://www.pizmonim.org/MP3/Reeh%20Shelishi.mp3",
+        "4": "https://www.pizmonim.org/MP3/Reeh%20Rebii.mp3",
+        "5": "https://www.pizmonim.org/MP3/Reeh%20Hamishi.mp3",
+        "6": "https://www.pizmonim.org/MP3/Reeh%20Shishi.mp3",
+        "7": "https://www.pizmonim.org/MP3/Reeh%20Shebii.mp3"
+      },
+      "weekday": {
+        "1": "https://www.pizmonim.org/MP3/Reeh%20Kohen.mp3",
+        "2": "https://www.pizmonim.org/MP3/Reeh%20Levi.mp3",
+        "3": "https://www.pizmonim.org/MP3/Reeh%20Yisrael.mp3"
+      }
+    },
+    {
+      "index": 48,
+      "canonical": "Shoftim",
+      "stem": "Shofetim",
+      "full": "https://www.pizmonim.org/MP3/Shofetim%20Full.mp3",
+      "shabbat": {
+        "1": "https://www.pizmonim.org/MP3/Shofetim%20Rishon.mp3",
+        "2": "https://www.pizmonim.org/MP3/Shofetim%20Sheni.mp3",
+        "3": "https://www.pizmonim.org/MP3/Shofetim%20Shelishi.mp3",
+        "4": "https://www.pizmonim.org/MP3/Shofetim%20Rebii.mp3",
+        "5": "https://www.pizmonim.org/MP3/Shofetim%20Hamishi.mp3",
+        "6": "https://www.pizmonim.org/MP3/Shofetim%20Shishi.mp3",
+        "7": "https://www.pizmonim.org/MP3/Shofetim%20Shebii.mp3"
+      },
+      "weekday": {
+        "1": "https://www.pizmonim.org/MP3/Shofetim%20Kohen.mp3",
+        "2": "https://www.pizmonim.org/MP3/Shofetim%20Levi.mp3",
+        "3": "https://www.pizmonim.org/MP3/Shofetim%20Yisrael.mp3"
+      }
+    },
+    {
+      "index": 49,
+      "canonical": "Ki Teitzei",
+      "stem": "Ki Tesse",
+      "full": "https://www.pizmonim.org/MP3/Ki%20Tesse%20Full.mp3",
+      "shabbat": {
+        "1": "https://www.pizmonim.org/MP3/Ki%20Tesse%20Rishon.mp3",
+        "2": "https://www.pizmonim.org/MP3/Ki%20Tesse%20Sheni.mp3",
+        "3": "https://www.pizmonim.org/MP3/Ki%20Tesse%20Shelishi.mp3",
+        "4": "https://www.pizmonim.org/MP3/Ki%20Tesse%20Rebii.mp3",
+        "5": "https://www.pizmonim.org/MP3/Ki%20Tesse%20Hamishi.mp3",
+        "6": "https://www.pizmonim.org/MP3/Ki%20Tesse%20Shishi.mp3",
+        "7": "https://www.pizmonim.org/MP3/Ki%20Tesse%20Shebii.mp3"
+      },
+      "weekday": {
+        "1": "https://www.pizmonim.org/MP3/Ki%20Tesse%20Kohen.mp3",
+        "2": "https://www.pizmonim.org/MP3/Ki%20Tesse%20Levi.mp3",
+        "3": "https://www.pizmonim.org/MP3/Ki%20Tesse%20Yisrael.mp3"
+      }
+    },
+    {
+      "index": 50,
+      "canonical": "Ki Tavo",
+      "stem": "Ki Tabo",
+      "full": "https://www.pizmonim.org/MP3/Ki%20Tabo%20Full.mp3",
+      "shabbat": {
+        "1": "https://www.pizmonim.org/MP3/Ki%20Tabo%20Rishon.mp3",
+        "2": "https://www.pizmonim.org/MP3/Ki%20Tabo%20Sheni.mp3",
+        "3": "https://www.pizmonim.org/MP3/Ki%20Tabo%20Shelishi.mp3",
+        "4": "https://www.pizmonim.org/MP3/Ki%20Tabo%20Rebii.mp3",
+        "5": "https://www.pizmonim.org/MP3/Ki%20Tabo%20Hamishi.mp3",
+        "6": "https://www.pizmonim.org/MP3/Ki%20Tabo%20Shishi.mp3",
+        "7": "https://www.pizmonim.org/MP3/Ki%20Tabo%20Shebii.mp3"
+      },
+      "weekday": {
+        "1": "https://www.pizmonim.org/MP3/Ki%20Tabo%20Kohen.mp3",
+        "2": "https://www.pizmonim.org/MP3/Ki%20Tabo%20Levi.mp3",
+        "3": "https://www.pizmonim.org/MP3/Ki%20Tabo%20Yisrael.mp3"
+      }
+    },
+    {
+      "index": 51,
+      "canonical": "Nitzavim",
+      "stem": "Nissabim",
+      "full": "https://www.pizmonim.org/MP3/Nissabim%20Full.mp3",
+      "shabbat": {
+        "1": "https://www.pizmonim.org/MP3/Nissabim%20Rishon.mp3",
+        "2": "https://www.pizmonim.org/MP3/Nissabim%20Sheni.mp3",
+        "3": "https://www.pizmonim.org/MP3/Nissabim%20Shelishi.mp3",
+        "4": "https://www.pizmonim.org/MP3/Nissabim%20Rebii.mp3",
+        "5": "https://www.pizmonim.org/MP3/Nissabim%20Hamishi.mp3",
+        "6": "https://www.pizmonim.org/MP3/Nissabim%20Shishi.mp3",
+        "7": "https://www.pizmonim.org/MP3/Nissabim%20Shebii.mp3"
+      },
+      "weekday": {
+        "1": "https://www.pizmonim.org/MP3/Nissabim%20Kohen.mp3",
+        "2": "https://www.pizmonim.org/MP3/Nissabim%20Levi.mp3",
+        "3": "https://www.pizmonim.org/MP3/Nissabim%20Yisrael.mp3"
+      }
+    },
+    {
+      "index": 52,
+      "canonical": "Vayelech",
+      "stem": "Vayelekh",
+      "full": "https://www.pizmonim.org/MP3/Vayelekh%20Full.mp3",
+      "shabbat": {
+        "1": "https://www.pizmonim.org/MP3/Vayelekh%20Rishon.mp3",
+        "2": "https://www.pizmonim.org/MP3/Vayelekh%20Sheni.mp3",
+        "3": "https://www.pizmonim.org/MP3/Vayelekh%20Shelishi.mp3",
+        "4": "https://www.pizmonim.org/MP3/Vayelekh%20Rebii.mp3",
+        "5": "https://www.pizmonim.org/MP3/Vayelekh%20Hamishi.mp3",
+        "6": "https://www.pizmonim.org/MP3/Vayelekh%20Shishi.mp3",
+        "7": "https://www.pizmonim.org/MP3/Vayelekh%20Shebii.mp3"
+      },
+      "weekday": {
+        "1": "https://www.pizmonim.org/MP3/Vayelekh%20Kohen.mp3",
+        "2": "https://www.pizmonim.org/MP3/Vayelekh%20Levi.mp3",
+        "3": "https://www.pizmonim.org/MP3/Vayelekh%20Yisrael.mp3"
+      }
+    },
+    {
+      "index": 53,
+      "canonical": "Ha'Azinu",
+      "stem": "Haazinu",
+      "full": "https://www.pizmonim.org/MP3/Haazinu%20Full.mp3",
+      "shabbat": {
+        "1": "https://www.pizmonim.org/MP3/Haazinu%20Rishon.mp3",
+        "2": "https://www.pizmonim.org/MP3/Haazinu%20Sheni.mp3",
+        "3": "https://www.pizmonim.org/MP3/Haazinu%20Shelishi.mp3",
+        "4": "https://www.pizmonim.org/MP3/Haazinu%20Rebii.mp3",
+        "5": "https://www.pizmonim.org/MP3/Haazinu%20Hamishi.mp3",
+        "6": "https://www.pizmonim.org/MP3/Haazinu%20Shishi.mp3",
+        "7": "https://www.pizmonim.org/MP3/Haazinu%20Shebii.mp3"
+      },
+      "weekday": {
+        "1": "https://www.pizmonim.org/MP3/Haazinu%20Kohen.mp3",
+        "2": "https://www.pizmonim.org/MP3/Haazinu%20Levi.mp3",
+        "3": "https://www.pizmonim.org/MP3/Haazinu%20Yisrael.mp3"
+      }
+    },
+    {
+      "index": 54,
+      "canonical": "Vezot Haberakhah",
+      "stem": "VeZot",
+      "full": "https://www.pizmonim.org/MP3/VeZot%20Full.mp3",
+      "shabbat": {
+        "1": "https://www.pizmonim.org/MP3/VeZot%20Rishon.mp3",
+        "2": "https://www.pizmonim.org/MP3/VeZot%20Sheni.mp3",
+        "3": "https://www.pizmonim.org/MP3/VeZot%20Shelishi.mp3",
+        "4": "https://www.pizmonim.org/MP3/VeZot%20Rebii.mp3",
+        "5": "https://www.pizmonim.org/MP3/VeZot%20Hamishi.mp3",
+        "6": "https://www.pizmonim.org/MP3/VeZot%20Shishi.mp3",
+        "7": "https://www.pizmonim.org/MP3/VeZot%20Shebii.mp3"
+      },
+      "weekday": {
+        "1": "https://www.pizmonim.org/MP3/VeZot%20Kohen.mp3",
+        "2": "https://www.pizmonim.org/MP3/VeZot%20Levi.mp3",
+        "3": "https://www.pizmonim.org/MP3/VeZot%20Yisrael.mp3"
+      }
+    }
+  ],
+  "aliyahVerification": "Every filename explicitly listed in primary source directory; actual verse boundaries and playback have not been audited. Syrian aliyah stops may differ from generic Sephardic metadata.",
+  "spotChecks": [
+    {
+      "url": "https://www.pizmonim.org/MP3/Bereshit%20Full.mp3",
+      "status": 200,
+      "type": "audio/mpeg",
+      "bytes": "85022485"
+    },
+    {
+      "url": "https://www.pizmonim.org/MP3/Haftarat%20Bereshit.mp3",
+      "status": 200,
+      "type": "audio/mpeg",
+      "bytes": "4379503"
+    },
+    {
+      "url": "https://www.pizmonim.org/MP3/dtawil%20amida.mp3",
+      "status": 200,
+      "type": "audio/mpeg",
+      "bytes": "1007616"
+    }
+  ]
+}

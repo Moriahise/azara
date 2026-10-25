@@ -1,0 +1,312 @@
+{
+  "schemaVersion": 1,
+  "pageNumbering": "PDF-Seiten ab 1, einschließlich Scan- und Rechtehinweisen; keine gedruckten Blattnummern.",
+  "documents": [
+    {
+      "id": "21376",
+      "path": "סידור תפילה להרשש - חלק א-Siddur-Harashash_21376.pdf",
+      "title": "HaRashash · Teil I · Grundlagen und Morgengebet",
+      "actualPart": "I",
+      "pages": 177,
+      "topics": [
+        {
+          "label": "Überblick: Wochentag, Schabbat und Festtage",
+          "page": 6
+        },
+        {
+          "label": "Überblick: Pessach, Omer und Schawuot",
+          "page": 7
+        },
+        {
+          "label": "Überblick: Jom Kippur und Sukkot",
+          "page": 8
+        },
+        {
+          "label": "Kavvanat ha-Mezuzah",
+          "page": 103
+        },
+        {
+          "label": "Pitum ha-Ketoret · Einleitung",
+          "page": 153
+        }
+      ],
+      "source": "https://hebrewbooks.org/21376",
+      "note": "Die ersten Seiten nennen ausdrücklich חלק ראשון. Die Festhinweise auf PDF-Seiten 7–8 sind Übersichten, kein vollständiger Fest-Siddur."
+    },
+    {
+      "id": "21375",
+      "path": "סידור תפילה להרשש - חלק ב-Siddur-Harashash_21375.pdf",
+      "title": "HaRashash · Werktagsgebete · Datei Teil II",
+      "actualPart": null,
+      "pages": 323,
+      "topics": [
+        {
+          "label": "Hodu · Anfang dieses Bandes",
+          "page": 3
+        },
+        {
+          "label": "Jotzer Or",
+          "page": 54
+        },
+        {
+          "label": "Wiederholung der Amida durch den Vorbeter",
+          "page": 223
+        },
+        {
+          "label": "Tora-Aufruf · Barekhu",
+          "page": 270
+        },
+        {
+          "label": "Schir schel Jom · Sonntag",
+          "page": 289
+        },
+        {
+          "label": "Mincha",
+          "page": 318
+        },
+        {
+          "label": "Arvit",
+          "page": 320
+        }
+      ],
+      "source": "https://hebrewbooks.org/21375",
+      "note": "Die Datei heißt Teil II; auf der ersten Scan-Seite ist keine verlässlich lesbare Teilnummer vorhanden. Der Inhalt führt Werktagsgebete aus."
+    },
+    {
+      "id": "21519",
+      "path": "סידור תפילה להרשש - חלק ג-Siddur-Harashash_21519.pdf",
+      "title": "HaRashash · Teil III · Schabbatabend",
+      "actualPart": "III",
+      "pages": 73,
+      "topics": [
+        {
+          "label": "Teil III · Einleitung zu Freitag-Mincha und Schabbatabend",
+          "page": 1
+        },
+        {
+          "label": "Kabbalat Schabbat",
+          "page": 3
+        },
+        {
+          "label": "Arvit des Schabbat",
+          "page": 19
+        },
+        {
+          "label": "Kaddisch vor der Amida",
+          "page": 47
+        },
+        {
+          "label": "Me-ein Schewa",
+          "page": 60
+        },
+        {
+          "label": "Musaf bei Schabbat und Rosch Chodesch",
+          "page": 73
+        }
+      ],
+      "source": "https://hebrewbooks.org/21519",
+      "note": "Die erste Scan-Seite nennt חלק שלישי. Die letzte Seite enthält den Rosch-Chodesch-Schabbat-Musaftext. Inhaltlich weitgehend paralleler Scan zu 21520; keine Byte- oder Textidentität."
+    },
+    {
+      "id": "21520",
+      "path": "סידור תפילה להרשש - חלק ג-Siddur-Harashash_21520.pdf",
+      "title": "HaRashash · Teil III · zweite Scan-Datei",
+      "actualPart": "III",
+      "pages": 73,
+      "topics": [
+        {
+          "label": "Teil III · Einleitung zu Freitag-Mincha und Schabbatabend",
+          "page": 1
+        },
+        {
+          "label": "Kabbalat Schabbat",
+          "page": 3
+        },
+        {
+          "label": "Arvit des Schabbat",
+          "page": 19
+        },
+        {
+          "label": "Kaddisch vor der Amida",
+          "page": 47
+        },
+        {
+          "label": "Me-ein Schewa",
+          "page": 60
+        },
+        {
+          "label": "Musaf bei Schabbat und Rosch Chodesch",
+          "page": 73
+        }
+      ],
+      "source": "https://hebrewbooks.org/21520",
+      "note": "Inhaltlich weitgehend paralleler Scan zu 21519; beide Originaldateien bleiben erhalten."
+    },
+    {
+      "id": "21521",
+      "path": "סידור תפילה להרשש - חלק א-Siddur-Harashash_21521.pdf",
+      "title": "HaRashash · Schabbatmorgen, Musaf und Mincha",
+      "actualPart": null,
+      "pages": 231,
+      "topics": [
+        {
+          "label": "Schabbatmorgen · Beginn",
+          "page": 1
+        },
+        {
+          "label": "Nischmat kol chai",
+          "page": 74
+        },
+        {
+          "label": "Kaddisch vor Jotzer",
+          "page": 79
+        },
+        {
+          "label": "Jotzer des Schabbat",
+          "page": 90
+        },
+        {
+          "label": "Musaf des Schabbat · Tikanta Schabbat",
+          "page": 217
+        },
+        {
+          "label": "Mincha des Schabbat",
+          "page": 221
+        }
+      ],
+      "source": "https://hebrewbooks.org/21521",
+      "note": "Dateiname nennt Teil I; der Scan beginnt jedoch mit בשחרית דשבת. Keine Teilnummer auf der ersten Scan-Seite. Daher inhaltlicher Titel ohne neue Bandzuweisung."
+    },
+    {
+      "id": "21518",
+      "path": "סידור תפילה להרשש - חלק ו-Siddur-Harashash_21518.pdf",
+      "title": "HaRashash · Teil VI · Schawuot",
+      "actualPart": "VI",
+      "pages": 25,
+      "topics": [
+        {
+          "label": "Teil VI · Lernen in der Nacht",
+          "page": 1
+        },
+        {
+          "label": "Amida von Schacharit und Musaf",
+          "page": 18
+        },
+        {
+          "label": "Schawuot-Musaf · Tag des Wochenfestes",
+          "page": 22
+        }
+      ],
+      "source": "https://hebrewbooks.org/21518",
+      "note": "Die erste Seite nennt חלק ששי. PDF-Seite 22 nennt יום חג השבועות הזה ausdrücklich. Keine vollständige Omer-Zählfolge in dieser Datei belegt."
+    },
+    {
+      "id": "21721",
+      "path": "סידור תפילה להרשש - חלק ז-Siddur-Harashash_21721.pdf",
+      "title": "HaRashash · Teil VII · Rosch HaSchana",
+      "actualPart": "VII",
+      "pages": 209,
+      "topics": [
+        {
+          "label": "Teil VII · Kavvanot von Schema an Rosch HaSchana",
+          "page": 1
+        },
+        {
+          "label": "Arvit von Rosch HaSchana",
+          "page": 3
+        },
+        {
+          "label": "Beginn der Amida-Kavvanot",
+          "page": 43
+        },
+        {
+          "label": "Schofar · Vorbereitung",
+          "page": 116
+        },
+        {
+          "label": "Schofar · Berakha",
+          "page": 126
+        },
+        {
+          "label": "Musaf · Malchujot, Sichronot und Schofarot",
+          "page": 147
+        },
+        {
+          "label": "Mincha",
+          "page": 161
+        }
+      ],
+      "source": "https://hebrewbooks.org/21721",
+      "note": "Die erste Seite nennt חלק שביעי und כונת קש דרה. Musaf-Themen werden an PDF-Seiten 147–160 ausgeführt; keine Audioaufnahme hieraus abgeleitet."
+    },
+    {
+      "id": "21722",
+      "path": "סידור תפילה להרשש - חלק ח-Siddur-Harashash_21722.pdf",
+      "title": "HaRashash · Teil VIII · Jom Kippur",
+      "actualPart": "VIII",
+      "pages": 139,
+      "topics": [
+        {
+          "label": "Teil VIII · Kavvanot an Jom Kippur",
+          "page": 1
+        },
+        {
+          "label": "Arvit und Übersicht der fünf Gebete",
+          "page": 3
+        },
+        {
+          "label": "Amida · Tag der Versöhnung",
+          "page": 98
+        },
+        {
+          "label": "Schacharit · Anweisungen nach Arvit",
+          "page": 126
+        },
+        {
+          "label": "Verweis zu Mincha und Neila",
+          "page": 132
+        }
+      ],
+      "source": "https://hebrewbooks.org/21722",
+      "note": "Die erste Seite nennt חלק שמיני und כונת קש וברכותיה ביוהכ. PDF-Seite 126 beginnt die Schacharit-Anweisungen; Seite 132 verweist auf Kavvanot für Mincha und Neila. Dies ist kein eigenständiger vollständiger Neila-Text an dieser Seite."
+    },
+    {
+      "id": "21723",
+      "path": "סידור תפילה להרשש - חלק ט-Siddur-Harashash_21723.pdf",
+      "title": "HaRashash · Teil IX · Sukkot und Hoschana Rabba",
+      "actualPart": "IX",
+      "pages": 43,
+      "topics": [
+        {
+          "label": "Teil IX · Lulav-Bewegungen am ersten Tag",
+          "page": 1
+        },
+        {
+          "label": "Berakha über den Lulav",
+          "page": 9
+        },
+        {
+          "label": "Lulav-Bewegungen im Hallel",
+          "page": 18
+        },
+        {
+          "label": "Hakafot · Einleitung",
+          "page": 32
+        },
+        {
+          "label": "Hoschana Rabba · Schlagen der Aravot",
+          "page": 43
+        }
+      ],
+      "source": "https://hebrewbooks.org/21723",
+      "note": "Die erste Seite nennt חלק תשיעי und כונת נענוע הברכה דיום ראשון. Die Hakafot hier sind Sukkot-Umzüge, nicht automatisch Simchat-Tora-Hakafot."
+    }
+  ],
+  "warnings": [
+    "Keine eigenständigen Dateien mit Dateinamensangaben Teil IV oder Teil V wurden geliefert. Die als Teil I benannte Datei 21521 enthält Schabbatgebete; ihre tatsächliche Teilnummer ist nicht verifiziert.",
+    "Die beiden Dateien 21519 und 21520 haben parallel paginierten ähnlichen Inhalt. Weder PDF-Dateien noch OCR-Texte sind identisch; daher nicht automatisch deduplizieren.",
+    "Die gesamte Abfolge der Rashash-Kavvanot wurde nicht transkribiert und nicht als vollständig maschinenlesbar überprüft. Die Originalseiten sind maßgebend.",
+    "Auf Scan-Seite 2 stehen Vertriebs- und Kopierbeschränkungen des Scan-Anbieters. Vorhandene Nutzerdateien nicht weiter vervielfältigen; bevorzugt auf bestehende Originaldateien oder HebrewBooks verlinken.",
+    "Pessach und Omer sind in Teil I nur in Übersichten belegt. Ein vollständiger Pessach-/Omer-Band ist im gelieferten Bestand nicht verifiziert."
+  ]
+}
