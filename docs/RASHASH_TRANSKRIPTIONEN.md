@@ -5,7 +5,7 @@ Die sieben hochgeladenen Transkriptionen sind in Azara unter **Siddur & Kavvanot
 | Band | Thema | HebrewBooks | Textseiten | Tabellen |
 |---|---|---|---:|---:|
 | I | Grundlagen, Morgenberachot, Tallit, Tefillin und Ketoret | 21376 | 176 | 308 |
-| II (Teilfassung bis PDF 50) | Hodu, Pesukei deZimra und Kaddisch-Kavvanot | 21375 | 49 | 102 |
+| II (Teilfassung bis PDF 100) | Hodu, Pesukei deZimra, Jotzer und Schema-Kavvanot | 21375 | 99 | 232 |
 | III | Erev Schabbat, Kabbalat Schabbat und Arvit | 21519 | 72 | 149 |
 | III | Erev Schabbat, Kabbalat Schabbat und Arvit | 21520 | 72 | 149 |
 | VI | Schawuot, Lernen in der Nacht, Schacharit und Musaf | 21518 | 24 | 28 |
@@ -150,6 +150,23 @@ Wiederholung nur für diese Teilfassung:
 
 ```bash
 python3 scripts/prepare-rashash.py /pfad/zum/upload /pfad/zum/cache --volume 21375 --through-pdf 50
+npm test
+npm run build
+```
+
+
+## Aktualisierung: Teil II · HB21375 · Erweiterung bis PDF 100
+
+Die neue Vorlage `Siddur_HaRashash_Teil_2_HB21375_bis_PDF100.txt` ersetzt die vorherige Teilfassung bis PDF 50. Sie enthält PDF 1 und 3–100, insgesamt 99 Textseiten. Die neue vokalisierte und getaggte TXT heißt `Siddur_HaRashash_Teil_2_HB21375_bis_PDF100_Niqqud_Tags.txt`. Die aktuelle Ausgangsdatei bleibt unter `texts/rashash/sources/HB21375_Original.txt` erhalten. Die vorherige Downloadfassung wird aus dem aktuellen Dateibaum entfernt und bleibt in der Git-Historie nachvollziehbar.
+
+Die bereits veröffentlichten 49 Textseiten bis PDF 50 sind inhaltlich unverändert. Das vorhandene Niqqud wird aus der bisherigen XML-Datei übernommen, wenn die betreffende Quellseite bis auf abschließende Leerzeilen identisch ist. Text-IDs, Absatz- und Tabelleninhalte bleiben dadurch erhalten. Nur neue bzw. geänderte Quellseiten werden erneut durch Dicta Nakdan im rabbinischen Modus verarbeitet. Ein automatischer Vergleich der bisherigen Webtextseiten ist als Prüfsumme in den Tests hinterlegt.
+
+Der erweiterte Bestand enthält 232 Tabellen. Alle sieben ursprünglichen Unsicherheitsmarker bleiben erhalten; auf den hinzugekommenen Seiten enthält die Vorlage keine neuen `[?]`-Markierungen. Namen, vorhandene Punktierung und alle Tabellen werden unverändert aus der Vorlage übernommen. Ergänztes Niqqud bleibt eine fachlich zu prüfende Arbeitsfassung; bei diesem Update wurde kein neuer vollständiger Scanabgleich durchgeführt.
+
+Seitenwahl, Suche, TXT-Download und Verweise aus dem Tagesablauf nutzen jetzt den Bereich bis PDF 100. Ab PDF 101 ist weiterhin ausschließlich der Originalscan verfügbar. Die anderen sechs Textfassungen bleiben unverändert.
+
+```bash
+python3 scripts/prepare-rashash.py /pfad/zum/upload /pfad/zum/cache --volume 21375 --through-pdf 100
 npm test
 npm run build
 ```

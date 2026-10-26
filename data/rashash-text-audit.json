@@ -1392,7 +1392,7 @@
         1
       ],
       "kind": "partial_transcription",
-      "note": "Teilfassung: PDF 1 und 3–50 von 323 Scan-Seiten. PDF 2 ist ausgelassen. Ab PDF 51 ist noch kein transkribierter Text enthalten."
+      "note": "Teilfassung: PDF 1 und 3–100 von 323 Scan-Seiten. PDF 2 ist ausgelassen. Ab PDF 101 ist noch kein transkribierter Text enthalten."
     }
   ],
   "volumes": [
@@ -2341,20 +2341,22 @@
     {
       "id": "21375",
       "part": 2,
-      "title": "Werktagsgebete · Hodu und Pesukei deZimra · bis PDF 50",
-      "pages": 49,
-      "pdfPages": 50,
-      "txtPath": "texts/rashash/Siddur_HaRashash_Teil_2_HB21375_bis_PDF050_Niqqud_Tags.txt",
+      "title": "Werktagsgebete · Hodu und Pesukei deZimra · bis PDF 100",
+      "pages": 99,
+      "pdfPages": 100,
+      "txtPath": "texts/rashash/Siddur_HaRashash_Teil_2_HB21375_bis_PDF100_Niqqud_Tags.txt",
       "sourcePath": "texts/rashash/sources/HB21375_Original.txt",
       "jsonPath": "data/rashash-text-21375.json",
       "status": "Niqqud-Arbeitsfassung · redaktionell zu prüfen",
       "statistics": {
-        "table_lines_preserved": 1347,
-        "words_with_added_niqqud": 5041,
-        "protected_abbr": 1456,
-        "protected_shem": 985,
-        "words_with_siddur_phrase_reference": 1257,
-        "protected_letter": 86
+        "reused_pages": 49,
+        "reused_source_lines": 1870,
+        "table_lines_preserved": 3400,
+        "protected_shem": 564,
+        "words_with_added_niqqud": 9961,
+        "protected_abbr": 2917,
+        "words_with_siddur_phrase_reference": 345,
+        "protected_letter": 81
       },
       "flags": [
         {
@@ -2447,18 +2449,18 @@
             1
           ],
           "kind": "partial_transcription",
-          "note": "Teilfassung: PDF 1 und 3–50 von 323 Scan-Seiten. PDF 2 ist ausgelassen. Ab PDF 51 ist noch kein transkribierter Text enthalten."
+          "note": "Teilfassung: PDF 1 und 3–100 von 323 Scan-Seiten. PDF 2 ist ausgelassen. Ab PDF 101 ist noch kein transkribierter Text enthalten."
         }
       ],
       "coverage": {
         "status": "partial",
-        "throughPdf": 50,
+        "throughPdf": 100,
         "scanPages": 323,
         "omittedPdfPages": [
           2
         ]
       },
-      "editionNote": "Teilfassung bis PDF 50 von 323. Die Fortsetzung ab PDF 51 ist nicht enthalten. Niqqud mit Dicta Nakdan im rabbinischen Modus ergänzt; fachliche Prüfung bleibt erforderlich."
+      "editionNote": "Teilfassung bis PDF 100 von 323. Die Fortsetzung ab PDF 101 ist nicht enthalten. Niqqud mit Dicta Nakdan im rabbinischen Modus ergänzt; fachliche Prüfung bleibt erforderlich."
     },
     {
       "id": "21519",

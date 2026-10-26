@@ -279,22 +279,49 @@ def source_name_line(line):
     content=line[1:-1].replace('—',' ').strip()
     return bool(re.fullmatch(r'[א-ת ]+',content)) and len(content.split())>=2 and all(2<=len(w)<=3 for w in content.split())
 
+def reusable_pointing(lines,previous):
+    """Reuse existing pointed lines only on unchanged source pages."""
+    if not previous:return {},0
+    oldlines=(ROOT/previous['sourcePath']).read_text().splitlines()
+    def spans(source):
+        starts=[(i,int(m[2])) for i,line in enumerate(source) if (m:=PAGE.fullmatch(line))]
+        return {number:(start,starts[j+1][0] if j+1<len(starts) else len(source)) for j,(start,number) in enumerate(starts)}
+    oldspans,newspans=spans(oldlines),spans(lines)
+    reused={};count=0
+    for page in ET.parse(ROOT/previous['txtPath']).getroot().findall('page'):
+        number=int(page.get('pdf'))
+        if number not in newspans:continue
+        a,b=oldspans[number];c,d=newspans[number]
+        if '\n'.join(oldlines[a:b]).rstrip()!= '\n'.join(lines[c:d]).rstrip():continue
+        count+=1
+        for node in page.iter():
+            if node.tag not in {'p','heading','row','lb'}:continue
+            oldindex=int(node.attrib['source-line'])-1;newindex=c+oldindex-a
+            assert oldlines[oldindex]==lines[newindex]
+            reused[newindex]=''.join(node.itertext())
+    return reused,count
+
 def main():
     ap=argparse.ArgumentParser();ap.add_argument('input',type=Path);ap.add_argument('cache',type=Path);ap.add_argument('--volume',choices=[v[0] for v in VOLUMES]);ap.add_argument('--through-pdf',type=int);args=ap.parse_args()
-    if args.volume=='21375' and args.through_pdf!=50:
-        ap.error('HB21375 currently requires --through-pdf 50 for the supplied partial transcription.')
+    if args.volume=='21375' and (args.through_pdf is None or not 3<=args.through_pdf<=323):
+        ap.error('HB21375 requires --through-pdf between 3 and 323 matching the supplied transcription.')
     if args.through_pdf is not None and args.volume!='21375':
         ap.error('--through-pdf is currently supported only for HB21375.')
     args.cache.mkdir(parents=True,exist_ok=True)
     output=ROOT/'texts/rashash';(output/'sources').mkdir(parents=True,exist_ok=True)
     docs=json.loads((ROOT/'data/rashash.json').read_text())
     summaries={v['id']:v for v in docs.get('transcriptions',{}).get('volumes',[])};phrase_index=prayer_phrases()
-    all_flags=json.loads((ROOT/'data/rashash-text-audit.json').read_text())['flags']
+    all_flags=json.loads((ROOT/'data/rashash-text-audit.json').read_text())['flags'];superseded=[]
     for ident,part,slug,title,total in VOLUMES:
         if args.volume and ident!=args.volume:continue
         if ident=='21375' and args.through_pdf is None:continue
         imported_total=args.through_pdf if ident=='21375' else total
-        source=next(args.input.glob('*HB'+ident+'*.txt'));raw=source.read_text();lines=raw.splitlines()
+        if ident=='21375':
+            slug=f'bis_PDF{imported_total:03}'
+            title=f'Werktagsgebete · Hodu und Pesukei deZimra · bis PDF {imported_total}'
+        source=next(args.input.glob(f'*HB{ident}_{slug}.txt' if ident=='21375' else '*HB'+ident+'*.txt'));raw=source.read_text();lines=raw.splitlines()
+        previous=summaries.get(ident)
+        reused,reused_pages=reusable_pointing(lines,previous) if ident=='21375' else ({},0)
         volume_flags=[f for f in FLAGS if f['volume']==ident]
         if ident in ('21375','21519','21722'):
             uncertain={};current_page=0
@@ -318,11 +345,14 @@ def main():
               'note':'Die mit [?] markierte Buchstabenkombination אאללההייםם bleibt unverändert. Die Lesart ist am Originalscan zu prüfen.'})
         all_flags=[f for f in all_flags if f['volume']!=ident]+volume_flags
         first=next(i for i,x in enumerate(lines) if PAGE.fullmatch(x));prefix=lines[:first]
-        if ident=='21375':
+        if ident=='21375' and imported_total<total:
             volume_flags.append({'volume':ident,'pdfPages':[1],'kind':'partial_transcription',
-                'note':'Teilfassung: PDF 1 und 3–50 von 323 Scan-Seiten. PDF 2 ist ausgelassen. Ab PDF 51 ist noch kein transkribierter Text enthalten.'})
+                'note':f'Teilfassung: PDF 1 und 3–{imported_total} von {total} Scan-Seiten. PDF 2 ist ausgelassen. Ab PDF {imported_total+1} ist noch kein transkribierter Text enthalten.'})
             all_flags=[f for f in all_flags if f['volume']!=ident]+volume_flags
         stats=Counter();newlines=lines.copy();chunks=[];indices=[];size=0;in_table=False;table_lines=set();name_lines=set()
+        if reused:
+            stats['reused_pages']=reused_pages;stats['reused_source_lines']=len(reused)
+            for n,value in reused.items():newlines[n]=value
         for n in range(first,len(lines)):
             # Names in diagrams are not ordinary words. Keep whole tables, even
             # their labels, exactly as supplied; do not infer missing pointing.
@@ -333,7 +363,7 @@ def main():
             if ident=='21519' and not in_table and source_name_line(lines[n]):
                 name_lines.add(n);stats['source_name_lines_preserved']+=1
             # Structural delimiters remain source text; only textual lines sent.
-            if (ident=='21375' and (n in table_lines or n in name_lines)) or PAGE.fullmatch(lines[n]) or lines[n].startswith('===') or not letters(lines[n]):continue
+            if n in reused or (ident=='21375' and (n in table_lines or n in name_lines)) or PAGE.fullmatch(lines[n]) or lines[n].startswith('===') or not letters(lines[n]):continue
             if size+len(lines[n])>5500 and indices:chunks.append(indices);indices=[];size=0
             indices.append(n);size+=len(lines[n])+1
         if indices:chunks.append(indices)
@@ -410,6 +440,7 @@ def main():
             entry.update(coverage={'status':'partial','throughPdf':imported_total,'scanPages':total,'omittedPdfPages':[2]},
                 editionNote=f'Teilfassung bis PDF {imported_total} von {total}. Die Fortsetzung ab PDF {imported_total+1} ist nicht enthalten. Niqqud mit Dicta Nakdan im rabbinischen Modus ergänzt; fachliche Prüfung bleibt erforderlich.')
         (ROOT/entry['jsonPath']).write_text(json.dumps({**entry,'pages':pages},ensure_ascii=False,separators=(',',':'))+'\n')
+        if previous and previous['txtPath']!=entry['txtPath']:superseded.append(ROOT/previous['txtPath'])
         summaries[ident]=entry
         doc=next(x for x in docs['documents'] if x['id']==ident);doc['transcription']=entry
         print(json.dumps({'volume':ident,'pages':len(pages),'statistics':dict(stats)},ensure_ascii=False),flush=True)
@@ -420,5 +451,8 @@ def main():
     docs['warnings'].append(f'{len(ordered)} Transkriptionen sind strukturiert und mit zusätzlichem Niqqud erschlossen. Die Gesamtjahresfolge und die ergänzte Punktierung sind nicht vollständig am Scan geprüft; bekannte Lücken tragen Prüfmarkierungen.')
     (ROOT/'data/rashash.json').write_text(json.dumps(docs,ensure_ascii=False,indent=2)+'\n')
     (ROOT/'data/rashash-text-audit.json').write_text(json.dumps({'date':'2026-10-26','flags':all_flags,'volumes':ordered},ensure_ascii=False,indent=2)+'\n')
+    for path in superseded:
+        assert path.parent==ROOT/'texts/rashash'
+        path.unlink(missing_ok=True)
 
 if __name__=='__main__':main()

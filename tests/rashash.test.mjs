@@ -9,20 +9,20 @@ import {stripHtml} from '../src/readalong.js';
 test('All seven Rashash editions retain every source letter, original vowel and all tables',()=>{
  const report=JSON.parse(execFileSync('python3',['scripts/validate-rashash.py'],{encoding:'utf8'}));
  assert.deepEqual(report.map(v=>v.id),['21376','21375','21519','21520','21518','21722','21723']);
- assert.equal(report.reduce((n,v)=>n+v.pages,0),573);assert.equal(report.reduce((n,v)=>n+v.tables,0),1249);
+ assert.equal(report.reduce((n,v)=>n+v.pages,0),623);assert.equal(report.reduce((n,v)=>n+v.tables,0),1379);
  assert.ok(report.every(v=>(v.importedUnchanged||v.addedMarks>1000)&&v.protectedTokens>100));
 });
 test('Rashash Hebrew search works with or without Niqqud and quote variants',()=>{
  assert.equal(searchableHebrew('שַׁבָּת'),searchableHebrew('שבת'));
  assert.equal(searchableHebrew('רש״ש'),searchableHebrew('רש"ש'));
 });
-test('HB21375 partial text keeps 49 pages and seven uncertainties while exposing only available text pages',async()=>{
+test('HB21375 partial text keeps 99 pages and seven uncertainties while exposing only available text pages',async()=>{
  const index=JSON.parse(await readFile('data/rashash.json','utf8'));
  const doc=index.documents.find(d=>d.id==='21375'),metadata=doc.transcription;
  const volume=JSON.parse(await readFile(metadata.jsonPath,'utf8'));
- assert.equal(doc.pages,323);assert.equal(metadata.pdfPages,50);
- assert.deepEqual(volume.pages.map(p=>p.pdfPage),[1,...Array.from({length:48},(_,i)=>i+3)]);
- assert.deepEqual(metadata.coverage,{status:'partial',throughPdf:50,scanPages:323,omittedPdfPages:[2]});
+ assert.equal(doc.pages,323);assert.equal(metadata.pdfPages,100);
+ assert.deepEqual(volume.pages.map(p=>p.pdfPage),[1,...Array.from({length:98},(_,i)=>i+3)]);
+ assert.deepEqual(metadata.coverage,{status:'partial',throughPdf:100,scanPages:323,omittedPdfPages:[2]});
  let uncertainties=0,tables=0;
  for(const page of volume.pages){
   for(const block of page.blocks){
@@ -34,21 +34,24 @@ test('HB21375 partial text keeps 49 pages and seven uncertainties while exposing
    }
   }
  }
- assert.equal(uncertainties,7);assert.equal(tables,102);
+ assert.equal(uncertainties,7);assert.equal(tables,232);
+ const priorPages=volume.pages.filter(p=>p.pdfPage<=50).map(({pdfPage,folio,blocks})=>({pdfPage,folio,blocks}));
+ assert.equal(createHash('sha256').update(JSON.stringify(priorPages)).digest('hex'),'eaef15028cff5dc7b58d2f2975b677c92ef4d3e4e145a7437ddbb097a64e616d');
+ assert.equal(metadata.statistics.reused_pages,49);
  assert.deepEqual(metadata.flags.filter(f=>f.kind==='source_uncertainty').map(f=>f.pdfPages[0]),[9,38,39,40,43,44,47]);
  const tagged=await readFile(metadata.txtPath,'utf8');
  assert.equal((tagged.match(/<unclear /g)||[]).length,7);
- assert.ok(tagged.includes('<coverage status="partial" through-pdf="50" scan-pages="323"'));
+ assert.ok(tagged.includes('<coverage status="partial" through-pdf="100" scan-pages="323"'));
  assert.ok(tagged.includes('engine="Dicta Nakdan" genre="rabbinic"'));
  assert.ok(searchableHebrew(volume.pages.find(p=>p.pdfPage===3).blocks.map(b=>b.text||'').join(' ')).includes('הודו'));
- for(const n of [1,3,50])assert.ok(hasRashashTextPage(metadata,n));
- for(const n of [0,2,51,54,323])assert.equal(hasRashashTextPage(metadata,n),false);
- const html=renderRashashReader({documents:index.documents,id:'21375',pageNumber:50,volume});
- assert.ok(html.includes('Teilfassung · bis PDF 50 von 323'));
- assert.ok(html.includes('data-open-rashash="21375" data-page="50"'));
- const missing=renderRashashReader({documents:index.documents,id:'21375',pageNumber:54,volume});
- assert.ok(missing.includes('PDF 54 ist noch nicht transkribiert'));
- assert.ok(missing.includes('data-open-rashash="21375" data-page="54"'));
+ for(const n of [1,3,50,51,54,100])assert.ok(hasRashashTextPage(metadata,n));
+ for(const n of [0,2,101,323])assert.equal(hasRashashTextPage(metadata,n),false);
+ const html=renderRashashReader({documents:index.documents,id:'21375',pageNumber:100,volume});
+ assert.ok(html.includes('Teilfassung · bis PDF 100 von 323'));
+ assert.ok(html.includes('data-open-rashash="21375" data-page="100"'));
+ const missing=renderRashashReader({documents:index.documents,id:'21375',pageNumber:101,volume});
+ assert.ok(missing.includes('PDF 101 ist noch nicht transkribiert'));
+ assert.ok(missing.includes('data-open-rashash="21375" data-page="101"'));
  assert.ok(!missing.includes('<span>PDF 1</span>'));
 });
 test('HB21376 imports the Scanabgleich upload verbatim with stable IDs, tables and all open readings',async()=>{
