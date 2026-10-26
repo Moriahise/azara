@@ -1310,10 +1310,10 @@
       "title": "Grundlagen und Morgengebet · HB21376",
       "pages": 176,
       "pdfPages": 177,
-      "txtPath": "texts/rashash/Siddur_HaRashash_Teil_1_HB21376_Niqqud_Tags_Kontextgeprueft.txt",
-      "sourcePath": "texts/rashash/Siddur_HaRashash_Teil_1_HB21376_Niqqud_Tags_Kontextgeprueft.txt",
+      "txtPath": "texts/rashash/Siddur_HaRashash_Teil_1_HB21376_Niqqud_Tags_Scanabgleich.txt",
+      "sourcePath": "texts/rashash/Siddur_HaRashash_Teil_1_HB21376_Niqqud_Tags_Scanabgleich.txt",
       "sourceFormat": "tagged-xml",
-      "sourceSha256": "d63dfd961cf1cad86f5f647ef6c8b5a7e5cbd2b779f52517689671f1108a8e29",
+      "sourceSha256": "994f829fd4ddc93220353ae593475a4b9d41a16ea89dff9b40c1fbc303e5d1a6",
       "jsonPath": "data/rashash-text-21376.json",
       "status": "Automatisches Niqqud · selektiv kontextgeprüft · 143 Lesestellen offen",
       "statistics": {
@@ -2243,8 +2243,8 @@
           "note": "1 ungeklärte Lesart(en) mit [?] in der gelieferten, selektiv kontextgeprüften Fassung. Am Originalscan prüfen; automatisches Niqqud ist nicht vollständig fachlich geprüft."
         }
       ],
-      "editionNote": "Unverändert gelieferte XML-TXT-Fassung. 143 Lesestellen bleiben offen. Das automatische Niqqud wurde nur selektiv kontextgeprüft; keine vollständige Kollation mit dem Originalscan.",
-      "sourceLabel": "Gelieferte TXT-Fassung mit Niqqud und Tags ↓"
+      "editionNote": "Unverändert übernommene Scanabgleich-Fassung mit Niqqud und Tags. 143 Lesestellen bleiben laut mitgelieferten Metadaten offen. Das automatische Niqqud ist weiterhin nur selektiv kontextgeprüft.",
+      "sourceLabel": "Gelieferte Scanabgleich-TXT mit Niqqud und Tags ↓"
     },
     {
       "id": "21519",

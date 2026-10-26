@@ -10,7 +10,7 @@ import re
 import xml.etree.ElementTree as ET
 
 ROOT = Path(__file__).resolve().parent.parent
-TXT = 'texts/rashash/Siddur_HaRashash_Teil_1_HB21376_Niqqud_Tags_Kontextgeprueft.txt'
+TXT = 'texts/rashash/Siddur_HaRashash_Teil_1_HB21376_Niqqud_Tags_Scanabgleich.txt'
 
 
 def inline(node):
@@ -73,8 +73,8 @@ def prepare(raw):
         'jsonPath': 'data/rashash-text-21376.json',
         'status': 'Automatisches Niqqud · selektiv kontextgeprüft · 143 Lesestellen offen',
         'statistics': statistics, 'flags': flags,
-        'editionNote': 'Unverändert gelieferte XML-TXT-Fassung. 143 Lesestellen bleiben offen. Das automatische Niqqud wurde nur selektiv kontextgeprüft; keine vollständige Kollation mit dem Originalscan.',
-        'sourceLabel': 'Gelieferte TXT-Fassung mit Niqqud und Tags ↓'}
+        'editionNote': 'Unverändert übernommene Scanabgleich-Fassung mit Niqqud und Tags. 143 Lesestellen bleiben laut mitgelieferten Metadaten offen. Das automatische Niqqud ist weiterhin nur selektiv kontextgeprüft.',
+        'sourceLabel': 'Gelieferte Scanabgleich-TXT mit Niqqud und Tags ↓'}
     volume = {**entry, 'pages': pages, 'provenance': {
         'niqqudStatus': root.get('niqqud-status'),
         'revision': root.findtext('metadata/revision'),
@@ -94,7 +94,9 @@ def main():
     (ROOT / TXT).write_bytes(raw)
     (ROOT / entry['jsonPath']).write_text(json.dumps(volume, ensure_ascii=False, separators=(',', ':')) + '\n')
     catalog = json.loads((ROOT / 'data/rashash.json').read_text())
-    next(d for d in catalog['documents'] if d['id'] == entry['id'])['transcription'] = entry
+    document = next(d for d in catalog['documents'] if d['id'] == entry['id'])
+    previous_txt = document.get('transcription', {}).get('txtPath')
+    document['transcription'] = entry
     transcriptions = catalog['transcriptions']
     transcriptions['volumes'] = sorted([v for v in transcriptions['volumes'] if v['id'] != entry['id']] + [entry], key=lambda v: (v['part'], v['id']))
     transcriptions['date'] = '2026-10-26'
@@ -104,6 +106,11 @@ def main():
     audit.update(date='2026-10-26', volumes=transcriptions['volumes'],
                  flags=[f for f in audit['flags'] if f['volume'] != entry['id']] + entry['flags'])
     (ROOT / 'data/rashash-text-audit.json').write_text(json.dumps(audit, ensure_ascii=False, indent=2) + '\n')
+    # A replacement keeps one current downloadable edition; git retains history.
+    if previous_txt and previous_txt != TXT:
+        previous = ROOT / previous_txt
+        assert previous.parent == ROOT / 'texts/rashash'
+        previous.unlink(missing_ok=True)
     print(json.dumps({'id': entry['id'], 'pages': entry['pages'], 'statistics': entry['statistics'], 'sha256': entry['sourceSha256']}))
 
 

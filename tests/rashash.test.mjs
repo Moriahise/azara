@@ -16,11 +16,11 @@ test('Rashash Hebrew search works with or without Niqqud and quote variants',()=
  assert.equal(searchableHebrew('שַׁבָּת'),searchableHebrew('שבת'));
  assert.equal(searchableHebrew('רש״ש'),searchableHebrew('רש"ש'));
 });
-test('HB21376 imports the tagged upload verbatim with stable IDs, tables and all open readings',async()=>{
+test('HB21376 imports the Scanabgleich upload verbatim with stable IDs, tables and all open readings',async()=>{
  const index=JSON.parse(await readFile('data/rashash.json','utf8'));
  const metadata=index.documents.find(d=>d.id==='21376').transcription;
  const raw=await readFile(metadata.txtPath);
- assert.equal(createHash('sha256').update(raw).digest('hex'),'d63dfd961cf1cad86f5f647ef6c8b5a7e5cbd2b779f52517689671f1108a8e29');
+ assert.equal(createHash('sha256').update(raw).digest('hex'),'994f829fd4ddc93220353ae593475a4b9d41a16ea89dff9b40c1fbc303e5d1a6');
  const volume=JSON.parse(await readFile(metadata.jsonPath,'utf8'));
  assert.deepEqual(volume.pages.map(p=>p.pdfPage),[1,...Array.from({length:175},(_,i)=>i+3)]);
  let count=0,tables=0,rows=0;const ids=[];
@@ -45,7 +45,7 @@ test('HB21376 imports the tagged upload verbatim with stable IDs, tables and all
  const html=renderRashashReader({documents:index.documents,id:'21376',pageNumber:177,volume});
  assert.ok(html.includes('data-open-rashash="21376" data-page="177"'));
  assert.ok(html.includes('143 Lesestellen'));assert.ok(html.includes(metadata.txtPath));
- assert.ok(html.includes('Gelieferte TXT-Fassung mit Niqqud und Tags'));
+ assert.ok(html.includes('Gelieferte Scanabgleich-TXT mit Niqqud und Tags'));
 });
 test('Jom Kippur preserves and exposes all 27 uncertain readings on their 19 source pages',async()=>{
  const volume=JSON.parse(await readFile('data/rashash-text-21722.json','utf8'));

@@ -105,7 +105,7 @@ Die zuvor veröffentlichten Textfassungen der Teile III, VI und IX werden durch 
 Auf PDF 99 wurden außerdem die Wörter `מְחוֹל`, der Imperativ `מְחֵה` und `פְשָׁעֵנוּ` sowie die Passage `מִנֶּגֶד עֵינֶיךָ` direkt am Scan geprüft. Das spätere `מֹחֶה` in der Schriftstelle bleibt als Partizip unterschieden. Die ergänzte Punktierung voller Schreibweisen mit Waw wird entsprechend lesbar gesetzt.
 
 
-## Ergänzung: Teil I · HB21376 · 26. Oktober 2026
+## Ergänzung: Teil I · HB21376 · Erstimport am 26. Oktober 2026
 
 Die gelieferte Datei `Siddur_HaRashash_Teil_1_HB21376_Niqqud_Tags_Kontextgeprueft.txt` wurde **bytegenau unverändert** übernommen (SHA-256 `d63dfd961cf1cad86f5f647ef6c8b5a7e5cbd2b779f52517689671f1108a8e29`). Sie enthält bereits wohlgeformtes XML, Niqqud und geschützte Namen-Tags. Für diesen Import wurde kein Niqqud-Dienst aufgerufen. Der Download ist zugleich die gelieferte Quelldatei; eine unvokalisierte Vorgängerfassung lag für diesen Import nicht vor. Die oben beschriebenen Niqqud-Erzeugungsschritte der früheren fünf Textfassungen wurden auf diesen Band nicht erneut angewandt.
 
@@ -122,3 +122,12 @@ python3 scripts/import-tagged-rashash.py /pfad/zur/gelieferten/HB21376.txt
 npm test
 npm run build
 ```
+
+
+## Aktualisierung: Teil I · HB21376 · Scanabgleich-Fassung
+
+Die nachgereichte Datei `Siddur_HaRashash_Teil_1_HB21376_Niqqud_Tags_Scanabgleich.txt` ersetzt die oben dokumentierte Kontextprüfungs-Fassung als aktuelle Text- und Downloadfassung. Sie wurde bytegenau übernommen: SHA-256 `994f829fd4ddc93220353ae593475a4b9d41a16ea89dff9b40c1fbc303e5d1a6`. Die bisherige TXT-Datei ist aus dem aktuellen Dateibaum entfernt und bleibt in der Git-Historie nachvollziehbar.
+
+Der Dateivergleich ergibt 43 geänderte Textabsätze auf 22 Seiten (PDF 6, 7, 8, 10, 17, 19, 23, 24, 43, 48, 73, 77, 81, 85, 89, 94, 97, 101, 119, 133, 143 und 145). Seitenfolge, stabile IDs, alle 308 Tabellen und geschützten Namen-Texte sowie ihre Tags bleiben gegenüber der vorherigen Fassung gleich. Die aktualisierten Absätze werden vollständig in die Webdaten übernommen.
+
+Der Umfang bleibt bei 176 Textseiten und 4.110 Tabellenzeilen. Die mitgelieferten Metadaten sind unverändert: Sie nennen weiterhin 143 offene Lesestellen und nur selektiv geprüftes automatisches Niqqud. Der Dateiname Scanabgleich wird deshalb nicht als neue vollständige sprachliche Freigabe interpretiert. Bei dieser Ersetzung wurde kein eigener erneuter Scanabgleich durchgeführt. Alle übrigen Bände bleiben unverändert.
