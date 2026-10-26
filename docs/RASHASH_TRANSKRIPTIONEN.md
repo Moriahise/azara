@@ -5,7 +5,7 @@ Die sieben hochgeladenen Transkriptionen sind in Azara unter **Siddur & Kavvanot
 | Band | Thema | HebrewBooks | Textseiten | Tabellen |
 |---|---|---|---:|---:|
 | I | Grundlagen, Morgenberachot, Tallit, Tefillin und Ketoret | 21376 | 176 | 308 |
-| II (Teilfassung bis PDF 100) | Hodu, Pesukei deZimra, Jotzer und Schema-Kavvanot | 21375 | 99 | 232 |
+| II (Teilfassung bis PDF 200) | Hodu, Jotzer, Schema und Amida-Kavvanot | 21375 | 199 | 488 |
 | III | Erev Schabbat, Kabbalat Schabbat und Arvit | 21519 | 72 | 149 |
 | III | Erev Schabbat, Kabbalat Schabbat und Arvit | 21520 | 72 | 149 |
 | VI | Schawuot, Lernen in der Nacht, Schacharit und Musaf | 21518 | 24 | 28 |
@@ -167,6 +167,25 @@ Seitenwahl, Suche, TXT-Download und Verweise aus dem Tagesablauf nutzen jetzt de
 
 ```bash
 python3 scripts/prepare-rashash.py /pfad/zum/upload /pfad/zum/cache --volume 21375 --through-pdf 100
+npm test
+npm run build
+```
+
+
+## Aktualisierung: Teil II · HB21375 · Erweiterung bis PDF 200
+
+Die neue Vorlage `Siddur_HaRashash_Teil_2_HB21375_bis_PDF200.txt` ersetzt die vorherige Teilfassung bis PDF 100. Der aktuelle Textbestand umfasst PDF 1 und 3–200, insgesamt 199 Textseiten und 488 Tabellen. Die neue UTF-8-Datei mit Niqqud und XML-Tags heißt `Siddur_HaRashash_Teil_2_HB21375_bis_PDF200_Niqqud_Tags.txt`. Der Originalscan umfasst weiterhin 323 Seiten; ab PDF 201 liegt in dieser Teilfassung noch kein Text vor.
+
+Die 99 bisherigen Textseiten bis PDF 100 stimmen in der Vorlage unverändert überein. Niqqud, Absatz- und Tabelleninhalte sowie IDs werden aus der bestehenden Fassung übernommen und durch einen separaten Prüfsummenvergleich abgesichert. Nur die neu hinzugekommenen Fließtexte werden mit Dicta Nakdan im rabbinischen Modus vokalisiert. Die neue Ausgangsdatei wird unverändert unter `texts/rashash/sources/HB21375_Original.txt` erhalten. Die bisherige TXT bis PDF 100 wird im aktuellen Dateibaum durch die erweiterte Fassung ersetzt; frühere Fassungen bleiben in der Git-Historie erhalten.
+
+Die Vorlage enthält nun 19 Unsicherheitsmarker auf 17 Seiten: PDF 9, 38, 39, 40, 43, 44, 47, 117, 130, 139, 167, 168, 185, 187, 190, 195 und 198. Alle bleiben erhalten und werden zusätzlich mit `unclear`-Tags und seitenbezogenen Prüfvermerken erschlossen. Originalpunktierung, Namen und Tabellen werden nicht durch automatisch vorgeschlagene Namenpunktierung ersetzt.
+
+In den neuen Abschnitten stehen Namenreihen auch außerhalb expliziter Tabellen. Eindeutige Buchstabenreihen und Fortschreibungen wie `צ צב צבא` sowie ausdrücklich erkannte Namen wie `פאי`, `חתך`, `בם` und die zusammengesetzten Namen aus Ana beKoach werden zusätzlich geschützt. Bei der gemischten Zeile `טובך יד י אן י` wird nur das Gebetswort vokalisiert; die nachfolgende Buchstabenkombination bleibt unverändert. Diese Regel gilt nur für die neu hinzugekommenen Texte; die bisherigen Seiten werden dadurch nicht nachträglich verändert.
+
+Die technische Prüfung vergleicht Konsonanten und Satzzeichen aller Quellzeilen, vorhandenes Niqqud, Tabellen, geschützte Wörter, stabile IDs und XML-/Webtextidentität. Die ergänzte Vokalisierung ist eine fachlich zu prüfende Arbeitsfassung. Dieses Update umfasst keinen neuen vollständigen Scanabgleich. Die übrigen sechs Textfassungen bleiben unverändert.
+
+```bash
+python3 scripts/prepare-rashash.py /pfad/zum/upload /pfad/zum/cache --volume 21375 --through-pdf 200
 npm test
 npm run build
 ```

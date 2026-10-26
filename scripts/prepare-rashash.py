@@ -40,6 +40,21 @@ VOLUMES = [
  ('21722',8,'Jom_Kippur','Jom Kippur · Gebete, Kavvanot & Seder haAvoda',139),
  ('21723',9,'Sukkot','Sukkot · Na’anuim, Hallel, Hakafot & Hoschana Rabba',43),
 ]
+HB21375_EXTRA_NAMES = frozenset({'בם','פאי','חתך','אט','אכפץ','אכנסם','טדהד',
+    'אידהנויה','קרעשטן','נגדיכש','בטרצתג','חקבטנע','יגלפזק','שקוצית'})
+
+def hb21375_name_line(line):
+    """Recognize standalone diagram rows, not short prayer phrases."""
+    text=bare(line).strip();words=text.split()
+    if text in {'מם כף קץ','דין דין דין דין דין','שן אלף למד הה יוד מם אדני'}:return True
+    if not re.fullmatch('[א-ת ]+',text):return False
+    if len(words)>=2 and len(words[0])==1 and all(len(w)<=4 for w in words):return True
+    if text=='לף י וד י':return True
+    return False
+
+def hb21375_symbol_word(original,offset):
+    return original=='טובך יד י אן י' and offset>=len('טובך ')
+
 FLAGS = [
  {'volume':'21520','pdfPages':[1],'kind':'transcription_typo','quote':'בשער פקרי הצלם',
   'note':'Im Scan steht בשער פרקי הצלם. Die hochgeladene Buchstabenfolge bleibt erhalten; zur Korrektur markiert.'},
@@ -57,11 +72,12 @@ def bare(s):
 def letters(s):
     return ''.join(re.findall('[א-ת]',s))
 
-def protected(token):
+def protected(token,extra_sacred=()):
     b=bare(token)
+    sacred=SACRED.union(extra_sacred) if extra_sacred else SACRED
     if any(c in b for c in '\'"״׳'):
         return 'abbr'
-    if b in SACRED or any(b.startswith(p) and b[len(p):] in SACRED for p in ['ב','ל','כ','מ','ו','ה','ד','וב','ול','של','וה','וד','דה','דב','לה','בה']):
+    if b in sacred or any(b.startswith(p) and b[len(p):] in sacred for p in ['ב','ל','כ','מ','ו','ה','ד','וב','ול','של','וה','וד','דה','דב','לה','בה']):
         return 'shem'
     if MARK.search(token):
         return 'source_pointing'
@@ -124,7 +140,7 @@ def call_nakdan(text,cache):
            'confident':x.get('nakdan',{}).get('fconfident',False)} for x in body['data']]
     p.write_text(json.dumps(data,ensure_ascii=False));return data
 
-def vocalize_chunk(text,cache,stats):
+def vocalize_chunk(text,cache,stats,extra_sacred=()):
     data=call_nakdan(text,cache)
     tokens=[m for m in WORD.finditer(text)]
     # Align through echoed Hebrew letters, not through the generated text.
@@ -144,7 +160,7 @@ def vocalize_chunk(text,cache,stats):
         count=len(letters(m.group()));offsets[m.start()]=(pos,count);pos+=count
     out=[];last=0
     for m in tokens:
-        out.append(text[last:m.start()]);word=m.group();reason=protected(word)
+        out.append(text[last:m.start()]);word=m.group();reason=protected(word,extra_sacred)
         if reason:
             stats['protected_'+reason]+=1;out.append(word)
         else:
@@ -181,7 +197,7 @@ def prayer_phrases():
             elif index[key]!=phrase:index[key]=None
     return indexes
 
-def refine_prayer_line(original,pointed,indexes,stats,niqqud_only=False):
+def refine_prayer_line(original,pointed,indexes,stats,niqqud_only=False,extra_sacred=()):
     source=list(WORD.finditer(original));result=[m.group() for m in WORD.finditer(pointed)]
     keys=[bare(m.group()) for m in source];replaced=set()
     for n in reversed(indexes):
@@ -189,7 +205,7 @@ def refine_prayer_line(original,pointed,indexes,stats,niqqud_only=False):
             phrase=indexes[n].get(tuple(keys[i:i+n]))
             if not phrase:continue
             for j,word in enumerate(phrase,i):
-                if j in replaced or protected(source[j].group()):continue
+                if j in replaced or protected(source[j].group(),extra_sacred):continue
                 if niqqud_only:word=re.sub('[\u0591-\u05af]','',word)
                 value,ok=graft(source[j].group(),word)
                 if ok and MARK.search(value):
@@ -198,7 +214,7 @@ def refine_prayer_line(original,pointed,indexes,stats,niqqud_only=False):
     # are corrected here, including a source's plene/defective spelling.
     corrections={'קדשנו':'קִדְּשָׁנוּ','השבעות':'הַשָּׁבֻעוֹת','האמות':'הָאֻמּוֹת'}
     for i,key in enumerate(keys):
-        if key in corrections and not protected(source[i].group()):
+        if key in corrections and not protected(source[i].group(),extra_sacred):
             result[i],ok=graft(source[i].group(),corrections[key]);replaced.add(i)
     # HB21722 PDF99: visually checked imperative. The later מֹחֶה quotation
     # has a different grammatical form and must not be globally overwritten.
@@ -247,13 +263,14 @@ def refine_hb21519_line(original,pointed):
         pointed=pointed[:start]+value+pointed[end:]
     return pointed
 
-def inline_xml(text,original,names_line=False,volume=None):
+def inline_xml(text,original,names_line=False,volume=None,extra_sacred=()):
     """Protected names and original pointing are independently addressable."""
     orig=list(WORD.finditer(original));now=list(WORD.finditer(text))
     assert len(orig)==len(now)
     out=[];last=0
     for a,b in zip(orig,now):
-        out.append(escape(text[last:b.start()]));tag=protected(a.group())
+        out.append(escape(text[last:b.start()]));tag=protected(a.group(),extra_sacred)
+        if volume=='21375' and extra_sacred and hb21375_symbol_word(original,a.start()):tag='shem'
         if volume=='21519' and a.group() in hb21519_readings(original):
             tag='shem' if a.group()=='בוה' else None
         # HB21519 explicitly labels the names placed above the Shema words.
@@ -322,6 +339,7 @@ def main():
         source=next(args.input.glob(f'*HB{ident}_{slug}.txt' if ident=='21375' else '*HB'+ident+'*.txt'));raw=source.read_text();lines=raw.splitlines()
         previous=summaries.get(ident)
         reused,reused_pages=reusable_pointing(lines,previous) if ident=='21375' else ({},0)
+        extra_names=HB21375_EXTRA_NAMES if ident=='21375' and imported_total>=200 else ()
         volume_flags=[f for f in FLAGS if f['volume']==ident]
         if ident in ('21375','21519','21722'):
             uncertain={};current_page=0
@@ -362,6 +380,8 @@ def main():
                 stats['table_lines_preserved']+=1;table_lines.add(n)
             if ident=='21519' and not in_table and source_name_line(lines[n]):
                 name_lines.add(n);stats['source_name_lines_preserved']+=1
+            if ident=='21375' and extra_names and n not in reused and not in_table and hb21375_name_line(lines[n]):
+                name_lines.add(n);stats['source_name_lines_preserved']+=1
             # Structural delimiters remain source text; only textual lines sent.
             if n in reused or (ident=='21375' and (n in table_lines or n in name_lines)) or PAGE.fullmatch(lines[n]) or lines[n].startswith('===') or not letters(lines[n]):continue
             if size+len(lines[n])>5500 and indices:chunks.append(indices);indices=[];size=0
@@ -369,17 +389,17 @@ def main():
         if indices:chunks.append(indices)
         for i,indices in enumerate(chunks):
             text='\n'.join(lines[n] for n in indices)
-            result=vocalize_chunk(text,args.cache,stats).split('\n')
+            result=vocalize_chunk(text,args.cache,stats,extra_sacred=extra_names).split('\n')
             assert len(result)==len(indices)
             for n,value in zip(indices,result):
                 if n not in table_lines and n not in name_lines:
-                    value=refine_prayer_line(lines[n],value,phrase_index,stats,niqqud_only=ident=='21375')
+                    value=refine_prayer_line(lines[n],value,phrase_index,stats,niqqud_only=ident=='21375',extra_sacred=extra_names)
                     if ident=='21519':value=refine_hb21519_line(lines[n],value)
                     # Do not settle a word which the transcriber marked uncertain.
                     old_words=list(WORD.finditer(lines[n]));new_words=list(WORD.finditer(value))
                     replacements=[]
                     for a,b in zip(old_words,new_words):
-                        if re.match(r'\s*\[\?\]',lines[n][a.end():]):replacements.append((b.start(),b.end(),a.group()))
+                        if re.match(r'\s*\[\?\]',lines[n][a.end():]) or (extra_names and hb21375_symbol_word(lines[n],a.start())):replacements.append((b.start(),b.end(),a.group()))
                     for start,end,original_word in reversed(replacements):value=value[:start]+original_word+value[end:]
                     newlines[n]=value
             print(f'HB{ident}: {i+1}/{len(chunks)} chunks vocalized',flush=True)
@@ -416,7 +436,7 @@ def main():
             tag='row' if table is not None else 'heading' if orig.strip().startswith('■') else 'p'
             if not orig.strip():
                 xml.append(f'<lb source-line="{n+1}" />');continue
-            content=inline_xml(value,orig,names_line=n in name_lines,volume=ident)
+            content=inline_xml(value,orig,names_line=n in name_lines,volume=ident,extra_sacred=extra_names if n not in reused else ())
             status='added-draft' if value!=orig else 'source-preserved'
             xml.append(f'<{tag} id="{identline}" source-line="{n+1}" niqqud="{status}">{content}</{tag}>')
             # Only generated, escaped markup; no source HTML is trusted.
