@@ -1012,7 +1012,129 @@
         }
       ],
       "source": "https://hebrewbooks.org/21375",
-      "note": "Die Datei heißt Teil II; auf der ersten Scan-Seite ist keine verlässlich lesbare Teilnummer vorhanden. Der Inhalt führt Werktagsgebete aus."
+      "note": "Die Datei heißt Teil II; auf der ersten Scan-Seite ist keine verlässlich lesbare Teilnummer vorhanden. Der Inhalt führt Werktagsgebete aus.",
+      "transcription": {
+        "id": "21375",
+        "part": 2,
+        "title": "Werktagsgebete · Hodu und Pesukei deZimra · bis PDF 50",
+        "pages": 49,
+        "pdfPages": 50,
+        "txtPath": "texts/rashash/Siddur_HaRashash_Teil_2_HB21375_bis_PDF050_Niqqud_Tags.txt",
+        "sourcePath": "texts/rashash/sources/HB21375_Original.txt",
+        "jsonPath": "data/rashash-text-21375.json",
+        "status": "Niqqud-Arbeitsfassung · redaktionell zu prüfen",
+        "statistics": {
+          "table_lines_preserved": 1347,
+          "words_with_added_niqqud": 5041,
+          "protected_abbr": 1456,
+          "protected_shem": 985,
+          "words_with_siddur_phrase_reference": 1257,
+          "protected_letter": 86
+        },
+        "flags": [
+          {
+            "volume": "21375",
+            "pdfPages": [
+              9
+            ],
+            "kind": "source_uncertainty",
+            "sourceLines": [
+              223
+            ],
+            "occurrences": 1,
+            "note": "Die gelieferte Transkription markiert hier 1 unsichere Lesart(en) mit [?] (Quellzeile(n) 223). Die Markierungen und die unmittelbar davor stehenden Wörter bleiben erhalten; am Scan prüfen."
+          },
+          {
+            "volume": "21375",
+            "pdfPages": [
+              38
+            ],
+            "kind": "source_uncertainty",
+            "sourceLines": [
+              1419
+            ],
+            "occurrences": 1,
+            "note": "Die gelieferte Transkription markiert hier 1 unsichere Lesart(en) mit [?] (Quellzeile(n) 1419). Die Markierungen und die unmittelbar davor stehenden Wörter bleiben erhalten; am Scan prüfen."
+          },
+          {
+            "volume": "21375",
+            "pdfPages": [
+              39
+            ],
+            "kind": "source_uncertainty",
+            "sourceLines": [
+              1449
+            ],
+            "occurrences": 1,
+            "note": "Die gelieferte Transkription markiert hier 1 unsichere Lesart(en) mit [?] (Quellzeile(n) 1449). Die Markierungen und die unmittelbar davor stehenden Wörter bleiben erhalten; am Scan prüfen."
+          },
+          {
+            "volume": "21375",
+            "pdfPages": [
+              40
+            ],
+            "kind": "source_uncertainty",
+            "sourceLines": [
+              1518
+            ],
+            "occurrences": 1,
+            "note": "Die gelieferte Transkription markiert hier 1 unsichere Lesart(en) mit [?] (Quellzeile(n) 1518). Die Markierungen und die unmittelbar davor stehenden Wörter bleiben erhalten; am Scan prüfen."
+          },
+          {
+            "volume": "21375",
+            "pdfPages": [
+              43
+            ],
+            "kind": "source_uncertainty",
+            "sourceLines": [
+              1685
+            ],
+            "occurrences": 1,
+            "note": "Die gelieferte Transkription markiert hier 1 unsichere Lesart(en) mit [?] (Quellzeile(n) 1685). Die Markierungen und die unmittelbar davor stehenden Wörter bleiben erhalten; am Scan prüfen."
+          },
+          {
+            "volume": "21375",
+            "pdfPages": [
+              44
+            ],
+            "kind": "source_uncertainty",
+            "sourceLines": [
+              1737
+            ],
+            "occurrences": 1,
+            "note": "Die gelieferte Transkription markiert hier 1 unsichere Lesart(en) mit [?] (Quellzeile(n) 1737). Die Markierungen und die unmittelbar davor stehenden Wörter bleiben erhalten; am Scan prüfen."
+          },
+          {
+            "volume": "21375",
+            "pdfPages": [
+              47
+            ],
+            "kind": "source_uncertainty",
+            "sourceLines": [
+              1918
+            ],
+            "occurrences": 1,
+            "note": "Die gelieferte Transkription markiert hier 1 unsichere Lesart(en) mit [?] (Quellzeile(n) 1918). Die Markierungen und die unmittelbar davor stehenden Wörter bleiben erhalten; am Scan prüfen."
+          },
+          {
+            "volume": "21375",
+            "pdfPages": [
+              1
+            ],
+            "kind": "partial_transcription",
+            "note": "Teilfassung: PDF 1 und 3–50 von 323 Scan-Seiten. PDF 2 ist ausgelassen. Ab PDF 51 ist noch kein transkribierter Text enthalten."
+          }
+        ],
+        "coverage": {
+          "status": "partial",
+          "throughPdf": 50,
+          "scanPages": 323,
+          "omittedPdfPages": [
+            2
+          ]
+        },
+        "editionNote": "Teilfassung bis PDF 50 von 323. Die Fortsetzung ab PDF 51 ist nicht enthalten. Niqqud mit Dicta Nakdan im rabbinischen Modus ergänzt; fachliche Prüfung bleibt erforderlich."
+      }
     },
     {
       "id": "21519",
@@ -1756,7 +1878,7 @@
     "Die beiden Dateien 21519 und 21520 haben parallel paginierten ähnlichen Inhalt. Weder PDF-Dateien noch OCR-Texte sind identisch; daher nicht automatisch deduplizieren.",
     "Auf Scan-Seite 2 stehen Vertriebs- und Kopierbeschränkungen des Scan-Anbieters. Vorhandene Nutzerdateien nicht weiter vervielfältigen; bevorzugt auf bestehende Originaldateien oder HebrewBooks verlinken.",
     "Pessach und Omer sind in Teil I nur in Übersichten belegt. Ein vollständiger Pessach-/Omer-Band ist im gelieferten Bestand nicht verifiziert.",
-    "6 Transkriptionen sind strukturiert und mit zusätzlichem Niqqud erschlossen. Die Gesamtjahresfolge und die ergänzte Punktierung sind nicht vollständig am Scan geprüft; bekannte Lücken tragen Prüfmarkierungen."
+    "7 Transkriptionen sind strukturiert und mit zusätzlichem Niqqud erschlossen. Die Gesamtjahresfolge und die ergänzte Punktierung sind nicht vollständig am Scan geprüft; bekannte Lücken tragen Prüfmarkierungen."
   ],
   "transcriptions": {
     "schemaVersion": 1,
@@ -2703,6 +2825,128 @@
         ],
         "editionNote": "Unverändert übernommene Scanabgleich-Fassung mit Niqqud und Tags. 143 Lesestellen bleiben laut mitgelieferten Metadaten offen. Das automatische Niqqud ist weiterhin nur selektiv kontextgeprüft.",
         "sourceLabel": "Gelieferte Scanabgleich-TXT mit Niqqud und Tags ↓"
+      },
+      {
+        "id": "21375",
+        "part": 2,
+        "title": "Werktagsgebete · Hodu und Pesukei deZimra · bis PDF 50",
+        "pages": 49,
+        "pdfPages": 50,
+        "txtPath": "texts/rashash/Siddur_HaRashash_Teil_2_HB21375_bis_PDF050_Niqqud_Tags.txt",
+        "sourcePath": "texts/rashash/sources/HB21375_Original.txt",
+        "jsonPath": "data/rashash-text-21375.json",
+        "status": "Niqqud-Arbeitsfassung · redaktionell zu prüfen",
+        "statistics": {
+          "table_lines_preserved": 1347,
+          "words_with_added_niqqud": 5041,
+          "protected_abbr": 1456,
+          "protected_shem": 985,
+          "words_with_siddur_phrase_reference": 1257,
+          "protected_letter": 86
+        },
+        "flags": [
+          {
+            "volume": "21375",
+            "pdfPages": [
+              9
+            ],
+            "kind": "source_uncertainty",
+            "sourceLines": [
+              223
+            ],
+            "occurrences": 1,
+            "note": "Die gelieferte Transkription markiert hier 1 unsichere Lesart(en) mit [?] (Quellzeile(n) 223). Die Markierungen und die unmittelbar davor stehenden Wörter bleiben erhalten; am Scan prüfen."
+          },
+          {
+            "volume": "21375",
+            "pdfPages": [
+              38
+            ],
+            "kind": "source_uncertainty",
+            "sourceLines": [
+              1419
+            ],
+            "occurrences": 1,
+            "note": "Die gelieferte Transkription markiert hier 1 unsichere Lesart(en) mit [?] (Quellzeile(n) 1419). Die Markierungen und die unmittelbar davor stehenden Wörter bleiben erhalten; am Scan prüfen."
+          },
+          {
+            "volume": "21375",
+            "pdfPages": [
+              39
+            ],
+            "kind": "source_uncertainty",
+            "sourceLines": [
+              1449
+            ],
+            "occurrences": 1,
+            "note": "Die gelieferte Transkription markiert hier 1 unsichere Lesart(en) mit [?] (Quellzeile(n) 1449). Die Markierungen und die unmittelbar davor stehenden Wörter bleiben erhalten; am Scan prüfen."
+          },
+          {
+            "volume": "21375",
+            "pdfPages": [
+              40
+            ],
+            "kind": "source_uncertainty",
+            "sourceLines": [
+              1518
+            ],
+            "occurrences": 1,
+            "note": "Die gelieferte Transkription markiert hier 1 unsichere Lesart(en) mit [?] (Quellzeile(n) 1518). Die Markierungen und die unmittelbar davor stehenden Wörter bleiben erhalten; am Scan prüfen."
+          },
+          {
+            "volume": "21375",
+            "pdfPages": [
+              43
+            ],
+            "kind": "source_uncertainty",
+            "sourceLines": [
+              1685
+            ],
+            "occurrences": 1,
+            "note": "Die gelieferte Transkription markiert hier 1 unsichere Lesart(en) mit [?] (Quellzeile(n) 1685). Die Markierungen und die unmittelbar davor stehenden Wörter bleiben erhalten; am Scan prüfen."
+          },
+          {
+            "volume": "21375",
+            "pdfPages": [
+              44
+            ],
+            "kind": "source_uncertainty",
+            "sourceLines": [
+              1737
+            ],
+            "occurrences": 1,
+            "note": "Die gelieferte Transkription markiert hier 1 unsichere Lesart(en) mit [?] (Quellzeile(n) 1737). Die Markierungen und die unmittelbar davor stehenden Wörter bleiben erhalten; am Scan prüfen."
+          },
+          {
+            "volume": "21375",
+            "pdfPages": [
+              47
+            ],
+            "kind": "source_uncertainty",
+            "sourceLines": [
+              1918
+            ],
+            "occurrences": 1,
+            "note": "Die gelieferte Transkription markiert hier 1 unsichere Lesart(en) mit [?] (Quellzeile(n) 1918). Die Markierungen und die unmittelbar davor stehenden Wörter bleiben erhalten; am Scan prüfen."
+          },
+          {
+            "volume": "21375",
+            "pdfPages": [
+              1
+            ],
+            "kind": "partial_transcription",
+            "note": "Teilfassung: PDF 1 und 3–50 von 323 Scan-Seiten. PDF 2 ist ausgelassen. Ab PDF 51 ist noch kein transkribierter Text enthalten."
+          }
+        ],
+        "coverage": {
+          "status": "partial",
+          "throughPdf": 50,
+          "scanPages": 323,
+          "omittedPdfPages": [
+            2
+          ]
+        },
+        "editionNote": "Teilfassung bis PDF 50 von 323. Die Fortsetzung ab PDF 51 ist nicht enthalten. Niqqud mit Dicta Nakdan im rabbinischen Modus ergänzt; fachliche Prüfung bleibt erforderlich."
       },
       {
         "id": "21519",

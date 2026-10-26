@@ -1,10 +1,11 @@
-# Sechs Rashash-Textfassungen · Prüfvermerk vom 26. Oktober 2026
+# Sieben Rashash-Textfassungen · Prüfvermerk vom 26. Oktober 2026
 
-Die sechs hochgeladenen Transkriptionen sind in Azara unter **Siddur & Kavvanot → HaRashash · Text mit Niqqud** erschlossen. Teil III liegt in zwei getrennten Scanfassungen vor. Die TXT-Downloads enthalten XML-Struktur-Tags und sind UTF-8-Dateien. Die hochgeladenen Originaltranskriptionen werden unverändert erhalten. Teil I wurde bereits mit Tags und Niqqud geliefert; hierfür ist der TXT-Download zugleich die unveränderte Quelldatei.
+Die sieben hochgeladenen Transkriptionen sind in Azara unter **Siddur & Kavvanot → HaRashash · Text mit Niqqud** erschlossen. Teil III liegt in zwei getrennten Scanfassungen vor. Die TXT-Downloads enthalten XML-Struktur-Tags und sind UTF-8-Dateien. Die hochgeladenen Originaltranskriptionen werden unverändert erhalten. Teil I wurde bereits mit Tags und Niqqud geliefert; hierfür ist der TXT-Download zugleich die unveränderte Quelldatei.
 
 | Band | Thema | HebrewBooks | Textseiten | Tabellen |
 |---|---|---|---:|---:|
 | I | Grundlagen, Morgenberachot, Tallit, Tefillin und Ketoret | 21376 | 176 | 308 |
+| II (Teilfassung bis PDF 50) | Hodu, Pesukei deZimra und Kaddisch-Kavvanot | 21375 | 49 | 102 |
 | III | Erev Schabbat, Kabbalat Schabbat und Arvit | 21519 | 72 | 149 |
 | III | Erev Schabbat, Kabbalat Schabbat und Arvit | 21520 | 72 | 149 |
 | VI | Schawuot, Lernen in der Nacht, Schacharit und Musaf | 21518 | 24 | 28 |
@@ -131,3 +132,24 @@ Die nachgereichte Datei `Siddur_HaRashash_Teil_1_HB21376_Niqqud_Tags_Scanabgleic
 Der Dateivergleich ergibt 43 geänderte Textabsätze auf 22 Seiten (PDF 6, 7, 8, 10, 17, 19, 23, 24, 43, 48, 73, 77, 81, 85, 89, 94, 97, 101, 119, 133, 143 und 145). Seitenfolge, stabile IDs, alle 308 Tabellen und geschützten Namen-Texte sowie ihre Tags bleiben gegenüber der vorherigen Fassung gleich. Die aktualisierten Absätze werden vollständig in die Webdaten übernommen.
 
 Der Umfang bleibt bei 176 Textseiten und 4.110 Tabellenzeilen. Die mitgelieferten Metadaten sind unverändert: Sie nennen weiterhin 143 offene Lesestellen und nur selektiv geprüftes automatisches Niqqud. Der Dateiname Scanabgleich wird deshalb nicht als neue vollständige sprachliche Freigabe interpretiert. Bei dieser Ersetzung wurde kein eigener erneuter Scanabgleich durchgeführt. Alle übrigen Bände bleiben unverändert.
+
+
+## Ergänzung: Teil II · HB21375 · Teilfassung bis PDF 50
+
+Die hochgeladene Datei `Siddur_HaRashash_Teil_2_HB21375_bis_PDF050.txt` enthält ausschließlich PDF 1 und 3–50, insgesamt 49 Textseiten. Der Originalscan hat 323 Seiten. PDF 2 ist laut Vorlage die ausgelassene Stempelseite. Ab PDF 51 liegt in diesem Import kein Text vor. In der Leseansicht und im TXT-Download wird der Umfang ausdrücklich als Teilfassung ausgewiesen. Verweise auf spätere Seiten bleiben beim Originalscan und öffnen keine unzutreffende Ersatzseite.
+
+Der hebräische Fließtext wurde mit dem öffentlich von Nakdan Pro verwendeten Dicta-Dienst im rabbinischen Modus vokalisiert. Der Endpunkt wurde am 26. Oktober 2026 anhand des aktuellen Anwendungsskripts von `https://nakdanpro.dicta.org.il/` verifiziert. Alle acht Textblöcke wurden erfolgreich verarbeitet. Die vorhandene vokalisierte Shaliehsaboo-Ausgabe dient zusätzlich nur bei exakt gleichlautenden Mehrwortpassagen als Punktierungsreferenz. Bei diesem Band werden daraus ausschließlich Niqqud-Zeichen, keine zusätzlichen Kantillationszeichen übernommen.
+
+Die unveränderte Quelle wird unter `texts/rashash/sources/HB21375_Original.txt` erhalten; die neue UTF-8-TXT mit XML-Tags unter `texts/rashash/Siddur_HaRashash_Teil_2_HB21375_bis_PDF050_Niqqud_Tags.txt`. Namen, Abkürzungen, einzelne Buchstaben und bereits punktierte Wörter bleiben geschützt. Die 102 Tabellen mit 1.346 Textzeilen und einer Leerzeile bleiben zeichengetreu erhalten. Geschützte Tabellen erhalten kein aus dem Sprachmodell ergänztes Namen-Niqqud. Es wird keine künstliche Aussprache erzeugt.
+
+Alle sieben Unsicherheitsmarker auf PDF 9, 38, 39, 40, 43, 44 und 47 bleiben erhalten und tragen zusätzlich `unclear`-Tags und seitenbezogene Prüfvermerke. Die unsicheren Namenpunktierungen und Buchstabenkombinationen werden nicht aus dem Zusammenhang erraten. Der Kopftext beschreibt den ursprünglichen unvokalisierten Stand; die Metadaten kennzeichnen das nachträglich ergänzte Niqqud als fachlich zu prüfende Arbeitsfassung. Diese technische Aufbereitung ist keine neue vollständige Kollation am Originalscan.
+
+Die Offline-Prüfung vergleicht jede Quellzeile, alle Konsonanten und Satzzeichen, vorhandenes Niqqud, geschützte Wörter und Tabellen sowie die Übereinstimmung zwischen XML und Webdaten. Die übrigen sechs Textfassungen bleiben unverändert.
+
+Wiederholung nur für diese Teilfassung:
+
+```bash
+python3 scripts/prepare-rashash.py /pfad/zum/upload /pfad/zum/cache --volume 21375 --through-pdf 50
+npm test
+npm run build
+```

@@ -3,18 +3,53 @@ import assert from 'node:assert/strict';
 import {execFileSync} from 'node:child_process';
 import {readFile} from 'node:fs/promises';
 import {createHash} from 'node:crypto';
-import {RashashTextStore,renderRashashReader,renderRashashPage,searchableHebrew} from '../src/rashash-reader.js';
+import {RashashTextStore,renderRashashReader,renderRashashPage,searchableHebrew,hasRashashTextPage} from '../src/rashash-reader.js';
 import {stripHtml} from '../src/readalong.js';
 
-test('All six Rashash editions retain every source letter, original vowel and all tables',()=>{
+test('All seven Rashash editions retain every source letter, original vowel and all tables',()=>{
  const report=JSON.parse(execFileSync('python3',['scripts/validate-rashash.py'],{encoding:'utf8'}));
- assert.deepEqual(report.map(v=>v.id),['21376','21519','21520','21518','21722','21723']);
- assert.equal(report.reduce((n,v)=>n+v.pages,0),524);assert.equal(report.reduce((n,v)=>n+v.tables,0),1147);
+ assert.deepEqual(report.map(v=>v.id),['21376','21375','21519','21520','21518','21722','21723']);
+ assert.equal(report.reduce((n,v)=>n+v.pages,0),573);assert.equal(report.reduce((n,v)=>n+v.tables,0),1249);
  assert.ok(report.every(v=>(v.importedUnchanged||v.addedMarks>1000)&&v.protectedTokens>100));
 });
 test('Rashash Hebrew search works with or without Niqqud and quote variants',()=>{
  assert.equal(searchableHebrew('שַׁבָּת'),searchableHebrew('שבת'));
  assert.equal(searchableHebrew('רש״ש'),searchableHebrew('רש"ש'));
+});
+test('HB21375 partial text keeps 49 pages and seven uncertainties while exposing only available text pages',async()=>{
+ const index=JSON.parse(await readFile('data/rashash.json','utf8'));
+ const doc=index.documents.find(d=>d.id==='21375'),metadata=doc.transcription;
+ const volume=JSON.parse(await readFile(metadata.jsonPath,'utf8'));
+ assert.equal(doc.pages,323);assert.equal(metadata.pdfPages,50);
+ assert.deepEqual(volume.pages.map(p=>p.pdfPage),[1,...Array.from({length:48},(_,i)=>i+3)]);
+ assert.deepEqual(metadata.coverage,{status:'partial',throughPdf:50,scanPages:323,omittedPdfPages:[2]});
+ let uncertainties=0,tables=0;
+ for(const page of volume.pages){
+  for(const block of page.blocks){
+   if(block.kind==='table')tables++;
+   for(const item of block.kind==='table'?block.rows:[block]){
+    uncertainties+=(item.text.match(/\[\?\]/g)||[]).length;
+    if(item.text.includes('[?]'))assert.ok(item.html.includes('rashash-unclear'));
+    assert.equal(stripHtml(item.html),item.text);
+   }
+  }
+ }
+ assert.equal(uncertainties,7);assert.equal(tables,102);
+ assert.deepEqual(metadata.flags.filter(f=>f.kind==='source_uncertainty').map(f=>f.pdfPages[0]),[9,38,39,40,43,44,47]);
+ const tagged=await readFile(metadata.txtPath,'utf8');
+ assert.equal((tagged.match(/<unclear /g)||[]).length,7);
+ assert.ok(tagged.includes('<coverage status="partial" through-pdf="50" scan-pages="323"'));
+ assert.ok(tagged.includes('engine="Dicta Nakdan" genre="rabbinic"'));
+ assert.ok(searchableHebrew(volume.pages.find(p=>p.pdfPage===3).blocks.map(b=>b.text||'').join(' ')).includes('הודו'));
+ for(const n of [1,3,50])assert.ok(hasRashashTextPage(metadata,n));
+ for(const n of [0,2,51,54,323])assert.equal(hasRashashTextPage(metadata,n),false);
+ const html=renderRashashReader({documents:index.documents,id:'21375',pageNumber:50,volume});
+ assert.ok(html.includes('Teilfassung · bis PDF 50 von 323'));
+ assert.ok(html.includes('data-open-rashash="21375" data-page="50"'));
+ const missing=renderRashashReader({documents:index.documents,id:'21375',pageNumber:54,volume});
+ assert.ok(missing.includes('PDF 54 ist noch nicht transkribiert'));
+ assert.ok(missing.includes('data-open-rashash="21375" data-page="54"'));
+ assert.ok(!missing.includes('<span>PDF 1</span>'));
 });
 test('HB21376 imports the Scanabgleich upload verbatim with stable IDs, tables and all open readings',async()=>{
  const index=JSON.parse(await readFile('data/rashash.json','utf8'));
@@ -74,7 +109,7 @@ test('The checked Jom Kippur prayer distinguishes imperative mecheh from partici
 });
 test('Text edition keeps review flags visible and links the exact TXT and scan page',async()=>{
  const index=JSON.parse(await readFile('data/rashash.json','utf8'));
- for(const id of ['21376','21519','21520','21518','21722','21723']){
+ for(const id of ['21376','21375','21519','21520','21518','21722','21723']){
   const metadata=index.documents.find(d=>d.id===id).transcription;
   const volume=JSON.parse(await readFile(metadata.jsonPath,'utf8'));
   const page=metadata.flags.at(-1).pdfPages.at(-1);

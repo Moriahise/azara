@@ -2,7 +2,7 @@
 """Prepare supplied user transcriptions. Run manually; builds need no API.
 
 Usage: python scripts/prepare-rashash.py /absolute/upload/directory /absolute/cache
-Requires requests. Dicta's rabbinic Nakdan supplies proposed vowels, never text.
+Dicta's rabbinic Nakdan supplies proposed vowels, never text.
 Every source letter, original vowel, space and punctuation mark is retained.
 """
 import argparse
@@ -15,14 +15,14 @@ from pathlib import Path
 import re
 import xml.etree.ElementTree as ET
 
-import requests
+from urllib.request import Request, urlopen
 
 ROOT = Path(__file__).resolve().parent.parent
 ENDPOINT = 'https://nakdan-u2-1a.loadbalancer.dicta.org.il/api'
 VERSION = '2026-10-25-rabbinic-v1'
 MARK = re.compile('[\u0591-\u05af\u05b0-\u05bd\u05bf\u05c1\u05c2\u05c4\u05c5\u05c7]')
 WORD = re.compile('[\u05d0-\u05ea][\u05d0-\u05ea\u0591-\u05c7]*(?:["\'״׳][\u05d0-\u05ea\u0591-\u05c7]*)*')
-PAGE = re.compile(r'━+\s+דף (.*?)\s+\(PDF (\d+)\)\s+━+')
+PAGE = re.compile(r'━+\s+(?:דף )?(.*?)\s+\(PDF (\d+)\)\s+━+')
 SACRED = {'יהוה','אהיה','אדני','אלהים','אלהינו','אלהיכם','אלוהינו','הויה',
           'יאהדונהי','יאההויהה','איההיוהה','יהו','הוי','ויה','יוה','היו','והי',
           'אבגיתץ','קרע','שטן','נגד','יכש','בטר','צתג','חקב','טנע','יגל','פזק',
@@ -33,6 +33,7 @@ SACRED = {'יהוה','אהיה','אדני','אלהים','אלהינו','אלהי
           'אלם','בוכו','כוזו','במוכסז','למד','שין','מם','נון','צדי','קוף','ריש','תיו',
           'יאהלוההים','יאהי','אאללההייםם','תצמץ','אכתריאל'}
 VOLUMES = [
+ ('21375',2,'bis_PDF050','Werktagsgebete · Hodu und Pesukei deZimra · bis PDF 50',323),
  ('21519',3,'Erev_Schabbat','Erev Schabbat · Kabbalat Schabbat & Arvit · HB21519',73),
  ('21520',3,'Erev_Schabbat','Erev Schabbat · Kabbalat Schabbat & Arvit',73),
  ('21518',6,'Schawuot','Schawuot · Lernen in der Nacht, Schacharit & Musaf',25),
@@ -110,10 +111,12 @@ def graft(original, candidate):
 def call_nakdan(text,cache):
     key=sha256((VERSION+text).encode()).hexdigest();p=cache/(key+'.json')
     if p.exists(): return json.loads(p.read_text())
-    r=requests.post(ENDPOINT,json={'task':'nakdan','genre':'rabbinic','data':text,
+    payload={'task':'nakdan','genre':'rabbinic','data':text,
       'addmorph':True,'keepmetagim':True,'keepqq':False,'matchpartial':True,
-      'nodageshdefmem':True,'patachma':False,'useTokenization':True},timeout=55)
-    r.raise_for_status();body=r.json()
+      'nodageshdefmem':True,'patachma':False,'useTokenization':True}
+    request=Request(ENDPOINT,data=json.dumps(payload).encode(),headers={'Content-Type':'application/json'})
+    with urlopen(request,timeout=55) as response:
+        body=json.load(response)
     if not isinstance(body,dict) or not isinstance(body.get('data'),list):
         raise ValueError('Unexpected Nakdan response')
     # Retain a small reproducible research cache, outside the Git repository.
@@ -178,7 +181,7 @@ def prayer_phrases():
             elif index[key]!=phrase:index[key]=None
     return indexes
 
-def refine_prayer_line(original,pointed,indexes,stats):
+def refine_prayer_line(original,pointed,indexes,stats,niqqud_only=False):
     source=list(WORD.finditer(original));result=[m.group() for m in WORD.finditer(pointed)]
     keys=[bare(m.group()) for m in source];replaced=set()
     for n in reversed(indexes):
@@ -187,6 +190,7 @@ def refine_prayer_line(original,pointed,indexes,stats):
             if not phrase:continue
             for j,word in enumerate(phrase,i):
                 if j in replaced or protected(source[j].group()):continue
+                if niqqud_only:word=re.sub('[\u0591-\u05af]','',word)
                 value,ok=graft(source[j].group(),word)
                 if ok and MARK.search(value):
                     result[j]=value;replaced.add(j)
@@ -276,22 +280,28 @@ def source_name_line(line):
     return bool(re.fullmatch(r'[א-ת ]+',content)) and len(content.split())>=2 and all(2<=len(w)<=3 for w in content.split())
 
 def main():
-    ap=argparse.ArgumentParser();ap.add_argument('input',type=Path);ap.add_argument('cache',type=Path);ap.add_argument('--volume',choices=[v[0] for v in VOLUMES]);args=ap.parse_args()
+    ap=argparse.ArgumentParser();ap.add_argument('input',type=Path);ap.add_argument('cache',type=Path);ap.add_argument('--volume',choices=[v[0] for v in VOLUMES]);ap.add_argument('--through-pdf',type=int);args=ap.parse_args()
+    if args.volume=='21375' and args.through_pdf!=50:
+        ap.error('HB21375 currently requires --through-pdf 50 for the supplied partial transcription.')
+    if args.through_pdf is not None and args.volume!='21375':
+        ap.error('--through-pdf is currently supported only for HB21375.')
     args.cache.mkdir(parents=True,exist_ok=True)
     output=ROOT/'texts/rashash';(output/'sources').mkdir(parents=True,exist_ok=True)
     docs=json.loads((ROOT/'data/rashash.json').read_text())
     summaries={v['id']:v for v in docs.get('transcriptions',{}).get('volumes',[])};phrase_index=prayer_phrases()
-    all_flags=[f for v in summaries.values() for f in v.get('flags',[])]
+    all_flags=json.loads((ROOT/'data/rashash-text-audit.json').read_text())['flags']
     for ident,part,slug,title,total in VOLUMES:
         if args.volume and ident!=args.volume:continue
+        if ident=='21375' and args.through_pdf is None:continue
+        imported_total=args.through_pdf if ident=='21375' else total
         source=next(args.input.glob('*HB'+ident+'*.txt'));raw=source.read_text();lines=raw.splitlines()
         volume_flags=[f for f in FLAGS if f['volume']==ident]
-        if ident in ('21519','21722'):
+        if ident in ('21375','21519','21722'):
             uncertain={};current_page=0
             for line_no,line in enumerate(lines,1):
                 marker=PAGE.fullmatch(line)
                 if marker:current_page=int(marker[2])
-                if '[?]' in line:uncertain.setdefault(current_page,[]).append({'line':line_no,'count':line.count('[?]')})
+                if current_page and '[?]' in line:uncertain.setdefault(current_page,[]).append({'line':line_no,'count':line.count('[?]')})
             for number,places in uncertain.items():
                 count=sum(p['count'] for p in places)
                 volume_flags.append({'volume':ident,'pdfPages':[number],'kind':'source_uncertainty',
@@ -308,6 +318,10 @@ def main():
               'note':'Die mit [?] markierte Buchstabenkombination אאללההייםם bleibt unverändert. Die Lesart ist am Originalscan zu prüfen.'})
         all_flags=[f for f in all_flags if f['volume']!=ident]+volume_flags
         first=next(i for i,x in enumerate(lines) if PAGE.fullmatch(x));prefix=lines[:first]
+        if ident=='21375':
+            volume_flags.append({'volume':ident,'pdfPages':[1],'kind':'partial_transcription',
+                'note':'Teilfassung: PDF 1 und 3–50 von 323 Scan-Seiten. PDF 2 ist ausgelassen. Ab PDF 51 ist noch kein transkribierter Text enthalten.'})
+            all_flags=[f for f in all_flags if f['volume']!=ident]+volume_flags
         stats=Counter();newlines=lines.copy();chunks=[];indices=[];size=0;in_table=False;table_lines=set();name_lines=set()
         for n in range(first,len(lines)):
             # Names in diagrams are not ordinary words. Keep whole tables, even
@@ -319,7 +333,7 @@ def main():
             if ident=='21519' and not in_table and source_name_line(lines[n]):
                 name_lines.add(n);stats['source_name_lines_preserved']+=1
             # Structural delimiters remain source text; only textual lines sent.
-            if PAGE.fullmatch(lines[n]) or lines[n].startswith('===') or not letters(lines[n]):continue
+            if (ident=='21375' and (n in table_lines or n in name_lines)) or PAGE.fullmatch(lines[n]) or lines[n].startswith('===') or not letters(lines[n]):continue
             if size+len(lines[n])>5500 and indices:chunks.append(indices);indices=[];size=0
             indices.append(n);size+=len(lines[n])+1
         if indices:chunks.append(indices)
@@ -329,7 +343,7 @@ def main():
             assert len(result)==len(indices)
             for n,value in zip(indices,result):
                 if n not in table_lines and n not in name_lines:
-                    value=refine_prayer_line(lines[n],value,phrase_index,stats)
+                    value=refine_prayer_line(lines[n],value,phrase_index,stats,niqqud_only=ident=='21375')
                     if ident=='21519':value=refine_hb21519_line(lines[n],value)
                     # Do not settle a word which the transcriber marked uncertain.
                     old_words=list(WORD.finditer(lines[n]));new_words=list(WORD.finditer(value))
@@ -344,6 +358,7 @@ def main():
         xml=['<?xml version="1.0" encoding="UTF-8"?>',f'<siddur id="HB{ident}" part="{part}" xml:lang="he" schema="azara-rashash-1" niqqud-status="machine-assisted-draft">',
              '<metadata>',f'<title>{escape(title)}</title>',f'<source filename="{escape(source.name,quote=True)}" sha256="{sha256(raw.encode()).hexdigest()}" />',
              '<vocalization engine="Dicta Nakdan" genre="rabbinic" status="editorial-review-required" />',
+             *([f'<coverage status="partial" through-pdf="{imported_total}" scan-pages="{total}" omitted-pdf="2" />'] if imported_total<total else []),
              '<policy>Alle Quellbuchstaben bleiben erhalten. Namen, Abkürzungen, einzelne Buchstaben und vorhandene Punktierung werden nicht automatisch verändert. Ergänztes Niqqud ist kein vollständig am Scan geprüftes Original-Niqqud.</policy>',
              '</metadata>','<transcription_header status="original-before-vocalization">']
         for n,value in enumerate(prefix,1):xml.append(f'<line source-line="{n}">{escape(value)}</line>')
@@ -382,25 +397,28 @@ def main():
             if table is not None:table['rows'].append(block)
             else:blocks.append(block)
         close_page();xml.append('</siddur>');tagged='\n'.join(xml)+'\n';ET.fromstring(tagged)
-        assert [p['pdfPage'] for p in pages]==[1,*range(3,total+1)]
+        assert [p['pdfPage'] for p in pages]==[1,*range(3,imported_total+1)]
         # Check all original text lines and original protected words byte-for-byte.
         assert all(bare(a)==bare(b) for a,b in zip(lines,newlines))
         name=f'Siddur_HaRashash_Teil_{part}_HB{ident}_{slug}_Niqqud_Tags.txt'
         sourcepath=output/'sources'/f'HB{ident}_Original.txt';sourcepath.write_text(raw)
         (output/name).write_text(tagged)
-        entry={'id':ident,'part':part,'title':title,'pages':len(pages),'pdfPages':total,'txtPath':'texts/rashash/'+name,
+        entry={'id':ident,'part':part,'title':title,'pages':len(pages),'pdfPages':imported_total,'txtPath':'texts/rashash/'+name,
                'sourcePath':'texts/rashash/sources/'+sourcepath.name,'jsonPath':f'data/rashash-text-{ident}.json',
                'status':'Niqqud-Arbeitsfassung · redaktionell zu prüfen','statistics':dict(stats),'flags':volume_flags}
+        if imported_total<total:
+            entry.update(coverage={'status':'partial','throughPdf':imported_total,'scanPages':total,'omittedPdfPages':[2]},
+                editionNote=f'Teilfassung bis PDF {imported_total} von {total}. Die Fortsetzung ab PDF {imported_total+1} ist nicht enthalten. Niqqud mit Dicta Nakdan im rabbinischen Modus ergänzt; fachliche Prüfung bleibt erforderlich.')
         (ROOT/entry['jsonPath']).write_text(json.dumps({**entry,'pages':pages},ensure_ascii=False,separators=(',',':'))+'\n')
         summaries[ident]=entry
         doc=next(x for x in docs['documents'] if x['id']==ident);doc['transcription']=entry
         print(json.dumps({'volume':ident,'pages':len(pages),'statistics':dict(stats)},ensure_ascii=False),flush=True)
     ordered=sorted(summaries.values(),key=lambda v:(v['part'],v['id']))
-    docs['transcriptions']={'schemaVersion':1,'date':'2026-10-25','volumes':ordered,
+    docs['transcriptions']={'schemaVersion':1,'date':'2026-10-26','volumes':ordered,
       'policy':'Maschinell unterstützte Niqqud-Arbeitsfassungen der hochgeladenen Transkriptionen. Keine vollständige Kollation; Originalscan bleibt maßgebend.'}
     docs['warnings']=[w for w in docs['warnings'] if not w.startswith(('Die gesamte Abfolge','Drei Transkriptionen')) and not re.match(r'\d+ Transkriptionen',w)]
     docs['warnings'].append(f'{len(ordered)} Transkriptionen sind strukturiert und mit zusätzlichem Niqqud erschlossen. Die Gesamtjahresfolge und die ergänzte Punktierung sind nicht vollständig am Scan geprüft; bekannte Lücken tragen Prüfmarkierungen.')
     (ROOT/'data/rashash.json').write_text(json.dumps(docs,ensure_ascii=False,indent=2)+'\n')
-    (ROOT/'data/rashash-text-audit.json').write_text(json.dumps({'date':'2026-10-25','flags':all_flags,'volumes':ordered},ensure_ascii=False,indent=2)+'\n')
+    (ROOT/'data/rashash-text-audit.json').write_text(json.dumps({'date':'2026-10-26','flags':all_flags,'volumes':ordered},ensure_ascii=False,indent=2)+'\n')
 
 if __name__=='__main__':main()
