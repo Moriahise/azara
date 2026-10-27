@@ -5,7 +5,7 @@ Die acht hochgeladenen Transkriptionen sind in Azara unter **Siddur & Kavvanot �
 | Band | Thema | HebrewBooks | Textseiten | Tabellen |
 |---|---|---|---:|---:|
 | I | Grundlagen, Morgenberachot, Tallit, Tefillin und Ketoret | 21376 | 176 | 308 |
-| I laut Dateiname (Teilfassung bis PDF 50) | Schabbatmorgen, Morgenberachot, Korbanot und Beginn Pesukei deZimra | 21521 | 49 | 45 |
+| I laut Dateiname (bis zum Scanende PDF 231) | Schabbat-Schacharit, Musaf, Mincha und Ausgang des Schabbat | 21521 | 230 | 483 |
 | II (bis zum Scanende PDF 323) | Werktagsgebete, Amida, Birkhat Kohanim, Selichot, Mincha und Arvit | 21375 | 322 | 843 |
 | III | Erev Schabbat, Kabbalat Schabbat und Arvit | 21519 | 72 | 149 |
 | III | Erev Schabbat, Kabbalat Schabbat und Arvit | 21520 | 72 | 149 |
@@ -26,7 +26,7 @@ Schutzregeln:
 - Alle ursprünglichen Buchstaben, Leerzeichen und Satzzeichen bleiben im Text erhalten.
 - Jedes bereits vokalisierte Quellwort bleibt unverändert.
 - Gottesnamen, erkannte Buchstabenkombinationen, Abkürzungen und Einzelbuchstaben erhalten kein automatisch vorgeschlagenes neues Niqqud.
-- Sämtliche 2.035 Tabellen bleiben einschließlich ihrer Punktierung und Abstände unverändert. Es wird kein fehlendes Namen-Niqqud aus einem Sprachmodell ergänzt.
+- Sämtliche 2.473 Tabellen bleiben einschließlich ihrer Punktierung und Abstände unverändert. Es wird kein fehlendes Namen-Niqqud aus einem Sprachmodell ergänzt.
 - In den Tabellen enthaltene Gebetswörter bleiben deshalb ebenfalls im ursprünglichen Transkriptionsstand.
 - Die lineare Transkription rekonstruiert keine verlorene räumliche Anordnung der handschriftlichen Diagramme. Dafür dient der Originalscan.
 
@@ -225,6 +225,25 @@ Die technische Prüfung kontrolliert sämtliche Quellzeilen, vorhandene Vokalzei
 
 ```bash
 python3 scripts/prepare-rashash.py /pfad/zum/upload /pfad/zum/cache --volume 21521 --through-pdf 50
+npm test
+npm run build
+```
+
+
+## Aktualisierung: HB21521 · bis zum Scanende PDF 231
+
+Die Vorlage `Siddur_HaRashash_Teil_1_HB21521_bis_PDF231.txt` ersetzt die Teilfassung bis PDF 50. Tatsächlich enthält sie PDF 1 und 3–231, insgesamt 230 Textseiten. PDF 2 bleibt als Stempelseite ausgelassen. Der Vorspann nennt noch den früheren Stand bis PDF 200 und fehlende Seiten 201–231. Dieser Vorspann bleibt unverändert als Quelltext erhalten; ein Prüfvermerk auf PDF 1 erklärt die Abweichung. Die XML-/JSON-Abdeckungsmetadaten richten sich nach den tatsächlich vorhandenen Seiten und kennzeichnen den Bestand als bis zum Scanende reichend. Musaf PDF 217 und Mincha PDF 221 sind nun auch als Text erreichbar.
+
+Die neue UTF-8-TXT mit Niqqud und XML-Tags heißt `Siddur_HaRashash_Teil_1_HB21521_bis_PDF231_Niqqud_Tags.txt`. Die Originalquelle bleibt unter `texts/rashash/sources/HB21521_Original.txt` erhalten. Der vorige Download wird im aktuellen Dateibaum ersetzt und bleibt in der Git-Historie nachvollziehbar. Die 49 bisherigen Textseiten stimmen unverändert überein; Niqqud, Inline-Tags, IDs, Zeilennummern und gerenderte Inhalte werden exakt übernommen und durch einen Prüfsummenvergleich gesichert. Nur die neuen Fließtexte werden mit Dicta Nakdan im rabbinischen Modus vokalisiert.
+
+Alle 483 Tabellen mit 5.190 nichtleeren Zeilen und 21 Leerzeilen bleiben zeichengetreu erhalten. Neun zusammengezogene Tabellen-End-/Anfangsmarker werden als getrennte Strukturereignisse derselben Quellzeile verarbeitet. Vorhandene Punktierung, Abkürzungen, Namen und die dreizehn Middot-Nummern bleiben unverändert. In den neuen Schema-Abschnitten werden die kleinen Namen in Klammern über den Gebetswörtern ausdrücklich geschützt, etwa `נלך`, `אני` und `יין`. Vollständige Buchstabendiagramme in Klammern und eindeutig erkannte eigenständige Namenreihen erhalten ebenfalls kein automatisch ergänztes Niqqud. Die umgebenden Gebetswörter werden regulär vokalisiert.
+
+243 Unsicherheitsmarker auf 110 Textseiten bleiben mit `unclear`-Tags und seitenbezogenen Prüfvermerken erhalten. Auch das unmittelbar vor einem Marker stehende Wort wird nicht durch Vokalisierung als gesicherte Lesart festgelegt. Die beiden bereits vermerkten möglichen Quellwiederholungen auf PDF 45–46 und PDF 47 bleiben sichtbar und unverändert. Die fehlende verifizierte gedruckte Teilnummer und die vom Transkribenten zusammengeführten seitenübergreifenden Anmerkungen bleiben erläutert.
+
+Die technischen Prüfungen kontrollieren jede Quellzeile, Konsonanten, Satzzeichen, Originalpunktierung, Tabellen, Namenannotation, Nummerierung, stabile IDs und XML-/Webtextidentität. Das ergänzte Niqqud bleibt eine fachlich zu prüfende Arbeitsfassung. Der vollständig erfasste Seitenumfang ist keine Behauptung einer vollständigen philologischen Edition oder eines neuen vollständigen Scanabgleichs. Die anderen sieben Ausgaben bleiben unverändert.
+
+```bash
+python3 scripts/prepare-rashash.py /pfad/zum/upload /pfad/zum/cache --volume 21521 --through-pdf 231
 npm test
 npm run build
 ```

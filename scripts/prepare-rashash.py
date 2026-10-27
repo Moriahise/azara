@@ -48,6 +48,22 @@ STAGED_VOLUMES = {'21375':323,'21521':231}
 HB21375_EXTRA_NAMES = frozenset({'בם','פאי','חתך','אט','אכפץ','אכנסם','טדהד',
     'אידהנויה','קרעשטן','נגדיכש','בטרצתג','חקבטנע','יגלפזק','שקוצית',
     'יההווההו','יאי','יהה','משסג','ההה','האהיה','ואהיהו','יאהלהוהים'})
+HB21521_EXTRA_NAMES = frozenset({'אאלל','אידהנויה','חתך','סאל','במוכן','ינעם',
+    'יההווההו','האהיה','ואהיהו','האה'})
+
+def hb21521_symbol_offsets(line,page):
+    """Names above Shema words and explicit bracketed letter diagrams."""
+    offsets=set()
+    for bracket in re.finditer(r'\[([^\[\]]+)\]',line):
+        content=bracket[1].strip().rstrip('.')
+        words=content.split()
+        diagram=bool(words and words[0] in {'הו','הוה','יהו'} and len(words)>5
+                     and re.fullmatch('[א-ת ]+',content))
+        shema=bool(101<=page<=118 and not line.startswith('[') and words
+                   and all(1<=len(w)<=3 for w in words) and re.fullmatch('[א-ת ]+',content))
+        if diagram or shema:
+            offsets.update(bracket.start(1)+word.start() for word in WORD.finditer(bracket[1]))
+    return offsets
 
 def hb21375_name_line(line):
     """Recognize standalone diagram rows, not short prayer phrases."""
@@ -275,13 +291,25 @@ def refine_hb21519_line(original,pointed):
         pointed=pointed[:start]+value+pointed[end:]
     return pointed
 
-def inline_xml(text,original,names_line=False,volume=None,extra_sacred=()):
+def refine_hb21521_line(original,pointed):
+    """The annotated Shema passage refers to commandments, not matzot."""
+    if 'מצות [יין]' not in original:return pointed
+    changes=[]
+    for a,b in zip(WORD.finditer(original),WORD.finditer(pointed)):
+        if a.group()=='מצות':
+            value,ok=graft(a.group(),'מִצְוֹת');assert ok
+            changes.append((b.start(),b.end(),value))
+    for start,end,value in reversed(changes):pointed=pointed[:start]+value+pointed[end:]
+    return pointed
+
+def inline_xml(text,original,names_line=False,volume=None,extra_sacred=(),symbol_offsets=()):
     """Protected names and original pointing are independently addressable."""
     orig=list(WORD.finditer(original));now=list(WORD.finditer(text))
     assert len(orig)==len(now)
     out=[];last=0
     for a,b in zip(orig,now):
         out.append(escape(text[last:b.start()]));tag=protected(a.group(),extra_sacred)
+        if a.start() in symbol_offsets:tag='shem'
         if volume=='21375' and extra_sacred and hb21375_symbol_word(original,a.start()):tag='shem'
         if volume=='21519' and a.group() in hb21519_readings(original):
             tag='shem' if a.group()=='בוה' else None
@@ -352,10 +380,11 @@ def main():
         if ident in STAGED_VOLUMES:
             slug=f'bis_PDF{imported_total:03}'
             title=(f'Werktagsgebete · Hodu und Pesukei deZimra · bis PDF {imported_total}' if ident=='21375' else title+f' · bis PDF {imported_total}')
+            if ident=='21521' and imported_total==total:title=f'Schabbat · Schacharit, Musaf und Mincha · HB21521 · bis PDF {total}'
         source=next(args.input.glob(f'*HB{ident}_{slug}.txt' if ident in STAGED_VOLUMES else '*HB'+ident+'*.txt'));raw=source.read_text();lines=raw.splitlines()
         previous=summaries.get(ident)
         reused,reused_pages,reused_markup=reusable_pointing(lines,previous) if ident in STAGED_VOLUMES else ({},0,{})
-        extra_names=HB21375_EXTRA_NAMES if ident=='21375' and imported_total>=200 else frozenset({'אאלל','אידהנויה'}) if ident=='21521' else ()
+        extra_names=HB21375_EXTRA_NAMES if ident=='21375' and imported_total>=200 else HB21521_EXTRA_NAMES if ident=='21521' else ()
         volume_flags=[f for f in FLAGS if f['volume']==ident]
         if ident in ('21375','21521','21519','21722'):
             uncertain={};current_page=0
@@ -368,6 +397,9 @@ def main():
                 volume_flags.append({'volume':ident,'pdfPages':[number],'kind':'source_uncertainty',
                   'sourceLines':[p['line'] for p in places],'occurrences':count,
                   'note':f'Die gelieferte Transkription markiert hier {count} unsichere Lesart(en) mit [?] (Quellzeile(n) '+', '.join(str(p['line']) for p in places)+'). Die Markierungen und die unmittelbar davor stehenden Wörter bleiben erhalten; am Scan prüfen.'})
+        if ident=='21521' and imported_total==231 and 'Noch nicht enthalten: PDF 201–231.' in raw[:2000]:
+            volume_flags.append({'volume':ident,'pdfPages':[1],'kind':'source_header_coverage_mismatch',
+                'note':'Der unverändert erhaltene Quellvorspann nennt noch PDF 1–200 und fehlende PDF 201–231. Tatsächlich enthält die Datei PDF 1 und 3–231, insgesamt 230 Textseiten. Die Abdeckungsmetadaten richten sich nach den vorhandenen Seitenmarkierungen.'})
         if ident=='21722':
             volume_flags.append({'volume':ident,'pdfPages':[132],'kind':'service_cross_reference',
               'note':'Der Hinweis zu Mincha und Neila verweist auf bereits erklärte gemeinsame Kavvanot. Diese Seite ist kein eigenständiger vollständiger Neila-Gebetstext.'})
@@ -383,11 +415,12 @@ def main():
             volume_flags.append({'volume':ident,'pdfPages':[1],'kind':'partial_transcription',
                 'note':f'Teilfassung: PDF 1 und 3–{imported_total} von {total} Scan-Seiten. PDF 2 ist ausgelassen. Ab PDF {imported_total+1} ist noch kein transkribierter Text enthalten.'})
             all_flags=[f for f in all_flags if f['volume']!=ident]+volume_flags
-        stats=Counter();newlines=lines.copy();chunks=[];indices=[];size=0;table_depth=0;table_lines=set();name_lines=set();number_lines=set()
+        stats=Counter();newlines=lines.copy();chunks=[];indices=[];size=0;table_depth=0;table_lines=set();name_lines=set();number_lines=set();symbol_offsets={};source_page=0
         if reused:
             stats['reused_pages']=reused_pages;stats['reused_source_lines']=len(reused)
             for n,value in reused.items():newlines[n]=value
         for n in range(first,len(lines)):
+            if marker:=PAGE.fullmatch(lines[n]):source_page=int(marker[2])
             # Names in diagrams are not ordinary words. Keep whole tables, even
             # their labels, exactly as supplied; do not infer missing pointing.
             if TABLE_MARKERS.fullmatch(lines[n]):
@@ -402,6 +435,12 @@ def main():
                 name_lines.add(n);stats['source_name_lines_preserved']+=1
             if ident=='21375' and extra_names and n not in reused and not table_depth and hb21375_name_line(lines[n]):
                 name_lines.add(n);stats['source_name_lines_preserved']+=1
+            if ident=='21521' and n not in reused and not table_depth:
+                offsets=hb21521_symbol_offsets(lines[n],source_page)
+                if offsets:symbol_offsets[n]=offsets
+                whole_name_line=hb21375_name_line(lines[n]) or lines[n] in {'א אל אלה אלהי אלהים','יהו ינעם'}
+                if whole_name_line or (offsets and offsets=={w.start() for w in WORD.finditer(lines[n])}):
+                    name_lines.add(n);stats['source_name_lines_preserved']+=1
             if ident=='21521' and not table_depth and lines[n] in ('א','ב','ג','ד','ה','ו','ז','ח','ט','י','יא','יב','יג'):
                 number_lines.add(n);stats['source_number_lines_preserved']+=1
             # Structural delimiters remain source text; only textual lines sent.
@@ -418,11 +457,12 @@ def main():
                 if n not in table_lines and n not in name_lines:
                     value=refine_prayer_line(lines[n],value,phrase_index,stats,niqqud_only=ident in STAGED_VOLUMES,extra_sacred=extra_names)
                     if ident=='21519':value=refine_hb21519_line(lines[n],value)
+                    if ident=='21521':value=refine_hb21521_line(lines[n],value)
                     # Do not settle a word which the transcriber marked uncertain.
                     old_words=list(WORD.finditer(lines[n]));new_words=list(WORD.finditer(value))
                     replacements=[]
                     for a,b in zip(old_words,new_words):
-                        if re.match(r'\s*\[\?\]',lines[n][a.end():]) or (extra_names and hb21375_symbol_word(lines[n],a.start())):replacements.append((b.start(),b.end(),a.group()))
+                        if re.match(r'\s*\[\?\]',lines[n][a.end():]) or a.start() in symbol_offsets.get(n,()) or (extra_names and hb21375_symbol_word(lines[n],a.start())):replacements.append((b.start(),b.end(),a.group()))
                     for start,end,original_word in reversed(replacements):value=value[:start]+original_word+value[end:]
                     newlines[n]=value
             print(f'HB{ident}: {i+1}/{len(chunks)} chunks vocalized',flush=True)
@@ -472,7 +512,7 @@ def main():
             tag='row' if table is not None else 'heading' if orig.strip().startswith('■') else 'p'
             if not orig.strip():
                 xml.append(f'<lb source-line="{n+1}" />');continue
-            content=reused_markup[n] if n in reused_markup else inline_xml(value,orig,names_line=n in name_lines,volume=ident,extra_sacred=extra_names if n not in reused else ())
+            content=reused_markup[n] if n in reused_markup else inline_xml(value,orig,names_line=n in name_lines,volume=ident,extra_sacred=extra_names if n not in reused else (),symbol_offsets=symbol_offsets.get(n,()))
             if n in number_lines:content=f'<number recite="false">{escape(orig)}</number>'
             status='added-draft' if value!=orig else 'source-preserved'
             xml.append(f'<{tag} id="{identline}" source-line="{n+1}" niqqud="{status}">{content}</{tag}>')

@@ -62,6 +62,8 @@ for meta in data['transcriptions']['volumes']:
         old=list(word.finditer(lines[n-1]));new=list(word.finditer(value));assert len(old)==len(new)
         for a,b in zip(old,new):
             if marks.search(a.group()):assert a.group()==b.group(),f'Changed source pointing HB{meta["id"]} line {n}'
+            if re.match(r'\s*\[\?\]',lines[n-1][a.end():]):
+                assert a.group()==b.group(),f'Pointed unresolved source word HB{meta["id"]} line {n}'
         for part in node:
             if part.tag in ['shem','abbr','source_pointing','letter','number']:
                 assert part.text in lines[n-1];protected+=1
