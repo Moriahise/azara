@@ -63,7 +63,7 @@ for meta in data['transcriptions']['volumes']:
         for a,b in zip(old,new):
             if marks.search(a.group()):assert a.group()==b.group(),f'Changed source pointing HB{meta["id"]} line {n}'
         for part in node:
-            if part.tag in ['shem','abbr','source_pointing','letter']:
+            if part.tag in ['shem','abbr','source_pointing','letter','number']:
                 assert part.text in lines[n-1];protected+=1
         if node.tag=='row':assert value==lines[n-1],f'Changed table HB{meta["id"]} line {n}'
         added+=len(marks.findall(value))-len(marks.findall(lines[n-1]))

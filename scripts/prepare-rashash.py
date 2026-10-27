@@ -36,6 +36,7 @@ SACRED = {'יהוה','אהיה','אדני','אלהים','אלהינו','אלהי
           'אלם','בוכו','כוזו','במוכסז','למד','שין','מם','נון','צדי','קוף','ריש','תיו',
           'יאהלוההים','יאהי','אאללההייםם','תצמץ','אכתריאל'}
 VOLUMES = [
+ ('21521',1,'bis_PDF050','Schabbatmorgen · Birkhot haSchachar, Korbanot und Pesukei deZimra · HB21521',231),
  ('21375',2,'bis_PDF050','Werktagsgebete · Hodu und Pesukei deZimra · bis PDF 50',323),
  ('21519',3,'Erev_Schabbat','Erev Schabbat · Kabbalat Schabbat & Arvit · HB21519',73),
  ('21520',3,'Erev_Schabbat','Erev Schabbat · Kabbalat Schabbat & Arvit',73),
@@ -43,6 +44,7 @@ VOLUMES = [
  ('21722',8,'Jom_Kippur','Jom Kippur · Gebete, Kavvanot & Seder haAvoda',139),
  ('21723',9,'Sukkot','Sukkot · Na’anuim, Hallel, Hakafot & Hoschana Rabba',43),
 ]
+STAGED_VOLUMES = {'21375':323,'21521':231}
 HB21375_EXTRA_NAMES = frozenset({'בם','פאי','חתך','אט','אכפץ','אכנסם','טדהד',
     'אידהנויה','קרעשטן','נגדיכש','בטרצתג','חקבטנע','יגלפזק','שקוצית',
     'יההווההו','יאי','יהה','משסג','ההה','האהיה','ואהיהו','יאהלהוהים'})
@@ -61,6 +63,11 @@ def hb21375_symbol_word(original,offset):
     return original=='טובך יד י אן י' and offset>=len('טובך ')
 
 FLAGS = [
+ {'volume':'21521','pdfPages':[45,46],'kind':'possible_source_repetition',
+  'note':'Die Gottesnamenfolge am Ende von PDF 45 erscheint erneut vor סביב ליראיו auf PDF 46. Beide Vorkommen der Vorlage bleiben erhalten; möglichen Seitenanschluss am Scan prüfen.'},
+ {'volume':'21521','pdfPages':[47],'kind':'possible_source_repetition',
+  'quote':'כי כלינו באפך ובחמתך נבהלנו: שתה עונתינו לנגדך עלמנו למאור פניך:',
+  'note':'Die Vorlage wiederholt diese beiden Sätze aus Psalm 90 unmittelbar. Beide Vorkommen bleiben erhalten; mögliche Dopplung am Scan prüfen.'},
  {'volume':'21520','pdfPages':[1],'kind':'transcription_typo','quote':'בשער פקרי הצלם',
   'note':'Im Scan steht בשער פרקי הצלם. Die hochgeladene Buchstabenfolge bleibt erhalten; zur Korrektur markiert.'},
  {'volume':'21520','pdfPages':[19],'kind':'missing_source_niqqud','quote':'[בניקוד הנדפס תחת האותיות]',
@@ -329,10 +336,10 @@ def reusable_pointing(lines,previous):
 
 def main():
     ap=argparse.ArgumentParser();ap.add_argument('input',type=Path);ap.add_argument('cache',type=Path);ap.add_argument('--volume',choices=[v[0] for v in VOLUMES]);ap.add_argument('--through-pdf',type=int);args=ap.parse_args()
-    if args.volume=='21375' and (args.through_pdf is None or not 3<=args.through_pdf<=323):
-        ap.error('HB21375 requires --through-pdf between 3 and 323 matching the supplied transcription.')
-    if args.through_pdf is not None and args.volume!='21375':
-        ap.error('--through-pdf is currently supported only for HB21375.')
+    if args.volume in STAGED_VOLUMES and (args.through_pdf is None or not 3<=args.through_pdf<=STAGED_VOLUMES[args.volume]):
+        ap.error(f'HB{args.volume} requires --through-pdf between 3 and {STAGED_VOLUMES[args.volume]} matching the supplied transcription.')
+    if args.through_pdf is not None and args.volume not in STAGED_VOLUMES:
+        ap.error('--through-pdf requires a supported staged volume.')
     args.cache.mkdir(parents=True,exist_ok=True)
     output=ROOT/'texts/rashash';(output/'sources').mkdir(parents=True,exist_ok=True)
     docs=json.loads((ROOT/'data/rashash.json').read_text())
@@ -340,17 +347,17 @@ def main():
     all_flags=json.loads((ROOT/'data/rashash-text-audit.json').read_text())['flags'];superseded=[]
     for ident,part,slug,title,total in VOLUMES:
         if args.volume and ident!=args.volume:continue
-        if ident=='21375' and args.through_pdf is None:continue
-        imported_total=args.through_pdf if ident=='21375' else total
-        if ident=='21375':
+        if ident in STAGED_VOLUMES and args.through_pdf is None:continue
+        imported_total=args.through_pdf if ident in STAGED_VOLUMES else total
+        if ident in STAGED_VOLUMES:
             slug=f'bis_PDF{imported_total:03}'
-            title=f'Werktagsgebete · Hodu und Pesukei deZimra · bis PDF {imported_total}'
-        source=next(args.input.glob(f'*HB{ident}_{slug}.txt' if ident=='21375' else '*HB'+ident+'*.txt'));raw=source.read_text();lines=raw.splitlines()
+            title=(f'Werktagsgebete · Hodu und Pesukei deZimra · bis PDF {imported_total}' if ident=='21375' else title+f' · bis PDF {imported_total}')
+        source=next(args.input.glob(f'*HB{ident}_{slug}.txt' if ident in STAGED_VOLUMES else '*HB'+ident+'*.txt'));raw=source.read_text();lines=raw.splitlines()
         previous=summaries.get(ident)
-        reused,reused_pages,reused_markup=reusable_pointing(lines,previous) if ident=='21375' else ({},0,{})
-        extra_names=HB21375_EXTRA_NAMES if ident=='21375' and imported_total>=200 else ()
+        reused,reused_pages,reused_markup=reusable_pointing(lines,previous) if ident in STAGED_VOLUMES else ({},0,{})
+        extra_names=HB21375_EXTRA_NAMES if ident=='21375' and imported_total>=200 else frozenset({'אאלל','אידהנויה'}) if ident=='21521' else ()
         volume_flags=[f for f in FLAGS if f['volume']==ident]
-        if ident in ('21375','21519','21722'):
+        if ident in ('21375','21521','21519','21722'):
             uncertain={};current_page=0
             for line_no,line in enumerate(lines,1):
                 marker=PAGE.fullmatch(line)
@@ -372,11 +379,11 @@ def main():
               'note':'Die mit [?] markierte Buchstabenkombination אאללההייםם bleibt unverändert. Die Lesart ist am Originalscan zu prüfen.'})
         all_flags=[f for f in all_flags if f['volume']!=ident]+volume_flags
         first=next(i for i,x in enumerate(lines) if PAGE.fullmatch(x));prefix=lines[:first]
-        if ident=='21375' and imported_total<total:
+        if ident in STAGED_VOLUMES and imported_total<total:
             volume_flags.append({'volume':ident,'pdfPages':[1],'kind':'partial_transcription',
                 'note':f'Teilfassung: PDF 1 und 3–{imported_total} von {total} Scan-Seiten. PDF 2 ist ausgelassen. Ab PDF {imported_total+1} ist noch kein transkribierter Text enthalten.'})
             all_flags=[f for f in all_flags if f['volume']!=ident]+volume_flags
-        stats=Counter();newlines=lines.copy();chunks=[];indices=[];size=0;table_depth=0;table_lines=set();name_lines=set()
+        stats=Counter();newlines=lines.copy();chunks=[];indices=[];size=0;table_depth=0;table_lines=set();name_lines=set();number_lines=set()
         if reused:
             stats['reused_pages']=reused_pages;stats['reused_source_lines']=len(reused)
             for n,value in reused.items():newlines[n]=value
@@ -395,8 +402,10 @@ def main():
                 name_lines.add(n);stats['source_name_lines_preserved']+=1
             if ident=='21375' and extra_names and n not in reused and not table_depth and hb21375_name_line(lines[n]):
                 name_lines.add(n);stats['source_name_lines_preserved']+=1
+            if ident=='21521' and not table_depth and lines[n] in ('א','ב','ג','ד','ה','ו','ז','ח','ט','י','יא','יב','יג'):
+                number_lines.add(n);stats['source_number_lines_preserved']+=1
             # Structural delimiters remain source text; only textual lines sent.
-            if n in reused or (ident=='21375' and (n in table_lines or n in name_lines)) or PAGE.fullmatch(lines[n]) or lines[n].startswith('===') or not letters(lines[n]):continue
+            if n in reused or (ident in STAGED_VOLUMES and (n in table_lines or n in name_lines or n in number_lines)) or PAGE.fullmatch(lines[n]) or lines[n].startswith('===') or not letters(lines[n]):continue
             if size+len(lines[n])>5500 and indices:chunks.append(indices);indices=[];size=0
             indices.append(n);size+=len(lines[n])+1
         assert table_depth==0, 'Unclosed source table'
@@ -407,7 +416,7 @@ def main():
             assert len(result)==len(indices)
             for n,value in zip(indices,result):
                 if n not in table_lines and n not in name_lines:
-                    value=refine_prayer_line(lines[n],value,phrase_index,stats,niqqud_only=ident=='21375',extra_sacred=extra_names)
+                    value=refine_prayer_line(lines[n],value,phrase_index,stats,niqqud_only=ident in STAGED_VOLUMES,extra_sacred=extra_names)
                     if ident=='21519':value=refine_hb21519_line(lines[n],value)
                     # Do not settle a word which the transcriber marked uncertain.
                     old_words=list(WORD.finditer(lines[n]));new_words=list(WORD.finditer(value))
@@ -422,7 +431,7 @@ def main():
         xml=['<?xml version="1.0" encoding="UTF-8"?>',f'<siddur id="HB{ident}" part="{part}" xml:lang="he" schema="azara-rashash-1" niqqud-status="machine-assisted-draft">',
              '<metadata>',f'<title>{escape(title)}</title>',f'<source filename="{escape(source.name,quote=True)}" sha256="{sha256(raw.encode()).hexdigest()}" />',
              '<vocalization engine="Dicta Nakdan" genre="rabbinic" status="editorial-review-required" />',
-             *([f'<coverage status="{"partial" if imported_total<total else "complete"}" through-pdf="{imported_total}" scan-pages="{total}" omitted-pdf="2" />'] if ident=='21375' or imported_total<total else []),
+             *([f'<coverage status="{"partial" if imported_total<total else "complete"}" through-pdf="{imported_total}" scan-pages="{total}" omitted-pdf="2" />'] if ident in STAGED_VOLUMES or imported_total<total else []),
              '<policy>Alle Quellbuchstaben bleiben erhalten. Namen, Abkürzungen, einzelne Buchstaben und vorhandene Punktierung werden nicht automatisch verändert. Ergänztes Niqqud ist kein vollständig am Scan geprüftes Original-Niqqud.</policy>',
              '</metadata>','<transcription_header status="original-before-vocalization">']
         for n,value in enumerate(prefix,1):xml.append(f'<line source-line="{n}">{escape(value)}</line>')
@@ -464,11 +473,12 @@ def main():
             if not orig.strip():
                 xml.append(f'<lb source-line="{n+1}" />');continue
             content=reused_markup[n] if n in reused_markup else inline_xml(value,orig,names_line=n in name_lines,volume=ident,extra_sacred=extra_names if n not in reused else ())
+            if n in number_lines:content=f'<number recite="false">{escape(orig)}</number>'
             status='added-draft' if value!=orig else 'source-preserved'
             xml.append(f'<{tag} id="{identline}" source-line="{n+1}" niqqud="{status}">{content}</{tag}>')
             # Only generated, escaped markup; no source HTML is trusted.
-            html=re.sub(r'<(shem|abbr|source_pointing|letter)(?: recite="false")?>',lambda m:f'<span class="rashash-{m[1]}">',content)
-            html=re.sub(r'</(?:shem|abbr|source_pointing|letter)>','</span>',html)
+            html=re.sub(r'<(shem|abbr|source_pointing|letter|number)(?: recite="false")?>',lambda m:f'<span class="rashash-{m[1]}">',content)
+            html=re.sub(r'</(?:shem|abbr|source_pointing|letter|number)>','</span>',html)
             html=html.replace('<unclear reason="source-transcription">','<span class="rashash-unclear" title="Unsichere Lesart der Transkription">').replace('</unclear>','</span>')
             block={'id':identline,'line':n+1,'kind':tag,'text':value,'html':html}
             if table is not None:table['rows'].append(block)
@@ -486,9 +496,11 @@ def main():
         if imported_total<total:
             entry.update(coverage={'status':'partial','throughPdf':imported_total,'scanPages':total,'omittedPdfPages':[2]},
                 editionNote=f'Teilfassung bis PDF {imported_total} von {total}. Die Fortsetzung ab PDF {imported_total+1} ist nicht enthalten. Niqqud mit Dicta Nakdan im rabbinischen Modus ergänzt; fachliche Prüfung bleibt erforderlich.')
-        elif ident=='21375':
+        elif ident in STAGED_VOLUMES:
             entry.update(coverage={'status':'complete','throughPdf':total,'scanPages':total,'omittedPdfPages':[2]},
                 editionNote=f'Transkription bis zum Scanende PDF {total}; PDF 2 ist die ausgelassene Stempelseite. Niqqud mit Dicta Nakdan im rabbinischen Modus ergänzt; fachliche Prüfung bleibt erforderlich.')
+        if ident=='21521':
+            entry['editionNote']+=' Der Dateiname nennt Teil I; der Scan ist im Katalog inhaltlich als Schabbatmorgen, Musaf und Mincha geführt. Eine gedruckte Teilnummer ist nicht verifiziert.'
         (ROOT/entry['jsonPath']).write_text(json.dumps({**entry,'pages':pages},ensure_ascii=False,separators=(',',':'))+'\n')
         if previous and previous['txtPath']!=entry['txtPath']:superseded.append(ROOT/previous['txtPath'])
         summaries[ident]=entry

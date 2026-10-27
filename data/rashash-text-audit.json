@@ -1870,6 +1870,116 @@
       ],
       "occurrences": 2,
       "note": "Die gelieferte Transkription markiert hier 2 unsichere Lesart(en) mit [?] (Quellzeile(n) 17250). Die Markierungen und die unmittelbar davor stehenden Wörter bleiben erhalten; am Scan prüfen."
+    },
+    {
+      "volume": "21521",
+      "pdfPages": [
+        45,
+        46
+      ],
+      "kind": "possible_source_repetition",
+      "note": "Die Gottesnamenfolge am Ende von PDF 45 erscheint erneut vor סביב ליראיו auf PDF 46. Beide Vorkommen der Vorlage bleiben erhalten; möglichen Seitenanschluss am Scan prüfen."
+    },
+    {
+      "volume": "21521",
+      "pdfPages": [
+        47
+      ],
+      "kind": "possible_source_repetition",
+      "quote": "כי כלינו באפך ובחמתך נבהלנו: שתה עונתינו לנגדך עלמנו למאור פניך:",
+      "note": "Die Vorlage wiederholt diese beiden Sätze aus Psalm 90 unmittelbar. Beide Vorkommen bleiben erhalten; mögliche Dopplung am Scan prüfen."
+    },
+    {
+      "volume": "21521",
+      "pdfPages": [
+        6
+      ],
+      "kind": "source_uncertainty",
+      "sourceLines": [
+        119
+      ],
+      "occurrences": 1,
+      "note": "Die gelieferte Transkription markiert hier 1 unsichere Lesart(en) mit [?] (Quellzeile(n) 119). Die Markierungen und die unmittelbar davor stehenden Wörter bleiben erhalten; am Scan prüfen."
+    },
+    {
+      "volume": "21521",
+      "pdfPages": [
+        26
+      ],
+      "kind": "source_uncertainty",
+      "sourceLines": [
+        704
+      ],
+      "occurrences": 1,
+      "note": "Die gelieferte Transkription markiert hier 1 unsichere Lesart(en) mit [?] (Quellzeile(n) 704). Die Markierungen und die unmittelbar davor stehenden Wörter bleiben erhalten; am Scan prüfen."
+    },
+    {
+      "volume": "21521",
+      "pdfPages": [
+        34
+      ],
+      "kind": "source_uncertainty",
+      "sourceLines": [
+        940
+      ],
+      "occurrences": 1,
+      "note": "Die gelieferte Transkription markiert hier 1 unsichere Lesart(en) mit [?] (Quellzeile(n) 940). Die Markierungen und die unmittelbar davor stehenden Wörter bleiben erhalten; am Scan prüfen."
+    },
+    {
+      "volume": "21521",
+      "pdfPages": [
+        36
+      ],
+      "kind": "source_uncertainty",
+      "sourceLines": [
+        1019
+      ],
+      "occurrences": 1,
+      "note": "Die gelieferte Transkription markiert hier 1 unsichere Lesart(en) mit [?] (Quellzeile(n) 1019). Die Markierungen und die unmittelbar davor stehenden Wörter bleiben erhalten; am Scan prüfen."
+    },
+    {
+      "volume": "21521",
+      "pdfPages": [
+        37
+      ],
+      "kind": "source_uncertainty",
+      "sourceLines": [
+        1057
+      ],
+      "occurrences": 1,
+      "note": "Die gelieferte Transkription markiert hier 1 unsichere Lesart(en) mit [?] (Quellzeile(n) 1057). Die Markierungen und die unmittelbar davor stehenden Wörter bleiben erhalten; am Scan prüfen."
+    },
+    {
+      "volume": "21521",
+      "pdfPages": [
+        39
+      ],
+      "kind": "source_uncertainty",
+      "sourceLines": [
+        1069
+      ],
+      "occurrences": 1,
+      "note": "Die gelieferte Transkription markiert hier 1 unsichere Lesart(en) mit [?] (Quellzeile(n) 1069). Die Markierungen und die unmittelbar davor stehenden Wörter bleiben erhalten; am Scan prüfen."
+    },
+    {
+      "volume": "21521",
+      "pdfPages": [
+        42
+      ],
+      "kind": "source_uncertainty",
+      "sourceLines": [
+        1097
+      ],
+      "occurrences": 1,
+      "note": "Die gelieferte Transkription markiert hier 1 unsichere Lesart(en) mit [?] (Quellzeile(n) 1097). Die Markierungen und die unmittelbar davor stehenden Wörter bleiben erhalten; am Scan prüfen."
+    },
+    {
+      "volume": "21521",
+      "pdfPages": [
+        1
+      ],
+      "kind": "partial_transcription",
+      "note": "Teilfassung: PDF 1 und 3–50 von 231 Scan-Seiten. PDF 2 ist ausgelassen. Ab PDF 51 ist noch kein transkribierter Text enthalten."
     }
   ],
   "volumes": [
@@ -2814,6 +2924,147 @@
       ],
       "editionNote": "Unverändert übernommene Scanabgleich-Fassung mit Niqqud und Tags. 143 Lesestellen bleiben laut mitgelieferten Metadaten offen. Das automatische Niqqud ist weiterhin nur selektiv kontextgeprüft.",
       "sourceLabel": "Gelieferte Scanabgleich-TXT mit Niqqud und Tags ↓"
+    },
+    {
+      "id": "21521",
+      "part": 1,
+      "title": "Schabbatmorgen · Birkhot haSchachar, Korbanot und Pesukei deZimra · HB21521 · bis PDF 50",
+      "pages": 49,
+      "pdfPages": 50,
+      "txtPath": "texts/rashash/Siddur_HaRashash_Teil_1_HB21521_bis_PDF050_Niqqud_Tags.txt",
+      "sourcePath": "texts/rashash/sources/HB21521_Original.txt",
+      "jsonPath": "data/rashash-text-21521.json",
+      "status": "Niqqud-Arbeitsfassung · redaktionell zu prüfen",
+      "statistics": {
+        "table_lines_preserved": 562,
+        "source_number_lines_preserved": 13,
+        "words_with_added_niqqud": 6113,
+        "protected_abbr": 915,
+        "protected_shem": 953,
+        "words_with_siddur_phrase_reference": 3347,
+        "protected_letter": 23
+      },
+      "flags": [
+        {
+          "volume": "21521",
+          "pdfPages": [
+            45,
+            46
+          ],
+          "kind": "possible_source_repetition",
+          "note": "Die Gottesnamenfolge am Ende von PDF 45 erscheint erneut vor סביב ליראיו auf PDF 46. Beide Vorkommen der Vorlage bleiben erhalten; möglichen Seitenanschluss am Scan prüfen."
+        },
+        {
+          "volume": "21521",
+          "pdfPages": [
+            47
+          ],
+          "kind": "possible_source_repetition",
+          "quote": "כי כלינו באפך ובחמתך נבהלנו: שתה עונתינו לנגדך עלמנו למאור פניך:",
+          "note": "Die Vorlage wiederholt diese beiden Sätze aus Psalm 90 unmittelbar. Beide Vorkommen bleiben erhalten; mögliche Dopplung am Scan prüfen."
+        },
+        {
+          "volume": "21521",
+          "pdfPages": [
+            6
+          ],
+          "kind": "source_uncertainty",
+          "sourceLines": [
+            119
+          ],
+          "occurrences": 1,
+          "note": "Die gelieferte Transkription markiert hier 1 unsichere Lesart(en) mit [?] (Quellzeile(n) 119). Die Markierungen und die unmittelbar davor stehenden Wörter bleiben erhalten; am Scan prüfen."
+        },
+        {
+          "volume": "21521",
+          "pdfPages": [
+            26
+          ],
+          "kind": "source_uncertainty",
+          "sourceLines": [
+            704
+          ],
+          "occurrences": 1,
+          "note": "Die gelieferte Transkription markiert hier 1 unsichere Lesart(en) mit [?] (Quellzeile(n) 704). Die Markierungen und die unmittelbar davor stehenden Wörter bleiben erhalten; am Scan prüfen."
+        },
+        {
+          "volume": "21521",
+          "pdfPages": [
+            34
+          ],
+          "kind": "source_uncertainty",
+          "sourceLines": [
+            940
+          ],
+          "occurrences": 1,
+          "note": "Die gelieferte Transkription markiert hier 1 unsichere Lesart(en) mit [?] (Quellzeile(n) 940). Die Markierungen und die unmittelbar davor stehenden Wörter bleiben erhalten; am Scan prüfen."
+        },
+        {
+          "volume": "21521",
+          "pdfPages": [
+            36
+          ],
+          "kind": "source_uncertainty",
+          "sourceLines": [
+            1019
+          ],
+          "occurrences": 1,
+          "note": "Die gelieferte Transkription markiert hier 1 unsichere Lesart(en) mit [?] (Quellzeile(n) 1019). Die Markierungen und die unmittelbar davor stehenden Wörter bleiben erhalten; am Scan prüfen."
+        },
+        {
+          "volume": "21521",
+          "pdfPages": [
+            37
+          ],
+          "kind": "source_uncertainty",
+          "sourceLines": [
+            1057
+          ],
+          "occurrences": 1,
+          "note": "Die gelieferte Transkription markiert hier 1 unsichere Lesart(en) mit [?] (Quellzeile(n) 1057). Die Markierungen und die unmittelbar davor stehenden Wörter bleiben erhalten; am Scan prüfen."
+        },
+        {
+          "volume": "21521",
+          "pdfPages": [
+            39
+          ],
+          "kind": "source_uncertainty",
+          "sourceLines": [
+            1069
+          ],
+          "occurrences": 1,
+          "note": "Die gelieferte Transkription markiert hier 1 unsichere Lesart(en) mit [?] (Quellzeile(n) 1069). Die Markierungen und die unmittelbar davor stehenden Wörter bleiben erhalten; am Scan prüfen."
+        },
+        {
+          "volume": "21521",
+          "pdfPages": [
+            42
+          ],
+          "kind": "source_uncertainty",
+          "sourceLines": [
+            1097
+          ],
+          "occurrences": 1,
+          "note": "Die gelieferte Transkription markiert hier 1 unsichere Lesart(en) mit [?] (Quellzeile(n) 1097). Die Markierungen und die unmittelbar davor stehenden Wörter bleiben erhalten; am Scan prüfen."
+        },
+        {
+          "volume": "21521",
+          "pdfPages": [
+            1
+          ],
+          "kind": "partial_transcription",
+          "note": "Teilfassung: PDF 1 und 3–50 von 231 Scan-Seiten. PDF 2 ist ausgelassen. Ab PDF 51 ist noch kein transkribierter Text enthalten."
+        }
+      ],
+      "coverage": {
+        "status": "partial",
+        "throughPdf": 50,
+        "scanPages": 231,
+        "omittedPdfPages": [
+          2
+        ]
+      },
+      "editionNote": "Teilfassung bis PDF 50 von 231. Die Fortsetzung ab PDF 51 ist nicht enthalten. Niqqud mit Dicta Nakdan im rabbinischen Modus ergänzt; fachliche Prüfung bleibt erforderlich. Der Dateiname nennt Teil I; der Scan ist im Katalog inhaltlich als Schabbatmorgen, Musaf und Mincha geführt. Eine gedruckte Teilnummer ist nicht verifiziert."
     },
     {
       "id": "21375",
