@@ -9,24 +9,24 @@ import {stripHtml} from '../src/readalong.js';
 test('All seven Rashash editions retain every source letter, original vowel and all tables',()=>{
  const report=JSON.parse(execFileSync('python3',['scripts/validate-rashash.py'],{encoding:'utf8'}));
  assert.deepEqual(report.map(v=>v.id),['21376','21375','21519','21520','21518','21722','21723']);
- assert.equal(report.reduce((n,v)=>n+v.pages,0),723);assert.equal(report.reduce((n,v)=>n+v.tables,0),1635);
+ assert.equal(report.reduce((n,v)=>n+v.pages,0),846);assert.equal(report.reduce((n,v)=>n+v.tables,0),1990);
  assert.ok(report.every(v=>(v.importedUnchanged||v.addedMarks>1000)&&v.protectedTokens>100));
 });
 test('Rashash Hebrew search works with or without Niqqud and quote variants',()=>{
  assert.equal(searchableHebrew('שַׁבָּת'),searchableHebrew('שבת'));
  assert.equal(searchableHebrew('רש״ש'),searchableHebrew('רש"ש'));
 });
-test('HB21375 partial text keeps 199 pages and nineteen uncertainties while exposing only available text pages',async()=>{
+test('HB21375 reaches the scan end at PDF 323 with all 322 text pages and 86 uncertainties',async()=>{
  const index=JSON.parse(await readFile('data/rashash.json','utf8'));
  const doc=index.documents.find(d=>d.id==='21375'),metadata=doc.transcription;
  const volume=JSON.parse(await readFile(metadata.jsonPath,'utf8'));
- assert.equal(doc.pages,323);assert.equal(metadata.pdfPages,200);
- assert.deepEqual(volume.pages.map(p=>p.pdfPage),[1,...Array.from({length:198},(_,i)=>i+3)]);
- assert.deepEqual(metadata.coverage,{status:'partial',throughPdf:200,scanPages:323,omittedPdfPages:[2]});
+ assert.equal(doc.pages,323);assert.equal(metadata.pdfPages,323);
+ assert.deepEqual(volume.pages.map(p=>p.pdfPage),[1,...Array.from({length:321},(_,i)=>i+3)]);
+ assert.deepEqual(metadata.coverage,{status:'complete',throughPdf:323,scanPages:323,omittedPdfPages:[2]});
  let uncertainties=0,tables=0;
  for(const page of volume.pages){
   for(const block of page.blocks){
-   if(block.kind==='table')tables++;
+   if(block.kind==='table')tables+=1+(block.nestedTables?.length||0);
    for(const item of block.kind==='table'?block.rows:[block]){
     uncertainties+=(item.text.match(/\[\?\]/g)||[]).length;
     if(item.text.includes('[?]'))assert.ok(item.html.includes('rashash-unclear'));
@@ -34,32 +34,57 @@ test('HB21375 partial text keeps 199 pages and nineteen uncertainties while expo
    }
   }
  }
- assert.equal(uncertainties,19);assert.equal(tables,488);
+ assert.equal(uncertainties,86);assert.equal(tables,843);
  const priorPages=volume.pages.filter(p=>p.pdfPage<=50).map(({pdfPage,folio,blocks})=>({pdfPage,folio,blocks}));
  assert.equal(createHash('sha256').update(JSON.stringify(priorPages)).digest('hex'),'eaef15028cff5dc7b58d2f2975b677c92ef4d3e4e145a7437ddbb097a64e616d');
  const prior100=volume.pages.filter(p=>p.pdfPage<=100).map(({pdfPage,folio,blocks})=>({pdfPage,folio,blocks}));
  assert.equal(createHash('sha256').update(JSON.stringify(prior100)).digest('hex'),'e4ea9103e48b793b3f6965d05eca098bddaad4a44914455afd521cd5d69584d4');
- assert.equal(metadata.statistics.reused_pages,99);
- assert.deepEqual(metadata.flags.filter(f=>f.kind==='source_uncertainty').map(f=>f.pdfPages[0]),[9,38,39,40,43,44,47,117,130,139,167,168,185,187,190,195,198]);
+ const prior200=volume.pages.filter(p=>p.pdfPage<=200).map(({pdfPage,folio,blocks})=>({pdfPage,folio,blocks}));
+ assert.equal(createHash('sha256').update(JSON.stringify(prior200)).digest('hex'),'43ea9483428eadbe1858ee0e4052e37e0ebc47e39b468eb0319919bd7ae850ac');
+ assert.equal(metadata.statistics.reused_pages,199);
+ assert.deepEqual(metadata.flags.filter(f=>f.kind==='source_uncertainty').map(f=>f.pdfPages[0]),[9,38,39,40,43,44,47,117,130,139,167,168,185,187,190,195,198,217,221,228,229,246,248,251,261,262,263,266,267,289,292,299,300,301,304,305,306,307,308,309,310,312,317,321]);
  const tagged=await readFile(metadata.txtPath,'utf8');
- assert.equal((tagged.match(/<unclear /g)||[]).length,19);
- assert.ok(tagged.includes('<coverage status="partial" through-pdf="200" scan-pages="323"'));
+ assert.equal((tagged.match(/<unclear /g)||[]).length,86);
+ assert.ok(tagged.includes('<coverage status="complete" through-pdf="323" scan-pages="323"'));
  assert.ok(tagged.includes('engine="Dicta Nakdan" genre="rabbinic"'));
  assert.ok(searchableHebrew(volume.pages.find(p=>p.pdfPage===3).blocks.map(b=>b.text||'').join(' ')).includes('הודו'));
- for(const n of [1,3,50,51,54,100,101,200])assert.ok(hasRashashTextPage(metadata,n));
- for(const n of [0,2,201,323])assert.equal(hasRashashTextPage(metadata,n),false);
+ for(const n of [1,3,50,51,54,100,101,200,201,245,322,323])assert.ok(hasRashashTextPage(metadata,n));
+ for(const n of [0,2,324])assert.equal(hasRashashTextPage(metadata,n),false);
  const html=renderRashashReader({documents:index.documents,id:'21375',pageNumber:200,volume});
- assert.ok(html.includes('Teilfassung · bis PDF 200 von 323'));
+ assert.ok(!html.includes('Teilfassung ·'));
+ const final=renderRashashReader({documents:index.documents,id:'21375',pageNumber:323,volume});
+ assert.ok(final.includes('data-open-rashash="21375" data-page="323"'));
+ assert.ok(final.includes('<span>PDF 323</span>'));
+ assert.ok(final.includes('data-action="rashash-text-next" disabled'));
+ assert.ok(!metadata.flags.some(f=>f.kind==='partial_transcription'));
  assert.ok(html.includes('data-open-rashash="21375" data-page="200"'));
- const missing=renderRashashReader({documents:index.documents,id:'21375',pageNumber:201,volume});
+ const partialMetadata={...metadata,pdfPages:200,coverage:{status:'partial',throughPdf:200,scanPages:323,omittedPdfPages:[2]}};
+ const partialVolume={...volume,...partialMetadata,pages:volume.pages.filter(p=>p.pdfPage<=200)};
+ const missing=renderRashashReader({documents:index.documents.map(d=>d.id==='21375'?{...d,transcription:partialMetadata}:d),id:'21375',pageNumber:201,volume:partialVolume});
  assert.ok(missing.includes('PDF 201 ist noch nicht transkribiert'));
  assert.ok(missing.includes('data-open-rashash="21375" data-page="201"'));
  assert.ok(!missing.includes('<span>PDF 1</span>'));
 });
+test('HB21375 retains nested tables and joined boundaries without losing or duplicating source rows',async()=>{
+ const volume=JSON.parse(await readFile('data/rashash-text-21375.json','utf8'));
+ const tables=volume.pages.flatMap(p=>p.blocks.filter(b=>b.kind==='table'));
+ assert.equal(tables.length,777);
+ assert.equal(tables.reduce((n,t)=>n+(t.nestedTables?.length||0),0),66);
+ const page245=volume.pages.find(p=>p.pdfPage===245);
+ const outer=page245.blocks.find(b=>b.kind==='table'&&b.nestedTables?.length===1);
+ assert.ok(outer);
+ assert.deepEqual(outer.nestedTables.map(t=>t.startLine),[14037]);
+ assert.deepEqual(page245.blocks.filter(b=>b.kind==='table').map(t=>[t.startLine,t.endLine]),[[14032,14056],[14056,14070],[14070,14084],[14084,14098]]);
+ const rows=tables.flatMap(t=>t.rows);
+ assert.equal(rows.length,11631);
+ assert.equal(new Set(rows.map(r=>r.id)).size,rows.length);
+ const xml=await readFile(volume.txtPath,'utf8');
+ assert.equal((xml.match(/<table /g)||[]).length,843);
+});
 test('HB21375 preserves diagram names outside tables without vocalizing short ordinary prayers as names',async()=>{
  const volume=JSON.parse(await readFile('data/rashash-text-21375.json','utf8'));
  const items=volume.pages.filter(p=>p.pdfPage>100).flatMap(p=>p.blocks.filter(b=>b.kind!=='table'));
- for(const text of ['צ צב צבא','א אד אדנ אדני','מם כף קץ','פאי','חתך','בם','שקוצית']){
+ for(const text of ['צ צב צבא','א אד אדנ אדני','מם כף קץ','פאי','חתך','בם','שקוצית','לל שיד הויה','לל שיד הויה עבד ב׳','ההה ההה']){
   const matches=items.filter(i=>i.text===text);assert.ok(matches.length,text);
   assert.ok(matches.every(i=>i.html.includes('rashash-shem')),text);
  }

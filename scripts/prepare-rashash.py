@@ -6,6 +6,7 @@ Dicta's rabbinic Nakdan supplies proposed vowels, never text.
 Every source letter, original vowel, space and punctuation mark is retained.
 """
 import argparse
+from datetime import date
 from collections import Counter
 from difflib import SequenceMatcher
 from hashlib import sha256
@@ -23,6 +24,8 @@ VERSION = '2026-10-25-rabbinic-v1'
 MARK = re.compile('[\u0591-\u05af\u05b0-\u05bd\u05bf\u05c1\u05c2\u05c4\u05c5\u05c7]')
 WORD = re.compile('[\u05d0-\u05ea][\u05d0-\u05ea\u0591-\u05c7]*(?:["\'״׳][\u05d0-\u05ea\u0591-\u05c7]*)*')
 PAGE = re.compile(r'━+\s+(?:דף )?(.*?)\s+\(PDF (\d+)\)\s+━+')
+TABLE_MARKERS = re.compile(r'(?:=== (?:סוף )?טבלה ===)+')
+TABLE_TOKEN = re.compile(r'=== (?:סוף )?טבלה ===')
 SACRED = {'יהוה','אהיה','אדני','אלהים','אלהינו','אלהיכם','אלוהינו','הויה',
           'יאהדונהי','יאההויהה','איההיוהה','יהו','הוי','ויה','יוה','היו','והי',
           'אבגיתץ','קרע','שטן','נגד','יכש','בטר','צתג','חקב','טנע','יגל','פזק',
@@ -41,12 +44,14 @@ VOLUMES = [
  ('21723',9,'Sukkot','Sukkot · Na’anuim, Hallel, Hakafot & Hoschana Rabba',43),
 ]
 HB21375_EXTRA_NAMES = frozenset({'בם','פאי','חתך','אט','אכפץ','אכנסם','טדהד',
-    'אידהנויה','קרעשטן','נגדיכש','בטרצתג','חקבטנע','יגלפזק','שקוצית'})
+    'אידהנויה','קרעשטן','נגדיכש','בטרצתג','חקבטנע','יגלפזק','שקוצית',
+    'יההווההו','יאי','יהה','משסג','ההה','האהיה','ואהיהו','יאהלהוהים'})
 
 def hb21375_name_line(line):
     """Recognize standalone diagram rows, not short prayer phrases."""
     text=bare(line).strip();words=text.split()
-    if text in {'מם כף קץ','דין דין דין דין דין','שן אלף למד הה יוד מם אדני'}:return True
+    if text in {'מם כף קץ','דין דין דין דין דין','שן אלף למד הה יוד מם אדני',
+                'לל שיד הויה','לל שיד הויה עבד ב׳','שך פר'}:return True
     if not re.fullmatch('[א-ת ]+',text):return False
     if len(words)>=2 and len(words[0])==1 and all(len(w)<=4 for w in words):return True
     if text=='לף י וד י':return True
@@ -298,13 +303,16 @@ def source_name_line(line):
 
 def reusable_pointing(lines,previous):
     """Reuse existing pointed lines only on unchanged source pages."""
-    if not previous:return {},0
+    if not previous:return {},0,{}
     oldlines=(ROOT/previous['sourcePath']).read_text().splitlines()
     def spans(source):
         starts=[(i,int(m[2])) for i,line in enumerate(source) if (m:=PAGE.fullmatch(line))]
         return {number:(start,starts[j+1][0] if j+1<len(starts) else len(source)) for j,(start,number) in enumerate(starts)}
     oldspans,newspans=spans(oldlines),spans(lines)
-    reused={};count=0
+    reused={};markup={};count=0
+    oldmarkup={int(m[2])-1:m[3] for m in re.finditer(
+        r'<(p|heading|row) [^>]*source-line="(\d+)"[^>]*>(.*?)</\1>',
+        (ROOT/previous['txtPath']).read_text())}
     for page in ET.parse(ROOT/previous['txtPath']).getroot().findall('page'):
         number=int(page.get('pdf'))
         if number not in newspans:continue
@@ -316,7 +324,8 @@ def reusable_pointing(lines,previous):
             oldindex=int(node.attrib['source-line'])-1;newindex=c+oldindex-a
             assert oldlines[oldindex]==lines[newindex]
             reused[newindex]=''.join(node.itertext())
-    return reused,count
+            if oldindex in oldmarkup:markup[newindex]=oldmarkup[oldindex]
+    return reused,count,markup
 
 def main():
     ap=argparse.ArgumentParser();ap.add_argument('input',type=Path);ap.add_argument('cache',type=Path);ap.add_argument('--volume',choices=[v[0] for v in VOLUMES]);ap.add_argument('--through-pdf',type=int);args=ap.parse_args()
@@ -338,7 +347,7 @@ def main():
             title=f'Werktagsgebete · Hodu und Pesukei deZimra · bis PDF {imported_total}'
         source=next(args.input.glob(f'*HB{ident}_{slug}.txt' if ident=='21375' else '*HB'+ident+'*.txt'));raw=source.read_text();lines=raw.splitlines()
         previous=summaries.get(ident)
-        reused,reused_pages=reusable_pointing(lines,previous) if ident=='21375' else ({},0)
+        reused,reused_pages,reused_markup=reusable_pointing(lines,previous) if ident=='21375' else ({},0,{})
         extra_names=HB21375_EXTRA_NAMES if ident=='21375' and imported_total>=200 else ()
         volume_flags=[f for f in FLAGS if f['volume']==ident]
         if ident in ('21375','21519','21722'):
@@ -367,25 +376,30 @@ def main():
             volume_flags.append({'volume':ident,'pdfPages':[1],'kind':'partial_transcription',
                 'note':f'Teilfassung: PDF 1 und 3–{imported_total} von {total} Scan-Seiten. PDF 2 ist ausgelassen. Ab PDF {imported_total+1} ist noch kein transkribierter Text enthalten.'})
             all_flags=[f for f in all_flags if f['volume']!=ident]+volume_flags
-        stats=Counter();newlines=lines.copy();chunks=[];indices=[];size=0;in_table=False;table_lines=set();name_lines=set()
+        stats=Counter();newlines=lines.copy();chunks=[];indices=[];size=0;table_depth=0;table_lines=set();name_lines=set()
         if reused:
             stats['reused_pages']=reused_pages;stats['reused_source_lines']=len(reused)
             for n,value in reused.items():newlines[n]=value
         for n in range(first,len(lines)):
             # Names in diagrams are not ordinary words. Keep whole tables, even
             # their labels, exactly as supplied; do not infer missing pointing.
-            if lines[n]=='=== טבלה ===': in_table=True;continue
-            if lines[n]=='=== סוף טבלה ===': in_table=False;continue
-            if in_table:
+            if TABLE_MARKERS.fullmatch(lines[n]):
+                for token in TABLE_TOKEN.findall(lines[n]):
+                    table_depth+=1 if token=='=== טבלה ===' else -1
+                    assert table_depth>=0, f'Orphan table close at line {n+1}'
+                continue
+            if PAGE.fullmatch(lines[n]):assert table_depth==0, f'Table crosses page at line {n+1}'
+            if table_depth:
                 stats['table_lines_preserved']+=1;table_lines.add(n)
-            if ident=='21519' and not in_table and source_name_line(lines[n]):
+            if ident=='21519' and not table_depth and source_name_line(lines[n]):
                 name_lines.add(n);stats['source_name_lines_preserved']+=1
-            if ident=='21375' and extra_names and n not in reused and not in_table and hb21375_name_line(lines[n]):
+            if ident=='21375' and extra_names and n not in reused and not table_depth and hb21375_name_line(lines[n]):
                 name_lines.add(n);stats['source_name_lines_preserved']+=1
             # Structural delimiters remain source text; only textual lines sent.
             if n in reused or (ident=='21375' and (n in table_lines or n in name_lines)) or PAGE.fullmatch(lines[n]) or lines[n].startswith('===') or not letters(lines[n]):continue
             if size+len(lines[n])>5500 and indices:chunks.append(indices);indices=[];size=0
             indices.append(n);size+=len(lines[n])+1
+        assert table_depth==0, 'Unclosed source table'
         if indices:chunks.append(indices)
         for i,indices in enumerate(chunks):
             text='\n'.join(lines[n] for n in indices)
@@ -404,11 +418,11 @@ def main():
                     newlines[n]=value
             print(f'HB{ident}: {i+1}/{len(chunks)} chunks vocalized',flush=True)
         stats['words_with_added_niqqud']=sum(a.group()!=b.group() for old,new in zip(lines,newlines) for a,b in zip(WORD.finditer(old),WORD.finditer(new)))
-        pages=[];page=None;table=None;blocks=[]
+        pages=[];page=None;table=None;table_stack=[];blocks=[]
         xml=['<?xml version="1.0" encoding="UTF-8"?>',f'<siddur id="HB{ident}" part="{part}" xml:lang="he" schema="azara-rashash-1" niqqud-status="machine-assisted-draft">',
              '<metadata>',f'<title>{escape(title)}</title>',f'<source filename="{escape(source.name,quote=True)}" sha256="{sha256(raw.encode()).hexdigest()}" />',
              '<vocalization engine="Dicta Nakdan" genre="rabbinic" status="editorial-review-required" />',
-             *([f'<coverage status="partial" through-pdf="{imported_total}" scan-pages="{total}" omitted-pdf="2" />'] if imported_total<total else []),
+             *([f'<coverage status="{"partial" if imported_total<total else "complete"}" through-pdf="{imported_total}" scan-pages="{total}" omitted-pdf="2" />'] if ident=='21375' or imported_total<total else []),
              '<policy>Alle Quellbuchstaben bleiben erhalten. Namen, Abkürzungen, einzelne Buchstaben und vorhandene Punktierung werden nicht automatisch verändert. Ergänztes Niqqud ist kein vollständig am Scan geprüftes Original-Niqqud.</policy>',
              '</metadata>','<transcription_header status="original-before-vocalization">']
         for n,value in enumerate(prefix,1):xml.append(f'<line source-line="{n}">{escape(value)}</line>')
@@ -416,10 +430,18 @@ def main():
         def close_table():
             nonlocal table
             if table is not None:
-                blocks.append(table);table=None;xml.append('</table>')
+                xml.append('</table>')
+                if table_stack:
+                    child=table;table=table_stack.pop()
+                    table['rows'].extend(child['rows'])
+                    table.setdefault('nestedTables',[]).extend([
+                        {k:child[k] for k in ('id','startLine','endLine')},
+                        *child.get('nestedTables',[])])
+                else:blocks.append(table);table=None
         def close_page():
             if page is not None:
-                close_table();page['blocks']=blocks.copy();pages.append(page.copy());xml.append('</page>')
+                assert table is None and not table_stack
+                page['blocks']=blocks.copy();pages.append(page.copy());xml.append('</page>')
         for n in range(first,len(lines)):
             orig=lines[n];value=newlines[n];m=PAGE.fullmatch(orig)
             if m:
@@ -428,15 +450,20 @@ def main():
                 for flag in page['flags']:xml.append(f'<review kind="{flag["kind"]}" status="open">{escape(flag["note"])}</review>')
                 continue
             identline=f'HB{ident}-L{n+1:04}'
-            if orig=='=== טבלה ===':
-                assert table is None
-                table={'kind':'table','id':identline,'rows':[],'startLine':n+1};xml.append(f'<table id="{identline}" source-line="{n+1}" preserve-layout="true" niqqud="source-only" recite="false">');continue
-            if orig=='=== סוף טבלה ===':
-                assert table is not None;table['endLine']=n+1;close_table();continue
+            if TABLE_MARKERS.fullmatch(orig):
+                for token in TABLE_TOKEN.findall(orig):
+                    if token=='=== טבלה ===':
+                        if table is not None:table_stack.append(table)
+                        table={'kind':'table','id':identline,'rows':[],'startLine':n+1}
+                        xml.append(f'<table id="{identline}" source-line="{n+1}" preserve-layout="true" niqqud="source-only" recite="false">')
+                    else:
+                        assert table is not None
+                        table['endLine']=n+1;close_table()
+                continue
             tag='row' if table is not None else 'heading' if orig.strip().startswith('■') else 'p'
             if not orig.strip():
                 xml.append(f'<lb source-line="{n+1}" />');continue
-            content=inline_xml(value,orig,names_line=n in name_lines,volume=ident,extra_sacred=extra_names if n not in reused else ())
+            content=reused_markup[n] if n in reused_markup else inline_xml(value,orig,names_line=n in name_lines,volume=ident,extra_sacred=extra_names if n not in reused else ())
             status='added-draft' if value!=orig else 'source-preserved'
             xml.append(f'<{tag} id="{identline}" source-line="{n+1}" niqqud="{status}">{content}</{tag}>')
             # Only generated, escaped markup; no source HTML is trusted.
@@ -459,18 +486,21 @@ def main():
         if imported_total<total:
             entry.update(coverage={'status':'partial','throughPdf':imported_total,'scanPages':total,'omittedPdfPages':[2]},
                 editionNote=f'Teilfassung bis PDF {imported_total} von {total}. Die Fortsetzung ab PDF {imported_total+1} ist nicht enthalten. Niqqud mit Dicta Nakdan im rabbinischen Modus ergänzt; fachliche Prüfung bleibt erforderlich.')
+        elif ident=='21375':
+            entry.update(coverage={'status':'complete','throughPdf':total,'scanPages':total,'omittedPdfPages':[2]},
+                editionNote=f'Transkription bis zum Scanende PDF {total}; PDF 2 ist die ausgelassene Stempelseite. Niqqud mit Dicta Nakdan im rabbinischen Modus ergänzt; fachliche Prüfung bleibt erforderlich.')
         (ROOT/entry['jsonPath']).write_text(json.dumps({**entry,'pages':pages},ensure_ascii=False,separators=(',',':'))+'\n')
         if previous and previous['txtPath']!=entry['txtPath']:superseded.append(ROOT/previous['txtPath'])
         summaries[ident]=entry
         doc=next(x for x in docs['documents'] if x['id']==ident);doc['transcription']=entry
         print(json.dumps({'volume':ident,'pages':len(pages),'statistics':dict(stats)},ensure_ascii=False),flush=True)
     ordered=sorted(summaries.values(),key=lambda v:(v['part'],v['id']))
-    docs['transcriptions']={'schemaVersion':1,'date':'2026-10-26','volumes':ordered,
+    docs['transcriptions']={'schemaVersion':1,'date':date.today().isoformat(),'volumes':ordered,
       'policy':'Maschinell unterstützte Niqqud-Arbeitsfassungen der hochgeladenen Transkriptionen. Keine vollständige Kollation; Originalscan bleibt maßgebend.'}
     docs['warnings']=[w for w in docs['warnings'] if not w.startswith(('Die gesamte Abfolge','Drei Transkriptionen')) and not re.match(r'\d+ Transkriptionen',w)]
     docs['warnings'].append(f'{len(ordered)} Transkriptionen sind strukturiert und mit zusätzlichem Niqqud erschlossen. Die Gesamtjahresfolge und die ergänzte Punktierung sind nicht vollständig am Scan geprüft; bekannte Lücken tragen Prüfmarkierungen.')
     (ROOT/'data/rashash.json').write_text(json.dumps(docs,ensure_ascii=False,indent=2)+'\n')
-    (ROOT/'data/rashash-text-audit.json').write_text(json.dumps({'date':'2026-10-26','flags':all_flags,'volumes':ordered},ensure_ascii=False,indent=2)+'\n')
+    (ROOT/'data/rashash-text-audit.json').write_text(json.dumps({'date':date.today().isoformat(),'flags':all_flags,'volumes':ordered},ensure_ascii=False,indent=2)+'\n')
     for path in superseded:
         assert path.parent==ROOT/'texts/rashash'
         path.unlink(missing_ok=True)

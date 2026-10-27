@@ -5,7 +5,7 @@ Die sieben hochgeladenen Transkriptionen sind in Azara unter **Siddur & Kavvanot
 | Band | Thema | HebrewBooks | Textseiten | Tabellen |
 |---|---|---|---:|---:|
 | I | Grundlagen, Morgenberachot, Tallit, Tefillin und Ketoret | 21376 | 176 | 308 |
-| II (Teilfassung bis PDF 200) | Hodu, Jotzer, Schema und Amida-Kavvanot | 21375 | 199 | 488 |
+| II (bis zum Scanende PDF 323) | Werktagsgebete, Amida, Birkhat Kohanim, Selichot, Mincha und Arvit | 21375 | 322 | 843 |
 | III | Erev Schabbat, Kabbalat Schabbat und Arvit | 21519 | 72 | 149 |
 | III | Erev Schabbat, Kabbalat Schabbat und Arvit | 21520 | 72 | 149 |
 | VI | Schawuot, Lernen in der Nacht, Schacharit und Musaf | 21518 | 24 | 28 |
@@ -186,6 +186,25 @@ Die technische Prüfung vergleicht Konsonanten und Satzzeichen aller Quellzeilen
 
 ```bash
 python3 scripts/prepare-rashash.py /pfad/zum/upload /pfad/zum/cache --volume 21375 --through-pdf 200
+npm test
+npm run build
+```
+
+
+## Aktualisierung: Teil II · HB21375 · bis zum Scanende PDF 323
+
+Die neue Vorlage `Siddur_HaRashash_Teil_2_HB21375_bis_PDF323.txt` ersetzt die Teilfassung bis PDF 200. Sie umfasst PDF 1 und 3–323, insgesamt 322 Textseiten. PDF 2 ist laut Vorlage die ausgelassene Stempelseite. Die neue UTF-8-TXT mit Niqqud und XML-Tags heißt `Siddur_HaRashash_Teil_2_HB21375_bis_PDF323_Niqqud_Tags.txt`. Der Katalog kennzeichnet die Abdeckung als bis zum Scanende reichend; der bisherige Hinweis auf fehlende Seiten ab PDF 201 entfällt. Dies beschreibt den Seitenumfang der gelieferten Transkription und ist keine Bestätigung einer vollständigen philologischen Edition.
+
+Alle 199 bisherigen Textseiten bis PDF 200 stimmen in der neuen Quelle unverändert überein. Vokalisierung, Inline-Tags, IDs und gerenderte Inhalte werden exakt übernommen und durch Prüfsummen für die bisherigen Stände bis PDF 50, 100 und 200 abgesichert. Nur die neuen Fließtexte werden mit Dicta Nakdan im rabbinischen Modus bearbeitet. Die neue Quelle bleibt unverändert unter `texts/rashash/sources/HB21375_Original.txt` erhalten. Die vorige TXT wird im aktuellen Dateibaum ersetzt; frühere Stände bleiben in der Git-Historie erhalten.
+
+Die Vorlage enthält 843 Tabellen, darunter 66 innere Tabellen in 777 äußeren Tabellen. Der Import erhält die Verschachtelung in XML. Für die bestehende lineare Leseansicht werden alle 11.631 nichtleeren Tabellenzeilen einmal in ihrer Quellreihenfolge dargestellt; die Grenzen der inneren Tabellen bleiben zusätzlich in den JSON-Metadaten nachvollziehbar. Auch unmittelbar zusammengezogene End-/Anfangsmarker werden als zwei Strukturereignisse derselben Quellzeile verarbeitet. Der unveränderte Quelltext wird dafür nicht umgeschrieben. Alle Tabellen einschließlich der 14 Leerzeilen bleiben von der automatischen Vokalisierung ausgenommen.
+
+86 unsichere Lesestellen auf 44 Textseiten bleiben unverändert erhalten und werden mit `unclear`-Tags sowie seitenbezogenen Prüfvermerken erschlossen. Die zwei zusätzlichen Vorkommen von `[?]` im Vorspann gehören zur Zählangabe und zur Zeichenerklärung, nicht zum Seiteninhalt. Bereits gesetztes Niqqud, Namen, Abkürzungen und Buchstabenreihen bleiben geschützt. Eindeutige neue symbolische Reihen wie `לל שיד הויה` werden ebenfalls nicht automatisch vokalisiert.
+
+Die technischen Prüfungen vergleichen alle Quellzeilen einschließlich Konsonanten, Satzzeichen und bestehender Punktierung, sämtliche Tabellenzeilen, innere Tabellengrenzen, IDs und die XML-/Webtextidentität. Die ergänzte Vokalisierung bleibt eine fachlich zu prüfende Arbeitsfassung. Dieses Update umfasst keinen neuen vollständigen Scanabgleich. Im Ausgangstext vermerkte seitenübergreifende Fortsetzungen bleiben bei den vom Transkribenten zugewiesenen Seiten; es wird keine neue Scanposition behauptet. Die übrigen sechs Textfassungen bleiben unverändert.
+
+```bash
+python3 scripts/prepare-rashash.py /pfad/zum/upload /pfad/zum/cache --volume 21375 --through-pdf 323
 npm test
 npm run build
 ```

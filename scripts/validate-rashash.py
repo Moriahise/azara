@@ -48,6 +48,11 @@ for meta in data['transcriptions']['volumes']:
     pages=root.findall('page');expected=[1,*range(3,meta['pdfPages']+1)]
     assert [int(p.attrib['pdf']) for p in pages]==expected
     assert len(pages)==meta['pages']
+    ids=[node.get('id') for node in root.iter() if node.get('id')]
+    assert len(ids)==len(set(ids)),f'Duplicate ID HB{meta["id"]}'
+    first=next(i for i,line in enumerate(lines) if '━━━━━━━━' in line)
+    table_markers=re.compile(r'(?:=== (?:סוף )?טבלה ===)+')
+    assert len(root.findall('.//table'))==sum(line.count('=== טבלה ===') for line in lines[first:] if table_markers.fullmatch(line))
     seen={};added=0;protected=0
     for node in root.iter():
         if node.tag not in ['line','p','heading','row','lb']:continue
@@ -63,12 +68,17 @@ for meta in data['transcriptions']['volumes']:
         if node.tag=='row':assert value==lines[n-1],f'Changed table HB{meta["id"]} line {n}'
         added+=len(marks.findall(value))-len(marks.findall(lines[n-1]))
     for n,line in enumerate(lines,1):
-        if '━━━━━━━━' in line or line in ['=== טבלה ===','=== סוף טבלה ===']:continue
+        if '━━━━━━━━' in line or (n>first and table_markers.fullmatch(line)):continue
         assert n in seen,f'Missing line HB{meta["id"]} {n}'
     assert added>1000
     volume=json.loads((ROOT/meta['jsonPath']).read_text())
     assert len(volume['pages'])==len(pages)
-    for page in volume['pages']:
+    for source,page in zip(pages,volume['pages']):
+        source_tables=source.findall('table');web_tables=[b for b in page['blocks'] if b['kind']=='table']
+        assert len(source_tables)==len(web_tables)
+        for node,block in zip(source_tables,web_tables):
+            assert [r.get('id') for r in node.findall('.//row')]==[r['id'] for r in block['rows']]
+            assert {t.get('id') for t in node.findall('.//table')}=={t['id'] for t in block.get('nestedTables',[])}
         for block in page['blocks']:
             for item in block['rows'] if block['kind']=='table' else [block]:
                 assert item['text']==seen[item['line']]
