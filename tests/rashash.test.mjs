@@ -6,15 +6,65 @@ import {createHash} from 'node:crypto';
 import {RashashTextStore,renderRashashReader,renderRashashPage,searchableHebrew,hasRashashTextPage} from '../src/rashash-reader.js';
 import {stripHtml} from '../src/readalong.js';
 
-test('All eight Rashash editions retain every source letter, original vowel and all tables',()=>{
+test('All nine Rashash editions retain every source letter, original vowel and all tables',()=>{
  const report=JSON.parse(execFileSync('python3',['scripts/validate-rashash.py'],{encoding:'utf8'}));
- assert.deepEqual(report.map(v=>v.id),['21376','21521','21375','21519','21520','21518','21722','21723']);
- assert.equal(report.reduce((n,v)=>n+v.pages,0),1076);assert.equal(report.reduce((n,v)=>n+v.tables,0),2473);
+ assert.deepEqual(report.map(v=>v.id),['21376','21521','21375','21519','21520','21518','21721','21722','21723']);
+ assert.equal(report.reduce((n,v)=>n+v.pages,0),1125);assert.equal(report.reduce((n,v)=>n+v.tables,0),2608);
  assert.ok(report.every(v=>(v.importedUnchanged||v.addedMarks>1000)&&v.protectedTokens>100));
 });
 test('Rashash Hebrew search works with or without Niqqud and quote variants',()=>{
  assert.equal(searchableHebrew('שַׁבָּת'),searchableHebrew('שבת'));
  assert.equal(searchableHebrew('רש״ש'),searchableHebrew('רש"ש'));
+});
+test('HB21721 imports 49 Rosh Hashanah pages, preserving all tables, name diagrams and six open readings',async()=>{
+ const index=JSON.parse(await readFile('data/rashash.json','utf8'));
+ const doc=index.documents.find(d=>d.id==='21721'),meta=doc.transcription;
+ const volume=JSON.parse(await readFile(meta.jsonPath,'utf8'));
+ assert.equal(doc.actualPart,'VII');assert.equal(doc.pages,209);assert.equal(meta.part,7);
+ assert.deepEqual(meta.coverage,{status:'partial',throughPdf:50,scanPages:209,omittedPdfPages:[2]});
+ assert.deepEqual(volume.pages.map(p=>p.pdfPage),[1,...Array.from({length:48},(_,i)=>i+3)]);
+ assert.equal(createHash('sha256').update(await readFile(meta.sourcePath)).digest('hex'),'1680c449075098fbc2d5fb515809640bbbc62a51719c0219d80486ddaeb32c08');
+ const tables=volume.pages.flatMap(p=>p.blocks.filter(b=>b.kind==='table'));
+ assert.equal(tables.length,135);assert.equal(tables.reduce((n,t)=>n+t.rows.length,0),1020);
+ const items=volume.pages.flatMap(p=>p.blocks.flatMap(b=>b.kind==='table'?b.rows:[b]));
+ for(const item of items){
+  assert.equal(stripHtml(item.html),item.text);
+  if(item.text.includes('[?]'))assert.ok(item.html.includes('rashash-unclear'));
+ }
+ assert.equal(items.reduce((n,i)=>n+(i.text.match(/\[\?\]/g)||[]).length,0),6);
+ assert.deepEqual(meta.flags.filter(f=>f.kind==='source_uncertainty').map(f=>f.pdfPages[0]),[1,24,29,31,50]);
+ const annotations=items.find(i=>i.line===858);
+ assert.equal(annotations.text,'[אני חעם רהע ייז]');
+ assert.equal((annotations.html.match(/rashash-shem/g)||[]).length,4);
+ for(const line of [949,954,963,1020]){
+  const row=items.find(i=>i.line===line);assert.ok(row.html.includes('rashash-shem'));
+  assert.ok(!/[\u05b0-\u05bd]/.test(row.text));
+ }
+ for(const line of [1240,1404,2180])assert.ok(items.find(i=>i.line===line).html.includes('rashash-shem'));
+ const words=items.find(i=>i.line===786);assert.match(words.text,/[\u05b0-\u05bd]/);
+ assert.ok(!words.html.includes('rashash-shem'));
+ for(const line of [774,804,903,1090]){
+  const row=items.find(i=>i.line===line);assert.ok(row.text.includes('וְהָיוּ'));
+  assert.ok(!row.html.includes('<span class="rashash-shem">והיו</span>'));
+ }
+ assert.ok(items.find(i=>i.line===830).text.startsWith('וְהָיָה אִם'));
+ assert.ok(items.find(i=>i.line===830).text.includes('אֶל'));
+ const diagram=items.find(i=>i.line===743);
+ assert.equal((diagram.html.match(/rashash-shem">היה<\/span>/g)||[]).length,4);
+ assert.ok(diagram.html.includes('<span class="rashash-shem">ין</span>'));
+ for(const n of [1,3,24,43,50])assert.ok(hasRashashTextPage(meta,n));
+ for(const n of [0,2,51,116,147,209])assert.equal(hasRashashTextPage(meta,n),false);
+ const html=renderRashashReader({documents:index.documents,id:'21721',pageNumber:50,volume});
+ assert.ok(html.includes('Teilfassung · bis PDF 50 von 209'));assert.ok(html.includes(meta.txtPath));
+ assert.ok(html.includes('data-open-rashash="21721" data-page="50"'));
+ const missing=renderRashashReader({documents:index.documents,id:'21721',pageNumber:126,volume});
+ assert.ok(missing.includes('PDF 126 ist noch nicht transkribiert'));
+ assert.ok(missing.includes('data-open-rashash="21721" data-page="126"'));
+ assert.ok(!missing.includes('<span>PDF 1</span>'));
+ const tagged=await readFile(meta.txtPath,'utf8');
+ assert.equal((tagged.match(/<unclear /g)||[]).length,6);
+ assert.ok(tagged.includes('<coverage status="partial" through-pdf="50" scan-pages="209"'));
+ assert.ok(tagged.includes('engine="Dicta Nakdan" genre="rabbinic"'));
 });
 test('HB21521 is a distinct 230-page Shabbat edition through the scan end with preserved tables, numerals and all open readings',async()=>{
  const index=JSON.parse(await readFile('data/rashash.json','utf8'));
@@ -226,7 +276,7 @@ test('The checked Jom Kippur prayer distinguishes imperative mecheh from partici
 });
 test('Text edition keeps review flags visible and links the exact TXT and scan page',async()=>{
  const index=JSON.parse(await readFile('data/rashash.json','utf8'));
- for(const id of ['21376','21521','21375','21519','21520','21518','21722','21723']){
+ for(const id of ['21376','21521','21375','21519','21520','21518','21721','21722','21723']){
   const metadata=index.documents.find(d=>d.id===id).transcription;
   const volume=JSON.parse(await readFile(metadata.jsonPath,'utf8'));
   const page=metadata.flags.at(-1).pdfPages.at(-1);

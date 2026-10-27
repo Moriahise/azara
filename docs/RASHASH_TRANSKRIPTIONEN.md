@@ -1,6 +1,6 @@
-# Acht Rashash-Textfassungen · Prüfvermerk vom 27. Oktober 2026
+# Neun Rashash-Textfassungen · Prüfvermerk vom 27. Oktober 2026
 
-Die acht hochgeladenen Transkriptionen sind in Azara unter **Siddur & Kavvanot → HaRashash · Text mit Niqqud** erschlossen. Teil III liegt in zwei getrennten Scanfassungen vor. HB21521 wird als eigene Schabbatmorgen-Ausgabe neben HB21376 geführt. Die TXT-Downloads enthalten XML-Struktur-Tags und sind UTF-8-Dateien. Die hochgeladenen Originaltranskriptionen werden unverändert erhalten. HB21376 wurde bereits mit Tags und Niqqud geliefert; hierfür ist der TXT-Download zugleich die unveränderte Quelldatei.
+Die neun hochgeladenen Transkriptionen sind in Azara unter **Siddur & Kavvanot → HaRashash · Text mit Niqqud** erschlossen. Teil III liegt in zwei getrennten Scanfassungen vor. HB21521 wird als eigene Schabbatmorgen-Ausgabe neben HB21376 geführt. Die TXT-Downloads enthalten XML-Struktur-Tags und sind UTF-8-Dateien. Die hochgeladenen Originaltranskriptionen werden unverändert erhalten. HB21376 wurde bereits mit Tags und Niqqud geliefert; hierfür ist der TXT-Download zugleich die unveränderte Quelldatei.
 
 | Band | Thema | HebrewBooks | Textseiten | Tabellen |
 |---|---|---|---:|---:|
@@ -10,6 +10,7 @@ Die acht hochgeladenen Transkriptionen sind in Azara unter **Siddur & Kavvanot �
 | III | Erev Schabbat, Kabbalat Schabbat und Arvit | 21519 | 72 | 149 |
 | III | Erev Schabbat, Kabbalat Schabbat und Arvit | 21520 | 72 | 149 |
 | VI | Schawuot, Lernen in der Nacht, Schacharit und Musaf | 21518 | 24 | 28 |
+| VII (Teilfassung bis PDF 50) | Rosch HaSchana, Schema, Arvit und Beginn Amida-Kavvanot | 21721 | 49 | 135 |
 | VIII | Jom Kippur, Gebete, Kavvanot und Seder haAvoda | 21722 | 138 | 416 |
 | IX | Sukkot, Na’anuim, Hallel, Hakafot und Hoschana Rabba | 21723 | 42 | 97 |
 
@@ -26,7 +27,7 @@ Schutzregeln:
 - Alle ursprünglichen Buchstaben, Leerzeichen und Satzzeichen bleiben im Text erhalten.
 - Jedes bereits vokalisierte Quellwort bleibt unverändert.
 - Gottesnamen, erkannte Buchstabenkombinationen, Abkürzungen und Einzelbuchstaben erhalten kein automatisch vorgeschlagenes neues Niqqud.
-- Sämtliche 2.473 Tabellen bleiben einschließlich ihrer Punktierung und Abstände unverändert. Es wird kein fehlendes Namen-Niqqud aus einem Sprachmodell ergänzt.
+- Sämtliche 2.608 Tabellen bleiben einschließlich ihrer Punktierung und Abstände unverändert. Es wird kein fehlendes Namen-Niqqud aus einem Sprachmodell ergänzt.
 - In den Tabellen enthaltene Gebetswörter bleiben deshalb ebenfalls im ursprünglichen Transkriptionsstand.
 - Die lineare Transkription rekonstruiert keine verlorene räumliche Anordnung der handschriftlichen Diagramme. Dafür dient der Originalscan.
 
@@ -60,7 +61,7 @@ Beispiel einer stabilen ID: `HB21520-L1840`. Sie bezieht sich auf die ursprüngl
 
 ## Einbindung und Audio
 
-Die acht Textfassungen besitzen Seitenwahl, Suche auch ohne Niqqud, Schriftgrößensteuerung, TXT-Download und einen Direktverweis zum Originalscan derselben Seite. Vom Scan lässt sich die entsprechende Textseite öffnen. Im Tagesablauf wird bei einem passenden Band auch dessen Textfassung angeboten.
+Die neun Textfassungen besitzen Seitenwahl, Suche auch ohne Niqqud, Schriftgrößensteuerung, TXT-Download und einen Direktverweis zum Originalscan derselben Seite. Vom Scan lässt sich die entsprechende Textseite öffnen. Im Tagesablauf wird bei einem passenden Band auch dessen Textfassung angeboten.
 
 Die Bände enthalten vielfach einzelne Gebetswörter, Kavvanot und Tabellen statt einer durchgehenden Gebetsrezitation. Sie ersetzen deshalb nicht automatisch den zusammenhängenden Edot-HaMizrach-Mitlesetext einer Aufnahme. Die vorhandene Audio-Mitlesefunktion bleibt erhalten. Kabbalistische Namen und Tabellen werden nicht künstlich vorgelesen.
 
@@ -244,6 +245,25 @@ Die technischen Prüfungen kontrollieren jede Quellzeile, Konsonanten, Satzzeich
 
 ```bash
 python3 scripts/prepare-rashash.py /pfad/zum/upload /pfad/zum/cache --volume 21521 --through-pdf 231
+npm test
+npm run build
+```
+
+
+## Ergänzung: Teil VII · HB21721 · Teilfassung bis PDF 50
+
+Die Datei `Siddur_HaRashash_Teil_7_HB21721_bis_PDF50.txt` wird als eigenständige neunte Textfassung eingebunden. Die erste Textseite nennt ausdrücklich `חלק שביעי` und Schema-Kavvanot für Rosch HaSchana. Der aktuelle Import umfasst PDF 1 und 3–50, insgesamt 49 Textseiten von 209 Scan-Seiten. PDF 2 ist nicht in der Vorlage enthalten. Die Teilabdeckung wird in XML, JSON und Leseansicht ausdrücklich ausgewiesen. Spätere Seiten, insbesondere Schofar und Musaf, bleiben über den Originalscan erreichbar; es wird keine andere Textseite als Ersatz geöffnet.
+
+Die neue UTF-8-TXT mit Niqqud und XML-Tags heißt `Siddur_HaRashash_Teil_7_HB21721_bis_PDF050_Niqqud_Tags.txt`. Die unveränderte Quelle bleibt unter `texts/rashash/sources/HB21721_Original.txt` erhalten. Der Import akzeptiert den ungepolsterten Seitenwert `PDF50` im gelieferten Dateinamen. Fließtext wird mit Dicta Nakdan im rabbinischen Modus vokalisiert; eindeutig gleichlautende Mehrwortpassagen werden zusätzlich mit dem vorhandenen vokalisierten Siddur abgeglichen. Dabei werden nur Vokalzeichen übernommen; der Wortlaut bleibt erhalten.
+
+135 Tabellen mit 1.020 nichtleeren Zeilen und 87 Leerzeilen bleiben zeichengetreu erhalten und sind von der automatischen Vokalisierung ausgenommen. Vorhandenes Niqqud, Namen und Abkürzungen bleiben geschützt. Die Vorlage trennt die kleinen Namen über den Schema-Wörtern häufig in eigene Zeilen: sowohl ausdrücklich bezeichnete Listen als auch reine Namenreihen wie `[אני חעם רהע ייז]` und einzelne Namensannotationen bleiben unvokalisiert. Ebenso werden grafische Beschreibungen mit `[ציור: …]`, eigenständige symbolische Reihen und die Kombinationen `יא` beziehungsweise `אי` in den bezeichneten Krümmungs-/Aufrichtungszeilen erhalten. Umgebende Gebetswörter und erläuternder Fließtext werden regulär vokalisiert. Eindeutige Gebetskontexte erhalten `וְהָיוּ` beziehungsweise `וְהָיָה`; die gleich geschriebene symbolische Reihe `היה היה היה היה` bleibt unverändert.
+
+Alle sechs Unsicherheitsmarker auf PDF 1, 24, 29, 31 und 50 (dort zwei) bleiben erhalten und tragen `unclear`-Tags sowie seitenbezogene Prüfvermerke. Auch das unmittelbar vor einem Marker stehende Wort bleibt unverändert. Nicht lesbare Namenpunktierung oder graphische Elemente werden nicht aus dem Sprachmodell rekonstruiert. Der Quellvorspann beschreibt den ursprünglich unvokalisierten Stand; die Metadaten kennzeichnen das ergänzte Niqqud als redaktionelle Arbeitsfassung.
+
+Die technische Prüfung vergleicht jede Quellzeile, Konsonanten, Satzzeichen, ursprüngliche Punktierung, Tabellen, Namenannotation, stabile IDs und XML-/Webtextidentität. Zusätzlich werden die Seitengrenze PDF 50, die Warnung für spätere nicht transkribierte Seiten und die Verweise zum jeweiligen Originalscan kontrolliert. Dieser Import ist kein neuer vollständiger Scanabgleich. Das ergänzte Niqqud bleibt fachlich zu prüfen. Die anderen acht Ausgaben bleiben unverändert.
+
+```bash
+python3 scripts/prepare-rashash.py /pfad/zum/upload /pfad/zum/cache --volume 21721 --through-pdf 50
 npm test
 npm run build
 ```

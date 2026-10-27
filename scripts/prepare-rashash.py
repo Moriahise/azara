@@ -41,10 +41,11 @@ VOLUMES = [
  ('21519',3,'Erev_Schabbat','Erev Schabbat · Kabbalat Schabbat & Arvit · HB21519',73),
  ('21520',3,'Erev_Schabbat','Erev Schabbat · Kabbalat Schabbat & Arvit',73),
  ('21518',6,'Schawuot','Schawuot · Lernen in der Nacht, Schacharit & Musaf',25),
+ ('21721',7,'bis_PDF050','Rosch HaSchana · Schema und Amida-Kavvanot · HB21721',209),
  ('21722',8,'Jom_Kippur','Jom Kippur · Gebete, Kavvanot & Seder haAvoda',139),
  ('21723',9,'Sukkot','Sukkot · Na’anuim, Hallel, Hakafot & Hoschana Rabba',43),
 ]
-STAGED_VOLUMES = {'21375':323,'21521':231}
+STAGED_VOLUMES = {'21375':323,'21521':231,'21721':209}
 HB21375_EXTRA_NAMES = frozenset({'בם','פאי','חתך','אט','אכפץ','אכנסם','טדהד',
     'אידהנויה','קרעשטן','נגדיכש','בטרצתג','חקבטנע','יגלפזק','שקוצית',
     'יההווההו','יאי','יהה','משסג','ההה','האהיה','ואהיהו','יאהלהוהים'})
@@ -64,6 +65,31 @@ def hb21521_symbol_offsets(line,page):
         if diagram or shema:
             offsets.update(bracket.start(1)+word.start() for word in WORD.finditer(bracket[1]))
     return offsets
+
+def hb21721_name_line(line,page):
+    """Preserve explicit name annotations and diagram rows from this source."""
+    if line.startswith(('[שמות ','[מעל התיב','[מעל כל תיבה:','[ציור:')):return True
+    if 19<=page<=25 and source_name_line(line):return True
+    if 19<=page<=25 and line in {'[יחי]','[מנה]','[חהו]','[נקם]'}:return True
+    return hb21375_name_line(line) or line in {'יה ריו','רו'}
+
+def hb21721_symbol_offsets(line):
+    offsets=set()
+    for prefix,token in [('ברוך — ','יא'),('אתה — ','יא'),("זקיפה ב' — ",'אי')]:
+        if line.startswith(prefix+token+' '):offsets.add(len(prefix))
+    for sequence in re.finditer('וד י ין י',line):
+        offsets.update(sequence.start()+word.start() for word in WORD.finditer(sequence[0]))
+    return offsets
+
+def hb21721_readings(original):
+    """Ordinary prayer words which coincide with protected name combinations."""
+    readings={}
+    if original.startswith(('והיו הדברים','והיו לטטפת','אתם לאות על ידכם והיו','וביום שמחתכם')):
+        readings['והיו']='וְהָיוּ'
+    if original.startswith(('והיה אם שמע','והיה לכם לציצת')) or 'ואז הדין נמתק והיה יגיד' in original:
+        readings['והיה']='וְהָיָה'
+    if original.startswith('והיה אם שמע'):readings['אל']='אֶל'
+    return readings
 
 def hb21375_name_line(line):
     """Recognize standalone diagram rows, not short prayer phrases."""
@@ -302,6 +328,15 @@ def refine_hb21521_line(original,pointed):
     for start,end,value in reversed(changes):pointed=pointed[:start]+value+pointed[end:]
     return pointed
 
+def refine_hb21721_line(original,pointed):
+    readings=hb21721_readings(original);changes=[]
+    for a,b in zip(WORD.finditer(original),WORD.finditer(pointed)):
+        if a.group() in readings:
+            value,ok=graft(a.group(),readings[a.group()]);assert ok
+            changes.append((b.start(),b.end(),value))
+    for start,end,value in reversed(changes):pointed=pointed[:start]+value+pointed[end:]
+    return pointed
+
 def inline_xml(text,original,names_line=False,volume=None,extra_sacred=(),symbol_offsets=()):
     """Protected names and original pointing are independently addressable."""
     orig=list(WORD.finditer(original));now=list(WORD.finditer(text))
@@ -310,6 +345,7 @@ def inline_xml(text,original,names_line=False,volume=None,extra_sacred=(),symbol
     for a,b in zip(orig,now):
         out.append(escape(text[last:b.start()]));tag=protected(a.group(),extra_sacred)
         if a.start() in symbol_offsets:tag='shem'
+        if volume=='21721' and a.group() in hb21721_readings(original):tag=None
         if volume=='21375' and extra_sacred and hb21375_symbol_word(original,a.start()):tag='shem'
         if volume=='21519' and a.group() in hb21519_readings(original):
             tag='shem' if a.group()=='בוה' else None
@@ -381,12 +417,18 @@ def main():
             slug=f'bis_PDF{imported_total:03}'
             title=(f'Werktagsgebete · Hodu und Pesukei deZimra · bis PDF {imported_total}' if ident=='21375' else title+f' · bis PDF {imported_total}')
             if ident=='21521' and imported_total==total:title=f'Schabbat · Schacharit, Musaf und Mincha · HB21521 · bis PDF {total}'
-        source=next(args.input.glob(f'*HB{ident}_{slug}.txt' if ident in STAGED_VOLUMES else '*HB'+ident+'*.txt'));raw=source.read_text();lines=raw.splitlines()
+        if ident in STAGED_VOLUMES:
+            candidates=[p for p in args.input.glob(f'*HB{ident}_bis_PDF*.txt')
+                        if (match:=re.search(r'_bis_PDF(\d+)\.txt$',p.name)) and int(match[1])==imported_total]
+            assert len(candidates)==1, f'Expected exactly one HB{ident} source through PDF {imported_total}'
+            source=candidates[0]
+        else:source=next(args.input.glob('*HB'+ident+'*.txt'))
+        raw=source.read_text();lines=raw.splitlines()
         previous=summaries.get(ident)
         reused,reused_pages,reused_markup=reusable_pointing(lines,previous) if ident in STAGED_VOLUMES else ({},0,{})
-        extra_names=HB21375_EXTRA_NAMES if ident=='21375' and imported_total>=200 else HB21521_EXTRA_NAMES if ident=='21521' else ()
+        extra_names=HB21375_EXTRA_NAMES if ident=='21375' and imported_total>=200 else HB21521_EXTRA_NAMES if ident=='21521' else frozenset({'רו','ריו'}) if ident=='21721' else ()
         volume_flags=[f for f in FLAGS if f['volume']==ident]
-        if ident in ('21375','21521','21519','21722'):
+        if ident in ('21375','21521','21721','21519','21722'):
             uncertain={};current_page=0
             for line_no,line in enumerate(lines,1):
                 marker=PAGE.fullmatch(line)
@@ -441,6 +483,11 @@ def main():
                 whole_name_line=hb21375_name_line(lines[n]) or lines[n] in {'א אל אלה אלהי אלהים','יהו ינעם'}
                 if whole_name_line or (offsets and offsets=={w.start() for w in WORD.finditer(lines[n])}):
                     name_lines.add(n);stats['source_name_lines_preserved']+=1
+            if ident=='21721' and n not in reused and not table_depth:
+                offsets=hb21721_symbol_offsets(lines[n])
+                if offsets:symbol_offsets[n]=offsets
+                if hb21721_name_line(lines[n],source_page):
+                    name_lines.add(n);stats['source_name_lines_preserved']+=1
             if ident=='21521' and not table_depth and lines[n] in ('א','ב','ג','ד','ה','ו','ז','ח','ט','י','יא','יב','יג'):
                 number_lines.add(n);stats['source_number_lines_preserved']+=1
             # Structural delimiters remain source text; only textual lines sent.
@@ -458,6 +505,7 @@ def main():
                     value=refine_prayer_line(lines[n],value,phrase_index,stats,niqqud_only=ident in STAGED_VOLUMES,extra_sacred=extra_names)
                     if ident=='21519':value=refine_hb21519_line(lines[n],value)
                     if ident=='21521':value=refine_hb21521_line(lines[n],value)
+                    if ident=='21721':value=refine_hb21721_line(lines[n],value)
                     # Do not settle a word which the transcriber marked uncertain.
                     old_words=list(WORD.finditer(lines[n]));new_words=list(WORD.finditer(value))
                     replacements=[]
