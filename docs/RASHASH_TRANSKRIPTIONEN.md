@@ -10,7 +10,7 @@ Die neun hochgeladenen Transkriptionen sind in Azara unter **Siddur & Kavvanot �
 | III | Erev Schabbat, Kabbalat Schabbat und Arvit | 21519 | 72 | 149 |
 | III | Erev Schabbat, Kabbalat Schabbat und Arvit | 21520 | 72 | 149 |
 | VI | Schawuot, Lernen in der Nacht, Schacharit und Musaf | 21518 | 24 | 28 |
-| VII (Teilfassung bis PDF 122) | Rosch HaSchana, Schema, Amida und Schofarvorbereitung | 21721 | 121 | 270 |
+| VII (bis zum Scanende PDF 209) | Rosch HaSchana, Schema, Schofar, Musaf, Mincha und ergänzende Kavvanot | 21721 | 208 | 523 |
 | VIII | Jom Kippur, Gebete, Kavvanot und Seder haAvoda | 21722 | 138 | 416 |
 | IX | Sukkot, Na’anuim, Hallel, Hakafot und Hoschana Rabba | 21723 | 42 | 97 |
 
@@ -27,7 +27,7 @@ Schutzregeln:
 - Alle ursprünglichen Buchstaben, Leerzeichen und Satzzeichen bleiben im Text erhalten.
 - Jedes bereits vokalisierte Quellwort bleibt unverändert.
 - Gottesnamen, erkannte Buchstabenkombinationen, Abkürzungen und Einzelbuchstaben erhalten kein automatisch vorgeschlagenes neues Niqqud.
-- Sämtliche 2.743 Tabellen bleiben einschließlich ihrer Punktierung und Abstände unverändert. Es wird kein fehlendes Namen-Niqqud aus einem Sprachmodell ergänzt.
+- Sämtliche 2.996 Tabellen bleiben einschließlich ihrer Punktierung und Abstände unverändert. Es wird kein fehlendes Namen-Niqqud aus einem Sprachmodell ergänzt.
 - In den Tabellen enthaltene Gebetswörter bleiben deshalb ebenfalls im ursprünglichen Transkriptionsstand.
 - Die lineare Transkription rekonstruiert keine verlorene räumliche Anordnung der handschriftlichen Diagramme. Dafür dient der Originalscan.
 
@@ -57,7 +57,7 @@ Die TXT-Dateien sind wohlgeformtes XML mit der Wurzel `<siddur>`. Die Dateiendun
 | `lb source-line="…"` | Erhaltene Leerzeile |
 | `unclear reason="source-transcription"` | Erhaltene unsichere Lesart `[?]` |
 
-Beispiel einer stabilen ID: `HB21520-L1840`. Sie bezieht sich auf die ursprüngliche Zeilennummer der Nutzerdatei. Diese IDs sind keine Audio-Zeitmarken.
+Beispiel einer stabilen ID: `HB21520-L1840`. Sie bezieht sich auf die ursprüngliche Zeilennummer der Nutzerdatei. Bei verschobenen, zeichenidentischen Zeilen bleibt die bestehende ID erhalten; `source-line` verweist dann auf die aktuelle Quellzeile. Diese IDs sind keine Audio-Zeitmarken.
 
 ## Einbindung und Audio
 
@@ -285,6 +285,25 @@ Die Prüfungen umfassen sämtliche Quellzeilen, Konsonanten, Satzzeichen, vorhan
 
 ```bash
 python3 scripts/prepare-rashash.py /pfad/zum/upload /pfad/zum/cache --volume 21721 --through-pdf 122
+npm test
+npm run build
+```
+
+
+## Aktualisierung: Teil VII · HB21721 · bis zum Scanende PDF 209
+
+Die Vorlage `Siddur_HaRashash_Teil_7_HB21721_bis_PDF209.txt` ersetzt die Teilfassung bis PDF 122. Der neue Bestand umfasst PDF 1 und 3–209, insgesamt 208 Textseiten von 209 Scan-Seiten. PDF 2 bleibt ausgelassen. Die neue UTF-8-TXT mit Niqqud und XML-Tags heißt `Siddur_HaRashash_Teil_7_HB21721_bis_PDF209_Niqqud_Tags.txt`. Die Originalquelle bleibt unverändert unter `texts/rashash/sources/HB21721_Original.txt` erhalten. Der vorige Download wird im aktuellen Dateibaum ersetzt und bleibt in der Git-Historie verfügbar. Seitenwahl und Textzugriff reichen nun einschließlich Schofar, Musaf, Mincha, ergänzenden Kavvanot und Schlussnachträgen bis zum Scanende.
+
+Die neue Quelle stellt auf PDF 1, 8, 12, 13, 30, 32, 43–47 und 102 die zuvor am Seitenende stehenden Fußnoten an den Anfang derselben Seite. Der Import übernimmt diese neue Reihenfolge und markiert sie als Änderung der Vorlage, ohne eine räumliche Scan-Anordnung neu zu bestätigen. Alle unveränderten Buchzeilen der bisherigen 121 Seiten behalten ihr Niqqud, ihre Inline-Tags und ihre stabilen IDs. Nur die aktuellen Quellzeilennummern und die Position der verschobenen Absätze ändern sich. Ein Vergleich pro ID prüft Text, Markup und Tabellenzeilen; eine Prüfsumme sichert 4.570 bisherige Tabellen- und Textobjekte. Der alte Arbeitsstandsvermerk unter PDF 122 entfällt entsprechend der neuen Quelle.
+
+Nur hinzugekommene Fließtexte werden mit Dicta Nakdan im rabbinischen Modus vokalisiert. Die 523 Tabellen mit 6.593 nichtleeren Zeilen und 160 Leerzeilen bleiben zeichengetreu erhalten. Auch reine Namenfolgen in eckigen Klammern, Fortschreibungen wie `[צ צבאו צבאות]`, Namenreihen wie `אל אלה אלהים` und die Kombination `במוכן` außerhalb der Tabellen werden geschützt. Bereits gesetzte Originalpunktierung bleibt unverändert. Eindeutige Gebetsbitten wie das allein stehende `כתבנו` und die Überschrift `זכרנו` erhalten die passenden Imperativformen; daraus wird keine automatische Aussprache für Namenreihen abgeleitet.
+
+119 unsichere Lesestellen auf 63 Textseiten bleiben mit `unclear`-Tags und seitenbezogenen Prüfvermerken erhalten. Unmittelbar davor stehende Quellwörter werden nicht durch Vokalisierung als gesicherte Lesarten festgelegt. Die Abdeckung ist bis zum Scanende als `complete` gekennzeichnet; das beschreibt den vorhandenen Seitenumfang und ist keine Behauptung einer vollständig kollationierten philologischen Edition. Die frühere Warnung auf fehlende Seiten ab PDF 123 entfällt. Das ergänzte Niqqud bleibt eine fachlich zu prüfende Arbeitsfassung.
+
+Die technischen Prüfungen kontrollieren jede Quellzeile, Konsonanten, Satzzeichen, Originalpunktierung, Tabellen, geschützte Namen, die übernommenen IDs und die XML-/Webtextidentität. Die anderen acht Ausgaben bleiben unverändert.
+
+```bash
+python3 scripts/prepare-rashash.py /pfad/zum/upload /pfad/zum/cache --volume 21721 --through-pdf 209
 npm test
 npm run build
 ```

@@ -7,7 +7,7 @@ Every source letter, original vowel, space and punctuation mark is retained.
 """
 import argparse
 from datetime import date
-from collections import Counter
+from collections import Counter, deque
 from difflib import SequenceMatcher
 from hashlib import sha256
 from html import escape
@@ -52,7 +52,7 @@ HB21375_EXTRA_NAMES = frozenset({'בם','פאי','חתך','אט','אכפץ','א�
 HB21521_EXTRA_NAMES = frozenset({'אאלל','אידהנויה','חתך','סאל','במוכן','ינעם',
     'יההווההו','האהיה','ואהיהו','האה'})
 HB21721_EXTRA_NAMES = frozenset({'רו','ריו','השתפא','הוה','וה','אחהע','גיכק','בומף',
-    'ודי','אוי','ודא','אוא','ודה','צפך','יי','דיקנרוסא'})
+    'ודי','אוי','ודא','אוא','ודה','צפך','יי','דיקנרוסא','במוכן'})
 
 def hb21521_symbol_offsets(line,page):
     """Names above Shema words and explicit bracketed letter diagrams."""
@@ -73,10 +73,15 @@ def hb21721_name_line(line,page):
     if line.startswith(('[שמות ','[מעל התיב','[מעל כל תיבה:','[ציור:')):return True
     if 19<=page<=25 and source_name_line(line):return True
     if 19<=page<=25 and line in {'[יחי]','[מנה]','[חהו]','[נקם]'}:return True
-    text=bare(line).strip();words=text.split()
+    text=bare(line).strip()
+    if text.startswith('[') and text.endswith(']'):text=text[1:-1].strip()
+    words=text.split()
     symbolic=bool(words and re.fullmatch('[א-ת ]+',text)
                   and all(len(w)==1 or protected(w,HB21721_EXTRA_NAMES)=='shem' for w in words))
-    return hb21375_name_line(line) or symbolic or line in {'יה ריו','רו'}
+    progression=bool(len(words)>1 and re.fullmatch('[א-ת ]+',text)
+                     and protected(words[-1],HB21721_EXTRA_NAMES)=='shem'
+                     and all(words[-1].startswith(w) for w in words))
+    return hb21375_name_line(text) or symbolic or progression or text in {'יה ריו','רו','כה דכ״ה','כו דכ״ה','כז דכ״ה'}
 
 def hb21721_symbol_offsets(line):
     offsets=set()
@@ -97,6 +102,10 @@ def hb21721_readings(original):
     if 'והיו לתפילין' in original:readings['והיו']='וְהָיוּ'
     if 'חייליהם היו כלא היו' in original:readings['היו']='הָיוּ'
     if original.startswith('זכרנו '):readings['זכרנו']='זָכְרֵנוּ'
+    if original.strip()=='■ זכרנו ■':readings['זכרנו']='זָכְרֵנוּ'
+    if original.strip()=='כתבנו':readings['כתבנו']='כָּתְבֵנוּ'
+    if original.strip()=='מותרים לכם':readings['מותרים']='מוּתָּרִים'
+    if original.strip()=='מחולים לכם':readings['מחולים']='מְחוּלִים'
     if original.startswith('ימלך '):readings['ימלך']='יִמְלֹךְ'
     if original.startswith('אבינו מלכנו '):
         request=original.split()[2]
@@ -392,7 +401,7 @@ def source_name_line(line):
 
 def reusable_pointing(lines,previous):
     """Reuse existing pointed lines only on unchanged source pages."""
-    if not previous:return {},0,{}
+    if not previous:return {},0,{},{}
     oldlines=(ROOT/previous['sourcePath']).read_text().splitlines()
     def spans(source):
         starts=[(i,int(m[2])) for i,line in enumerate(source) if (m:=PAGE.fullmatch(line))]
@@ -404,8 +413,11 @@ def reusable_pointing(lines,previous):
             if re.fullmatch(r'━+\s+ARBEITSSTAND\s+━+',source[i]) and re.fullmatch(
                 r'\(Übertragen bis PDF \d+; PDF \d+–\d+ folgen\.\)', '\n'.join(source[i+1:b]).strip()):
                 return i
+            if source[i]=='═══ ARBEITSSTAND ═══' and re.fullmatch(
+                r'Vorhandene Vorlage bis PDF \d+; Fortsetzung PDF \d+–\d+ als visuell bearbeitete Arbeitsfassung\. PDF \d+–\d+ sind noch nicht übertragen\. Die abschließende Vollständigkeits- und Zeichenprüfung steht aus\.',
+                '\n'.join(source[i+1:b]).strip()):return i
         return b
-    reused={};markup={};count=0
+    reused={};markup={};ids={};count=0
     oldmarkup={int(m[2])-1:m[3] for m in re.finditer(
         r'<(p|heading|row) [^>]*source-line="(\d+)"[^>]*>(.*?)</\1>',
         (ROOT/previous['txtPath']).read_text())}
@@ -414,16 +426,25 @@ def reusable_pointing(lines,previous):
         if number not in newspans:continue
         a,b=oldspans[number];c,d=newspans[number]
         b=content_end(oldlines,a,b);d=content_end(lines,c,d)
-        if '\n'.join(oldlines[a:b]).rstrip()!= '\n'.join(lines[c:d]).rstrip():continue
+        if Counter(l for l in oldlines[a:b] if l.strip())!=Counter(l for l in lines[c:d] if l.strip()):continue
+        available={}
+        for i in range(c,d):available.setdefault(lines[i],deque()).append(i)
+        mapping={}
+        for i in range(a,b):
+            matches=available.get(oldlines[i])
+            if matches:mapping[i]=matches.popleft()
         count+=1
         for node in page.iter():
-            if node.tag not in {'p','heading','row','lb'}:continue
-            oldindex=int(node.attrib['source-line'])-1;newindex=c+oldindex-a
-            if oldindex>=b:continue
+            if node.tag not in {'p','heading','row','lb','table'}:continue
+            oldindex=int(node.attrib['source-line'])-1
+            if oldindex not in mapping:continue
+            newindex=mapping[oldindex]
             assert oldlines[oldindex]==lines[newindex]
+            if node.get('id'):ids[newindex]=node.get('id')
+            if node.tag=='table':continue
             reused[newindex]=''.join(node.itertext())
             if oldindex in oldmarkup:markup[newindex]=oldmarkup[oldindex]
-    return reused,count,markup
+    return reused,count,markup,ids
 
 def main():
     ap=argparse.ArgumentParser();ap.add_argument('input',type=Path);ap.add_argument('cache',type=Path);ap.add_argument('--volume',choices=[v[0] for v in VOLUMES]);ap.add_argument('--through-pdf',type=int);args=ap.parse_args()
@@ -445,6 +466,7 @@ def main():
             title=(f'Werktagsgebete · Hodu und Pesukei deZimra · bis PDF {imported_total}' if ident=='21375' else title+f' · bis PDF {imported_total}')
             if ident=='21521' and imported_total==total:title=f'Schabbat · Schacharit, Musaf und Mincha · HB21521 · bis PDF {total}'
             if ident=='21721' and imported_total>=116:title=f'Rosch HaSchana · Schema, Amida und Schofarvorbereitung · HB21721 · bis PDF {imported_total}'
+            if ident=='21721' and imported_total==total:title=f'Rosch HaSchana · Schema, Schofar und Gebete · HB21721 · bis PDF {total}'
         if ident in STAGED_VOLUMES:
             candidates=[p for p in args.input.glob(f'*HB{ident}_bis_PDF*.txt')
                         if (match:=re.search(r'_bis_PDF(\d+)\.txt$',p.name)) and int(match[1])==imported_total]
@@ -453,7 +475,7 @@ def main():
         else:source=next(args.input.glob('*HB'+ident+'*.txt'))
         raw=source.read_text();lines=raw.splitlines()
         previous=summaries.get(ident)
-        reused,reused_pages,reused_markup=reusable_pointing(lines,previous) if ident in STAGED_VOLUMES else ({},0,{})
+        reused,reused_pages,reused_markup,reused_ids=reusable_pointing(lines,previous) if ident in STAGED_VOLUMES else ({},0,{},{})
         extra_names=HB21375_EXTRA_NAMES if ident=='21375' and imported_total>=200 else HB21521_EXTRA_NAMES if ident=='21521' else HB21721_EXTRA_NAMES if ident=='21721' else ()
         volume_flags=[f for f in FLAGS if f['volume']==ident]
         if ident in ('21375','21521','21721','21519','21722'):
@@ -473,6 +495,9 @@ def main():
         if ident=='21721' and 'abschließende Vollständigkeits- und Zeichenprüfung steht aus' in raw:
             volume_flags.append({'volume':ident,'pdfPages':[51,imported_total],'kind':'source_working_draft',
                 'note':f'Die Quelle bezeichnet PDF 51–{imported_total} als visuell bearbeitete Arbeitsfassung. Die abschließende Vollständigkeits- und Zeichenprüfung am Scan steht laut Quelle noch aus. Die technische Aufbereitung prüft Quelltreue, ersetzt aber keine vollständige Kollation.'})
+        if ident=='21721' and imported_total==209:
+            volume_flags.append({'volume':ident,'pdfPages':[1,8,12,13,30,32,43,44,45,46,47,102],'kind':'source_note_order',
+                'note':'Die neue Vorlage stellt die zuvor am Seitenende stehenden Fußnoten an den Anfang derselben Seite. Reihenfolge und Quellzeilennummern folgen der neuen Datei; unveränderte Texte, ihre Punktierung und bestehenden IDs werden übernommen. Dies ist keine neue Bestätigung der räumlichen Scan-Anordnung.'})
         if ident=='21722':
             volume_flags.append({'volume':ident,'pdfPages':[132],'kind':'service_cross_reference',
               'note':'Der Hinweis zu Mincha und Neila verweist auf bereits erklärte gemeinsame Kavvanot. Diese Seite ist kein eigenständiger vollständiger Neila-Gebetstext.'})
@@ -577,7 +602,7 @@ def main():
                 xml.append(f'<page id="HB{ident}-p{number:03}" pdf="{number}" folio="{escape(m[1],quote=True)}" marker="{escape(orig,quote=True)}">')
                 for flag in page['flags']:xml.append(f'<review kind="{flag["kind"]}" status="open">{escape(flag["note"])}</review>')
                 continue
-            identline=f'HB{ident}-L{n+1:04}'
+            identline=reused_ids.get(n,f'HB{ident}-L{n+1:04}')
             if TABLE_MARKERS.fullmatch(orig):
                 for token in TABLE_TOKEN.findall(orig):
                     if token=='=== טבלה ===':
