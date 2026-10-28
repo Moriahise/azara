@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-27",
+  "date": "2026-10-28",
   "flags": [
     {
       "volume": "21520",
@@ -3381,10 +3381,275 @@
     {
       "volume": "21721",
       "pdfPages": [
+        54
+      ],
+      "kind": "source_uncertainty",
+      "sourceLines": [
+        2439
+      ],
+      "occurrences": 1,
+      "note": "Die gelieferte Transkription markiert hier 1 unsichere Lesart(en) mit [?] (Quellzeile(n) 2439). Die Markierungen und die unmittelbar davor stehenden Wörter bleiben erhalten; am Scan prüfen."
+    },
+    {
+      "volume": "21721",
+      "pdfPages": [
+        58
+      ],
+      "kind": "source_uncertainty",
+      "sourceLines": [
+        2689
+      ],
+      "occurrences": 1,
+      "note": "Die gelieferte Transkription markiert hier 1 unsichere Lesart(en) mit [?] (Quellzeile(n) 2689). Die Markierungen und die unmittelbar davor stehenden Wörter bleiben erhalten; am Scan prüfen."
+    },
+    {
+      "volume": "21721",
+      "pdfPages": [
+        62
+      ],
+      "kind": "source_uncertainty",
+      "sourceLines": [
+        2855,
+        2864
+      ],
+      "occurrences": 2,
+      "note": "Die gelieferte Transkription markiert hier 2 unsichere Lesart(en) mit [?] (Quellzeile(n) 2855, 2864). Die Markierungen und die unmittelbar davor stehenden Wörter bleiben erhalten; am Scan prüfen."
+    },
+    {
+      "volume": "21721",
+      "pdfPages": [
+        65
+      ],
+      "kind": "source_uncertainty",
+      "sourceLines": [
+        3065
+      ],
+      "occurrences": 1,
+      "note": "Die gelieferte Transkription markiert hier 1 unsichere Lesart(en) mit [?] (Quellzeile(n) 3065). Die Markierungen und die unmittelbar davor stehenden Wörter bleiben erhalten; am Scan prüfen."
+    },
+    {
+      "volume": "21721",
+      "pdfPages": [
+        66
+      ],
+      "kind": "source_uncertainty",
+      "sourceLines": [
+        3083,
+        3098
+      ],
+      "occurrences": 3,
+      "note": "Die gelieferte Transkription markiert hier 3 unsichere Lesart(en) mit [?] (Quellzeile(n) 3083, 3098). Die Markierungen und die unmittelbar davor stehenden Wörter bleiben erhalten; am Scan prüfen."
+    },
+    {
+      "volume": "21721",
+      "pdfPages": [
+        68
+      ],
+      "kind": "source_uncertainty",
+      "sourceLines": [
+        3228
+      ],
+      "occurrences": 1,
+      "note": "Die gelieferte Transkription markiert hier 1 unsichere Lesart(en) mit [?] (Quellzeile(n) 3228). Die Markierungen und die unmittelbar davor stehenden Wörter bleiben erhalten; am Scan prüfen."
+    },
+    {
+      "volume": "21721",
+      "pdfPages": [
+        70
+      ],
+      "kind": "source_uncertainty",
+      "sourceLines": [
+        3307
+      ],
+      "occurrences": 1,
+      "note": "Die gelieferte Transkription markiert hier 1 unsichere Lesart(en) mit [?] (Quellzeile(n) 3307). Die Markierungen und die unmittelbar davor stehenden Wörter bleiben erhalten; am Scan prüfen."
+    },
+    {
+      "volume": "21721",
+      "pdfPages": [
+        72
+      ],
+      "kind": "source_uncertainty",
+      "sourceLines": [
+        3449
+      ],
+      "occurrences": 1,
+      "note": "Die gelieferte Transkription markiert hier 1 unsichere Lesart(en) mit [?] (Quellzeile(n) 3449). Die Markierungen und die unmittelbar davor stehenden Wörter bleiben erhalten; am Scan prüfen."
+    },
+    {
+      "volume": "21721",
+      "pdfPages": [
+        73
+      ],
+      "kind": "source_uncertainty",
+      "sourceLines": [
+        3466
+      ],
+      "occurrences": 1,
+      "note": "Die gelieferte Transkription markiert hier 1 unsichere Lesart(en) mit [?] (Quellzeile(n) 3466). Die Markierungen und die unmittelbar davor stehenden Wörter bleiben erhalten; am Scan prüfen."
+    },
+    {
+      "volume": "21721",
+      "pdfPages": [
+        76
+      ],
+      "kind": "source_uncertainty",
+      "sourceLines": [
+        3707
+      ],
+      "occurrences": 1,
+      "note": "Die gelieferte Transkription markiert hier 1 unsichere Lesart(en) mit [?] (Quellzeile(n) 3707). Die Markierungen und die unmittelbar davor stehenden Wörter bleiben erhalten; am Scan prüfen."
+    },
+    {
+      "volume": "21721",
+      "pdfPages": [
+        77
+      ],
+      "kind": "source_uncertainty",
+      "sourceLines": [
+        3746,
+        3780
+      ],
+      "occurrences": 2,
+      "note": "Die gelieferte Transkription markiert hier 2 unsichere Lesart(en) mit [?] (Quellzeile(n) 3746, 3780). Die Markierungen und die unmittelbar davor stehenden Wörter bleiben erhalten; am Scan prüfen."
+    },
+    {
+      "volume": "21721",
+      "pdfPages": [
+        81
+      ],
+      "kind": "source_uncertainty",
+      "sourceLines": [
+        4064
+      ],
+      "occurrences": 1,
+      "note": "Die gelieferte Transkription markiert hier 1 unsichere Lesart(en) mit [?] (Quellzeile(n) 4064). Die Markierungen und die unmittelbar davor stehenden Wörter bleiben erhalten; am Scan prüfen."
+    },
+    {
+      "volume": "21721",
+      "pdfPages": [
+        92
+      ],
+      "kind": "source_uncertainty",
+      "sourceLines": [
+        4770
+      ],
+      "occurrences": 1,
+      "note": "Die gelieferte Transkription markiert hier 1 unsichere Lesart(en) mit [?] (Quellzeile(n) 4770). Die Markierungen und die unmittelbar davor stehenden Wörter bleiben erhalten; am Scan prüfen."
+    },
+    {
+      "volume": "21721",
+      "pdfPages": [
+        98
+      ],
+      "kind": "source_uncertainty",
+      "sourceLines": [
+        5061
+      ],
+      "occurrences": 1,
+      "note": "Die gelieferte Transkription markiert hier 1 unsichere Lesart(en) mit [?] (Quellzeile(n) 5061). Die Markierungen und die unmittelbar davor stehenden Wörter bleiben erhalten; am Scan prüfen."
+    },
+    {
+      "volume": "21721",
+      "pdfPages": [
+        99
+      ],
+      "kind": "source_uncertainty",
+      "sourceLines": [
+        5150
+      ],
+      "occurrences": 1,
+      "note": "Die gelieferte Transkription markiert hier 1 unsichere Lesart(en) mit [?] (Quellzeile(n) 5150). Die Markierungen und die unmittelbar davor stehenden Wörter bleiben erhalten; am Scan prüfen."
+    },
+    {
+      "volume": "21721",
+      "pdfPages": [
+        102
+      ],
+      "kind": "source_uncertainty",
+      "sourceLines": [
+        5340
+      ],
+      "occurrences": 2,
+      "note": "Die gelieferte Transkription markiert hier 2 unsichere Lesart(en) mit [?] (Quellzeile(n) 5340). Die Markierungen und die unmittelbar davor stehenden Wörter bleiben erhalten; am Scan prüfen."
+    },
+    {
+      "volume": "21721",
+      "pdfPages": [
+        103
+      ],
+      "kind": "source_uncertainty",
+      "sourceLines": [
+        5348,
+        5372
+      ],
+      "occurrences": 2,
+      "note": "Die gelieferte Transkription markiert hier 2 unsichere Lesart(en) mit [?] (Quellzeile(n) 5348, 5372). Die Markierungen und die unmittelbar davor stehenden Wörter bleiben erhalten; am Scan prüfen."
+    },
+    {
+      "volume": "21721",
+      "pdfPages": [
+        107
+      ],
+      "kind": "source_uncertainty",
+      "sourceLines": [
+        5402
+      ],
+      "occurrences": 1,
+      "note": "Die gelieferte Transkription markiert hier 1 unsichere Lesart(en) mit [?] (Quellzeile(n) 5402). Die Markierungen und die unmittelbar davor stehenden Wörter bleiben erhalten; am Scan prüfen."
+    },
+    {
+      "volume": "21721",
+      "pdfPages": [
+        115
+      ],
+      "kind": "source_uncertainty",
+      "sourceLines": [
+        5507
+      ],
+      "occurrences": 1,
+      "note": "Die gelieferte Transkription markiert hier 1 unsichere Lesart(en) mit [?] (Quellzeile(n) 5507). Die Markierungen und die unmittelbar davor stehenden Wörter bleiben erhalten; am Scan prüfen."
+    },
+    {
+      "volume": "21721",
+      "pdfPages": [
+        121
+      ],
+      "kind": "source_uncertainty",
+      "sourceLines": [
+        5590
+      ],
+      "occurrences": 1,
+      "note": "Die gelieferte Transkription markiert hier 1 unsichere Lesart(en) mit [?] (Quellzeile(n) 5590). Die Markierungen und die unmittelbar davor stehenden Wörter bleiben erhalten; am Scan prüfen."
+    },
+    {
+      "volume": "21721",
+      "pdfPages": [
+        122
+      ],
+      "kind": "source_uncertainty",
+      "sourceLines": [
+        5624
+      ],
+      "occurrences": 1,
+      "note": "Die gelieferte Transkription markiert hier 1 unsichere Lesart(en) mit [?] (Quellzeile(n) 5624). Die Markierungen und die unmittelbar davor stehenden Wörter bleiben erhalten; am Scan prüfen."
+    },
+    {
+      "volume": "21721",
+      "pdfPages": [
+        51,
+        122
+      ],
+      "kind": "source_working_draft",
+      "note": "Die Quelle bezeichnet PDF 51–122 als visuell bearbeitete Arbeitsfassung. Die abschließende Vollständigkeits- und Zeichenprüfung am Scan steht laut Quelle noch aus. Die technische Aufbereitung prüft Quelltreue, ersetzt aber keine vollständige Kollation."
+    },
+    {
+      "volume": "21721",
+      "pdfPages": [
         1
       ],
       "kind": "partial_transcription",
-      "note": "Teilfassung: PDF 1 und 3–50 von 209 Scan-Seiten. PDF 2 ist ausgelassen. Ab PDF 51 ist noch kein transkribierter Text enthalten."
+      "note": "Teilfassung: PDF 1 und 3–122 von 209 Scan-Seiten. PDF 2 ist ausgelassen. Ab PDF 123 ist noch kein transkribierter Text enthalten."
     }
   ],
   "volumes": [
@@ -6607,22 +6872,24 @@
     {
       "id": "21721",
       "part": 7,
-      "title": "Rosch HaSchana · Schema und Amida-Kavvanot · HB21721 · bis PDF 50",
-      "pages": 49,
-      "pdfPages": 50,
-      "txtPath": "texts/rashash/Siddur_HaRashash_Teil_7_HB21721_bis_PDF050_Niqqud_Tags.txt",
+      "title": "Rosch HaSchana · Schema, Amida und Schofarvorbereitung · HB21721 · bis PDF 122",
+      "pages": 121,
+      "pdfPages": 122,
+      "txtPath": "texts/rashash/Siddur_HaRashash_Teil_7_HB21721_bis_PDF122_Niqqud_Tags.txt",
       "sourcePath": "texts/rashash/sources/HB21721_Original.txt",
       "jsonPath": "data/rashash-text-21721.json",
       "status": "Niqqud-Arbeitsfassung · redaktionell zu prüfen",
       "statistics": {
-        "table_lines_preserved": 1107,
-        "source_name_lines_preserved": 76,
-        "words_with_added_niqqud": 3539,
-        "protected_abbr": 2170,
-        "protected_shem": 425,
-        "protected_letter": 38,
-        "words_with_siddur_phrase_reference": 336,
-        "protected_source_pointing": 2
+        "reused_pages": 49,
+        "reused_source_lines": 1947,
+        "table_lines_preserved": 3172,
+        "source_name_lines_preserved": 346,
+        "protected_shem": 556,
+        "words_with_added_niqqud": 9163,
+        "protected_abbr": 1621,
+        "protected_letter": 56,
+        "protected_source_pointing": 4,
+        "words_with_siddur_phrase_reference": 1178
       },
       "flags": [
         {
@@ -6688,21 +6955,286 @@
         {
           "volume": "21721",
           "pdfPages": [
+            54
+          ],
+          "kind": "source_uncertainty",
+          "sourceLines": [
+            2439
+          ],
+          "occurrences": 1,
+          "note": "Die gelieferte Transkription markiert hier 1 unsichere Lesart(en) mit [?] (Quellzeile(n) 2439). Die Markierungen und die unmittelbar davor stehenden Wörter bleiben erhalten; am Scan prüfen."
+        },
+        {
+          "volume": "21721",
+          "pdfPages": [
+            58
+          ],
+          "kind": "source_uncertainty",
+          "sourceLines": [
+            2689
+          ],
+          "occurrences": 1,
+          "note": "Die gelieferte Transkription markiert hier 1 unsichere Lesart(en) mit [?] (Quellzeile(n) 2689). Die Markierungen und die unmittelbar davor stehenden Wörter bleiben erhalten; am Scan prüfen."
+        },
+        {
+          "volume": "21721",
+          "pdfPages": [
+            62
+          ],
+          "kind": "source_uncertainty",
+          "sourceLines": [
+            2855,
+            2864
+          ],
+          "occurrences": 2,
+          "note": "Die gelieferte Transkription markiert hier 2 unsichere Lesart(en) mit [?] (Quellzeile(n) 2855, 2864). Die Markierungen und die unmittelbar davor stehenden Wörter bleiben erhalten; am Scan prüfen."
+        },
+        {
+          "volume": "21721",
+          "pdfPages": [
+            65
+          ],
+          "kind": "source_uncertainty",
+          "sourceLines": [
+            3065
+          ],
+          "occurrences": 1,
+          "note": "Die gelieferte Transkription markiert hier 1 unsichere Lesart(en) mit [?] (Quellzeile(n) 3065). Die Markierungen und die unmittelbar davor stehenden Wörter bleiben erhalten; am Scan prüfen."
+        },
+        {
+          "volume": "21721",
+          "pdfPages": [
+            66
+          ],
+          "kind": "source_uncertainty",
+          "sourceLines": [
+            3083,
+            3098
+          ],
+          "occurrences": 3,
+          "note": "Die gelieferte Transkription markiert hier 3 unsichere Lesart(en) mit [?] (Quellzeile(n) 3083, 3098). Die Markierungen und die unmittelbar davor stehenden Wörter bleiben erhalten; am Scan prüfen."
+        },
+        {
+          "volume": "21721",
+          "pdfPages": [
+            68
+          ],
+          "kind": "source_uncertainty",
+          "sourceLines": [
+            3228
+          ],
+          "occurrences": 1,
+          "note": "Die gelieferte Transkription markiert hier 1 unsichere Lesart(en) mit [?] (Quellzeile(n) 3228). Die Markierungen und die unmittelbar davor stehenden Wörter bleiben erhalten; am Scan prüfen."
+        },
+        {
+          "volume": "21721",
+          "pdfPages": [
+            70
+          ],
+          "kind": "source_uncertainty",
+          "sourceLines": [
+            3307
+          ],
+          "occurrences": 1,
+          "note": "Die gelieferte Transkription markiert hier 1 unsichere Lesart(en) mit [?] (Quellzeile(n) 3307). Die Markierungen und die unmittelbar davor stehenden Wörter bleiben erhalten; am Scan prüfen."
+        },
+        {
+          "volume": "21721",
+          "pdfPages": [
+            72
+          ],
+          "kind": "source_uncertainty",
+          "sourceLines": [
+            3449
+          ],
+          "occurrences": 1,
+          "note": "Die gelieferte Transkription markiert hier 1 unsichere Lesart(en) mit [?] (Quellzeile(n) 3449). Die Markierungen und die unmittelbar davor stehenden Wörter bleiben erhalten; am Scan prüfen."
+        },
+        {
+          "volume": "21721",
+          "pdfPages": [
+            73
+          ],
+          "kind": "source_uncertainty",
+          "sourceLines": [
+            3466
+          ],
+          "occurrences": 1,
+          "note": "Die gelieferte Transkription markiert hier 1 unsichere Lesart(en) mit [?] (Quellzeile(n) 3466). Die Markierungen und die unmittelbar davor stehenden Wörter bleiben erhalten; am Scan prüfen."
+        },
+        {
+          "volume": "21721",
+          "pdfPages": [
+            76
+          ],
+          "kind": "source_uncertainty",
+          "sourceLines": [
+            3707
+          ],
+          "occurrences": 1,
+          "note": "Die gelieferte Transkription markiert hier 1 unsichere Lesart(en) mit [?] (Quellzeile(n) 3707). Die Markierungen und die unmittelbar davor stehenden Wörter bleiben erhalten; am Scan prüfen."
+        },
+        {
+          "volume": "21721",
+          "pdfPages": [
+            77
+          ],
+          "kind": "source_uncertainty",
+          "sourceLines": [
+            3746,
+            3780
+          ],
+          "occurrences": 2,
+          "note": "Die gelieferte Transkription markiert hier 2 unsichere Lesart(en) mit [?] (Quellzeile(n) 3746, 3780). Die Markierungen und die unmittelbar davor stehenden Wörter bleiben erhalten; am Scan prüfen."
+        },
+        {
+          "volume": "21721",
+          "pdfPages": [
+            81
+          ],
+          "kind": "source_uncertainty",
+          "sourceLines": [
+            4064
+          ],
+          "occurrences": 1,
+          "note": "Die gelieferte Transkription markiert hier 1 unsichere Lesart(en) mit [?] (Quellzeile(n) 4064). Die Markierungen und die unmittelbar davor stehenden Wörter bleiben erhalten; am Scan prüfen."
+        },
+        {
+          "volume": "21721",
+          "pdfPages": [
+            92
+          ],
+          "kind": "source_uncertainty",
+          "sourceLines": [
+            4770
+          ],
+          "occurrences": 1,
+          "note": "Die gelieferte Transkription markiert hier 1 unsichere Lesart(en) mit [?] (Quellzeile(n) 4770). Die Markierungen und die unmittelbar davor stehenden Wörter bleiben erhalten; am Scan prüfen."
+        },
+        {
+          "volume": "21721",
+          "pdfPages": [
+            98
+          ],
+          "kind": "source_uncertainty",
+          "sourceLines": [
+            5061
+          ],
+          "occurrences": 1,
+          "note": "Die gelieferte Transkription markiert hier 1 unsichere Lesart(en) mit [?] (Quellzeile(n) 5061). Die Markierungen und die unmittelbar davor stehenden Wörter bleiben erhalten; am Scan prüfen."
+        },
+        {
+          "volume": "21721",
+          "pdfPages": [
+            99
+          ],
+          "kind": "source_uncertainty",
+          "sourceLines": [
+            5150
+          ],
+          "occurrences": 1,
+          "note": "Die gelieferte Transkription markiert hier 1 unsichere Lesart(en) mit [?] (Quellzeile(n) 5150). Die Markierungen und die unmittelbar davor stehenden Wörter bleiben erhalten; am Scan prüfen."
+        },
+        {
+          "volume": "21721",
+          "pdfPages": [
+            102
+          ],
+          "kind": "source_uncertainty",
+          "sourceLines": [
+            5340
+          ],
+          "occurrences": 2,
+          "note": "Die gelieferte Transkription markiert hier 2 unsichere Lesart(en) mit [?] (Quellzeile(n) 5340). Die Markierungen und die unmittelbar davor stehenden Wörter bleiben erhalten; am Scan prüfen."
+        },
+        {
+          "volume": "21721",
+          "pdfPages": [
+            103
+          ],
+          "kind": "source_uncertainty",
+          "sourceLines": [
+            5348,
+            5372
+          ],
+          "occurrences": 2,
+          "note": "Die gelieferte Transkription markiert hier 2 unsichere Lesart(en) mit [?] (Quellzeile(n) 5348, 5372). Die Markierungen und die unmittelbar davor stehenden Wörter bleiben erhalten; am Scan prüfen."
+        },
+        {
+          "volume": "21721",
+          "pdfPages": [
+            107
+          ],
+          "kind": "source_uncertainty",
+          "sourceLines": [
+            5402
+          ],
+          "occurrences": 1,
+          "note": "Die gelieferte Transkription markiert hier 1 unsichere Lesart(en) mit [?] (Quellzeile(n) 5402). Die Markierungen und die unmittelbar davor stehenden Wörter bleiben erhalten; am Scan prüfen."
+        },
+        {
+          "volume": "21721",
+          "pdfPages": [
+            115
+          ],
+          "kind": "source_uncertainty",
+          "sourceLines": [
+            5507
+          ],
+          "occurrences": 1,
+          "note": "Die gelieferte Transkription markiert hier 1 unsichere Lesart(en) mit [?] (Quellzeile(n) 5507). Die Markierungen und die unmittelbar davor stehenden Wörter bleiben erhalten; am Scan prüfen."
+        },
+        {
+          "volume": "21721",
+          "pdfPages": [
+            121
+          ],
+          "kind": "source_uncertainty",
+          "sourceLines": [
+            5590
+          ],
+          "occurrences": 1,
+          "note": "Die gelieferte Transkription markiert hier 1 unsichere Lesart(en) mit [?] (Quellzeile(n) 5590). Die Markierungen und die unmittelbar davor stehenden Wörter bleiben erhalten; am Scan prüfen."
+        },
+        {
+          "volume": "21721",
+          "pdfPages": [
+            122
+          ],
+          "kind": "source_uncertainty",
+          "sourceLines": [
+            5624
+          ],
+          "occurrences": 1,
+          "note": "Die gelieferte Transkription markiert hier 1 unsichere Lesart(en) mit [?] (Quellzeile(n) 5624). Die Markierungen und die unmittelbar davor stehenden Wörter bleiben erhalten; am Scan prüfen."
+        },
+        {
+          "volume": "21721",
+          "pdfPages": [
+            51,
+            122
+          ],
+          "kind": "source_working_draft",
+          "note": "Die Quelle bezeichnet PDF 51–122 als visuell bearbeitete Arbeitsfassung. Die abschließende Vollständigkeits- und Zeichenprüfung am Scan steht laut Quelle noch aus. Die technische Aufbereitung prüft Quelltreue, ersetzt aber keine vollständige Kollation."
+        },
+        {
+          "volume": "21721",
+          "pdfPages": [
             1
           ],
           "kind": "partial_transcription",
-          "note": "Teilfassung: PDF 1 und 3–50 von 209 Scan-Seiten. PDF 2 ist ausgelassen. Ab PDF 51 ist noch kein transkribierter Text enthalten."
+          "note": "Teilfassung: PDF 1 und 3–122 von 209 Scan-Seiten. PDF 2 ist ausgelassen. Ab PDF 123 ist noch kein transkribierter Text enthalten."
         }
       ],
       "coverage": {
         "status": "partial",
-        "throughPdf": 50,
+        "throughPdf": 122,
         "scanPages": 209,
         "omittedPdfPages": [
           2
         ]
       },
-      "editionNote": "Teilfassung bis PDF 50 von 209. Die Fortsetzung ab PDF 51 ist nicht enthalten. Niqqud mit Dicta Nakdan im rabbinischen Modus ergänzt; fachliche Prüfung bleibt erforderlich."
+      "editionNote": "Teilfassung bis PDF 122 von 209. Die Fortsetzung ab PDF 123 ist nicht enthalten. Niqqud mit Dicta Nakdan im rabbinischen Modus ergänzt; fachliche Prüfung bleibt erforderlich."
     },
     {
       "id": "21722",
